@@ -1,22 +1,22 @@
 ---
 title: Cross-Media Data Mining
-date: 2020-06-15 09:16:00 +02:00
+date: 2020-06-15T07:16:00.000Z
 categories:
-- data mining
-thumb_image: "/uploads/programguides.png"
-poster_image: "/uploads/rtv-22e80b.png"
+  - data mining
+thumb_image: /uploads/programguides.png
+poster_image: /uploads/rtv-22e80b.png
 description: 'Interrelate information across collections  '
 related_project: CLARIAH
 contacts:
-- name: Roeland Ordelman
-- email: rordelman@beeldengeluid.nl
+  - name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 used_sources:
-- name: Kijk en Luistercijfers (TV and Radio ratings)
-  url: http://mediasuitedata.clariah.nl/dataset/kijk-en-luistercijfers-viewing-figures
-- name: Sound and Vision Archive
-  url: http://mediasuitedata.clariah.nl/dataset/audiovisual-collection-daan
-- name: 'KB newspaper collection '
-  url: http://mediasuitedata.clariah.nl/dataset/kb-newspapers-test
+  - name: Kijk en Luistercijfers (TV and Radio ratings)
+    url: http://mediasuitedata.clariah.nl/dataset/kijk-en-luistercijfers-viewing-figures
+  - name: Sound and Vision Archive
+    url: 'http://mediasuitedata.clariah.nl/dataset/audiovisual-collection-daan'
+  - name: 'KB newspaper collection '
+    url: 'http://mediasuitedata.clariah.nl/dataset/kb-newspapers-test'
 ---
 
 The Netherlands Institute for Sound and Vision is well-known about its large Radio and Television collection, consisting of audio and video data of the Dutch Public Broadcasters. But also, so-called context collections are available such as [Viewing and Listening Ratings](http://mediasuitedata.clariah.nl/dataset/kijk-en-luistercijfers-viewing-figures), Program Guides and all sorts of documents that were created during the production process such as auto-cues, contracts and scripts. Interrelating the information across these collections would be very interesting. For example, to increase knowledge about individual items in the collections (e.g., descriptions, popularity), but also to study representations of topics or people in different media. As we are collaborating with other institutions such as the National Library and Eye Film Institute (see e.g. [Media Suite](https://mediasuite.clariah.nl/) where you can access the data with your university login), interrelating collections is also interesting from a broader, cross-institutional perspective.

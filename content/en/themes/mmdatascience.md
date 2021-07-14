@@ -1,34 +1,34 @@
 ---
 title: Tools for Multimedia Data Science
-date: 2020-06-10 12:53:00 +02:00
+date: 2020-06-10T10:53:00.000Z
 categories:
-- digital humanities
-- data journalism
-- data stories
-- infrastructures
-- data engineering
-- data visualization
-- storytelling
-website_url: https://mediasuite.clariah.nl/
-thumb_image: "/uploads/datascientist.png"
-poster_image: "/uploads/datascientist.png"
-description: Usability, Design and Evaluation of Applications for Multimedia Data
-  Science
+  - digital humanities
+  - data journalism
+  - data stories
+  - infrastructures
+  - data engineering
+  - data visualization
+  - storytelling
+website_url: 'https://mediasuite.clariah.nl/'
+thumb_image: /uploads/datascientist.png
+poster_image: /uploads/datascientist.png
+description: 'Usability, Design and Evaluation of Applications for Multimedia Data Science'
 related_project: www.clariah.nl
 contacts:
-- name: Roeland Ordelman
-  email: rordelman@beeldengeluid.nl
+  - name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 organizations:
-- name: University of Amsterdam
-  url: https://www.create.humanities.uva.nl/
-- name: Utrecht University
-  url: https://www.uu.nl/en/organisation/department-of-media-and-culture-studies
-- name: University of Twente
-  url: https://hmi.ewi.utwente.nl
+  - name: University of Amsterdam
+    url: 'https://www.create.humanities.uva.nl/'
+  - name: Utrecht University
+    url: 'https://www.uu.nl/en/organisation/department-of-media-and-culture-studies'
+  - name: University of Twente
+    url: 'https://hmi.ewi.utwente.nl'
 publications:
-- title: A Workflow Analysis Perspective to Scholarly Research Tasks , Koolen, Kumpulainen,
-    Melgar-Estrada (2020)
-  url: doi.org/10.1145/3343413.3377969
+  - title: >-
+      A Workflow Analysis Perspective to Scholarly Research Tasks, Koolen,
+      Kumpulainen, Melgar-Estrada (2020)
+    url: doi.org/10.1145/3343413.3377969
 ---
 
 Data science is about analyzing data to extract useful information to better **understand** things and to tell stories about it. At the Netherlands Institute for Sound and Vision, we are interested in the stories that can be told with archival data. In particular, how we can do '**multimedia storytelling**' given that our archive consists of multimedia data (audio, video, images, text) that need special treatment in order to analyze it and extract information from it. For example, manually or automatically provide descriptions of the *pixels and samples* that make up the archive.

@@ -1,15 +1,15 @@
 ---
 title: Conversational AI
 menu: research
-thumb_image: "/uploads/spokenconversationalsearch.png"
-poster_image: "/uploads/spokenconversationalsearch.png"
+thumb_image: /uploads/spokenconversationalsearch.png
+poster_image: /uploads/spokenconversationalsearch.png
 description: Archive Search using a (Spoken) Dialogue
 contacts:
-- name: Roeland Ordelman
-  email: rordelman@beeldengeluid.nl
+  - name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 organizations:
-- name: University of Twente
-  url: https://www.utwente.nl/en/eemcs/hmi/
+  - name: University of Twente
+    url: 'https://www.utwente.nl/en/eemcs/hmi/'
 ---
 
 Instead of typing keywords in a search bar, we would rather have a chat with a (virtual) librarian and express our 'information need' or interest in certain content in the archive in a conversation. At Netherlands Institute for Sound and Vision, we investigate several use cases in the area of *Spoken Conversational Search* (SCS) as a means to guide access to our rich but also large and heterogeneous audiovisual archive. In our **LABS** environment, we have search APIs built on top of indices of rich metadata that can be connected to a dialogue system that uses keyboard or speech input to communicate with users online and in our museum. 
