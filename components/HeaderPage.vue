@@ -24,8 +24,6 @@ export default {}
 
 <style lang="scss" scoped>
 .header-bar {
-  height: 75px;
-  display: flex;
   align-items: center;
   padding: 16px;
 }
