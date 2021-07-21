@@ -1,8 +1,7 @@
 ---
 title: AI in Media
 date: 2020-06-15T08:44:00.000Z
-thumb_image: /uploads/media.png
-poster_image: /uploads/media.png
+image: themes/media.png
 description: 'Using media for machine learning, using machine learning for media'
 contacts:
   - name: Roeland Ordelman

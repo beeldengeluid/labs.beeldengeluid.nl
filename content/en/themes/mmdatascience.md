@@ -10,8 +10,7 @@ categories:
   - data visualization
   - storytelling
 website_url: 'https://mediasuite.clariah.nl/'
-thumb_image: /uploads/datascientist.png
-poster_image: /uploads/datascientist.png
+image: themes/datascientist.png
 description: 'Usability, Design and Evaluation of Applications for Multimedia Data Science'
 related_project: www.clariah.nl
 contacts:

@@ -1,8 +1,7 @@
 ---
 title: Storytelling Superhub
 date: 2020-06-15T08:57:00.000Z
-thumb_image: /uploads/knooppunt.png
-poster_image: /uploads/knooppunt.png
+image: themes/knooppunt.png
 description: 'Infrastructural Support for Digital Storytelling  '
 related_project: 'CLARIAH, NDE'
 contacts:

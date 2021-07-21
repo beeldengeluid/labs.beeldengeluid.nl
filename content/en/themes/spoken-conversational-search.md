@@ -1,8 +1,7 @@
 ---
 title: Conversational AI
 menu: research
-thumb_image: /uploads/spokenconversationalsearch.png
-poster_image: /uploads/spokenconversationalsearch.png
+image: themes/spokenconversationalsearch.png
 description: Archive Search using a (Spoken) Dialogue
 contacts:
   - name: Roeland Ordelman

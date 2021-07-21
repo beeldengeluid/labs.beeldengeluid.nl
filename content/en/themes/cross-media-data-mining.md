@@ -3,8 +3,7 @@ title: Cross-Media Data Mining
 date: 2020-06-15T07:16:00.000Z
 categories:
   - data mining
-thumb_image: /uploads/programguides.png
-poster_image: /uploads/rtv-22e80b.png
+image: themes/programguides.png
 description: 'Interrelate information across collections  '
 related_project: CLARIAH
 contacts:

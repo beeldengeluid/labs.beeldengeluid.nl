@@ -5,8 +5,7 @@ categories:
   - access
   - serendipity
   - generous interfaces
-thumb_image: /uploads/browse.png
-poster_image: /uploads/browse.png
+image: themes/browse.png
 description: Improving data access and interaction with media
 related_project: MediaScape
 contacts:

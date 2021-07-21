@@ -4,8 +4,7 @@ categories:
   - IR for kids
   - responsable AI
 menu: research
-thumb_image: /uploads/kind_en_media.png
-poster_image: /uploads/kind_en_media.png
+image: themes/kind_en_media.png
 description: Play-full Responsible Media Interaction
 related_project: Kinderen in Gesprek met Media
 contacts:
