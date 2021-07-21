@@ -4,7 +4,7 @@ date: 2020-06-15T07:16:00.000Z
 categories:
   - data mining
 image: themes/programguides.png
-description: 'Interrelate information across collections  '
+subtitle: 'Interrelate information across collections  '
 related_project: CLARIAH
 contacts:
   - name: Roeland Ordelman

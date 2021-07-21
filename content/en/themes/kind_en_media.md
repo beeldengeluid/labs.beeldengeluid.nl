@@ -5,7 +5,7 @@ categories:
   - responsable AI
 menu: research
 image: themes/kind_en_media.png
-description: Play-full Responsible Media Interaction
+subtitle: Play-full Responsible Media Interaction
 related_project: Kinderen in Gesprek met Media
 contacts:
   - name: Roeland Ordelman

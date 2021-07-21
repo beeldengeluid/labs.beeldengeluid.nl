@@ -11,7 +11,7 @@ categories:
   - storytelling
 website_url: 'https://mediasuite.clariah.nl/'
 image: themes/datascientist.png
-description: 'Usability, Design and Evaluation of Applications for Multimedia Data Science'
+subtitle: 'Usability, Design and Evaluation of Applications for Multimedia Data Science'
 related_project: www.clariah.nl
 contacts:
   - name: Roeland Ordelman

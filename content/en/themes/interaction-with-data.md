@@ -6,7 +6,7 @@ categories:
   - serendipity
   - generous interfaces
 image: themes/browse.png
-description: Improving data access and interaction with media
+subtitle: Improving data access and interaction with media
 related_project: MediaScape
 contacts:
   - name: Roeland Ordelman
