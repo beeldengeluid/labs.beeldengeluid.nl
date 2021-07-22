@@ -9,4 +9,5 @@ export default {
   organization: 'mdi-domain',
   link: 'mdi-link-variant',
   download: 'mdi-download',
+  email: 'mdi-email',
 }

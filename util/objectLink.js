@@ -1,6 +1,6 @@
 import { isUrl } from './url'
 
-export const isObjectLink = (value) => {
+export const isObjectLinkFromSchema = (value) => {
   return (
     typeof value === 'object' &&
     !Array.isArray(value) &&

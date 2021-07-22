@@ -24,15 +24,22 @@
       </ul>
     </nav> -->
 
-      <!-- <v-divider class="my-5" /> -->
-
       <nuxt-content :document="article" />
+
+      <v-divider class="my-5" />
+
+      <data-table
+        v-if="article.contacts"
+        :object="{ contacts: article.contacts }"
+      />
+
+      <v-divider class="my-5" />
 
       <p class="caption">
         {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
       </p>
 
-      <v-divider class="my-5" />
+      <!-- <v-divider class="my-5" /> -->
 
       <!-- relations -->
       <Relations :datasets="article.datasets" />
@@ -46,11 +53,12 @@
 import ArticleHeader from './ArticleHeader'
 import Relations from './Relations'
 import PrevNext from './PrevNext'
+import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
 import { classColorIndex } from '~/config/theme'
 
 export default {
-  components: { Relations, PrevNext, ArticleHeader },
+  components: { Relations, PrevNext, ArticleHeader, DataTable },
   props: {
     article: {
       type: Object,

@@ -15,8 +15,8 @@
           </span>
 
           <!-- Typed URI -->
-          <span v-else-if="isObjectLink(value)">
-            <ObjectLink :value="value" />
+          <span v-else-if="isObjectLinkFromSchema(value)">
+            <ObjectLinkFromSchema :value="value" />
           </span>
 
           <!-- Array of non-objects -->
@@ -30,7 +30,21 @@
 
           <!-- Array of objects -->
           <Fragment v-if="isObjectArray(value)">
-            <DataTable v-for="(v, index) in value" :key="index" :object="v" />
+            <ul v-if="isEmailArray(value)" class="list-none">
+              <li v-for="(v, index) in value" :key="index" class="my-2">
+                <ObjectLink
+                  :icon-key="'email'"
+                  :href="`mailto:${v.email}`"
+                  :name="v.name"
+                />
+              </li>
+            </ul>
+            <DataTable
+              v-for="(v, index) in value"
+              v-else
+              :key="index"
+              :object="v"
+            />
           </Fragment>
 
           <!-- Object -->
@@ -43,10 +57,12 @@
 
 <script>
 import { Fragment } from 'vue-fragment'
+import ObjectLinkFromSchema from './ObjectLinkFromSchema'
 import ObjectLink from './ObjectLink'
 import DataTable from './DataTable'
 import LinkText from './LinkText'
-import { isObjectLink } from '~/util/objectLink'
+import { isObjectLinkFromSchema } from '~/util/objectLink'
+import { isEmailObject, isEmailArray } from '~/util/frontmatter'
 
 const isNonObjectArray = (value) =>
   Array.isArray(value) && value.length > 0 && typeof value[0] !== 'object'
@@ -55,7 +71,13 @@ const isObjectArray = (value) =>
 
 export default {
   name: 'DataTable',
-  components: { DataTable, Fragment, LinkText, ObjectLink },
+  components: {
+    DataTable,
+    Fragment,
+    LinkText,
+    ObjectLink,
+    ObjectLinkFromSchema,
+  },
   props: {
     object: {
       type: Object,
@@ -63,13 +85,23 @@ export default {
       default: null,
     },
   },
-
   methods: {
-    isObjectLink,
+    isObjectLinkFromSchema,
+    isEmailObject,
+    isEmailArray,
     isNonObjectArray,
     isObjectArray,
     renderable: (value) =>
-      isObjectLink(value) || !isObjectArray(value) || typeof value !== 'object',
+      isObjectLinkFromSchema(value) ||
+      !isObjectArray(value) ||
+      typeof value !== 'object',
   },
 }
 </script>
+
+<style scoped lang="scss">
+.list-none {
+  list-style: none;
+  padding-left: 0;
+}
+</style>

@@ -39,7 +39,6 @@ export default {
     margin-top: 0;
     th {
       text-align: left;
-      vertical-align: top;
       padding: 10px 20px 10px 0;
       text-transform: capitalize;
     }
