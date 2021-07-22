@@ -31,6 +31,13 @@
       <data-table
         v-if="article.contacts"
         :object="{ contacts: article.contacts }"
+        class="mb-2"
+      />
+
+      <data-table
+        v-if="article.organizations"
+        :object="{ organizations: article.organizations }"
+        class="mb-2"
       />
 
       <v-divider class="my-5" />

@@ -46,10 +46,6 @@ export default {
     td {
       padding: 10px 10px 10px 0;
     }
-
-    td > table {
-      margin-top: -10px;
-    }
   }
 }
 </style>

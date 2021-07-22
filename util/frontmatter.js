@@ -9,3 +9,15 @@ export const isEmailObject = (value) => {
 export const isEmailArray = (value) => {
   return value.every((v) => isEmailObject(v))
 }
+
+export const isLinkObject = (value) => {
+  return (
+    typeof value === 'object' &&
+    !Array.isArray(value) &&
+    ['name', 'url'].every((key) => key in value)
+  )
+}
+
+export const isLinkArray = (value) => {
+  return value.every((v) => isLinkObject(v))
+}
