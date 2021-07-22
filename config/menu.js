@@ -26,6 +26,12 @@ export default [
     color: classColors.blog,
   },
   {
+    icon: icons.theme,
+    title: 'themes',
+    to: 'themes',
+    color: classColors.theme,
+  },
+  {
     icon: icons.about,
     title: 'about',
     to: 'about',

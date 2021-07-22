@@ -4,6 +4,7 @@ const theme = {
   primary: colors.blue.darken2, // dataset
   secondary: colors.amber.darken3, // project
   tertiary: colors.pink.darken1, // blog
+  quaternary: colors.purple.darken1, // theme
   accent: colors.grey.darken3,
   info: colors.teal.lighten1,
   warning: colors.amber.base,
@@ -15,12 +16,14 @@ export const classColorIndex = {
   dataset: 'primary',
   project: 'secondary',
   blog: 'tertiary',
+  theme: 'quaternary',
 }
 
 export const classColors = {
   dataset: theme[classColorIndex.dataset],
   project: theme[classColorIndex.project],
   blog: theme[classColorIndex.blog],
+  theme: theme[classColorIndex.theme],
 }
 
 export default theme

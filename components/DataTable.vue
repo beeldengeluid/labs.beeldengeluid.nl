@@ -1,7 +1,25 @@
 <template>
   <table>
     <tbody>
-      <tr v-for="(value, key) in object" :key="key">
+      <tr v-if="isLinkObject(object)">
+        <td colspan="2">
+          <ObjectLink
+            :icon-key="'link'"
+            :href="object.url"
+            :name="object.name"
+          />
+        </td>
+      </tr>
+      <tr v-else-if="isEmailObject(object)">
+        <td colspan="2">
+          <ObjectLink
+            :icon-key="'email'"
+            :href="`mailto:${object.email}`"
+            :name="object.name"
+          />
+        </td>
+      </tr>
+      <tr v-for="(value, key) in object" v-else :key="key">
         <th v-if="renderable(value)">{{ key }}</th>
         <td v-if="renderable(value)">
           <!-- String -->
@@ -15,8 +33,8 @@
           </span>
 
           <!-- Typed URI -->
-          <span v-else-if="isObjectLink(value)">
-            <ObjectLink :value="value" />
+          <span v-else-if="isObjectLinkFromSchema(value)">
+            <ObjectLinkFromSchema :value="value" />
           </span>
 
           <!-- Array of non-objects -->
@@ -26,7 +44,7 @@
         </td>
 
         <td v-else colspan="2">
-          <h2 class="text-capitalize mb-3">{{ key }}</h2>
+          <h2 class="text-capitalize">{{ key }}</h2>
 
           <!-- Array of objects -->
           <Fragment v-if="isObjectArray(value)">
@@ -34,7 +52,9 @@
           </Fragment>
 
           <!-- Object -->
-          <DataTable v-else-if="typeof value == 'object'" :object="value" />
+          <Fragment v-else-if="typeof value == 'object'">
+            <DataTable :object="value" />
+          </Fragment>
         </td>
       </tr>
     </tbody>
@@ -43,10 +63,12 @@
 
 <script>
 import { Fragment } from 'vue-fragment'
+import ObjectLinkFromSchema from './ObjectLinkFromSchema'
 import ObjectLink from './ObjectLink'
 import DataTable from './DataTable'
 import LinkText from './LinkText'
-import { isObjectLink } from '~/util/objectLink'
+import { isObjectLinkFromSchema } from '~/util/objectLink'
+import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
 const isNonObjectArray = (value) =>
   Array.isArray(value) && value.length > 0 && typeof value[0] !== 'object'
@@ -55,7 +77,13 @@ const isObjectArray = (value) =>
 
 export default {
   name: 'DataTable',
-  components: { DataTable, Fragment, LinkText, ObjectLink },
+  components: {
+    DataTable,
+    Fragment,
+    LinkText,
+    ObjectLink,
+    ObjectLinkFromSchema,
+  },
   props: {
     object: {
       type: Object,
@@ -63,13 +91,26 @@ export default {
       default: null,
     },
   },
-
   methods: {
-    isObjectLink,
+    isObjectLinkFromSchema,
+    isEmailObject,
+    isLinkObject,
     isNonObjectArray,
     isObjectArray,
-    renderable: (value) =>
-      isObjectLink(value) || !isObjectArray(value) || typeof value !== 'object',
+    renderable(value) {
+      return (
+        isObjectLinkFromSchema(value) ||
+        !isObjectArray(value) ||
+        typeof value !== 'object'
+      )
+    },
   },
 }
 </script>
+
+<style scoped lang="scss">
+.list-none {
+  list-style: none;
+  padding-left: 0;
+}
+</style>
