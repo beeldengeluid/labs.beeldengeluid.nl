@@ -11,8 +11,6 @@ organizations:
     url: 'https://mediaperspectives.nl/'
   - name: NPO Innovatie
     url: 'https://innovatie.npo.nl/'
-  - name: null
-    url: null
 publications:
   - title: >-
       On the effects of using speech transcripts and subtitles to detect topic
