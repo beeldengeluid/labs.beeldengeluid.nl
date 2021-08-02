@@ -70,7 +70,7 @@
               md="6"
               class="pa-10 d-flex flex-column justify-center align-start"
             >
-              <nuxt-content :document="page" />
+              <nuxt-content :document="{ body: page.excerpt }" />
               <v-btn color="primary" :to="localePath('about')" nuxt>
                 {{ $t('read_more') }}
               </v-btn>
@@ -101,8 +101,8 @@ export default {
     Visual,
   },
   async asyncData({ $content, app }) {
-    const homePath = await getLocalePath({ $content, app, path: 'home' })
-    const page = await $content(homePath).fetch()
+    const aboutPath = await getLocalePath({ $content, app, path: 'about' })
+    const page = await $content(aboutPath).fetch()
 
     // blogs
     const blogsPath = await getLocalePath({
