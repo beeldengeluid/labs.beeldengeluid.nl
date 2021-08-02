@@ -32,6 +32,12 @@ export default [
     color: classColors.theme,
   },
   {
+    icon: icons.lab,
+    title: 'labs',
+    to: 'labs',
+    color: classColors.lab,
+  },
+  {
     icon: icons.about,
     title: 'about',
     to: 'about',

@@ -4,6 +4,7 @@ export default {
   project: 'mdi-rocket-launch',
   blog: 'mdi-post',
   theme: 'mdi-shape',
+  lab: 'mdi-flask',
   about: 'mdi-information',
 
   organization: 'mdi-domain',
