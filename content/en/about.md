@@ -2,27 +2,43 @@
 title: About
 ---
 
-Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula
-tantique. Minantia tigres corpora [parvos](http://ad.io/cancer) destinat
-venabula simulavit poples ego ardentis Opheltes violentior huius natum; utque
-ipse modo lumina. Iugulare _demens simul_ se neque unde per erroresque repellit
-quamvis. Oneri [et tristis](http://pennae-temesaea.com/).
+## What about LABS?
 
-## Ignes truncoque
+Sound and Vision LABS represent our *Research & Innovation* activities. On a wide range of topics, we put media innovation into practice by connecting new technologies and innovative ideas to **real data** ("big multimedia data") and evaluating them in **real-life use scenarios** in *media*, *cultural heritage*, *research*, *education* and *journalism*, together with **real users**. 
 
-In quis, saepe revulsum. Cava novo conlapsus quaque primoque _oculos natas_, in
-cupiens, nam. Longum annis Tartara hastilia.
+<!--more-->
 
-1. Locus Agamemnona perveniunt iacebat fecit foret
-2. Non cum
-3. Hic mihi
-4. Sive cervis quaeque repulsae malis praecipitem pars
+By doing so, we have been facilitating (inter)national researchers to help bring forward innovations in the media domain for many years. At the same time, working with great minds with great ideas and by testing those ideas in practice helps us to remain a modern-day archive that persistently finds useful ways to open up, explore and exploit the multifaceted richness of our large multimedia archives. 
 
-## Spectabere perdere
+The labs.beeldengeluid.nl website serves as the umbrella website for all our LABS activities, the ones from the past and LABS that are currently active. You will find showcases of tools, demos and prototypes that have been developed in the past years with our (inter)national partners in research and industry. Please note that in some cases the showcases require authentication for access. You can request access via the contact details on the application page.
 
-Currus [tectoque](http://cum-peleus.org/vicinosarte), non his, iam et [manus
-plenissima vitta](http://referre-amanti.net/lacertis). Mutavit superstes se
-**cum Mavors depositura** Hector, mansit fortis parte exploratum velleris.
-Sumusve me super admoti caerula in Titania umeris, has fortia cum develat, Iovem
-est dixit acceptior amnis. Ab tamen porrecta ipsos quam illa parentum repulsae
-levem.
+We are delighted to be able to collaborate with our partners in academia and higher education in a variety of research and innovation projects funded by national and European funding schemes. Check-out our research pages to get an impression on what we are doing and how to collaborate with us.  
+
+For more information about Sound and Vision Lab activities, please contact: [rordelman@beeldengeluid.nl](mailto:rordelman@beeldengeluid.nl)
+
+## What about Sound and Vision?
+
+[The Netherlands Institute for Sound and Vision](https://www.beeldengeluid.nl) is one of Europe's largest audiovisual archives that is progressively making its way into the digital realm. It maintains and provides access to over 1 million hours of television, radio, music, film and web video. Sound and Vision provides access to its collections online for various end-user services, including dedicated services for the creative industries, education and research. The institute operates as a visitor attraction aimed at the general public and is visited by over 250.000 people annually.
+
+Read about our activities on our [blog](https://www.beeldengeluid.nl/kennis/blog) or follow us on Twitter via [@benglabs](https://twitter.com/benglabs)
+
+### Visiting Address 
+
+Netherland Institute for Sound and Vision  
+Media Parkboulevard 1  
+1217 WE Hilversum  
+
+
+### Postal Addres  
+
+Nederlands Instituut voor Beeld en Geluid  
+Postbus 1060  
+1200 BB Hilversum  
+
+### Telephone
+
++31 (0)35 677 5555
+
+In case you have any questions or requests, please do not hesitate to contact us at [rd@beeldengeluid.nl](mailto:rd@beeldengeluid.nl) or on Twitter via [@benglabs](https://twitter.com/benglabs)
+
+![Sound & Vision](/uploads/images/about.jpg)
