@@ -38,6 +38,12 @@ export default [
     color: classColors.lab,
   },
   {
+    icon: icons.api,
+    title: 'apis',
+    to: 'apis',
+    color: classColors.api,
+  },
+  {
     icon: icons.about,
     title: 'about',
     to: 'about',

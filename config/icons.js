@@ -5,8 +5,8 @@ export default {
   blog: 'mdi-post',
   theme: 'mdi-shape',
   lab: 'mdi-flask',
+  api: 'mdi-power-plug',
   about: 'mdi-information',
-
   organization: 'mdi-domain',
   link: 'mdi-link-variant',
   download: 'mdi-download',
