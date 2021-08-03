@@ -21,6 +21,7 @@ export const classColorIndex = {
   theme: 'quaternary',
   lab: 'quinary',
   api: 'senary',
+  archive: 'accent',
 }
 
 export const classColors = {
@@ -30,6 +31,7 @@ export const classColors = {
   theme: theme[classColorIndex.theme],
   lab: theme[classColorIndex.lab],
   api: theme[classColorIndex.api],
+  archive: theme[classColorIndex.archive],
 }
 
 export default theme
