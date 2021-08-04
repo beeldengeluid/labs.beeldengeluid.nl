@@ -1,12 +1,12 @@
 ---
 title: The Mind of The Universe
+type: project
+subtitle: The Mind of the Universe is an international tv series and open source digital platform about the rapid evolution of our knowledge.
 date: 2019-03-15 15:55:00 +01:00
 tags:
 - open source
 - search
 - television
-project_id: the_mind_of_the_universe
-menu: projects
 website_url: http://themindoftheuniverse.org/
 themes:
 - Access

@@ -1,16 +1,14 @@
 ---
 title: Sound of the Netherlands
-permalink: "/project/dbd2f7b8-edb3-11e4-8099-005056a71e3a"
+subtitle: Sounds of daily life from the Netherlands
+type: project
 tags:
 - Radio stories
 - ASR
 - Content Enrichments
 - COMMIT
-project_id: dbd2f7b8-edb3-11e4-8099-005056a71e3a
-menu: projects
 website_url: http://www.geluidvannederland.nl/
-thumb_image: "/uploads/gvnl_poster.png"
-description: Sounds of daily life from the Netherlands
+image: archive/gvnl_poster.png
 themes:
 - Digitization and Preservation
 - Access
@@ -23,8 +21,6 @@ contactpersons:
 - organization: Netherlands Institute for Sound and Vision
   name: Maarten Brinkerink
   email: mbrinkerink@beeldengeluid.nl
-predecessors: 
-layout: project
 ---
 
 'Het Geluid van Nederland' or 'The Sound of the Netherlands' makes an unique [sound archive](http://www.beeldengeluid.nl/geluiden) available from the Netherlands Institute for Sound and Vision. This collection contains over 10.000 sound recordings from the 1950s to the 1990s. It includes horse driven trams, venders and recordings from the ‘Elfstedentocht 1986’. A selection of 2.300 recording of this archive is now available under an open license on this website.

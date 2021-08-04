@@ -1,14 +1,11 @@
 ---
 title: Digitale Collectie
-permalink: "/project/dbd33368-edb3-11e4-8099-005056a71e3a"
+subtitle: Data aggregator for Dutch cultural heritage
+type: project
 tags:
 - Aggregator
 - Digitisation
-project_id: dbd33368-edb3-11e4-8099-005056a71e3a
-menu: projects
 website_url: http://www.digitalecollectie.nl/
-thumb_image: "/uploads/digitalecollectie_poster.png"
-description: Data aggregator for Dutch cultural heritage
 themes:
 - Digitisation and Preservation
 - Access
@@ -28,8 +25,6 @@ blogposts:
   url: http://pers.beeldengeluid.nl/32821-digitale-collectie-brengt-nederlandse-erfgoedmetadata-samen
 - title: 5 nieuwtjes over de nationale aggregator (only available in Dutch)
   url: https://beeldengeluid.nl/kennis/blog/5-nieuwtjes-over-de-nationale-aggregator
-predecessors: 
-layout: project
 ---
 
 Digitale Collectie (Digital Collection) brings the digital heritage collections Netherlands together in one place. These collections can then be used in various applications. Digitale Collectie also increases the international visibility of Dutch cultural heritage by also transferring collections to Europeana.

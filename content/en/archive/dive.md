@@ -1,16 +1,14 @@
 ---
 title: DIVE
-permalink: "/project/dbd1f6e2-edb3-11e4-8099-005056a71e3a"
+subtitle: Dynamically linking collections on the basis of events
+type: project
 tags:
 - LOD
 - Digital History
 - Heterogeneous Data Cloud
 - Historical Events
-project_id: dbd1f6e2-edb3-11e4-8099-005056a71e3a
-menu: projects
 website_url: http://dive.beeldengeluid.nl
-thumb_image: "/uploads/dive_poster.png"
-description: Dynamically linking collections on the basis of events
+image: archive/dive_poster.png
 themes:
 - Access
 - Use and Context
@@ -27,7 +25,6 @@ contactpersons:
 predecessors:
 - name: AGORA
   url: http://agora.cs.vu.nl
-layout: project
 ---
 
 In this digital cultural heritage project, we provide innovative access to heritage objects from heterogeneous online collections. We use historical events and event narratives as a context both for searching and browsing as well as for the presentation of individual and groups of objects. Semantics from existing collection vocabularies and linked data vocabularies are used to link objects and the events, people, locations and concepts that are depicted or associated with those objects.

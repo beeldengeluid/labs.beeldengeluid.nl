@@ -1,6 +1,7 @@
 ---
 title: TROVe
-permalink: "/project/dbd240e8-edb3-11e4-8099-005056a71e3a"
+subtitle: Transmedia Observatory
+type: project
 tags:
 - Academic Research
 - Digital Humanities
@@ -10,11 +11,8 @@ tags:
 - CLARIAH
 - Content Enrichments
 - Public Debates
-project_id: dbd240e8-edb3-11e4-8099-005056a71e3a
-menu: projects
 website_url: http://trove.beeldengeluid.nl
-thumb_image: "/uploads/trove_wide.png"
-description: Transmedia Observatory
+image: archive/trove_wide.png
 themes:
 - Access
 - Use and Context
@@ -30,8 +28,6 @@ contactpersons:
 - organization: Utrecht University
   name: Jasmijn van Gorp
   email: j.vangorp@uu.nl
-predecessors: 
-layout: project
 ---
 
 TROVe is a search engine for digital humanities that allows researchers to explore and partly analyse public debates and discourses thought he the diffusion of news and opinion through different media and time. Specific roles of different media can be explored and their mutual relations & reactions can be laid bare.

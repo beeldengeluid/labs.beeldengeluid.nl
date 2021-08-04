@@ -1,16 +1,13 @@
 ---
 title: Bridge
+subtitle: Automatically creating meaningful links between dynamically expanding archived television data and other information sources centered around entities, themes and events
+type: project
 date: 2019-03-14 16:47:00 +01:00
 tags:
 - Digital Humanities
 - Semantic Web
 - LOD
-project_id: bridge
-menu: projects
 website_url: http://vps46235.public.cloudvps.com/bridge/
-description: Automatically creating meaningful links between dynamically expanding
-  archived television data and other information sources centered around entities,
-  themes and events
 themes:
 - Access
 - Use and context

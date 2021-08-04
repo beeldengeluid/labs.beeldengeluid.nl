@@ -1,13 +1,10 @@
 ---
 title: Transnational Radio Encounters
-permalink: "/project/deb93ff6-fcfb-11e6-bc09-0050569ef392"
+subtitle: "  Transnational Radio Encounters investigates how radio structures cultural encounters"
+type: project
 tags:
 - radio
-project_id: deb93ff6-fcfb-11e6-bc09-0050569ef392
-menu: projects
-thumb_image: "/uploads/radio_garden.png"
-description: "  Transnational Radio Encounters investigates how radio structures cultural
-  encounters"
+image: archive/radio_garden.png
 themes:
 - Humanities
 - Users
@@ -30,8 +27,6 @@ contactpersons:
 - organization: Netherlands Institute for Sound and Vision
   name: Bas Agterberg
   email: bagterberg@beeldengeluid.nl
-predecessors: 
-layout: project
 ---
 
 TRE aims at establishing a new transnational agenda in radio research. Moving through and beyond national and comparative paradigms in order to investigate radio's transnational structures and forms, TRE places radio research within contemporary discussions about migration, cultural identities, encounters and memories by generating new knowledge about the meaning of radio and listening in the age of globalisation and digitisation.

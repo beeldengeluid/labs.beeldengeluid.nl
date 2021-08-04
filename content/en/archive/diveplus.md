@@ -1,6 +1,7 @@
 ---
 title: 'DIVE+'
 subtitle: 'An innovative tool for interaction, interpretation and exploration of multiple digital heritage collections.'
+type: project
 image: projects/diveplus.jpg
 tags:
 datasets:
