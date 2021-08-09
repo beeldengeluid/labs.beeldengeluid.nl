@@ -14,7 +14,7 @@ partners:
 - Netherlands Institute for Sound and Vision
 - KRO
 - VU University
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Maarten Brinkerink
   email: mbrinkerink@beeldengeluid.nl

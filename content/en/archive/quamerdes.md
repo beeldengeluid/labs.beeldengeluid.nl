@@ -20,7 +20,7 @@ partners:
 - Utrecht University
 - University of Amsterdam
 - National Library of the Netherlands
-contactpersons:
+contacts:
 - organization: Utrecht University
   name: Jasmijn van Gorp
   email: j.vangorp@uu.nl

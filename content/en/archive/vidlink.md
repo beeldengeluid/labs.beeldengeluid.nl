@@ -17,7 +17,7 @@ partners:
 - Videodock
 - NTR
 - Europeana
-contactpersons:
+contacts:
 - organization: The Netherlands Institue of Sound and Vision
   name: Erwin Verbruggen
   email: rd@beeldengeluid.nl

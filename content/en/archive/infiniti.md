@@ -30,7 +30,7 @@ partners:
 - Textkernel
 - ThirdSight
 - WCC
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl

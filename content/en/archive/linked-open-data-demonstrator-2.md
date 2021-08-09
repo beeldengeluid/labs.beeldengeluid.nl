@@ -13,7 +13,7 @@ partners:
 - RCE
 - Spinque
 - Delving
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Victor de Boer
   email: vdboer@beeldengeluid.nl

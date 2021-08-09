@@ -28,15 +28,13 @@
 
       <v-divider class="my-5" />
 
+      <!-- Display selected article fiels if present -->
       <data-table
-        v-if="article.contacts"
-        :object="{ contacts: article.contacts }"
-        class="mb-2"
-      />
-
-      <data-table
-        v-if="article.organizations"
-        :object="{ organizations: article.organizations }"
+        :object="{
+          ...(article.contacts && { contacts: article.contacts }),
+          ...(article.website_url && { website: article.website_url }),
+          ...(article.partners && { partners: article.partners }),
+        }"
         class="mb-2"
       />
 

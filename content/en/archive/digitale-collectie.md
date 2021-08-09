@@ -16,7 +16,7 @@ partners:
 - National Library of the Netherlands
 - National Archives of the Netherlands
 - Digital Heritage Netherlands
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Dimitra Atsidis
   email: datsidis@beeldengeluid.nl

@@ -17,7 +17,7 @@ partners:
 - The Netherlands Institute for Sound and Vision
 - Kennisland
 - De Auditieve Dienst
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Maarten Brinkerink
   email: mbrinkerink@beeldengeluid.nl

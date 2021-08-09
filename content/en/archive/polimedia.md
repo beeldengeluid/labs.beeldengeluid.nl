@@ -18,7 +18,7 @@ partners:
 - The Netherlands Institute for Sound and Vision
 - Erasmus University Rotterdam
 - VU University
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Jaap Blom
   email: jblom@beeldengeluid.nl

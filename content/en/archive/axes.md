@@ -28,7 +28,7 @@ partners:
 - Technicolor
 - Cassidian
 - Erasmus University Rotterdam
-contactpersons:
+contacts:
 - organization: Nederlands Instituut voor Beeld en Geluid
   name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl

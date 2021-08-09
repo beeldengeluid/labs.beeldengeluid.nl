@@ -27,7 +27,7 @@ partners:
 - University St. Gallen
 - UEP
 - EURECOM
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Jaap Blom
   email: jblom@beeldengeluid.nl

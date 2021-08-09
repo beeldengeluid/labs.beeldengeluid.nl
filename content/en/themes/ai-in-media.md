@@ -6,7 +6,7 @@ subtitle: 'Using media for machine learning, using machine learning for media'
 contacts:
   - name: Roeland Ordelman
     email: rordelman@beeldengeluid.nl
-organizations:
+partners:
   - name: Media Perspectives
     url: 'https://mediaperspectives.nl/'
   - name: NPO Innovatie

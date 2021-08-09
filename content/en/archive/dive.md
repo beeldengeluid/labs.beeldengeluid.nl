@@ -18,7 +18,7 @@ partners:
 - VU University
 - National Library of the Netherlands
 - Frontwise
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Johan Oomen
   email: joomen@beeldengeluid.nl

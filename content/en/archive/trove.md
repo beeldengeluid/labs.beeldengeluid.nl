@@ -24,7 +24,7 @@ partners:
 - University of Amsterdam
 - Dispectu
 - Frontwise
-contactpersons:
+contacts:
 - organization: Utrecht University
   name: Jasmijn van Gorp
   email: j.vangorp@uu.nl

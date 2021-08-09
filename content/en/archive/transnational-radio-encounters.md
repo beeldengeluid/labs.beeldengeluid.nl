@@ -23,7 +23,7 @@ partners:
 - European Broadcasting Union
 - Deutschlandradio Kultur
 - Athena Media
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Bas Agterberg
   email: bagterberg@beeldengeluid.nl

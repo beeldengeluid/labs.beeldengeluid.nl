@@ -16,7 +16,7 @@ related_project: www.clariah.nl
 contacts:
   - name: Roeland Ordelman
     email: rordelman@beeldengeluid.nl
-organizations:
+partners:
   - name: University of Amsterdam
     url: 'https://www.create.humanities.uva.nl/'
   - name: Utrecht University

@@ -12,7 +12,7 @@ themes:
 - Access
 - Use and Context
 - Users
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Erwin Verbruggen
   email: everbruggen@beeldengeluid.nl

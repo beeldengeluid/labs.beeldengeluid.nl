@@ -16,7 +16,7 @@ partners:
 - Frontwise
 - Dispectu
 - Netherlands Institute for Sound and Vision
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Arnoud Goos
   email: agoos@beeldengeluid.nl

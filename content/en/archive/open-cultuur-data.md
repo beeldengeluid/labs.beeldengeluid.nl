@@ -16,7 +16,7 @@ partners:
 - Netherlands Institute for Sound and Vision
 - Kennisland
 - Open State Foundation
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Maarten Brinkerink
   email: mbrinkerink@beeldengeluid.nl

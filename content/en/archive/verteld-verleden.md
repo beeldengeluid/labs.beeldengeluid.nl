@@ -19,7 +19,7 @@ partners:
 - Atria
 - Meertens Institute
 - University of Amsterdam
-contactpersons:
+contacts:
 - organization: Netherlands Institute for Sound and Vision
   name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl

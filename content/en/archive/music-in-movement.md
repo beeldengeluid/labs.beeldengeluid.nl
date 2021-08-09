@@ -15,7 +15,7 @@ partners:
 - INA
 - FINA
 - Arvo Pärt Centre
-contactpersons:
+contacts:
 - organization: Sound and Vision
   name: Lizzy Komen
   email: lkomen@beeldengeluid.nl
