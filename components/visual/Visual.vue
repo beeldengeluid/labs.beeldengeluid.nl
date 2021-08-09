@@ -148,7 +148,6 @@ export default {
       activeId: '',
       hoverDataset: null,
       hoverId: '',
-      filteredDatasets: this.datasets,
       tags: Object.keys(
         this.datasets.reduce((tags, dataset) => {
           if (dataset.tags) {
@@ -162,6 +161,13 @@ export default {
     }
   },
   computed: {
+    filteredDatasets() {
+      return this.tagsFilter.length === 0
+        ? this.datasets
+        : this.datasets.filter((dataset) =>
+            this.tagsFilter.some((tag) => dataset.tags.includes(tag))
+          )
+    },
     stats() {
       return [
         {
@@ -190,22 +196,6 @@ export default {
     },
   },
   watch: {
-    tagsFilter() {
-      // Filtered datasets
-      this.filteredDatasets =
-        this.tagsFilter.length === 0
-          ? this.datasets
-          : this.datasets.filter(
-              (dataset) =>
-                dataset.tags &&
-                this.tagsFilter.some((tag) => dataset.tags.includes(tag))
-            )
-      // Active dataset from filtered datasets
-      if (!this.filteredDatasets.includes(this.activeDataset)) {
-        this.activeDataset = null
-        this.activeId = ''
-      }
-    },
     activeId() {
       this.activeDataset = this.datasets.find(
         (dataset) => dataset.slug === this.activeId
