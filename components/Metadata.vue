@@ -34,18 +34,5 @@ export default {
 .metadata-table-wrapper {
   font-size: 0.9em;
   overflow-x: auto;
-  table {
-    border-collapse: collapse;
-    margin-top: 0;
-    th {
-      text-align: left;
-      padding: 10px 20px 10px 0;
-      text-transform: capitalize;
-    }
-
-    td {
-      padding: 10px 10px 10px 0;
-    }
-  }
 }
 </style>

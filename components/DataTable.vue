@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <table class="text-left">
     <tbody>
       <tr v-if="isLinkObject(object)">
         <td colspan="2">
@@ -20,7 +20,7 @@
         </td>
       </tr>
       <tr v-for="(value, key) in object" v-else :key="key">
-        <th v-if="renderable(value)">{{ key }}</th>
+        <th v-if="renderable(value)" class="text-capitalize">{{ key }}</th>
         <td v-if="renderable(value)">
           <!-- String -->
           <span v-if="typeof value == 'string'">
@@ -112,5 +112,14 @@ export default {
 .list-none {
   list-style: none;
   padding-left: 0;
+}
+table {
+  border-collapse: collapse;
+  th {
+    padding: 10px 20px 10px 0;
+  }
+  td {
+    padding: 10px 10px 10px 0;
+  }
 }
 </style>
