@@ -1,5 +1,5 @@
 <template>
-  <Fragment>
+  <div>
     <!-- Filter -->
     <div
       class="filter d-flex flex-column align-end ma-2"
@@ -48,11 +48,10 @@
       :card-path="cardPath"
       :data-class="dataClass"
     />
-  </Fragment>
+  </div>
 </template>
 
 <script>
-import { Fragment } from 'vue-fragment'
 import CardPage from '~/components/CardPage'
 import Tags from '~/components/visual/Tags'
 import { getLocalePath } from '~/util/contentFallback'
@@ -60,7 +59,7 @@ import { getLocalePath } from '~/util/contentFallback'
 const dataClass = 'archive'
 
 export default {
-  components: { Fragment, Tags, CardPage },
+  components: { Tags, CardPage },
   async asyncData({ $content, app }) {
     const path = dataClass
 
