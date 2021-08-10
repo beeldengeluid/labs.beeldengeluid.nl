@@ -1,5 +1,6 @@
 ---
 title: RadioPlus Context Browser
+type: application
 tags:
 - Radio stories
 - ASR

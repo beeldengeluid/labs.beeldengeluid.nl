@@ -1,5 +1,6 @@
 ---
 title: CoMeRDa
+type: application
 date: 2019-03-14 16:22:00 +01:00
 tags:
 - Cross-Collection Search

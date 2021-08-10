@@ -1,5 +1,6 @@
 ---
 title: Open Images Platform
+type: application
 tags:
 - Open Media
 - Open Source

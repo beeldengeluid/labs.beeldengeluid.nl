@@ -1,5 +1,6 @@
 ---
 title: Transmedia Observatory
+type: application
 tags:
 - Digital Humanities
 - Media Studies

@@ -1,5 +1,6 @@
 ---
 title: CultuurLINK
+type: application
 tags:
 - Alignment
 - SKOS

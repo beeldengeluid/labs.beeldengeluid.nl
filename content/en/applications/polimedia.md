@@ -1,5 +1,6 @@
 ---
 title: PoliMedia
+type: application
 tags:
 - LOD
 - Semantic Web

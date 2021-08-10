@@ -1,5 +1,6 @@
 ---
 title: VidLink
+type: application
 tags:
 - Documentary
 - ASR

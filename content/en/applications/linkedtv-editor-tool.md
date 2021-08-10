@@ -1,5 +1,6 @@
 ---
 title: LinkedTV Editor Tool
+type: application
 tags:
 - Video annotation
 - Television

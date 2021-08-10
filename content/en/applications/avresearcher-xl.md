@@ -1,5 +1,6 @@
 ---
 title: AVResearcher XL
+type: application
 tags:
 - Academic Research
 - Digital Humanities

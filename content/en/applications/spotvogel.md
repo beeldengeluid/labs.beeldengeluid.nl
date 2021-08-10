@@ -1,5 +1,6 @@
 ---
 title: Spotvogel
+type: application
 tags:
 - Crowdsourcing
 - Nature

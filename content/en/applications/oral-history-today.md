@@ -1,5 +1,6 @@
 ---
 title: Oral History Today
+type: application
 tags:
 - Speech Search
 - Digital Humanities

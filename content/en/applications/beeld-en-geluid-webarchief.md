@@ -1,5 +1,6 @@
 ---
 title: Beeld en Geluid Webarchief
+type: application
 tags:
 - Speech Search
 - Digital Humanities

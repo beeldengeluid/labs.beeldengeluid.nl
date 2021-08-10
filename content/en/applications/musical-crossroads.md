@@ -1,5 +1,6 @@
 ---
 title: Musical Crossroads
+type: application
 tags:
 - Linked Data
 - Visualization

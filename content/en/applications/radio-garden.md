@@ -1,5 +1,6 @@
 ---
 title: Radio.Garden
+type: application
 tags:
 - radio
 website_url: http://radio.garden/

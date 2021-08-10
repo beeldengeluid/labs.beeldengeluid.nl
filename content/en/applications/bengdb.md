@@ -1,5 +1,6 @@
 ---
 title: BengDB
+type: application
 tags:
 - Open data
 image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"

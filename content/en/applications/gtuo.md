@@ -1,5 +1,6 @@
 ---
 title: GTUO
+type: application
 tags:
 - Thesauri Alignment
 - Cross-Collection Search

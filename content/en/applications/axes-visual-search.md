@@ -1,5 +1,6 @@
 ---
 title: AXES Visual Search
+type: application
 tags:
 - Multimodal search
 - Visual search

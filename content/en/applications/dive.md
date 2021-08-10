@@ -1,5 +1,6 @@
 ---
 title: DIVE
+type: application
 tags:
 - LOD
 - Digital History

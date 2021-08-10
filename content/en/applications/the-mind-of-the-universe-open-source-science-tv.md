@@ -1,5 +1,6 @@
 ---
 title: 'The Mind of the Universe: Open Source Science TV'
+type: application
 date: 2019-03-15 15:28:00 +01:00
 tags:
 - open source
