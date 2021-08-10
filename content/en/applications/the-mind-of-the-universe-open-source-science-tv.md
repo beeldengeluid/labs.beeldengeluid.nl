@@ -6,7 +6,7 @@ tags:
 - open source
 - search
 website_url: http://themindoftheuniverse.org/explore
-image: "/uploads/The%20Mind%20of%20the%20Universe%20_%20Explore.png"
+image: "/uploads/the-mind-of-the-universe-explore.png"
 subtitle: Search openly licensed video material based on keywords and transcriptions
 project: archive/the-mind-of-the-universe
 themes:
