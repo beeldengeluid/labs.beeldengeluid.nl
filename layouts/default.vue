@@ -21,19 +21,9 @@
               }"
               class="black--text d-flex align-center"
             >
-              <LogoMark :size="10" />
-              <img
-                width="160"
-                height="39"
-                src="~assets/images/odl-text-logo.svg"
-                :alt="$t('site_name')"
-                class="ml-3"
-              />
+              <LogoMarkLabs />
             </NuxtLink>
           </v-list-item-title>
-          <v-list-item-subtitle>
-            {{ $t('site_author') }}
-          </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
@@ -109,14 +99,7 @@
         <v-toolbar-title
           class="d-none d-md-flex align-items-center text-uppercase"
         >
-          <LogoMark />
-          <img
-            width="180"
-            height="44"
-            src="~assets/images/odl-text-logo.svg"
-            :alt="$t('site_name')"
-            class="ml-4"
-          />
+          <LogoMarkLabs />
         </v-toolbar-title>
       </NuxtLink>
 
@@ -179,16 +162,9 @@
               textDecoration: 'none',
               color: 'white',
             }"
-            class="ml-3 d-flex"
+            class="ma-3 d-flex"
           >
-            <LogoMark />
-            <img
-              width="180"
-              height="44"
-              src="~assets/images/odl-text-logo.svg"
-              :alt="$t('site_name')"
-              class="ml-3"
-            />
+            <LogoMarkLabs />
           </NuxtLink>
         </v-col>
 
@@ -223,10 +199,10 @@
 
 <script>
 import menu from '~/config/menu'
-import LogoMark from '~/components/LogoMark'
+import LogoMarkLabs from '~/components/LogoMarkLabs'
 
 export default {
-  components: { LogoMark },
+  components: { LogoMarkLabs },
   data: () => ({
     drawer: false,
     fixed: false,
