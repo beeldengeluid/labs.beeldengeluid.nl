@@ -1,15 +1,16 @@
 <template>
-  <div class="tags">
+  <div
+    class="tags d-flex align-end"
+    :class="[horizontal ? 'flex-row' : 'flex-column']"
+  >
     <v-btn
-      v-for="(tag, index) in tags"
+      v-for="tag in tags"
       :key="tag"
       :color="!filterActive || inFilter(tag) ? 'primary' : 'grey darken-3'"
       :style="{
-        top: 10 + index * 30 + 'px',
         opacity: highlightActive && !inHighlight(tag) ? 0.7 : 1,
       }"
-      height="23"
-      class="tag mr-2 py-0 px-2 text-uppercase white--text"
+      class="tag ma-1 py-0 px-2 text-uppercase white--text"
       depressed
       small
       label
@@ -36,8 +37,13 @@ export default {
     },
     highlight: {
       type: Array,
-      required: true,
+      required: false,
       default: () => [],
+    },
+    horizontal: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   computed: {
@@ -64,15 +70,7 @@ export default {
   position: relative;
 
   .tag {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    line-height: 1em;
     box-shadow: 1px 1px 5px rgba(black, 0.3);
-
-    .v-chip__content {
-      display: block;
-    }
   }
 }
 </style>

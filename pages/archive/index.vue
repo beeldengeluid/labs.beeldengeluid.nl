@@ -1,9 +1,14 @@
 <template>
   <Fragment>
     <Tags
+      :style="{
+        position: 'absolute',
+        right: '8px',
+        top: '30px',
+      }"
       :tags="types"
       :filter="typesFilter"
-      :highlight="[]"
+      horizontal
       @toggle-tag="toggleType"
       @set-tag="setType"
     />

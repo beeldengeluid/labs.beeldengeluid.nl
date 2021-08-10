@@ -79,10 +79,10 @@
     </transition>
 
     <!-- Filter -->
-    <div class="filter">
+    <div class="filter d-flex flex-column align-end ma-1">
       <!-- Filter button on mobile -->
       <v-btn
-        class="ma-2 mb-0 d-block d-md-none"
+        class="ma-1 d-block d-md-none"
         fab
         dark
         small
