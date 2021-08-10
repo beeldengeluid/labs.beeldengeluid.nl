@@ -7,19 +7,8 @@ tags:
   - api
 ---
 
-## Loqui sine adulter augusta et deceat
+The Sound and Vision dataset on Open Images contains more than 3000 videos. It consists of Polygoon newsreels and some other films from the 20th century. The videos cover a broad range of Dutch (news) topics, such as art, culture, transportation, health, education, nature, politics, sports, pets, fashion and curiosa. The metadata is provided in Dutch and English.
 
-Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula
-tantique. Minantia tigres corpora [parvos](http://ad.io/cancer) destinat
-venabula simulavit poples ego ardentis Opheltes violentior huius natum; utque
-ipse modo lumina. Iugulare _demens simul_ se neque unde per erroresque repellit
-quamvis. Oneri [et tristis](http://pennae-temesaea.com/).
+Open Images also contains datasets from other providers and content (mostly remixes) added by users. Access to the material on Open Images is provided under the [Creative Commons](http://www.creativecommons.org/ "Creative Commons") licensing model.
 
-## Spectabere perdere
-
-Currus [tectoque](http://cum-peleus.org/vicinosarte), non his, iam et [manus
-plenissima vitta](http://referre-amanti.net/lacertis). Mutavit superstes se
-**cum Mavors depositura** Hector, mansit fortis parte exploratum velleris.
-Sumusve me super admoti caerula in Titania umeris, has fortia cum develat, Iovem
-est dixit acceptior amnis. Ab tamen porrecta ipsos quam illa parentum repulsae
-levem.
+The Sound and Vision dataset on Open Images is downloadable via the [Open Images OAI-PMH provider](http://www.openimages.eu/api). The dataset is also available via the [Europeana API](http://labs.europeana.eu/data/newsreels-from-sound-and-vision-on-the-netherlands-in-the-20th-century/).
