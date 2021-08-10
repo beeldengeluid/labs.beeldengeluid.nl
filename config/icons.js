@@ -6,6 +6,7 @@ export default {
   theme: 'mdi-shape',
   lab: 'mdi-flask',
   api: 'mdi-power-plug',
+  archive: 'mdi-archive',
   about: 'mdi-information',
   organization: 'mdi-domain',
   link: 'mdi-link-variant',

@@ -44,6 +44,12 @@ export default [
     color: classColors.api,
   },
   {
+    icon: icons.archive,
+    title: 'archive',
+    to: 'archive',
+    color: classColors.archive,
+  },
+  {
     icon: icons.about,
     title: 'about',
     to: 'about',

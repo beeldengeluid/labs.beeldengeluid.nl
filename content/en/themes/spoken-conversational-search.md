@@ -6,7 +6,7 @@ subtitle: Archive Search using a (Spoken) Dialogue
 contacts:
   - name: Roeland Ordelman
     email: rordelman@beeldengeluid.nl
-organizations:
+partners:
   - name: University of Twente
     url: 'https://www.utwente.nl/en/eemcs/hmi/'
 ---

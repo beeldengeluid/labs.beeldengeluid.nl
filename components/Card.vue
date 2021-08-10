@@ -32,13 +32,22 @@
           : null
       "
     >
-      <!-- <v-card-title :style="{ textShadow: '1px 1px 5px rgba(0,0,0,0.3)' }">
-        {{ card.title }}
-      </v-card-title> -->
     </v-img>
     <v-card-title class="pt-4 mb-2">
       {{ card.title }}
     </v-card-title>
+    <v-card-text>
+      <v-chip
+        v-if="card.type"
+        :color="'primary'"
+        class="text-uppercase"
+        small
+        label
+        outlined
+      >
+        {{ card.type }}
+      </v-chip>
+    </v-card-text>
     <v-card-subtitle> {{ card.subtitle }} </v-card-subtitle>
 
     <v-spacer></v-spacer>
