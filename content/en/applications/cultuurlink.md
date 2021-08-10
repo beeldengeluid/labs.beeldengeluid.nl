@@ -7,7 +7,7 @@ tags:
 website_url: http://cultuurlink.beeldengeluid.nl/
 image: "/uploads/cultuurlink_screenshot.jpg"
 subtitle: Align your vocabulary with the Dutch cultural heritage hub
-project_id: 06e627fc-1a70-11e5-811b-005056a71e3a
+project: archive/linked-open-data-demonstrator-2
 status:
 - Beta
 themes:

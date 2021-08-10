@@ -6,7 +6,7 @@ tags:
 - Content Enrichments
 image: "/uploads/woordnlfc_poster.png"
 subtitle: Contextualize RSS feeds with woord.nl content
-project_id: dbd2a100-edb3-11e4-8099-005056a71e3a
+project: archive/infiniti
 status:
 - Completed
 themes:

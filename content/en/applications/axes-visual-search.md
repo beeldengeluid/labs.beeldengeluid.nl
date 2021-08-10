@@ -8,7 +8,7 @@ tags:
 - Access models
 image: "/uploads/AXES_poster.png"
 subtitle: State-of-the-art Video Search Engine
-project_id: 3a0a9b4c-1b4f-11e5-bf8d-005056a71e3a
+project: archive/axes
 github: https://github.com/kencoken/axes-lite
 status:
 - Completed

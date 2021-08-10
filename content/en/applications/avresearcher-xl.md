@@ -11,7 +11,7 @@ tags:
 website_url: http://avresearcher.clariah.beeldengeluid.nl
 image: "/uploads/avresearcherxl_wide.png"
 subtitle: Exploring radio and television in context
-project_id: dbd21ad2-edb3-11e4-8099-005056a71e3a
+project: archive/quamerdes
 github: https://github.com/beeldengeluid/audiovisual-researcher
 status:
 - Completed

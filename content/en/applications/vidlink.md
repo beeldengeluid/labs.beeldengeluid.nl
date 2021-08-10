@@ -8,7 +8,7 @@ tags:
 website_url: http://www.nadebevrijding.nl/
 image: "/uploads/vidlink_wide.png"
 subtitle: Interactive documentary explorer
-project_id: dbd312fc-edb3-11e4-8099-005056a71e3a
+project: archive/vidlink
 status:
 - Completed
 themes:

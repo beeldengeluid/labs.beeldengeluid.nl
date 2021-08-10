@@ -11,7 +11,7 @@ tags:
 website_url: http://trove.beeldengeluid.nl
 image: "/uploads/trove_wide.png"
 subtitle: Search engine for exploring the diffusion of news and opinion
-project_id: dbd240e8-edb3-11e4-8099-005056a71e3a
+project: archive/trove
 status:
 - Completed
 - 

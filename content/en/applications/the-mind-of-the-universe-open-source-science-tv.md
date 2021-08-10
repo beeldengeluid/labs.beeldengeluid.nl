@@ -7,7 +7,7 @@ tags:
 website_url: http://themindoftheuniverse.org/explore
 image: "/uploads/The%20Mind%20of%20the%20Universe%20_%20Explore.png"
 subtitle: Search openly licensed video material based on keywords and transcriptions
-project_id: the_mind_of_the_universe
+project: archive/the-mind-of-the-universe
 status: Completed
 themes:
 - Access

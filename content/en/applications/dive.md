@@ -11,7 +11,7 @@ tags:
 website_url: http://dive.beeldengeluid.nl
 image: "/uploads/dive_wide.png"
 subtitle: Dynamically linking collections on the basis of events
-project_id: dbd1f6e2-edb3-11e4-8099-005056a71e3a
+project: archive/dive
 status:
 - In Development
 themes:

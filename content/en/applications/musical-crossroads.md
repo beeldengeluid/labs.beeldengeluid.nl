@@ -8,7 +8,7 @@ tags:
 website_url: http://musicinmovement.eu/graph
 image: "/uploads/MiMgraph.png"
 subtitle: Graph representation of the life and work of four composers
-project_id: 11c3e7ec-acfc-11e7-a9c0-0050569ef392
+project: archive/music-in-movement
 github: https://github.com/Frontwise/mim-graph
 status:
 - completed

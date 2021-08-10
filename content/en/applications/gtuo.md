@@ -5,7 +5,7 @@ tags:
 - Cross-Collection Search
 image: "/uploads/GTUO.png"
 subtitle: Search and explore connections between two aligned collections
-project_id: 3f0b59a8-57f1-11e6-87b0-005056a71e3a
+project: archive/gemeenschappelijke-thesaurus-voor-uniforme-ontsluiting
 github: https://github.com/biktorrr/gtou_taalunie
 status:
 - Completed

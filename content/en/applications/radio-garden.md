@@ -6,7 +6,7 @@ website_url: http://radio.garden/
 image: "/uploads/radio_garden.png"
 subtitle: 'Radio.Garden allows users to explore an interactive globe filled with
   radio’s past and present. '
-project_id: deb93ff6-fcfb-11e6-bc09-0050569ef392
+project: archive/transnational-radio-encounters
 status:
 - Completed
 themes:

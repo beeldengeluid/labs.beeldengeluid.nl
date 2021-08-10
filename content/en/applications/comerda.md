@@ -7,7 +7,7 @@ tags:
 image: "/uploads/comerda.jpg"
 subtitle: An aggregated search system with multiple options for visualizing search
   results
-project_id: bridge
+project: archive/bridge
 github: https://bitbucket.org/ilps/comerda
 status: Completed
 themes:

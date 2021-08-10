@@ -6,7 +6,7 @@ tags:
 website_url: http://www.openimages.eu
 image: "/uploads/openimages_poster.png"
 subtitle: A Java webapplication to manage and publish open media
-project_id: dbd2dbf2-edb3-11e4-8099-005056a71e3a
+project: archive/open-images
 github: https://github.com/beeldengeluid/openbeelden
 status:
 - Completed

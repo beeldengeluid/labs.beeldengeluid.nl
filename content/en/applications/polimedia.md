@@ -9,7 +9,7 @@ tags:
 website_url: http://polimedia.nl
 image: "/uploads/polimedia_wide.png"
 subtitle: How do media cover political debates?
-project_id: dbd28102-edb3-11e4-8099-005056a71e3a
+project: archive/polimedia
 status:
 - Completed
 themes:

@@ -7,7 +7,7 @@ tags:
 website_url: http://spotvogel.vroegevogels.vara.nl/
 image: "/uploads/spotvogel_poster.png"
 subtitle: A video labeling game
-project_id: ed1929a0-1b3c-11e5-9234-005056a71e3a
+project: archive/waisda
 github: https://github.com/beeldengeluid/waisda
 status:
 - Completed

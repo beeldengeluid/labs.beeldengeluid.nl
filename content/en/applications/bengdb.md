@@ -5,7 +5,7 @@ tags:
 image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"
 subtitle: A visual encyclopedia of Dutch TV history combining multiple open data
   sources
-project_id: f0adb896-217d-11e5-b980-005056a71e3a
+project: archive/open-cultuur-data
 github: https://github.com/beeldengeluid/bengdb-frontend
 status:
 - Completed

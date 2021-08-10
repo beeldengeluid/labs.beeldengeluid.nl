@@ -9,7 +9,7 @@ tags:
 website_url: http://editortoolv2.linkedtv.eu/
 image: "/uploads/linkedtv_wide.png"
 subtitle: Video annotation and data curation tool
-project_id: dbd261d6-edb3-11e4-8099-005056a71e3a
+project: archive/linkedtv
 github: https://github.com/beeldengeluid/linkedtv-editortool
 status:
 - Completed

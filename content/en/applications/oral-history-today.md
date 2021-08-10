@@ -7,7 +7,7 @@ tags:
 website_url: http://zoeken.verteldverleden.org
 image: "/uploads/VerteldVerleden-screenshot.png"
 subtitle: Search Dutch Oral History collections
-project_id: a728c296-2a1b-11e5-b980-005056a71e3a
+project: archive/verteld-verleden
 status:
 - In Development
 themes:
