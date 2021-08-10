@@ -44,7 +44,7 @@ export default {
     title: dataClass,
     cardPath: dataClass + '-slug',
     dataClass,
-    types: ['project', 'example'],
+    types: ['project', 'example', 'application'],
     typesFilter: [],
   }),
   head() {
