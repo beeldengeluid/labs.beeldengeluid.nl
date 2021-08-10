@@ -9,7 +9,7 @@ tags:
 - Video hyperlinking
 - Access models
 website_url: http://www.axes-project.eu/
-image: archive/avresearcherxl_poster.png
+image: archive/projects/avresearcherxl_poster.png
 themes:
 - Metadata & Context
 - Users

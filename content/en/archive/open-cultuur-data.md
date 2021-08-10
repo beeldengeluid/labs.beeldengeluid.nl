@@ -8,7 +8,7 @@ tags:
 - Apps
 - Reuse
 website_url: http://www.opencultuurdata.nl/
-image: archive/AXES_poster.png
+image: archive/projects/AXES_poster.png
 themes:
 - Access
 - Metadata & Context

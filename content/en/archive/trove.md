@@ -12,7 +12,7 @@ tags:
 - Content Enrichments
 - Public Debates
 website_url: http://trove.beeldengeluid.nl
-image: archive/trove_wide.png
+image: archive/projects/trove_wide.png
 themes:
 - Access
 - Use and Context

@@ -2,7 +2,7 @@
 title: Gemeenschappelijke Thesaurus voor Uniforme Ontsluiting
 subtitle: Establish connections between different collections and allow for cross-collection search and browsing
 type: project
-image: archive/GTUO.png
+image: archive/projects/GTUO.png
 themes:
 - Metadata & Context
 partners:

@@ -9,7 +9,7 @@ tags:
 - Content Enrichments
 - Interactive Television
 website_url: http://www.linkedtv.eu
-image: archive/linkedtv_poster.png
+image: archive/projects/linkedtv_poster.png
 themes:
 - Users
 - Access

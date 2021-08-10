@@ -7,7 +7,7 @@ tags:
 - Digital Humanities
 - Virtual Research Environment
 website_url: http://www.verteldverleden.org
-image: archive/AXES_poster.png
+image: archive/projects/AXES_poster.png
 themes:
 - Access
 - Humanities

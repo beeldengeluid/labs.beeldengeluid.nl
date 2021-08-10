@@ -9,7 +9,7 @@ tags:
 - Government
 - Political Debates
 website_url: http://www.polimedia.nl
-image: archive/polimedia_wide.png
+image: archive/projects/polimedia_wide.png
 themes:
 - Humanities
 - Metadata

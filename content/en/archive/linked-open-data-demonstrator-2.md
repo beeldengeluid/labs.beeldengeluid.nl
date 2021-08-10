@@ -4,7 +4,7 @@ type: project
 tags:
 - Vocabularies
 - Alignment
-image: archive/avresearcherxl_poster.png
+image: archive/projects/avresearcherxl_poster.png
 subtitle: Developing an openly available Thesaurus alignment service for Dutch heritage institutions
 themes:
 - Metadata & Context

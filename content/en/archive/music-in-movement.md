@@ -4,7 +4,7 @@ type: project
 tags:
 - Classical Music
 website_url: http://musicinmovement.eu/
-image: archive/MiMgraph.png
+image: archive/projects/MiMgraph.png
 subtitle: Online project showcasing four prominent European composers
 themes:
 - Metadata & Context

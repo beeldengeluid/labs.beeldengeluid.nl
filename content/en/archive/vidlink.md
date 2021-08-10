@@ -7,7 +7,7 @@ tags:
 - Content Enrichments
 - Radio stories
 website_url: http://www.nadebevrijding.nl/
-image: archive/vidlink_poster.png
+image: archive/projects/vidlink_poster.png
 subtitle: Interactive documentary explorer
 themes:
 - Access

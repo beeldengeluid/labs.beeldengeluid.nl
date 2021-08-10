@@ -8,7 +8,7 @@ tags:
 - Heterogeneous Data Cloud
 - Historical Events
 website_url: http://dive.beeldengeluid.nl
-image: archive/dive_poster.png
+image: archive/projects/dive_poster.png
 themes:
 - Access
 - Use and Context

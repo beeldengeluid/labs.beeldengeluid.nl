@@ -6,7 +6,7 @@ tags:
 - Preservation of Online Content
 - Contextualize the AV-collection
 website_url: http://www.beeldengeluidwebarchief.nl/
-image: archive/Beeldengeluidwebarchief_screenshot.jpg
+image: archive/projects/Beeldengeluidwebarchief_screenshot.jpg
 themes:
 - Access
 - Metadata & Context

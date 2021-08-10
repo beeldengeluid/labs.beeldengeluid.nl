@@ -8,7 +8,7 @@ tags:
 - Content Enrichments
 - COMMIT
 website_url: http://www.geluidvannederland.nl/
-image: archive/gvnl_poster.png
+image: archive/projects/gvnl_poster.png
 themes:
 - Digitization and Preservation
 - Access

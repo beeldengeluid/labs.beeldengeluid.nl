@@ -6,7 +6,7 @@ tags:
 - Reuse
 - Open Video
 website_url: http://www.openbeelden.nl
-image: archive/openimages_wide.png
+image: archive/projects/openimages_wide.png
 themes:
 - Access
 - Use and Context

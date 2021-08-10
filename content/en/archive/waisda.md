@@ -6,7 +6,7 @@ tags:
 - Gaming
 - Video annotation
 - Crowdsourcing
-image: archive/avresearcherxl_poster.png
+image: archive/projects/avresearcherxl_poster.png
 themes:
 - Access
 - Metadata & Context

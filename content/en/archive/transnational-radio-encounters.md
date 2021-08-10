@@ -4,7 +4,7 @@ subtitle: "  Transnational Radio Encounters investigates how radio structures cu
 type: project
 tags:
 - radio
-image: archive/radio_garden.png
+image: archive/projects/radio_garden.png
 themes:
 - Humanities
 - Users
