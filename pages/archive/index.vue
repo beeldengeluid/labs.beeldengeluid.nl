@@ -1,17 +1,47 @@
 <template>
   <Fragment>
-    <Tags
+    <!-- Filter -->
+    <div
+      class="filter d-flex flex-column align-end ma-2"
       :style="{
         position: 'absolute',
-        right: '8px',
-        top: '30px',
+        top: '18px',
+        right: '0',
       }"
-      :tags="types"
-      :filter="typesFilter"
-      horizontal
-      @toggle-tag="toggleType"
-      @set-tag="setType"
-    />
+    >
+      <!-- Filter button on mobile -->
+      <v-btn
+        class="ma-1 d-block d-sm-none mt-n1"
+        fab
+        dark
+        small
+        color="primary"
+        @click.stop="showTypes = !showTypes"
+      >
+        <v-badge
+          v-if="typesFilter.length > 0"
+          :content="typesFilter.length"
+          :style="{ transform: 'translate(22px,-12px)' }"
+          color="red darken-1"
+        />
+
+        <v-icon dark>
+          {{ showTypes ? 'mdi-close' : 'mdi-filter-variant' }}
+        </v-icon>
+      </v-btn>
+
+      <!-- Tags list -->
+      <transition name="slideInRight">
+        <Tags
+          v-if="showTypes"
+          :tags="types"
+          :filter="typesFilter"
+          horizontal
+          @toggle-tag="toggleType"
+          @set-tag="setType"
+        />
+      </transition>
+    </div>
     <CardPage
       :cards="filteredCards"
       :title="title"
@@ -51,6 +81,7 @@ export default {
     dataClass,
     types: ['project', 'example', 'application'],
     typesFilter: [],
+    showTypes: false,
   }),
   head() {
     return {
@@ -65,6 +96,12 @@ export default {
             (card) => card.type && this.typesFilter.includes(card.type)
           )
     },
+  },
+  mounted() {
+    // show tags on large screens
+    if (window.innerWidth > 500) {
+      this.showTypes = true
+    }
   },
   methods: {
     toggleType(type) {
