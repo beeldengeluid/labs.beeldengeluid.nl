@@ -8,8 +8,6 @@ subtitle: A visual encyclopedia of Dutch TV history combining multiple open data
   sources
 project: archive/open-cultuur-data
 github: https://github.com/beeldengeluid/bengdb-frontend
-status:
-- Completed
 themes:
 - Access
 - Metadata & Context

@@ -8,8 +8,6 @@ image: "/uploads/radio_garden.png"
 subtitle: 'Radio.Garden allows users to explore an interactive globe filled with
   radio’s past and present. '
 project: archive/transnational-radio-encounters
-status:
-- Completed
 themes:
 - Humanities
 - Users

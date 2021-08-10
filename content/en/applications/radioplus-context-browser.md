@@ -8,8 +8,6 @@ tags:
 image: "/uploads/woordnlfc_poster.png"
 subtitle: Contextualize RSS feeds with woord.nl content
 project: archive/infiniti
-status:
-- Completed
 themes:
 - Metadata & Context
 contenttypes:

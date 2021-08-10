@@ -14,8 +14,6 @@ image: "/uploads/avresearcherxl_wide.png"
 subtitle: Exploring radio and television in context
 project: archive/quamerdes
 github: https://github.com/beeldengeluid/audiovisual-researcher
-status:
-- Completed
 themes:
 - Humanities
 - Metadata & Context

@@ -9,8 +9,6 @@ image: "/uploads/openimages_poster.png"
 subtitle: A Java webapplication to manage and publish open media
 project: archive/open-images
 github: https://github.com/beeldengeluid/openbeelden
-status:
-- Completed
 themes:
 - Access
 - Metadata & Context

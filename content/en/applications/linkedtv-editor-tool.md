@@ -12,8 +12,6 @@ image: "/uploads/linkedtv_wide.png"
 subtitle: Video annotation and data curation tool
 project: archive/linkedtv
 github: https://github.com/beeldengeluid/linkedtv-editortool
-status:
-- Completed
 themes:
 - Metadata & Context
 - Access

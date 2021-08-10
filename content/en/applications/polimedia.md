@@ -11,8 +11,6 @@ website_url: http://polimedia.nl
 image: "/uploads/polimedia_wide.png"
 subtitle: How do media cover political debates?
 project: archive/polimedia
-status:
-- Completed
 themes:
 - Metadata & Context
 - Humanities

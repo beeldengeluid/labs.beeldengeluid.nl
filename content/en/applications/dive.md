@@ -13,8 +13,6 @@ website_url: http://dive.beeldengeluid.nl
 image: "/uploads/dive_wide.png"
 subtitle: Dynamically linking collections on the basis of events
 project: archive/dive
-status:
-- In Development
 themes:
 - Humanities
 - Metadata & Context

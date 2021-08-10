@@ -11,8 +11,6 @@ image: "/uploads/MiMgraph.png"
 subtitle: Graph representation of the life and work of four composers
 project: archive/music-in-movement
 github: https://github.com/Frontwise/mim-graph
-status:
-- completed
 themes:
 - Metadata & Context
 - Humanities

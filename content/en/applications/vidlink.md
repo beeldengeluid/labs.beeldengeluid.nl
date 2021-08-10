@@ -10,8 +10,6 @@ website_url: http://www.nadebevrijding.nl/
 image: "/uploads/vidlink_wide.png"
 subtitle: Interactive documentary explorer
 project: archive/vidlink
-status:
-- Completed
 themes:
 - Metadata & Context
 contenttypes:

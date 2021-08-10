@@ -9,8 +9,6 @@ website_url: http://zoeken.verteldverleden.org
 image: "/uploads/VerteldVerleden-screenshot.png"
 subtitle: Search Dutch Oral History collections
 project: archive/verteld-verleden
-status:
-- In Development
 themes:
 - Access
 - Users

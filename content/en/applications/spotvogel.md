@@ -10,8 +10,6 @@ image: "/uploads/spotvogel_poster.png"
 subtitle: A video labeling game
 project: archive/waisda
 github: https://github.com/beeldengeluid/waisda
-status:
-- Completed
 themes:
 - Access
 - Metadata & Context

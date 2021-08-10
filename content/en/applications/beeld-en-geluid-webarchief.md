@@ -10,8 +10,6 @@ image: "/uploads/Beeldengeluidwebarchief_screenshot.jpg"
 subtitle: Broadcaster's websites are archived and presented in Sound and Visions
   webarchive
 project: archive/beeld-en-geluid-webarchief
-status:
-- In Development
 themes:
 - Access
 - Users

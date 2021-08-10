@@ -8,8 +8,6 @@ image: "/uploads/GTUO.png"
 subtitle: Search and explore connections between two aligned collections
 project: archive/gemeenschappelijke-thesaurus-voor-uniforme-ontsluiting
 github: https://github.com/biktorrr/gtou_taalunie
-status:
-- Completed
 themes:
 - Metadata & Context
 contenttypes:

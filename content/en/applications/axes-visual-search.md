@@ -11,8 +11,6 @@ image: "/uploads/AXES_poster.png"
 subtitle: State-of-the-art Video Search Engine
 project: archive/axes
 github: https://github.com/kencoken/axes-lite
-status:
-- Completed
 themes:
 - Metadata & Context
 - Users

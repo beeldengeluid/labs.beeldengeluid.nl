@@ -10,7 +10,6 @@ subtitle: An aggregated search system with multiple options for visualizing sear
   results
 project: archive/bridge
 github: https://bitbucket.org/ilps/comerda
-status: Completed
 themes:
 - Humanities
 - Access
