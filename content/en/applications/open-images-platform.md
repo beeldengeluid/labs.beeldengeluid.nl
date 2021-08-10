@@ -5,7 +5,7 @@ tags:
 - Open Media
 - Open Source
 website_url: http://www.openimages.eu
-image: "/uploads/openimages_poster.png"
+image: archive/applications/openimages_poster.png
 subtitle: A Java webapplication to manage and publish open media
 project: archive/open-images
 github: https://github.com/beeldengeluid/openbeelden

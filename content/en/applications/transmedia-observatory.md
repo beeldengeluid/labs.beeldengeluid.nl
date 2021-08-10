@@ -10,7 +10,7 @@ tags:
 - Content Enrichments
 - Public Debates
 website_url: http://trove.beeldengeluid.nl
-image: "/uploads/trove_wide.png"
+image: archive/applications/trove_wide.png
 subtitle: Search engine for exploring the diffusion of news and opinion
 project: archive/trove
 themes:

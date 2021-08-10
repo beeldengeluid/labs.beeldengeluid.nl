@@ -4,7 +4,7 @@ type: application
 tags:
 - Thesauri Alignment
 - Cross-Collection Search
-image: "/uploads/GTUO.png"
+image: archive/applications/GTUO.png
 subtitle: Search and explore connections between two aligned collections
 project: archive/gemeenschappelijke-thesaurus-voor-uniforme-ontsluiting
 github: https://github.com/biktorrr/gtou_taalunie

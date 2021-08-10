@@ -6,7 +6,7 @@ tags:
 - Digital Humanities
 - Virtual Research Environment
 website_url: http://www.beeldengeluidwebarchief.nl/
-image: "/uploads/Beeldengeluidwebarchief_screenshot.jpg"
+image: archive/applications/Beeldengeluidwebarchief_screenshot.jpg
 subtitle: Broadcaster's websites are archived and presented in Sound and Visions
   webarchive
 project: archive/beeld-en-geluid-webarchief

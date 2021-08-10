@@ -5,7 +5,7 @@ date: 2019-03-14 16:22:00 +01:00
 tags:
 - Cross-Collection Search
 - Digital Humanities
-image: "/uploads/comerda.jpg"
+image: archive/applications/comerda.jpg
 subtitle: An aggregated search system with multiple options for visualizing search
   results
 project: archive/bridge

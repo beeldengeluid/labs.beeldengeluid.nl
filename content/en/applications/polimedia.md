@@ -8,7 +8,7 @@ tags:
 - Government
 - Political Debates
 website_url: http://polimedia.nl
-image: "/uploads/polimedia_wide.png"
+image: archive/applications/polimedia_wide.png
 subtitle: How do media cover political debates?
 project: archive/polimedia
 themes:

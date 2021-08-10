@@ -10,7 +10,7 @@ tags:
 - Maritime data
 - Crowdsourcing
 website_url: http://dive.beeldengeluid.nl
-image: "/uploads/dive_wide.png"
+image: archive/applications/dive_wide.png
 subtitle: Dynamically linking collections on the basis of events
 project: archive/dive
 themes:

@@ -5,7 +5,7 @@ tags:
 - Radio stories
 - ASR
 - Content Enrichments
-image: "/uploads/woordnlfc_poster.png"
+image: archive/applications/woordnlfc_poster.png
 subtitle: Contextualize RSS feeds with woord.nl content
 project: archive/infiniti
 themes:

@@ -6,7 +6,7 @@ tags:
 - SKOS
 - Vocabularies
 website_url: http://cultuurlink.beeldengeluid.nl/
-image: "/uploads/cultuurlink_screenshot.jpg"
+image: archive/applications/cultuurlink_screenshot.jpg
 subtitle: Align your vocabulary with the Dutch cultural heritage hub
 project: archive/linked-open-data-demonstrator-2
 themes:

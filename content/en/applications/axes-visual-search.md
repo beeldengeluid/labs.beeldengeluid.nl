@@ -7,7 +7,7 @@ tags:
 - Speech recognition
 - Video hyperlinking
 - Access models
-image: "/uploads/AXES_poster.png"
+image: archive/applications/AXES_poster.png
 subtitle: State-of-the-art Video Search Engine
 project: archive/axes
 github: https://github.com/kencoken/axes-lite

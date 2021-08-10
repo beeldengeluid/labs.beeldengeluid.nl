@@ -4,7 +4,7 @@ type: application
 tags:
 - radio
 website_url: http://radio.garden/
-image: "/uploads/radio_garden.png"
+image: archive/applications/radio_garden.png
 subtitle: 'Radio.Garden allows users to explore an interactive globe filled with
   radio’s past and present. '
 project: archive/transnational-radio-encounters

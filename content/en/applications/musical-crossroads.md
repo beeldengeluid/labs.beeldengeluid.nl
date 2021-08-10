@@ -7,7 +7,7 @@ tags:
 - Classical Music
 - Composers
 website_url: http://musicinmovement.eu/graph
-image: "/uploads/MiMgraph.png"
+image: archive/applications/MiMgraph.png
 subtitle: Graph representation of the life and work of four composers
 project: archive/music-in-movement
 github: https://github.com/Frontwise/mim-graph

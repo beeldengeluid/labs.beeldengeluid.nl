@@ -10,7 +10,7 @@ tags:
 - CLARIAH
 - Context Collections
 website_url: http://avresearcher.clariah.beeldengeluid.nl
-image: "/uploads/avresearcherxl_wide.png"
+image: archive/applications/avresearcherxl_wide.png
 subtitle: Exploring radio and television in context
 project: archive/quamerdes
 github: https://github.com/beeldengeluid/audiovisual-researcher

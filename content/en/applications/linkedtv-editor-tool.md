@@ -8,7 +8,7 @@ tags:
 - Content Enrichments
 - Interactive Television
 website_url: http://editortoolv2.linkedtv.eu/
-image: "/uploads/linkedtv_wide.png"
+image: archive/applications/linkedtv_wide.png
 subtitle: Video annotation and data curation tool
 project: archive/linkedtv
 github: https://github.com/beeldengeluid/linkedtv-editortool

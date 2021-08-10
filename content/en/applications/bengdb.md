@@ -3,7 +3,7 @@ title: BengDB
 type: application
 tags:
 - Open data
-image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"
+image: archive/applications/Schermafbeelding_2015-07-03_om_14.22.47.png
 subtitle: A visual encyclopedia of Dutch TV history combining multiple open data
   sources
 project: archive/open-cultuur-data

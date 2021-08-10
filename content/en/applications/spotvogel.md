@@ -6,7 +6,7 @@ tags:
 - Nature
 - Social tagging
 website_url: http://spotvogel.vroegevogels.vara.nl/
-image: "/uploads/spotvogel_poster.png"
+image: archive/applications/spotvogel_poster.png
 subtitle: A video labeling game
 project: archive/waisda
 github: https://github.com/beeldengeluid/waisda
