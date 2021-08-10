@@ -4,10 +4,8 @@ date: 2019-03-14 16:22:00 +01:00
 tags:
 - Cross-Collection Search
 - Digital Humanities
-position: 18
-thumb_image: "/uploads/comerda.jpg"
-poster_image: "/uploads/comerda.jpg"
-description: An aggregated search system with multiple options for visualizing search
+image: "/uploads/comerda.jpg"
+subtitle: An aggregated search system with multiple options for visualizing search
   results
 project_id: bridge
 github: https://bitbucket.org/ilps/comerda

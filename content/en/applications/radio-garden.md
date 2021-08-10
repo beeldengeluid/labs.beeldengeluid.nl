@@ -1,17 +1,12 @@
 ---
 title: Radio.Garden
-permalink: "/application/234168c6-fcfa-11e6-a3f3-0050569ef392"
 tags:
 - radio
-position: 7
-application_id: 234168c6-fcfa-11e6-a3f3-0050569ef392
 website_url: http://radio.garden/
-thumb_image: "/uploads/radio_garden.png"
-poster_image: "/uploads/radio_garden.png"
-description: 'Radio.Garden allows users to explore an interactive globe filled with
+image: "/uploads/radio_garden.png"
+subtitle: 'Radio.Garden allows users to explore an interactive globe filled with
   radio’s past and present. '
 project_id: deb93ff6-fcfb-11e6-bc09-0050569ef392
-access: Open
 status:
 - Completed
 themes:
@@ -20,7 +15,6 @@ themes:
 - Access
 contenttypes:
 - Audio
-layout: application
 ---
 
 By bringing distant voices close, radio connects people and places. Radio Garden allows listeners to explore processes of broadcasting and hearing identities across the entire globe. From its very beginning, radio signals have crossed borders. Radio makers and listeners have imagined both connecting with distant cultures, as well as re-connecting with people from 'home' from thousands of miles away - or using local community radio to make and enrich new homes.

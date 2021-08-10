@@ -1,19 +1,14 @@
 ---
 title: Musical Crossroads
-permalink: "/application/cb51d770-acfa-11e7-bf7f-0050569ef392"
 tags:
 - Linked Data
 - Visualization
 - Classical Music
 - Composers
-position: 6
-application_id: cb51d770-acfa-11e7-bf7f-0050569ef392
 website_url: http://musicinmovement.eu/graph
-thumb_image: "/uploads/MiMgraph.png"
-poster_image: "/uploads/MiMgraph.png"
-description: Graph representation of the life and work of four composers
+image: "/uploads/MiMgraph.png"
+subtitle: Graph representation of the life and work of four composers
 project_id: 11c3e7ec-acfc-11e7-a9c0-0050569ef392
-access: open
 github: https://github.com/Frontwise/mim-graph
 status:
 - completed
@@ -22,7 +17,6 @@ themes:
 - Humanities
 contenttypes:
 - Metadata
-layout: application
 ---
 
 The Musical Crossroads visualization is a graph representation of the life and work of the composers that are featured in the Music in Movement project. It shows the composers and their compositions, the techniques they used and what inspired them. There are also links to their friends and colleagues, the places they visited and the events they participated in. All the entities are illustrated with videos, images or audio. The interactive visual network enables you to discover the composers and the way they are connected with each other.

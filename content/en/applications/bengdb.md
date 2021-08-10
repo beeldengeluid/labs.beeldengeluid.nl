@@ -1,16 +1,11 @@
 ---
 title: BengDB
-permalink: "/application/90e196ba-217f-11e5-b980-005056a71e3a"
 tags:
 - Open data
-position: 12
-application_id: 90e196ba-217f-11e5-b980-005056a71e3a
-thumb_image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"
-poster_image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"
-description: A visual encyclopedia of Dutch TV history combining multiple open data
+image: "/uploads/Schermafbeelding_2015-07-03_om_14.22.47.png"
+subtitle: A visual encyclopedia of Dutch TV history combining multiple open data
   sources
 project_id: f0adb896-217d-11e5-b980-005056a71e3a
-access: Open
 github: https://github.com/beeldengeluid/bengdb-frontend
 status:
 - Completed
@@ -21,7 +16,6 @@ contenttypes:
 - Text
 - Images
 - Metadata
-layout: application
 ---
 
 BengDB is an experiment of the R&D Department to investigate whether it is possible to combine multiple data sources on the basis of the GTAA, the thesaurus used in Sound and Vision to make the media in the archive better searchable. Data from different sources were combined in a very readable way. This encyclopedia is not manually written or composed, instead, existing text, images and data is reused.

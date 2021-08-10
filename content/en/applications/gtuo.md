@@ -1,14 +1,10 @@
 ---
 title: GTUO
-permalink: "/application/a4fd0e34-57ef-11e6-87b0-005056a71e3a"
 tags:
 - Thesauri Alignment
 - Cross-Collection Search
-position: 8
-application_id: a4fd0e34-57ef-11e6-87b0-005056a71e3a
-thumb_image: "/uploads/GTUO.png"
-poster_image: "/uploads/GTUO.png"
-description: Search and explore connections between two aligned collections
+image: "/uploads/GTUO.png"
+subtitle: Search and explore connections between two aligned collections
 project_id: 3f0b59a8-57f1-11e6-87b0-005056a71e3a
 github: https://github.com/biktorrr/gtou_taalunie
 status:
@@ -24,7 +20,6 @@ publications:
 blogposts:
 - title: Connecting collections across national borders
   url: https://www.beeldengeluid.nl/en/knowledge/blog/connecting-collections-across-national-borders
-layout: application
 ---
 
 The project "Gemeenschappelijke Thesaurus voor Uniforme Ontsluiting" (GTUO) was funded by the Taalunie -a cross-national organization focusing on the Dutch language- and executed by the Netherlands Institute for Sound and Vision and the Flemish [VIAA archive](http://viaa.be/en/about-viaa/). It involved a case study where partial collections of the two archives were connected by aligning their thesauri. This involved the conversion of the VRT thesaurus to the SKOS format and linking it to Sound and Vision's GTAA thesaurus. The interactive alignment tool CultuurLINK, made by Dutch company Spinque was used to align the two thesauri. The links between the collections can be explored using a cross-collection browser, also built by Spinque. This allows users to search and explore connections between the two collections.</p>

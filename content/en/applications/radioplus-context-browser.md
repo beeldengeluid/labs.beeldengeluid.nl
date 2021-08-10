@@ -1,17 +1,12 @@
 ---
 title: RadioPlus Context Browser
-permalink: "/application/dbd10fca-edb3-11e4-8099-005056a71e3a"
 tags:
 - Radio stories
 - ASR
 - Content Enrichments
-position: 4
-application_id: dbd10fca-edb3-11e4-8099-005056a71e3a
-thumb_image: "/uploads/woordnlfc_poster.png"
-poster_image: "/uploads/woordnlfc_poster.png"
-description: Contextualize RSS feeds with woord.nl content
+image: "/uploads/woordnlfc_poster.png"
+subtitle: Contextualize RSS feeds with woord.nl content
 project_id: dbd2a100-edb3-11e4-8099-005056a71e3a
-access: Open
 status:
 - Completed
 themes:
@@ -21,7 +16,6 @@ contenttypes:
 publications:
 - title: Enriching use and experience of radio content
   url: http://www.commit-nl.nl/sites/default/files/55.%20Enriching%20use%20and%20experience%20of%20radio%20content.pdf
-layout: application
 ---
 
 Radio can be much more then listening only. Radio can be made searchable to find a certain quote, person or topic. The experience of listening radio can be enhanced presenting related images from other information sources on a screen. Reversely, radio content can also be linked to information on the web. A written news story might be enriched with a related radio interview. We improve the use and experience of radio content by automatically processing audio files and combining the output with the latest audio search technology.

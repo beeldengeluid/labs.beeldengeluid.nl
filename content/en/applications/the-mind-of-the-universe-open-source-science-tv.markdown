@@ -4,13 +4,10 @@ date: 2019-03-15 15:28:00 +01:00
 tags:
 - open source
 - search
-position: 16
 website_url: http://themindoftheuniverse.org/explore
-thumb_image: "/uploads/The%20Mind%20of%20the%20Universe%20_%20Explore.png"
-poster_image: "/uploads/The%20Mind%20of%20the%20Universe%20_%20Explore.png"
-description: Search openly licensed video material based on keywords and transcriptions
+image: "/uploads/The%20Mind%20of%20the%20Universe%20_%20Explore.png"
+subtitle: Search openly licensed video material based on keywords and transcriptions
 project_id: the_mind_of_the_universe
-access: Open
 status: Completed
 themes:
 - Access

@@ -1,6 +1,5 @@
 ---
 title: AVResearcher XL
-permalink: "/application/dbd1c7ee-edb3-11e4-8099-005056a71e3a"
 tags:
 - Academic Research
 - Digital Humanities
@@ -9,14 +8,10 @@ tags:
 - Analysis
 - CLARIAH
 - Context Collections
-position: 14
-application_id: dbd09298-edb3-11e4-8099-005056a71e3a
 website_url: http://avresearcher.clariah.beeldengeluid.nl
-thumb_image: "/uploads/avresearcherxl_wide.png"
-poster_image: "/uploads/avresearcherxl_poster.png"
-description: Exploring radio and television in context
+image: "/uploads/avresearcherxl_wide.png"
+subtitle: Exploring radio and television in context
 project_id: dbd21ad2-edb3-11e4-8099-005056a71e3a
-access: Authentication needed
 github: https://github.com/beeldengeluid/audiovisual-researcher
 status:
 - Completed
@@ -37,7 +32,6 @@ blogposts:
 - title: 'Door de ogen van een journalist: verslag masterclass onderzoeksjournalistiek
     Beeld en Geluid en VondelCS'
   url: http://www.beeldengeluid.nl/blogs/research-and-development/201410/door-de-ogen-van-een-journalist-verslag-masterclass
-layout: application
 ---
 
 AVResearcherXL is a tool for exploring radio and television programme descriptions, television subtitles, tweets about television programmes, and general newspaper articles. The interface searches across the catalogue "iMMix" of the Netherlands Institute for Sound and Vision and a selection of newspapers of the National Library of the Netherlands. Authentication is needed, you can register to create an account here. After you've registered you can find an elaborate user manual on the help page of the tool.
