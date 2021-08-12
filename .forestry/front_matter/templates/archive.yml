@@ -4,10 +4,10 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - name: type
   type: select
   default: []
@@ -35,7 +35,7 @@ fields:
   description: The date of the archive item
 - type: file
   name: image
-  label: image
+  label: Image
 - name: website_url
   type: text
   config:
@@ -62,7 +62,7 @@ fields:
   description: Tags of this archive item
 - type: list
   name: themes
-  label: themes
+  label: Themes
 - type: list
   name: contenttypes
-  label: contenttypes
+  label: Contenttypes
