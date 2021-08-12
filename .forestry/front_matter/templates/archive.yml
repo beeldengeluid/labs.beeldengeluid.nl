@@ -1,0 +1,31 @@
+---
+label: Archive
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: list
+  name: tags
+  label: tags
+- type: file
+  name: image
+  label: image
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: project
+  label: project
+- type: text
+  name: github
+  label: github
+- type: list
+  name: themes
+  label: themes
+- type: list
+  name: contenttypes
+  label: contenttypes
