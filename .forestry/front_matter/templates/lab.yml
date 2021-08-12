@@ -11,3 +11,25 @@ fields:
 - type: file
   name: image
   label: image
+- name: website_url
+  type: text
+  config:
+    required: false
+  label: website URL
+  description: URL of the lab's website
+- name: partners
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: partners
+  description: Partners of the lab
+- name: funders
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: funders
+  description: Funders of the lab
