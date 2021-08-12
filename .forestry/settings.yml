@@ -19,6 +19,11 @@ sections:
   templates:
   - project
 - type: directory
+  path: content/en/topics
+  label: Topics
+  create: documents
+  match: "**/*.md"
+- type: directory
   path: content/en/datasets
   label: Data sets
   create: documents
