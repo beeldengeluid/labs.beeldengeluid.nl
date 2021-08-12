@@ -12,16 +12,6 @@ sections:
   templates:
   - lab
 - type: directory
-  path: content/en/archive
-  label: Archive
-  create: documents
-  match: "**/*.md"
-- type: directory
-  path: content/en/apis
-  label: APIs
-  create: documents
-  match: "**/*.md"
-- type: directory
   path: content/en/projects
   label: Projects
   create: documents
@@ -36,6 +26,11 @@ sections:
   templates:
   - dataset
 - type: directory
+  path: content/en/apis
+  label: APIs
+  create: documents
+  match: "**/*.md"
+- type: directory
   path: content/en/blogs
   label: Blog Posts EN
   create: documents
@@ -49,6 +44,11 @@ sections:
   match: "**/*.md"
   templates:
   - blog-post
+- type: directory
+  path: content/en/archive
+  label: Archive
+  create: documents
+  match: "**/*.md"
 - type: document
   path: content/en/about.md
   label: About EN
