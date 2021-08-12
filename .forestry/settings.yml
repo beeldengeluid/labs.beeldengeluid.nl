@@ -30,18 +30,22 @@ sections:
   create: documents
   match: "**/*.md"
 - type: directory
-  path: content/nl/blogs
-  label: Blog Posts NL
+  path: content/en/blogs
+  label: Blog Posts EN
   create: documents
   match: "**/*.md"
 - type: directory
-  path: content/en/blogs
-  label: Blog Posts EN
+  path: content/nl/blogs
+  label: Blog Posts NL
   create: documents
   match: "**/*.md"
 - type: document
   path: content/en/about.md
   label: About EN
+- type: document
+  path: content/nl/about.md
+  label: About NL
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
