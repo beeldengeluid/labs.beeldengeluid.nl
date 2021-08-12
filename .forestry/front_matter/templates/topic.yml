@@ -5,18 +5,12 @@ fields:
 - type: text
   name: title
   label: title
-- type: datetime
-  name: date
-  label: date
-- type: file
-  name: image
-  label: image
 - type: text
   name: subtitle
   label: subtitle
-- type: text
-  name: related_project
-  label: related_project
+- type: file
+  name: image
+  label: image
 - type: field_group_list
   name: contacts
   label: contacts

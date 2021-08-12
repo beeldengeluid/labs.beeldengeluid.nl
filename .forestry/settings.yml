@@ -25,6 +25,8 @@ sections:
   label: Topics
   create: documents
   match: "**/*.md"
+  templates:
+  - topic
 - type: directory
   path: content/en/datasets
   label: Data sets
