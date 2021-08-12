@@ -4,18 +4,18 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: file
   name: image
-  label: image
+  label: Image
 - name: website_url
   type: text
   config:
     required: false
-  label: website URL
+  label: Website URL
   description: URL of the lab's website
 - name: partners
   type: list
@@ -23,7 +23,7 @@ fields:
     use_select: false
     min: 
     max: 
-  label: partners
+  label: Partners
   description: Partners of the lab
 - name: funders
   type: list
@@ -31,5 +31,5 @@ fields:
     use_select: false
     min: 
     max: 
-  label: funders
+  label: Funders
   description: Funders of the lab
