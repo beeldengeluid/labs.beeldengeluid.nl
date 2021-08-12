@@ -11,7 +11,7 @@
 import CardPage from '~/components/CardPage'
 import { getLocalePath } from '~/util/contentFallback'
 
-const dataClass = 'theme'
+const dataClass = 'topic'
 
 export default {
   components: { CardPage },

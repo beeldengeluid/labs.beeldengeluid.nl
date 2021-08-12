@@ -27,8 +27,8 @@ export default [
   },
   {
     icon: icons.theme,
-    title: 'themes',
-    to: 'themes',
+    title: 'topics',
+    to: 'topics',
     color: classColors.theme,
   },
   {

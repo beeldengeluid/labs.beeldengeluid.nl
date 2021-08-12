@@ -7,8 +7,8 @@ import ArticlePage from '~/components/ArticlePage'
 import { createArticleSlugPage } from '~/util/articleSlugPage'
 
 export default createArticleSlugPage({
-  source: 'themes',
+  source: 'topics',
   components: { ArticlePage },
-  data: () => ({ dataClass: 'theme' }),
+  data: () => ({ dataClass: 'topic' }),
 })
 </script>

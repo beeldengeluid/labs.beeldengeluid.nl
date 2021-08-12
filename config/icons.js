@@ -3,7 +3,7 @@ export default {
   dataset: 'mdi-database',
   project: 'mdi-rocket-launch',
   blog: 'mdi-post',
-  theme: 'mdi-shape',
+  topic: 'mdi-shape',
   lab: 'mdi-flask',
   api: 'mdi-power-plug',
   archive: 'mdi-archive',
