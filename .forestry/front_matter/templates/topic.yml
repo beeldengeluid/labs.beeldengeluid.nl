@@ -1,0 +1,29 @@
+---
+label: Topic
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: text
+  name: subtitle
+  label: subtitle
+- type: text
+  name: related_project
+  label: related_project
+- type: field_group_list
+  name: contacts
+  label: contacts
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: email
+    label: email
