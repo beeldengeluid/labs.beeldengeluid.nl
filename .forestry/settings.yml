@@ -9,6 +9,8 @@ sections:
   label: Labs
   create: documents
   match: "**/*.md"
+  templates:
+  - lab
 - type: directory
   path: content/en/archive
   label: Archive
@@ -24,21 +26,29 @@ sections:
   label: Projects
   create: documents
   match: "**/*.md"
+  templates:
+  - project
 - type: directory
   path: content/en/datasets
   label: Data sets
   create: documents
   match: "**/*.md"
+  templates:
+  - dataset
 - type: directory
   path: content/en/blogs
   label: Blog Posts EN
   create: documents
   match: "**/*.md"
+  templates:
+  - blog-post
 - type: directory
   path: content/nl/blogs
   label: Blog Posts NL
   create: documents
   match: "**/*.md"
+  templates:
+  - blog-post
 - type: document
   path: content/en/about.md
   label: About EN
