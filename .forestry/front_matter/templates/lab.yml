@@ -33,5 +33,3 @@ fields:
     max: 
   label: Funders
   description: Funders of the lab
-pages:
-- content/en/labs/mediascape.md
