@@ -6,23 +6,60 @@ fields:
   name: title
   label: title
 - type: text
-  name: type
-  label: type
-- type: list
-  name: tags
-  label: tags
+  name: subtitle
+  label: subtitle
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - project
+    - example
+    - application
+    source:
+      type: simple
+      section: archive
+      file: 
+      path: 
+  label: Type
+  description: The type of archive item
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: false
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+  description: The date of the archive item
 - type: file
   name: image
   label: image
-- type: text
-  name: subtitle
-  label: subtitle
-- type: text
-  name: project
-  label: project
-- type: text
-  name: github
-  label: github
+- name: website_url
+  type: text
+  config:
+    required: false
+  label: Website URL
+  description: The URL of the archive item's website
+- name: project
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: archive
+      file: 
+      path: 
+  label: Project
+  description: Project this archive item belongs to
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags of this archive item
 - type: list
   name: themes
   label: themes
