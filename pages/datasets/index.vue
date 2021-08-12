@@ -9,29 +9,28 @@
 
 <script>
 import CardPage from '~/components/CardPage'
-import { getLocalePath } from '~/util/contentFallback'
+import { enrichDatasets, randomDataSet } from '~/util/dataset'
 
-const dataClass = 'api'
+const dataClass = 'dataset'
 
 export default {
   components: { CardPage },
   async asyncData({ $content, app }) {
     const path = dataClass + 's'
+    const data = await $content(path).fetch()
 
-    const articlesPath = await getLocalePath({
-      $content,
-      app,
-      path,
-    })
-    const articles = await $content(articlesPath)
-      .sortBy('createdAt', 'asc')
-      .fetch()
+    // DEV
+    data.datasets = [
+      ...data.datasets,
+      ...Array.from(Array(15)).map((_, index) => randomDataSet({ id: index })),
+    ]
 
-    return { cards: articles }
+    const datasets = enrichDatasets(data.datasets)
+    return { cards: datasets }
   },
   data: () => ({
     title: dataClass + 's',
-    cardPath: dataClass + '-slug',
+    cardPath: dataClass + 's' + '-slug',
     dataClass,
   }),
   head() {

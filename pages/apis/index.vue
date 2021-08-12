@@ -11,7 +11,7 @@
 import CardPage from '~/components/CardPage'
 import { getLocalePath } from '~/util/contentFallback'
 
-const dataClass = 'blog'
+const dataClass = 'api'
 
 export default {
   components: { CardPage },
@@ -31,7 +31,7 @@ export default {
   },
   data: () => ({
     title: dataClass + 's',
-    cardPath: dataClass + '-slug',
+    cardPath: dataClass + 's' + '-slug',
     dataClass,
   }),
   head() {
