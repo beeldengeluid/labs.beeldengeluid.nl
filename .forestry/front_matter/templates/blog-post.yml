@@ -28,3 +28,16 @@ fields:
     source:
       type: pages
       section: data-sets
+- name: project
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: projects
+      file: 
+      path: 
+  label: Project
+  description: A project that this blog post belongs to
