@@ -70,7 +70,7 @@
               md="6"
               class="pa-10 d-flex flex-column justify-center align-start"
             >
-              <nuxt-content :document="{ body: page.excerpt }" />
+              <nuxt-content :document="{ body: aboutPage.excerpt }" />
               <v-btn color="primary" :to="localePath('about')" nuxt>
                 {{ $t('read_more') }}
               </v-btn>
@@ -102,7 +102,7 @@ export default {
   },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })
-    const page = await $content(aboutPath).fetch()
+    const aboutPage = await $content(aboutPath).fetch()
 
     // blogs
     const blogsPath = await getLocalePath({
@@ -159,7 +159,7 @@ export default {
     }
 
     return {
-      page,
+      aboutPage,
       datasets,
       blogs,
       projects,
