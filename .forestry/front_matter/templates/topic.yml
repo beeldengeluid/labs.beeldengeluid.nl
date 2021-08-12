@@ -4,20 +4,20 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
 - type: file
   name: image
-  label: image
+  label: Image
 - type: field_group_list
   name: contacts
-  label: contacts
+  label: Contacts
   fields:
   - type: text
     name: name
-    label: name
+    label: Name
   - type: text
     name: email
-    label: email
+    label: Email
