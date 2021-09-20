@@ -42,7 +42,18 @@
           </NuxtLink>
         </h3>
 
-        <h1>{{ article.title }}</h1>
+        <div class="d-flex justify-space-between align-center mb-4">
+          <h1>{{ article.title }}</h1>
+          <v-chip
+            v-if="article.type"
+            color="primary"
+            class="text-uppercase"
+            small
+            label
+          >
+            {{ article.type }}
+          </v-chip>
+        </div>
         <p>{{ article.subtitle }}</p>
       </section>
     </v-col>
@@ -103,7 +114,6 @@ export default {
 
 h1 {
   color: white;
-  padding-bottom: 15px;
 }
 
 a.category {
