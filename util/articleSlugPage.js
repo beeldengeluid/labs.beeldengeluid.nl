@@ -50,6 +50,19 @@ export const createArticleSlugPage = ({
         )
         .filter((d) => d)
 
+    // (for article of type lab) populate projects on article with project content that refers to this lab
+    const projectsPath = await getLocalePath({
+      $content,
+      app,
+      path: 'projects',
+    })
+
+    const projects = await $content(projectsPath)
+      .where({ lab: { $eq: article.slug } })
+      .fetch()
+
+    article.projects = projects
+
     return { article, prev, next }
   },
   components,

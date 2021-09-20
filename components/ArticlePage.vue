@@ -47,7 +47,11 @@
       <!-- <v-divider class="my-5" /> -->
 
       <!-- relations -->
-      <Relations :datasets="article.datasets" />
+      <Relations
+        :datasets="article.datasets"
+        :projects="article.projects"
+        :blogs="article.blogs"
+      />
 
       <PrevNext :prev="prev" :next="next" />
     </section>
