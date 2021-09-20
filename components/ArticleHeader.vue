@@ -94,9 +94,13 @@ export default {
       colorClass: classColorIndex[this.dataClass],
       color,
       id: 'article-heading',
-      path: this.dataClass + 's', // blog -> blogs, project -> project etc
       backgroundImageStyle,
     }
+  },
+  computed: {
+    path() {
+      return this.article.dir.split('/').pop()
+    },
   },
   methods: {
     getBackGroundImage(image) {
