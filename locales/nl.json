@@ -1,6 +1,6 @@
 {
-  "site_name": "Open Data Lab",
-  "site_author": "Beeld en Geluid",
+  "site_name": "Beeld en Geluid · Labs",
+  "site_author": "Nederlands Instituut voor Beeld en Geluid",
 
   "blogs": "Artikelen",
   "datasets": "Datasets",
@@ -9,7 +9,6 @@
   "topics": "Onderwerpen",
   "archive": "Archief",
   "records": "Objecten",
-  "home": "Home",
   "about": "Over ons",
   "last_update": "Laatste wijziging",
   "read_more": "Lees meer",

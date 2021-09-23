@@ -12,7 +12,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - Open Data Lab',
+    titleTemplate: '%s - Sound and Vision · Labs',
     title: 'Beeld en Geluid',
     meta: [
       { charset: 'utf-8' },

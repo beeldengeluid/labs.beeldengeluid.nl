@@ -1,6 +1,6 @@
 {
-  "site_name": "Open Data Lab",
-  "site_author": "Sound and Vision",
+  "site_name": "Sound and Vision · Labs",
+  "site_author": "The Netherlands Institute for Sound and Vision",
   "dataset": "Dataset",
   "datasets": "Datasets",
   "datasets_description": "Our open data sets (todo: replace with visualization)",
@@ -30,6 +30,6 @@
   "metadata": "Metadata",
   "download_metadata": "JSON-LD",
   "explore_dataset": "Explore dataset",
-  "intro_title": "Welcome to the playground!",
-  "intro_text": "The Open Data Lab offers you information, example projects and the latest articles about the open datasets of Sound and Vision."
+  "intro_title": "Welcome to Sound and Vision Labs!",
+  "intro_text": "Here we offer you information, projects and the latest articles about the research and innovation activities at Sound and Vision."
 }
