@@ -20,10 +20,10 @@ export default [
     color: classColors.project,
   },
   {
-    icon: icons.theme,
+    icon: icons.topic,
     title: 'topics',
     to: 'topics',
-    color: classColors.theme,
+    color: classColors.topic,
   },
   {
     icon: icons.dataset,
