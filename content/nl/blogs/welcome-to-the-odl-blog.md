@@ -3,6 +3,7 @@ title: Welkom bij het Open Data Lab
 subtitle: 'Longum annis Tartara hastilia.'
 image: placeholders/placeholder-blog.jpg
 tags:
+lab: opendatalab
 datasets:
   - https://www.openbeelden.nl/users/beeldengeluid
 ---

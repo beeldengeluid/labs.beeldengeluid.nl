@@ -2,6 +2,7 @@
 title: 'Open Data for AI research'
 subtitle: 'In quis, saepe revulsum. Cava novo conlapsus quaque primoque, in cupiens, nam.'
 image: placeholders/placeholder-blog.jpg
+lab: opendatalab
 tags:
 datasets:
   - https://www.openbeelden.nl/users/beeldengeluid
