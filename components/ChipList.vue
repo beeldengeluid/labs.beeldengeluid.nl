@@ -9,12 +9,7 @@
       large
       link
       nuxt
-      :to="
-        localePath({
-          name: path,
-          params: { slug: chip.slug },
-        })
-      "
+      :to="localePath('/' + path + '/' + chip.slug)"
       text-color="white"
       :style="{
         backgroundImage: getImageOverlayCSS(

@@ -36,21 +36,21 @@ export default {
       items: [
         {
           title: 'projects',
-          path: 'project-slug',
+          path: 'projects',
           color: classColorIndex.project,
           chips: this.projects,
           icon: icons.project,
         },
         {
           title: 'blogs',
-          path: 'blog-slug',
+          path: 'blogs',
           color: classColorIndex.blog,
           chips: this.blogs,
           icon: icons.blog,
         },
         {
           title: 'datasets',
-          path: 'dataset-slug',
+          path: 'datasets',
           color: classColorIndex.dataset,
           chips: this.datasets,
           icon: icons.dataset,
