@@ -3,6 +3,7 @@ title: Welcome to the ODL blog
 subtitle: 'Longum annis Tartara hastilia.'
 image: placeholders/placeholder-blog.jpg
 tags:
+lab: opendatalab
 datasets:
   - https://www.openbeelden.nl/users/beeldengeluid
   - https://www.openbeelden.nl/users/stichting_natuurbeelden
