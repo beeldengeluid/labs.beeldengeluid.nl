@@ -34,4 +34,5 @@ fields:
   label: Funders
   description: Funders of the lab
 pages:
+- content/en/labs/benchmarking-ai.md
 - content/en/labs/media-suite-data-stories.md
