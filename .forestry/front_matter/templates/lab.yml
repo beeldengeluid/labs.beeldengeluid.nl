@@ -33,3 +33,5 @@ fields:
     max: 
   label: Funders
   description: Funders of the lab
+pages:
+- content/en/labs/media-suite-data-stories.md
