@@ -5,35 +5,6 @@
     :style="backgroundImageStyle"
   >
     <v-col>
-      <!-- Responsive background image -->
-      <component :is="'style'" type="text/css">
-        @media (max-width: 600px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=600`).src
-              : ''
-          )
-        }}
-        } } @media (max-width: 930px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=930`).src
-              : ''
-          )
-        }}
-        } } @media (min-width: 930px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=1200`).src
-              : ''
-          )
-        }}
-        } }
-      </component>
-
       <!-- Content -->
       <section>
         <h3>
