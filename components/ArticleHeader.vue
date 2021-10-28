@@ -5,35 +5,6 @@
     :style="backgroundImageStyle"
   >
     <v-col>
-      <!-- Responsive background image -->
-      <component :is="'style'" type="text/css">
-        @media (max-width: 600px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=600`).src
-              : ''
-          )
-        }}
-        } } @media (max-width: 930px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=930`).src
-              : ''
-          )
-        }}
-        } } @media (min-width: 930px) { #{{ id }} { background-image:
-        {{
-          getBackGroundImage(
-            article.image
-              ? require(`~/assets/images/${article.image}?size=1200`).src
-              : ''
-          )
-        }}
-        } }
-      </component>
-
       <!-- Content -->
       <section>
         <h3>
@@ -82,29 +53,32 @@ export default {
   },
 
   data() {
-    const color = classColors[this.dataClass]
-    const image = this.article.image
-      ? require(`~/assets/images/${this.article.image}?size=930`).src
-      : ''
-    const backgroundImageStyle = {
-      backgroundImage: getDarkenedImageOverlayCSS(image, color, 0.9),
-    }
-
     return {
+      imageSrc: !this.article.image
+        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
+            .src
+        : this.article.image.includes('/uploads/')
+        ? this.article.image
+        : require(`~/assets/images/${this.article.image}?size=930`).src,
       colorClass: classColorIndex[this.dataClass],
-      color,
       id: 'article-heading',
-      backgroundImageStyle,
     }
   },
   computed: {
     path() {
       return this.article.dir.split('/').pop()
     },
-  },
-  methods: {
-    getBackGroundImage(image) {
-      return getDarkenedImageOverlayCSS(image, this.color, 0.9)
+    color() {
+      return classColors[this.dataClass]
+    },
+    backgroundImageStyle() {
+      return {
+        backgroundImage: getDarkenedImageOverlayCSS(
+          this.imageSrc,
+          this.color,
+          0.9
+        ),
+      }
     },
   },
 }
