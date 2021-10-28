@@ -98,10 +98,12 @@ export default {
       icon: icons[this.dataClass],
       color: classColors[this.dataClass],
       rippleClass: classColorIndex[this.dataClass] + '--text',
-      image: this.card.image
-        ? require(`~/assets/images/${this.card.image}?size=400`).src
-        : require(`~/assets/images/placeholders/placeholder-generic.jpg?size=400`)
-            .src,
+      image: !this.card.image
+        ? require(`~/assets/images/placeholders/placeholder-generic.jpg?size=400`)
+            .src
+        : this.card.image.includes('/uploads/')
+        ? this.card.image
+        : require(`~/assets/images/${this.card.image}?size=400`).src,
     }
   },
   methods: {

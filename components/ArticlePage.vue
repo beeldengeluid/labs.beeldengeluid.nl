@@ -8,11 +8,8 @@
         position="top center"
         width="930px"
         class="header-image"
-        :src="require(`~/assets/images/${article.image}?size=930`).src"
-        :srcset="
-          require(`~/assets/images/${article.image}?{sizes:[620,930,1200,1600]}`)
-            .srcSet
-        "
+        :src="imageSrc"
+        :srcset="imageSrcset"
       />
 
       <!-- Optional article navigation -->
@@ -91,7 +88,6 @@ export default {
       required: false,
       default: null,
     },
-
     dataClass: {
       type: String,
       required: true,
@@ -99,7 +95,22 @@ export default {
     },
   },
   data() {
-    return { colorClass: classColorIndex[this.dataClass] + '--text' }
+    return {
+      colorClass: classColorIndex[this.dataClass] + '--text',
+      imageSrc: !this.article.image
+        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
+            .src
+        : this.article.image.includes('/uploads/')
+        ? this.article.image
+        : require(`~/assets/images/${this.article.image}?size=930`).src,
+      imageSrcset: !this.article.image
+        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[620,930,1200,1600]}`)
+            .srcSet
+        : this.article.image.includes('/uploads/')
+        ? this.article.image
+        : require(`~/assets/images/${this.article.image}?{sizes:[620,930,1200,1600]}`)
+            .srcSet,
+    }
   },
   methods: {
     formatDate,
