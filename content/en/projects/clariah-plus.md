@@ -8,3 +8,4 @@ tags:
 datasets: []
 
 ---
+The CLARIAH project is a joint effort of research institutes and cultural heritage institutes to develop a shared, national research infrastructure for scholars in the Social Sciences and Humanities (SSH).
