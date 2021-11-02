@@ -15,7 +15,7 @@ partners:
 funders:
 - CLARIAH CORE (NWO)
 - CLARIAH PLUS (NWO)
-
+sortOrder: 1
 ---
 The Media Suite is one of the virtual research environments of the Dutch national infrastructure for digital humanities and social sciences ([CLARIAH](clariah.nl)). It facilitates scholarly research with large Dutch media collections from various institutes, by providing advanced search and exploration functionalities and analysis tools. However, the Media Suite can also be interesting outside the academic world. Also (research) journalists have expressed interest in the concept of the Media Suite as a tool for investigative journalism using large media archives.  Ultimately, the Media Suite could be an entry point for the general public to browse Dutch audiovisual heritage but for copyright reasons, access to the larger part of the data is currently restricted for research use only. 
 

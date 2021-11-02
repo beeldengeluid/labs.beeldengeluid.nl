@@ -24,6 +24,7 @@ export default {
       path,
     })
     const articles = await $content(articlesPath)
+      .sortBy('sortOrder', 'asc')
       .sortBy('createdAt', 'asc')
       .fetch()
 

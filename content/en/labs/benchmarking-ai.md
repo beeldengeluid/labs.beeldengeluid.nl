@@ -10,5 +10,5 @@ partners:
 funders:
 - Gemeente Hilversum
 - Beeld en Geluid
-
+sortOrder: 2
 ---
