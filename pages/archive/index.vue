@@ -69,7 +69,8 @@ export default {
       path,
     })
     const articles = await $content(articlesPath)
-      .sortBy('createdAt', 'asc')
+      .sortBy('createdAt', 'desc')
+      .sortBy('title', 'asc')
       .fetch()
 
     return { cards: articles }
