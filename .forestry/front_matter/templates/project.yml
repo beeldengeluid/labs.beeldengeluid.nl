@@ -52,6 +52,7 @@ fields:
     max: 
     step: 
 pages:
+- content/en/projects/ai4media.md
 - content/en/projects/clariah-plus.md
 - content/en/projects/homed.md
 - content/en/projects/kind-in-gesprek-met-media.md
