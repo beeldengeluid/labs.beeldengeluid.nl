@@ -1,9 +1,11 @@
 ---
 title: CLARIAH Media Suite
 subtitle: Virtual Research Environment for Scholars
-image: "/uploads/media_suite_logo_def_rgb.png"
+image: "/uploads/mediasuite-rv-stembusakkoord.png"
 website_url: https://mediasuite.clariah.nl/
 partners:
+- Eye Film Institute
+- Humanities Cluster (HuC)
 - Koninklijke Bibliotheek
 - Max Planck Institute
 - Erasmus University Rotterdam
@@ -11,8 +13,8 @@ partners:
 - University of Amsterdam
 - CLARIAH
 funders:
-- NWO
-- ''
+- CLARIAH CORE (NWO)
+- CLARIAH PLUS (NWO)
 
 ---
 The Media Suite is one of the virtual research environments of the Dutch national infrastructure for digital humanities and social sciences ([CLARIAH](clariah.nl)). It facilitates scholarly research with large Dutch media collections from various institutes, by providing advanced search and exploration functionalities and analysis tools. However, the Media Suite can also be interesting outside the academic world. Also (research) journalists have expressed interest in the concept of the Media Suite as a tool for investigative journalism using large media archives.  Ultimately, the Media Suite could be an entry point for the general public to browse Dutch audiovisual heritage but for copyright reasons, access to the larger part of the data is currently restricted for research use only. 
