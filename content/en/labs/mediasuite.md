@@ -1,7 +1,7 @@
 ---
 title: CLARIAH Media Suite
 subtitle: Virtual Research Environment for Scholars
-image: "/uploads/mediasuite-rv-stembusakkoord.png"
+image: "/uploads/ms-screenshot-front.png"
 website_url: https://mediasuite.clariah.nl/
 partners:
 - Eye Film Institute
