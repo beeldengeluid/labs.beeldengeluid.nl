@@ -33,6 +33,16 @@ fields:
     max: 
   label: Funders
   description: Funders of the lab
+- name: sortOrder
+  type: number
+  label: Sort Order
+  description: Set order for sorting content items on index page (optional)
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 1
 pages:
 - content/en/labs/benchmarking-ai.md
 - content/en/labs/media-suite-data-stories.md
