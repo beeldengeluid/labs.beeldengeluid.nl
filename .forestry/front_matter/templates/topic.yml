@@ -21,3 +21,13 @@ fields:
   - type: text
     name: email
     label: Email
+- name: sortOrder
+  type: number
+  description: Set order for sorting content items on index page (optional)
+  default: 999
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: Sort Order
