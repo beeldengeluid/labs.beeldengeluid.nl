@@ -51,6 +51,12 @@ fields:
     min: 
     max: 
     step: 
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
+  description: A valid URL (incl "https://") of a project website
 pages:
 - content/en/projects/ai4media.md
 - content/en/projects/clariah-plus.md
