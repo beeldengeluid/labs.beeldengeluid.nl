@@ -30,6 +30,7 @@
         :object="{
           ...(article.contacts && { contacts: article.contacts }),
           ...(article.website_url && { website: article.website_url }),
+          ...(article.website && { website: article.website }),
           ...(article.partners && { partners: article.partners }),
         }"
         class="mb-2"
