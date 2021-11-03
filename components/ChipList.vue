@@ -13,9 +13,7 @@
       text-color="white"
       :style="{
         backgroundImage: getImageOverlayCSS(
-          chip.image
-            ? require(`~/assets/images/${chip.image}?size=300`).src
-            : '',
+          getImageSrc(chip.image),
           theme[color]
         ),
       }"
@@ -54,6 +52,13 @@ export default {
   data: () => ({ theme }),
   methods: {
     getImageOverlayCSS,
+    getImageSrc(chipImage, size) {
+      return !chipImage
+        ? ''
+        : chipImage.includes('/uploads/')
+        ? chipImage
+        : require(`~/assets/images/${chipImage}?size=${size}`).src
+    },
   },
 }
 </script>

@@ -58,7 +58,7 @@ export const createArticleSlugPage = ({
     })
 
     article.projects = await $content(projectsPath)
-      .where({ lab: { $eq: article.slug } })
+      .where({ lab: { $contains: article.slug } })
       .fetch()
 
     // (for article of type lab) populate blogs on article with blog content that refers to this lab
@@ -69,7 +69,7 @@ export const createArticleSlugPage = ({
     })
 
     article.blogs = await $content(blogsPath)
-      .where({ lab: { $eq: article.slug } })
+      .where({ lab: { $contains: article.slug } })
       .fetch()
 
     return { article, prev, next }
