@@ -8,6 +8,26 @@
         </v-col>
       </v-row>
 
+      <!-- Labs -->
+      <v-row class="justify-center light-background my-3 pb-3">
+        <v-col class="limit-width px-3 py-4 mb-2">
+          <Heading
+            :title="$t('labs')"
+            :description="$t('labs_description')"
+            data-class="lab"
+            :action-path="'labs'"
+            :action-title="$t('all_labs')"
+          />
+
+          <CardGrid
+            :cards="labs"
+            path="lab-slug"
+            data-class="lab"
+            row-class="justify-center justify-md-start px-5"
+          />
+        </v-col>
+      </v-row>
+
       <!-- Projects -->
       <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
@@ -115,6 +135,17 @@ export default {
       .limit(4)
       .fetch()
 
+    // labs
+    const labsPath = await getLocalePath({
+      $content,
+      app,
+      path: 'labs',
+    })
+    const labs = await $content(labsPath)
+      .sortBy('createdAt', 'asc')
+      .limit(4)
+      .fetch()
+
     // projects
     const projectsPath = await getLocalePath({
       $content,
@@ -162,6 +193,7 @@ export default {
       aboutPage,
       datasets,
       blogs,
+      labs,
       projects,
     }
   },
