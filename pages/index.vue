@@ -21,7 +21,7 @@
 
           <CardGrid
             :cards="labs"
-            path="lab-slug"
+            path="labs-slug"
             data-class="lab"
             row-class="justify-center justify-md-start px-5"
           />
@@ -41,7 +41,7 @@
 
           <CardGrid
             :cards="projects"
-            path="project-slug"
+            path="projects-slug"
             data-class="project"
             row-class="justify-center justify-md-start px-5"
           />
@@ -60,7 +60,7 @@
           />
           <CardGrid
             :cards="blogs"
-            path="blog-slug"
+            path="blogs-slug"
             data-class="blog"
             row-class="justify-center justify-md-start px-5"
           />
