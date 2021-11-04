@@ -3,13 +3,17 @@ title: Mediascape
 subtitle: Finding happiness in audiovisual archives without searching for it
 image: projects/mediascape.png
 tags:
-  - generous interfaces
-  - UI
+- generous interfaces
+- UI
 datasets:
-  - https://www.openbeelden.nl/users/beeldengeluid
-lab: opendatalab
----
+- content/en/datasets/https-www-openbeelden-nl-users-beeldengeluid.md
+lab: content/en/labs/opendatalab.md
+website: https://open-images-browser.vercel.app/
+contacts:
+- name: Philo van Kemenade
+  email: pvkemenade@beeldengeluid.nl
 
+---
 The MediaScape project investigates how innovative interfaces can provide generous access to audiovisual collections in order to make connections between the interests of individuals and heritage objects. Or:
 
 > How to find happiness in AV collections without searching for it?

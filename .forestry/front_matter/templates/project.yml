@@ -57,6 +57,24 @@ fields:
     required: false
   label: Website
   description: A valid URL (incl "https://") of a project website
+- name: contacts
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Contacts
 pages:
 - content/en/projects/ai4media.md
 - content/en/projects/clariah-plus.md
