@@ -33,7 +33,7 @@
       "
     >
     </v-img>
-    <v-card-title class="pt-4 mb-2">
+    <v-card-title class="pt-4 mb-2 h-24">
       {{ card.title }}
     </v-card-title>
     <v-card-text>
@@ -155,5 +155,12 @@ export default {
   .v-card__subtitle {
     font-size: 0.95rem;
   }
+
+  .v-card__title {
+    &.h-24 {
+      height: 6rem;
+    }  
+  }
+  
 }
 </style>
