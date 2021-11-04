@@ -157,6 +157,8 @@ export default {
   }
 
   .v-card__title {
+    word-break: normal;
+
     &.h-24 {
       height: 6rem;
     }  
