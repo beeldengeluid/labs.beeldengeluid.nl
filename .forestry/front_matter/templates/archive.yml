@@ -24,15 +24,6 @@ fields:
       path: 
   label: Type
   description: The type of archive item
-- name: date
-  type: datetime
-  label: Date
-  config:
-    required: false
-    date_format: DD/MM/YYYY
-    time_format: 
-    display_utc: false
-  description: The date of the archive item
 - type: file
   name: image
   label: Image
@@ -66,3 +57,21 @@ fields:
 - type: list
   name: contenttypes
   label: Contenttypes
+- name: startDate
+  type: datetime
+  label: Start Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: endDate
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
