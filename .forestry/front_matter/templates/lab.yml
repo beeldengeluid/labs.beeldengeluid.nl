@@ -43,6 +43,23 @@ fields:
     min: 
     max: 
     step: 1
+- name: startDate
+  type: datetime
+  label: Start Date
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: endDate
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
 pages:
 - content/en/labs/benchmarking-ai.md
 - content/en/labs/media-suite-data-stories.md
