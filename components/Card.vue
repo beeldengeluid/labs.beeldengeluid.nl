@@ -161,8 +161,7 @@ export default {
 
     &.h-24 {
       height: 6rem;
-    }  
+    }
   }
-  
 }
 </style>
