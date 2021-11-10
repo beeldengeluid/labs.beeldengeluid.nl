@@ -75,6 +75,24 @@ fields:
     max: 
     labelField: 
   label: Contacts
+- name: startDate
+  type: datetime
+  label: Start Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
+- name: endDate
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD-MM-YYYY
+    time_format: 
+    display_utc: false
 pages:
 - content/en/projects/ai4media.md
 - content/en/projects/clariah-plus.md
