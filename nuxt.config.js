@@ -76,6 +76,8 @@ export default {
     '@nuxt/content',
     // https://i18n.nuxtjs.org,
     'nuxt-i18n',
+    // https://github.com/pimlie/nuxt-matomo
+    ['nuxt-matomo', { matomoUrl: 'https://clariah-mediasuite.innocraft.cloud/', siteId: 4 }],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
