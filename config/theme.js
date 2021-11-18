@@ -28,7 +28,7 @@ export const classColors = {
   dataset: theme[classColorIndex.dataset],
   project: theme[classColorIndex.project],
   blog: theme[classColorIndex.blog],
-  topic: theme[classColorIndex.theme],
+  topic: theme[classColorIndex.topic],
   lab: theme[classColorIndex.lab],
   api: theme[classColorIndex.api],
   archive: theme[classColorIndex.archive],

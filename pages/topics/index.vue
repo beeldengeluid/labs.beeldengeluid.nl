@@ -32,7 +32,7 @@ export default {
   },
   data: () => ({
     title: dataClass + 's',
-    cardPath: dataClass + '-slug',
+    cardPath: dataClass + 's' + '-slug',
     dataClass,
   }),
   head() {
