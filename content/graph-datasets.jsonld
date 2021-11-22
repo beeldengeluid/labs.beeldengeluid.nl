@@ -1,0 +1,436 @@
+{
+  "datasets": [
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0010",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Het Nederlands Instituut voor Beeld en Geluid heeft samen met enkele andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus."
+      },
+      "https://schema.org/distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0014"
+        }
+      ],
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://labs.beeldengeluid.nl/dataset/5520ccca-2c8e-11e6-a743-005056a71e3a"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Gemeenschappelijke Thesaurus voor Audiovisuele Archieven"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0009",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://wiki.beeldengeluid.nl"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Lemma's over mediageschiedenis op de Beeld en Geluid Wiki"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0006",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone."
+        },
+        {
+          "@language": "en",
+          "@value": "The collection of broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation."
+        },
+        {
+          "@language": "en",
+          "@value": "The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API. "
+        }
+      ],
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/002"
+        }
+      ],
+      "https://schema.org/keywords": "Audio, Radio broadcasts, WWII",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Radio Oranje op SoundCloud"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0001",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "en",
+        "@value": "Metadata for the catalogue objects that are provided by Netherlands Institue for Sound and Vision."
+      },
+      "https://schema.org/distribution": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0002"
+        }
+      ],
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://www.beeldengeluid.nl/collectie"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid catalogus"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0008",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Dit is een bestandenlijst op de WIKI"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://wiki.beeldengeluid.nl/index.php/Speciaal:Bestandenlijst"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Fotografie op de Beeld en Geluid Wiki"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0002",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "The Sound and Vision dataset on Open Images is downloadable via the Open Images OAI-PMH provider. The dataset is also available via the Europeana API."
+        },
+        {
+          "@language": "nl",
+          "@value": "Een verzameling van videomateriaal dat Beeld en Geluid onder een Creative Commons licentie vrijgeeft, of reeds in het Publiek Domein valt."
+        },
+        {
+          "@language": "en",
+          "@value": "Open Images also contains datasets from other providers and content (mostly remixes) added by users. Access to the material on Open Images is provided under the Creative Commons licensing model."
+        },
+        {
+          "@language": "en",
+          "@value": "The Sound and Vision dataset on Open Images contains more than 3000 videos. It consists of Polygoon newsreels and some other films from the 20th century. The videos cover a broad range of Dutch (news) topics, such as art, culture, transportation, health, education, nature, politics, sports, pets, fashion and curiosa. The metadata is provided in Dutch and English."
+        }
+      ],
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0003"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/keywords": "Video; Open",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://www.openbeelden.nl/users/beeldengeluid"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Open video op Open Beelden"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0012",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Een verzameling van videomateriaal dat Beeld en Geluid onder een Creative Commons licentie vrijgeeft, of reeds in het Publiek Domein valt en dat is samengesteld voor het Europeana Sounds project. "
+      },
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0010"
+      },
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Europeana Sounds op Open Beelden"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0003",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "The set contains raw footage of Dutch nature. This subset is part of a larger collection of video's from the project Natuurbeelden that has been made available under a Creative Commons license. "
+        },
+        {
+          "@language": "nl",
+          "@value": "Een verzameling van ruwe videoregistraties van Nederlandse flora en fauna onder een Creative Commons licentie, afkomstig van Stichting Natuurbeelden "
+        }
+      ],
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0004"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "http://rightsstatements.org/vocab/UND/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://natuurbeelden.openbeelden.nl/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Natuurbeelden op Open Beelden"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0005",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone."
+        },
+        {
+          "@language": "en",
+          "@value": "The collection Radio De Brandaris contains radio broadcasts that were transmitted between 1944 and 1946 by Radio de Brandaris. The broadcasts of Radio De Brandaris were meant for Dutch allied seafarers and other ships from Holland. On July 10th, 1941 Radio De Brandaris began transmitting alongside Radio Oranje. In the beginning of november 1942 Radio de Brandaris became part of Radio Oranje."
+        },
+        {
+          "@language": "en",
+          "@value": "The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API. "
+        }
+      ],
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0012"
+      },
+      "https://schema.org/includedInDataCatalog": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/002"
+        }
+      ],
+      "https://schema.org/keywords": "Audio, Radio broadcasts, WWII",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Radio de Brandaris op SoundCloud"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0004",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Een verzameling van geluidsopnames van Nederlandse locaties en taferelen, door Beeld en Geluid vrijgegeven onder een Creative Commons licentie"
+      },
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0011"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/002"
+        }
+      ],
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid op SoundCloud"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0007",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "The collection of broadcasts from Radio Herrijzend Nederland (Radio \"The Netherlands Revived\") contains a selection of the radio broadcasts that were transmitted between 1944 and 1946. They were broadcasted by the military authorities from Eindhoven after its liberation in September 1944, to encourage and inform the people of the still occupied north of the Netherlands. After the liberation it continued to broadcast untill January 1946."
+        },
+        {
+          "@language": "en",
+          "@value": "According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone."
+        },
+        {
+          "@language": "en",
+          "@value": "The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."
+        }
+      ],
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0006"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/002"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+        }
+      ],
+      "https://schema.org/keywords": "Audio, Radio broadcasts, WWII",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Radio Herrijzend Nederland op SoundCloud"
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/dataset/0011",
+      "@type": "https://schema.org/Dataset",
+      "https://schema.org/creator": {
+        "@id": "https://www.beeldengeluid.nl"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Een verzameling van videomateriaal van Barend & van Dorp & Open Beelden dat Beeld en Geluid als verrijkte curated collecties op de EUscreen website heeft gepubluceerd. "
+      },
+      "https://schema.org/distribution": {
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0005"
+      },
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/includedInDataCatalog": {
+        "@id": "http://data.beeldengeluid.nl/id/datacatalog/001"
+      },
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/mainEntityOfPage": {
+        "@id": "https://www.openbeelden.nl/users/europeanasounds"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "EUscreen - Beeld en Geluid "
+      },
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    }
+  ]
+}
