@@ -60,9 +60,13 @@ export default {
 
   async asyncData({ $content, app, params, error }) {
     // datasets are not localized (yet)
-    const datasetsPath = 'datacatalog0001-datasets'
-    const data = await $content(datasetsPath).fetch()
-    const datasets = enrichDatasets(data.datasets)
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'https://schema.org/Dataset'
+    )
+    const datacatalog = data['@graph']
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
     const dataset = datasets.find((dataset) => dataset.slug === params.slug)
 

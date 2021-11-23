@@ -2,7 +2,7 @@ import slugify from 'slugify'
 import { stripObject } from './objects'
 import { getRandomColor } from './color'
 
-export const enrichDataset = (dataset) => {
+export const enrichDataset = (dataset, datacatalog = []) => {
   // Props
   dataset.title = dataset['https://schema.org/name']['@value']
   dataset.subtitle = dataset['https://schema.org/description']['@value']
@@ -20,6 +20,10 @@ export const enrichDataset = (dataset) => {
     lower: true,
     strict: true,
   })
+  const creatorId = dataset['https://schema.org/creator']?.['@id']
+  dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
+    'https://schema.org/name'
+  ]?.['@value']
 
   // Random styling by default
   Object.assign(dataset, randomDatasetStyle())
@@ -27,8 +31,8 @@ export const enrichDataset = (dataset) => {
   return dataset
 }
 
-export const enrichDatasets = (datasets) => {
-  return datasets.map((dataset) => enrichDataset(dataset))
+export const enrichDatasets = (datasets, datacatalog = []) => {
+  return datasets.map((dataset) => enrichDataset(dataset, datacatalog))
 }
 
 export const enrichProps = [
