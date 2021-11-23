@@ -4,9 +4,9 @@ import { getRandomColor } from './color'
 
 export const enrichDataset = (dataset) => {
   // Props
-  dataset.title = dataset.name
-  dataset.subtitle = dataset.description
-  dataset.slug = slugify(dataset.identifier.replace(/[.:/]/g, ' '), {
+  dataset.title = dataset['https://schema.org/name']['@value']
+  dataset.subtitle = dataset['https://schema.org/description']['@value']
+  dataset.slug = slugify(dataset['@id'].replace(/[.:/]/g, ' '), {
     lower: true,
     strict: true,
   })
@@ -39,7 +39,7 @@ export const randomDataSet = ({ id, name, contentSize }) => {
     },
     '@type': 'Dataset',
     '@id': 'https://example.com/my-uid-' + id,
-    identifier: 'https://example.com/my-uid-' + id,
+    // identifier: 'https://example.com/my-uid-' + id,
     name: name || 'Random dataset #' + id,
     description:
       'Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula tantique.',

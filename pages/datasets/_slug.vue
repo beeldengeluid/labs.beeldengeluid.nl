@@ -60,7 +60,8 @@ export default {
 
   async asyncData({ $content, app, params, error }) {
     // datasets are not localized (yet)
-    const data = await $content('datasets').fetch()
+    const datasetsPath = 'datacatalog0001-datasets'
+    const data = await $content(datasetsPath).fetch()
     const datasets = enrichDatasets(data.datasets)
 
     const dataset = datasets.find((dataset) => dataset.slug === params.slug)
@@ -78,7 +79,7 @@ export default {
     })
 
     const blogs = await $content(blogsPath)
-      .where({ datasets: { $contains: dataset.identifier } })
+      .where({ datasets: { $contains: dataset['@id'] } })
       .fetch()
 
     // projects
@@ -89,7 +90,7 @@ export default {
     })
 
     const projects = await $content(projectsPath)
-      .where({ datasets: { $contains: dataset.identifier } })
+      .where({ datasets: { $contains: dataset['@id'] } })
       .fetch()
 
     // Related datasets, excluding current
@@ -97,15 +98,15 @@ export default {
     projects.concat(blogs).forEach((article) => {
       article.datasets &&
         article.datasets
-          .filter((ds) => ds !== dataset.identifier)
+          .filter((ds) => ds !== dataset['@id'])
           .forEach((ds) => {
             ds in datasetCount ? datasetCount[ds]++ : (datasetCount[ds] = 1)
           })
     })
 
     const relatedDatasets = datasets
-      .filter((ds) => ds.identifier in datasetCount)
-      .sort((a, b) => datasetCount[b.identifier] - datasetCount[a.identifier])
+      .filter((ds) => ds['@id'] in datasetCount)
+      .sort((a, b) => datasetCount[b['@id']] - datasetCount[a['@id']])
 
     // Custom markdown content for dataset
     const mdPath = await getLocalePath({

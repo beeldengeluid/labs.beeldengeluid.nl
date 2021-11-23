@@ -111,7 +111,7 @@ import Visual from '~/components/visual/Visual'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
-import { enrichDatasets, randomDataSet } from '~/util/dataset'
+import { enrichDatasets } from '~/util/dataset'
 import { parseColor } from '~/util/color'
 
 export default {
@@ -158,11 +158,13 @@ export default {
       .fetch()
 
     // datasets
-    const data = await $content('datasets').fetch()
-    data.datasets = [
-      ...data.datasets,
-      ...Array.from(Array(25)).map((_, index) => randomDataSet({ id: index })),
-    ]
+    // const datasetsPath = 'datasets'
+    const datasetsPath = 'datacatalog0001-datasets'
+    const data = await $content(datasetsPath).fetch()
+    // data.datasets = [
+    //   ...data.datasets,
+    //   ...Array.from(Array(25)).map((_, index) => randomDataSet({ id: index })),
+    // ]
 
     // enrich datasets with helper properties
     const datasets = enrichDatasets(data.datasets)

@@ -1,5 +1,32 @@
 {
-  "datasets": [
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "https://schema.org/",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0004",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=stichting_natuurbeelden&metadataPrefix=oai_oi"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "www.natuurbeelden.nl"
+      },
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Natuurbeelden set op Open Beelden OAI-PMH data provider"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
     {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0010",
       "@type": "https://schema.org/Dataset",
@@ -43,6 +70,38 @@
       },
       "https://schema.org/publisher": {
         "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0020",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://commons.wikimedia.org/wiki/Category:Films_by_Filmdienst_der_NSB"
+      },
+      "https://schema.org/description": [
+        {
+          "@language": "de",
+          "@value": "Diese Kategorie enthält Material, das von der Nationaal-Socialistische Beweging (NSB) in den Niederlanden produziert wurde. Diese Videos sind möglicherweise als fehlerhaft, einseitig, propagandistisch oder sonstwie aus heutiger Sicht unpassend einzustufen."
+        },
+        {
+          "@language": "en",
+          "@value": "This category contains material produced by the NSB, the National Socialist Movement in the Netherlands. As such, these videos and their metadata might reflect erroneous, biased or politically extreme ideas."
+        },
+        {
+          "@language": "nl",
+          "@value": "Deze categorie bevat materiaal dat is geproduceerd door de NSB, de Nationaal-Socialistische Beweging. Deze video's kunnen daardoor onjuiste, eenzijdige en politiek extreme ideeën bevatten."
+        }
+      ],
+      "https://schema.org/encodingFormat": "video/webm",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Category:Films by Filmdienst der NSB"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.mediawiki.org/wiki/API:Tutorial"
       }
     },
     {
@@ -110,6 +169,18 @@
       }
     },
     {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0011",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets"
+      },
+      "https://schema.org/encodingFormat": "audio/wav",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
+      }
+    },
+    {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0013",
       "@type": "https://schema.org/Dataset",
       "https://schema.org/description": {
@@ -143,6 +214,50 @@
       }
     },
     {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0013",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "http://openskos.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:138d0e62-d688-e289-f136-05ad7acc85a2"
+      },
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "Person names from the Common Thesaurus Audiovisal Archives"
+        },
+        {
+          "@language": "nl",
+          "@value": "Persoonsnamen uit de Gemeenschappelijke Thesaurus Audiovisuele Archieven"
+        }
+      ],
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "GTAA/Persoonsnamen"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0012",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-de-brandaris"
+      },
+      "https://schema.org/encodingFormat": "audio/wav",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
+      }
+    },
+    {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0012",
       "@type": "https://schema.org/Dataset",
       "https://schema.org/creator": {
@@ -170,6 +285,100 @@
       },
       "https://schema.org/publisher": {
         "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0021",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://bit.ly/2sbJT6q"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "De set films van de Filmdienst de NSB staat klaar voor laagdrempelig hergebruik op Open Beelden."
+      },
+      "https://schema.org/encodingFormat": "video/mp4",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Films van de Filmdienst der NSB"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
+      "@id": "https://www.beeldengeluid.nl",
+      "@type": "https://schema.org/Organization",
+      "https://schema.org/alternateName": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Nederlands Instituut voor Beeld en Geluid"
+      },
+      "https://schema.org/sameAs": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1131877"
+        },
+        {
+          "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
+        },
+        {
+          "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
+        },
+        {
+          "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
+        },
+        {
+          "@id": "https://grid.ac/institutes/grid.425952.d"
+        }
+      ]
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0005",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "http://panic.image.ntua.gr:9000/euscreenxl-core/oai?verb=ListRecords&set=1019&metadataPrefix=rdf"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Publicatie van Beeld en Geluid materiaal op EUScreen"
+      },
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid op EUScreen"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0001",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://catalogus.apis.beeldengeluid.nl/sparql"
+      },
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "SPARQL endpoint voor de Beeld en Geluid DAAN catalogus in schema.org formaat"
+      },
+      "https://schema.org/encodingFormat": "application/sparql-query",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid Catalogus als Open Data"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.w3.org/TR/rdf-sparql-query/"
       }
     },
     {
@@ -214,6 +423,35 @@
       },
       "https://schema.org/publisher": {
         "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0015",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "http://openskos.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:52bd3e5f-a368-abed-59b2-6b0ccee5641d"
+      },
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "Subjects from the Common Thesaurus Audiovisal Archives"
+        },
+        {
+          "@language": "nl",
+          "@value": "Onderwerpen uit de Gemeenschappelijke Thesaurus Audiovisuele Archieven"
+        }
+      ],
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "GTAA/Onderwerpen"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
       }
     },
     {
@@ -297,6 +535,120 @@
       }
     },
     {
+      "@id": "http://data.beeldengeluid.nl/id/datacatalog/0001",
+      "@type": "https://schema.org/DataCatalog",
+      "https://schema.org/dataset": [
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0004"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0008"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0009"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0011"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0012"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+        }
+      ],
+      "https://schema.org/description": {
+        "@language": "nl",
+        "@value": "Alle open data beschikbaar gesteld door het Nederlands Instituut voor Beeld en Geluid."
+      },
+      "https://schema.org/name": [
+        {
+          "@language": "en",
+          "@value": "Open Data at NISV"
+        },
+        {
+          "@language": "nl",
+          "@value": "Beeld en Geluid Open Data"
+        }
+      ],
+      "https://schema.org/publisher": {
+        "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0014",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "http://openskos.beeldengeluid.nl/oai-pmh?verb=ListRecords&metadataPrefix=oai_rdf_xl&set=beng:gtaa:73fbf6f6-4e5c-5f53-f88e-3f73cc18b9c6"
+      },
+      "https://schema.org/description": [
+        {
+          "@language": "en",
+          "@value": "Names from the Common Thesaurus Audiovisal Archives"
+        },
+        {
+          "@language": "nl",
+          "@value": "Namen uit de Gemeenschappelijke Thesaurus Audiovisuele Archieven"
+        }
+      ],
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "https://opendatacommons.org/licenses/odbl/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "GTAA/Namen"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "http://www.openarchives.org/OAI/openarchivesprotocol.html"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0003",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://www.openbeelden.nl/feeds/oai/?verb=ListRecords&set=beeldengeluid&metadataPrefix=oai_oi"
+      },
+      "https://schema.org/description": {
+        "@language": "en",
+        "@value": "Creative Commons licensed audiovisual heritage from the Netherlands Institute for Sound and Vision"
+      },
+      "https://schema.org/encodingFormat": "text/xml",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Beeld en Geluid set op Open Beelden OAI-PMH-endpoint"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.openbeelden.nl/api/"
+      }
+    },
+    {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0002",
       "@type": "https://schema.org/Dataset",
       "https://schema.org/creator": {
@@ -374,6 +726,44 @@
       },
       "https://schema.org/publisher": {
         "@id": "https://www.beeldengeluid.nl"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0008",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://commons.wikimedia.org/wiki/Category:Radio_broadcasts_by_Radio_Herrijzend_Nederland"
+      },
+      "https://schema.org/encodingFormat": "audio/wav",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Radio uitzendingen Radio Herrijzend Nederland van Beeld en Geluid op Wikimedia Commons"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://www.mediawiki.org/wiki/API:Tutorial"
+      }
+    },
+    {
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0006",
+      "@type": "https://schema.org/DataDownload",
+      "https://schema.org/contentUrl": {
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-herrijzend-nederland"
+      },
+      "https://schema.org/encodingFormat": "audio/wav",
+      "https://schema.org/inLanguage": "nl-NL",
+      "https://schema.org/license": {
+        "@id": "http://creativecommons.org/publicdomain/mark/1.0/deed.nl"
+      },
+      "https://schema.org/name": {
+        "@language": "nl",
+        "@value": "Radio uitzendingen van Radio Herrijzend Nederland van Beeld en Geluid op Soundcloud"
+      },
+      "https://schema.org/usageInfo": {
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
       }
     },
     {
