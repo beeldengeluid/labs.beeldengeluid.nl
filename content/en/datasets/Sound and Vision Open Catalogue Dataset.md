@@ -1,7 +1,10 @@
 ---
 color: ''
 image: "/uploads/schermafbeelding-2021-11-23-om-10-52-50.png"
-tags: []
+tags:
+- Metadata
+- CC0
+- Creative Commons
 
 ---
 # Sound and Vision Open Catalogue Dataset
