@@ -63,7 +63,7 @@ export default {
       stats: [
         {
           icon: 'mdi-domain',
-          text: this.dataset.creator?.name,
+          text: this.dataset['https://schema.org/creator']?.['@id'],
         },
         {
           icon: 'mdi-file-document-multiple',
