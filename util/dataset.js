@@ -32,6 +32,8 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     'https://schema.org/name'
   ]?.['@value']
 
+  // TODO enrich contentSize when available in source data
+
   // Random styling by default
   Object.assign(dataset, randomDatasetStyle())
 

@@ -65,20 +65,18 @@ export default {
           icon: 'mdi-domain',
           text: this.dataset.creator || this.dataset.publisher,
         },
-        {
-          icon: 'mdi-file-document-multiple',
-          text:
-            (this.dataset.distribution?.length
-              ? this.dataset.distribution[0].contentSize
-              : '-') +
-            ' ' +
-            this.$t('records'),
-        },
-        {
-          icon: 'mdi-calendar-range',
-          // TODO: replace with real data
-          text: '1899 - 1978',
-        },
+        this.dataset.contentSize
+          ? {
+              icon: 'mdi-file-document-multiple',
+              text: this.dataset.contentSize + ' ' + this.$t('records'),
+            }
+          : {},
+        this.dataset['https://schema.org/temporalCoverage']
+          ? {
+              icon: 'mdi-calendar-range',
+              text: this.dataset['https://schema.org/temporalCoverage'],
+            }
+          : {},
       ],
     }
   },
