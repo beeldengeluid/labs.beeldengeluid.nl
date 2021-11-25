@@ -33,7 +33,7 @@
           </span>
 
           <!-- Typed URI -->
-          <span v-else-if="isObjectLinkFromSchema(value)">
+          <span v-else-if="isObjectWithIdTypeName(value)">
             <ObjectLinkFromSchema :value="value" />
           </span>
 
@@ -67,7 +67,7 @@ import ObjectLinkFromSchema from './ObjectLinkFromSchema'
 import ObjectLink from './ObjectLink'
 import DataTable from './DataTable'
 import LinkText from './LinkText'
-import { isObjectLinkFromSchema } from '~/util/objectLink'
+import { isObjectWithIdTypeName } from '~/util/objectsFromSchema'
 import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
 const isNonObjectArray = (value) =>
@@ -92,14 +92,14 @@ export default {
     },
   },
   methods: {
-    isObjectLinkFromSchema,
+    isObjectWithIdTypeName,
     isEmailObject,
     isLinkObject,
     isNonObjectArray,
     isObjectArray,
     renderable(value) {
       return (
-        isObjectLinkFromSchema(value) ||
+        isObjectWithIdTypeName(value) ||
         !isObjectArray(value) ||
         typeof value !== 'object'
       )
