@@ -16,12 +16,19 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     : dataset['https://schema.org/description'].filter(
         (d) => d['@language'] === 'en'
       )[0]['@value']
+
   dataset.slug = slugify(dataset['@id'].replace(/[.:/]/g, ' '), {
     lower: true,
     strict: true,
   })
+
   const creatorId = dataset['https://schema.org/creator']?.['@id']
   dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
+    'https://schema.org/name'
+  ]?.['@value']
+
+  const publisherId = dataset['https://schema.org/publisher']?.['@id']
+  dataset.publisher = datacatalog.find((item) => item['@id'] === publisherId)?.[
     'https://schema.org/name'
   ]?.['@value']
 
