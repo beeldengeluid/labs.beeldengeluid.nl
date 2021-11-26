@@ -37,6 +37,11 @@
             <ObjectLinkFromSchema :value="value" />
           </span>
 
+          <!-- URI -->
+          <span v-else-if="isObjectWithIdOnly(value)">
+            <LinkText :value="value['@id']" />
+          </span>
+
           <!-- Array of non-objects -->
           <ul v-else-if="Array.isArray(value)">
             <li v-for="v in value" :key="v"><LinkText :value="v" /></li>
@@ -67,7 +72,10 @@ import ObjectLinkFromSchema from './ObjectLinkFromSchema'
 import ObjectLink from './ObjectLink'
 import DataTable from './DataTable'
 import LinkText from './LinkText'
-import { isObjectWithIdTypeName } from '~/util/objectsFromSchema'
+import {
+  isObjectWithIdTypeName,
+  isObjectWithIdOnly,
+} from '~/util/objectsFromSchema'
 import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
 const isNonObjectArray = (value) =>
@@ -93,6 +101,7 @@ export default {
   },
   methods: {
     isObjectWithIdTypeName,
+    isObjectWithIdOnly,
     isEmailObject,
     isLinkObject,
     isNonObjectArray,
