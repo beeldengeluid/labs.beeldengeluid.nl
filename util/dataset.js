@@ -49,6 +49,13 @@ export const enrichDatasets = (datasets, datacatalog = []) => {
 }
 
 export const enrichProps = [
+  'toc',
+  'body',
+  'dir',
+  'path',
+  'extension',
+  'createdAt',
+  'updatedAt',
   'title',
   'subtitle',
   'slug',
