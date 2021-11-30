@@ -13,9 +13,9 @@ This dataset contains the catalogue metadata of the majority of the collections 
 
 To facilitate users of this dataset we made the following decisions:
 
-* We transformed our internal metadata format to [Schema.org](https://schema.org/ "Schema.org") 
-* We included links to our General Public Portal to the catalogue, from which materials can be ordered
-* If the material described in the metadata is available under an open license we have included a link to that item on our [Open Images](https://openimages.eu/ "Open Images") platform, where it can be downloaded in various formats
+* We transformed our internal metadata format to [Schema.org](https://schema.org/ "Schema.org").
+* We included links to our General Public Portal to the catalogue, from which materials can be ordered.
+* The metadata about the objects contains machine-readable rights and licensing information from [rightsstatement.org](https://rightsstatements.org/en/ "rightsstatement.org") and [creativecommons.org](https://creativecommons.org/ "creativecommons.org"). If the material described in the metadata is available under an open license we have included a direct link to that item on our [Open Images](https://openimages.eu/ "Open Images") platform, from where it can be downloaded in various formats.
 * We created a SPARQL-endpoint which allows users to build their own queries, or use and tweak some of the example queries that we have provided in the interface.
 
 We will continue to expand and improve on this dataset. Please contact us with any specific requirements or use case that you might have.
