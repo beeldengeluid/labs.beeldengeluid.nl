@@ -20,7 +20,7 @@
         </td>
       </tr>
       <tr v-else-if="isObjectWithLanguageValueOnly(object)">
-        <th v-if="renderable(value)" class="text-capitalize">
+        <th class="text-capitalize">
           <span>{{ object['@language'] }}</span>
         </th>
         <td>
