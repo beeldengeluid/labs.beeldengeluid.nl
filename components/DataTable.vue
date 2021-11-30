@@ -21,7 +21,7 @@
       </tr>
       <tr v-for="(value, key) in object" v-else :key="key">
         <th v-if="renderable(value)" class="text-capitalize">
-          <span v-if="isSchemaProp(key)">{{ stripSchemaURL(key) }}</span>
+          <span v-if="isSchemaProp(key)">{{ renderSchemaProp(key) }}</span>
           <span v-else>{{ key }}</span>
         </th>
         <td v-if="renderable(value)">
@@ -52,7 +52,10 @@
         </td>
 
         <td v-else colspan="2">
-          <h2 class="text-capitalize">{{ key }}</h2>
+          <h2 v-if="isSchemaProp(key)" class="text-capitalize">
+            {{ renderSchemaProp(key) }}
+          </h2>
+          <h2 v-else class="text-capitalize">{{ key }}</h2>
 
           <!-- Array of objects -->
           <Fragment v-if="isObjectArray(value)">
@@ -80,6 +83,7 @@ import {
   isObjectWithIdOnly,
   isSchemaProp,
   stripSchemaURL,
+  camel2title,
 } from '~/util/objectsFromSchema'
 import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
@@ -109,6 +113,7 @@ export default {
     isObjectWithIdOnly,
     isSchemaProp,
     stripSchemaURL,
+    camel2title,
     isEmailObject,
     isLinkObject,
     isNonObjectArray,
@@ -119,6 +124,9 @@ export default {
         !isObjectArray(value) ||
         typeof value !== 'object'
       )
+    },
+    renderSchemaProp(string) {
+      return this.camel2title(this.stripSchemaURL(string))
     },
   },
 }

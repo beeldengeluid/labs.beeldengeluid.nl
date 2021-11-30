@@ -26,3 +26,9 @@ export const isSchemaProp = (string) => {
 export const stripSchemaURL = (string) => {
   return string.replace('https://schema.org/', '')
 }
+
+export const camel2title = (camelCase) =>
+  camelCase
+    .replace(/([A-Z])/g, (match) => ` ${match}`)
+    .replace(/^./, (match) => match.toUpperCase())
+    .trim()
