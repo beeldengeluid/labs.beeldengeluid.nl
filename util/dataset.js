@@ -23,14 +23,18 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   })
 
   const creatorId = dataset['https://schema.org/creator']?.['@id']
-  dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
-    'https://schema.org/name'
-  ]?.['@value']
+  if (creatorId) {
+    dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
+      'https://schema.org/name'
+    ]?.['@value']
+  }
 
   const publisherId = dataset['https://schema.org/publisher']?.['@id']
-  dataset.publisher = datacatalog.find((item) => item['@id'] === publisherId)?.[
-    'https://schema.org/name'
-  ]?.['@value']
+  if (publisherId) {
+    dataset.publisher = datacatalog.find(
+      (item) => item['@id'] === publisherId
+    )?.['https://schema.org/name']?.['@value']
+  }
 
   // TODO enrich contentSize when available in source data
 
@@ -51,6 +55,8 @@ export const enrichProps = [
   'image',
   'color',
   'tags',
+  'publisher',
+  'creator',
 ]
 
 export const stripEnrichments = (dataset) => stripObject(dataset, enrichProps)
