@@ -113,16 +113,18 @@ export default {
       .sort((a, b) => datasetCount[b['@id']] - datasetCount[a['@id']])
 
     // Custom markdown content for dataset
-    const mdPath = await getLocalePath({
+    const datasetsPath = await getLocalePath({
       $content,
       app,
-      path: 'datasets/' + dataset.slug,
+      path: 'datasets',
     })
-    const page = await $content(mdPath)
+    const pages = await $content(datasetsPath)
+      .where({ id: dataset['@id'] })
       .fetch()
       .catch((e) => {
         // ignore error of missing page
       })
+    const page = pages[0]
 
     if (page) {
       // assign page props to dataset, parse color vars (e.g. red.base)
