@@ -19,6 +19,14 @@
           />
         </td>
       </tr>
+      <tr v-else-if="isObjectWithLanguageValueOnly(object)">
+        <th v-if="renderable(value)" class="text-capitalize">
+          <span>{{ object['@language'] }}</span>
+        </th>
+        <td>
+          <LinkText :value="object['@value']" />
+        </td>
+      </tr>
       <tr v-for="(value, key) in object" v-else :key="key">
         <th v-if="renderable(value)" class="text-capitalize">
           <span v-if="isSchemaProp(key)">{{ renderSchemaProp(key) }}</span>
