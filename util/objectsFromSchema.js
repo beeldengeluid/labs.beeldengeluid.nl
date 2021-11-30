@@ -19,13 +19,19 @@ export const isObjectWithIdOnly = (obj) => {
   )
 }
 
-export const isSchemaProp = (string) => {
-  return string.startsWith('https://schema.org/')
+export const isObjectWithLanguageValueOnly = (obj) => {
+  return (
+    typeof obj === 'object' &&
+    !Array.isArray(obj) &&
+    Object.keys(obj).length === 2 &&
+    ['@language', '@value'].every((key) => key in obj)
+  )
 }
 
-export const stripSchemaURL = (string) => {
-  return string.replace('https://schema.org/', '')
-}
+export const isSchemaProp = (string) => string.startsWith('https://schema.org/')
+
+export const stripSchemaURL = (string) =>
+  string.replace('https://schema.org/', '')
 
 export const camel2title = (camelCase) =>
   camelCase

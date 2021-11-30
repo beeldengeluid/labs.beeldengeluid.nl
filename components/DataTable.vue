@@ -45,6 +45,11 @@
             <LinkText :value="value['@id']" />
           </span>
 
+          <!-- language, value Object -->
+          <span v-else-if="isObjectWithLanguageValueOnly(value)">
+            <LinkText :value="value['@value']" />
+          </span>
+
           <!-- Array of non-objects -->
           <ul v-else-if="Array.isArray(value)">
             <li v-for="v in value" :key="v"><LinkText :value="v" /></li>
@@ -81,6 +86,7 @@ import LinkText from './LinkText'
 import {
   isObjectWithIdTypeName,
   isObjectWithIdOnly,
+  isObjectWithLanguageValueOnly,
   isSchemaProp,
   stripSchemaURL,
   camel2title,
@@ -111,6 +117,7 @@ export default {
   methods: {
     isObjectWithIdTypeName,
     isObjectWithIdOnly,
+    isObjectWithLanguageValueOnly,
     isSchemaProp,
     stripSchemaURL,
     camel2title,
@@ -121,6 +128,8 @@ export default {
     renderable(value) {
       return (
         isObjectWithIdTypeName(value) ||
+        isObjectWithIdOnly(value) ||
+        isObjectWithLanguageValueOnly(value) ||
         !isObjectArray(value) ||
         typeof value !== 'object'
       )
