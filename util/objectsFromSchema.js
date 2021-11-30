@@ -18,3 +18,11 @@ export const isObjectWithIdOnly = (obj) => {
     isUrl(obj['@id'])
   )
 }
+
+export const isSchemaProp = (string) => {
+  return string.startsWith('https://schema.org/')
+}
+
+export const stripSchemaURL = (string) => {
+  return string.replace('https://schema.org/', '')
+}

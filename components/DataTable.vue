@@ -20,7 +20,10 @@
         </td>
       </tr>
       <tr v-for="(value, key) in object" v-else :key="key">
-        <th v-if="renderable(value)" class="text-capitalize">{{ key }}</th>
+        <th v-if="renderable(value)" class="text-capitalize">
+          <span v-if="isSchemaProp(key)">{{ stripSchemaURL(key) }}</span>
+          <span v-else>{{ key }}</span>
+        </th>
         <td v-if="renderable(value)">
           <!-- String -->
           <span v-if="typeof value == 'string'">
@@ -75,6 +78,8 @@ import LinkText from './LinkText'
 import {
   isObjectWithIdTypeName,
   isObjectWithIdOnly,
+  isSchemaProp,
+  stripSchemaURL,
 } from '~/util/objectsFromSchema'
 import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
@@ -102,6 +107,8 @@ export default {
   methods: {
     isObjectWithIdTypeName,
     isObjectWithIdOnly,
+    isSchemaProp,
+    stripSchemaURL,
     isEmailObject,
     isLinkObject,
     isNonObjectArray,
