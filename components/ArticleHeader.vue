@@ -42,7 +42,7 @@ export default {
       required: true,
       default: null,
       validator: (object) => {
-        return object && object.title && object.image && object.subtitle
+        return object && object.title && object.subtitle
       },
     },
     dataClass: {
