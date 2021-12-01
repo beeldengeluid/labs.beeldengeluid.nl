@@ -17,7 +17,7 @@ export const enrichDataset = (dataset, datacatalog = []) => {
         (d) => d['@language'] === 'en'
       )[0]['@value']
 
-  dataset.slug = slugify(dataset['@id'].replace(/[.:/]/g, ' '), {
+  dataset.slug = slugify(dataset['https://schema.org/name']['@value'], {
     lower: true,
     strict: true,
   })
