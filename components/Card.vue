@@ -48,7 +48,9 @@
         {{ card.type }}
       </v-chip>
     </v-card-text>
-    <v-card-subtitle> {{ card.subtitle }} </v-card-subtitle>
+    <v-card-subtitle class="line-clamp">
+      {{ card.subtitle }}
+    </v-card-subtitle>
 
     <v-spacer></v-spacer>
 
@@ -154,6 +156,17 @@ export default {
 
   .v-card__subtitle {
     font-size: 0.95rem;
+
+    &.line-clamp {
+      // enable line-clamping
+      padding: 0;
+      margin: 16px;
+      overflow: hidden;
+      // apply the actual line-clamping
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
   }
 
   .v-card__title {
