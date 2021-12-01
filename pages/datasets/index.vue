@@ -9,21 +9,22 @@
 
 <script>
 import CardPage from '~/components/CardPage'
-import { enrichDatasets, randomDataSet } from '~/util/dataset'
+import { enrichDatasets } from '~/util/dataset'
 
 const dataClass = 'dataset'
 
 export default {
   components: { CardPage },
   async asyncData({ $content, app }) {
-    const path = dataClass + 's'
-    const data = await $content(path).fetch()
+    // const path = dataClass + 's'
+    const datasetsPath = 'datacatalog0001-datasets'
+    const data = await $content(datasetsPath).fetch()
 
     // DEV
-    data.datasets = [
-      ...data.datasets,
-      ...Array.from(Array(15)).map((_, index) => randomDataSet({ id: index })),
-    ]
+    // data.datasets = [
+    //   ...data.datasets,
+    //   ...Array.from(Array(15)).map((_, index) => randomDataSet({ id: index })),
+    // ]
 
     const datasets = enrichDatasets(data.datasets)
     return { cards: datasets }

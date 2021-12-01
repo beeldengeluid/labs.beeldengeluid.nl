@@ -63,22 +63,28 @@ export default {
       stats: [
         {
           icon: 'mdi-domain',
-          text: this.dataset.creator?.name,
+          text: this.dataset.creator || this.dataset.publisher,
         },
         {
-          icon: 'mdi-file-document-multiple',
+          icon: 'mdi-license',
           text:
-            (this.dataset.distribution?.length
-              ? this.dataset.distribution[0].contentSize
-              : '-') +
-            ' ' +
-            this.$t('records'),
+            this.dataset['https://schema.org/license']['@id'] ===
+            'https://creativecommons.org/publicdomain/zero/1.0/'
+              ? 'CC0 1.0'
+              : this.dataset['https://schema.org/license']['@id'],
         },
-        {
-          icon: 'mdi-calendar-range',
-          // TODO: replace with real data
-          text: '1899 - 1978',
-        },
+        this.dataset.contentSize
+          ? {
+              icon: 'mdi-file-document-multiple',
+              text: this.dataset.contentSize + ' ' + this.$t('records'),
+            }
+          : {},
+        this.dataset['https://schema.org/temporalCoverage']
+          ? {
+              icon: 'mdi-calendar-range',
+              text: this.dataset['https://schema.org/temporalCoverage'],
+            }
+          : {},
       ],
     }
   },

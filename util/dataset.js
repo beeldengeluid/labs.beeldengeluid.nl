@@ -2,14 +2,41 @@ import slugify from 'slugify'
 import { stripObject } from './objects'
 import { getRandomColor } from './color'
 
-export const enrichDataset = (dataset) => {
+export const enrichDataset = (dataset, datacatalog = []) => {
   // Props
-  dataset.title = dataset.name
-  dataset.subtitle = dataset.description
-  dataset.slug = slugify(dataset.identifier.replace(/[.:/]/g, ' '), {
+  dataset.title = dataset['https://schema.org/name']['@value']
+  dataset.subtitle = dataset['https://schema.org/description']['@value']
+    ? dataset['https://schema.org/description']['@value']
+    : dataset['https://schema.org/description'].filter(
+        (d) => d['@language'] === 'nl'
+      ).length
+    ? dataset['https://schema.org/description'].filter(
+        (d) => d['@language'] === 'nl'
+      )[0]['@value']
+    : dataset['https://schema.org/description'].filter(
+        (d) => d['@language'] === 'en'
+      )[0]['@value']
+
+  dataset.slug = slugify(dataset['https://schema.org/name']['@value'], {
     lower: true,
     strict: true,
   })
+
+  const creatorId = dataset['https://schema.org/creator']?.['@id']
+  if (creatorId) {
+    dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
+      'https://schema.org/name'
+    ]?.['@value']
+  }
+
+  const publisherId = dataset['https://schema.org/publisher']?.['@id']
+  if (publisherId) {
+    dataset.publisher = datacatalog.find(
+      (item) => item['@id'] === publisherId
+    )?.['https://schema.org/name']?.['@value']
+  }
+
+  // TODO enrich contentSize when available in source data
 
   // Random styling by default
   Object.assign(dataset, randomDatasetStyle())
@@ -17,17 +44,26 @@ export const enrichDataset = (dataset) => {
   return dataset
 }
 
-export const enrichDatasets = (datasets) => {
-  return datasets.map((dataset) => enrichDataset(dataset))
+export const enrichDatasets = (datasets, datacatalog = []) => {
+  return datasets.map((dataset) => enrichDataset(dataset, datacatalog))
 }
 
 export const enrichProps = [
+  'toc',
+  'body',
+  'dir',
+  'path',
+  'extension',
+  'createdAt',
+  'updatedAt',
   'title',
   'subtitle',
   'slug',
   'image',
   'color',
   'tags',
+  'publisher',
+  'creator',
 ]
 
 export const stripEnrichments = (dataset) => stripObject(dataset, enrichProps)
@@ -39,7 +75,7 @@ export const randomDataSet = ({ id, name, contentSize }) => {
     },
     '@type': 'Dataset',
     '@id': 'https://example.com/my-uid-' + id,
-    identifier: 'https://example.com/my-uid-' + id,
+    // identifier: 'https://example.com/my-uid-' + id,
     name: name || 'Random dataset #' + id,
     description:
       'Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula tantique.',

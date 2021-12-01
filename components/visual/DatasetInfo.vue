@@ -88,7 +88,7 @@ export default {
       return [
         {
           icon: 'mdi-domain',
-          text: this.dataset.creator?.name,
+          text: this.dataset.creator,
         },
         {
           icon: 'mdi-file-document-multiple',

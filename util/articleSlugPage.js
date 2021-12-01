@@ -46,7 +46,7 @@ export const createArticleSlugPage = ({
       article.datasets &&
       article.datasets
         .map((datasetId) =>
-          datasets.find((dataset) => dataset.identifier === datasetId)
+          datasets.find((dataset) => dataset['@id'] === datasetId)
         )
         .filter((d) => d)
 

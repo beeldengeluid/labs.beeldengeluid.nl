@@ -60,8 +60,13 @@ export default {
 
   async asyncData({ $content, app, params, error }) {
     // datasets are not localized (yet)
-    const data = await $content('datasets').fetch()
-    const datasets = enrichDatasets(data.datasets)
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'https://schema.org/Dataset'
+    )
+    const datacatalog = data['@graph']
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
     const dataset = datasets.find((dataset) => dataset.slug === params.slug)
 
@@ -78,7 +83,7 @@ export default {
     })
 
     const blogs = await $content(blogsPath)
-      .where({ datasets: { $contains: dataset.identifier } })
+      .where({ datasets: { $contains: dataset['@id'] } })
       .fetch()
 
     // projects
@@ -89,7 +94,7 @@ export default {
     })
 
     const projects = await $content(projectsPath)
-      .where({ datasets: { $contains: dataset.identifier } })
+      .where({ datasets: { $contains: dataset['@id'] } })
       .fetch()
 
     // Related datasets, excluding current
@@ -97,27 +102,29 @@ export default {
     projects.concat(blogs).forEach((article) => {
       article.datasets &&
         article.datasets
-          .filter((ds) => ds !== dataset.identifier)
+          .filter((ds) => ds !== dataset['@id'])
           .forEach((ds) => {
             ds in datasetCount ? datasetCount[ds]++ : (datasetCount[ds] = 1)
           })
     })
 
     const relatedDatasets = datasets
-      .filter((ds) => ds.identifier in datasetCount)
-      .sort((a, b) => datasetCount[b.identifier] - datasetCount[a.identifier])
+      .filter((ds) => ds['@id'] in datasetCount)
+      .sort((a, b) => datasetCount[b['@id']] - datasetCount[a['@id']])
 
     // Custom markdown content for dataset
-    const mdPath = await getLocalePath({
+    const datasetsPath = await getLocalePath({
       $content,
       app,
-      path: 'datasets/' + dataset.slug,
+      path: 'datasets',
     })
-    const page = await $content(mdPath)
+    const pages = await $content(datasetsPath)
+      .where({ id: dataset['@id'] })
       .fetch()
       .catch((e) => {
         // ignore error of missing page
       })
+    const page = pages[0]
 
     if (page) {
       // assign page props to dataset, parse color vars (e.g. red.base)
