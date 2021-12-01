@@ -101,8 +101,6 @@ import {
 } from '~/util/objectsFromSchema'
 import { isEmailObject, isLinkObject } from '~/util/frontmatter'
 
-const isNonObjectArray = (value) =>
-  Array.isArray(value) && value.length > 0 && typeof value[0] !== 'object'
 const isObjectArray = (value) =>
   Array.isArray(value) && value.length > 0 && typeof value[0] === 'object'
 
@@ -131,7 +129,6 @@ export default {
     camel2title,
     isEmailObject,
     isLinkObject,
-    isNonObjectArray,
     isObjectArray,
     renderable(value) {
       return (
