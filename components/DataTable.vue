@@ -58,6 +58,13 @@
             <LinkText :value="value['@value']" />
           </span>
 
+          <!-- Array of id-only objects -->
+          <ul v-else-if="isObjectWithIdOnlyArray(value)">
+            <li v-for="(v, index) in value" :key="index">
+              <LinkText :value="v['@id']" />
+            </li>
+          </ul>
+
           <!-- Array of non-objects -->
           <ul v-else-if="Array.isArray(value)">
             <li v-for="v in value" :key="v"><LinkText :value="v" /></li>
@@ -94,6 +101,7 @@ import LinkText from './LinkText'
 import {
   isObjectWithIdTypeName,
   isObjectWithIdOnly,
+  isObjectWithIdOnlyArray,
   isObjectWithLanguageValueOnly,
   isSchemaProp,
   stripSchemaURL,
@@ -123,6 +131,7 @@ export default {
   methods: {
     isObjectWithIdTypeName,
     isObjectWithIdOnly,
+    isObjectWithIdOnlyArray,
     isObjectWithLanguageValueOnly,
     isSchemaProp,
     stripSchemaURL,
@@ -135,6 +144,7 @@ export default {
         isObjectWithIdTypeName(value) ||
         isObjectWithIdOnly(value) ||
         isObjectWithLanguageValueOnly(value) ||
+        isObjectWithIdOnlyArray(value) ||
         !isObjectArray(value) ||
         typeof value !== 'object'
       )

@@ -19,6 +19,10 @@ export const isObjectWithIdOnly = (obj) => {
   )
 }
 
+export const isObjectWithIdOnlyArray = (obj) => {
+  return Array.isArray(obj) && obj.every((item) => isObjectWithIdOnly(item))
+}
+
 export const isObjectWithLanguageValueOnly = (obj) => {
   return (
     typeof obj === 'object' &&
