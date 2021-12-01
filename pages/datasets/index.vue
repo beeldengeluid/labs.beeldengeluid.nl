@@ -16,17 +16,15 @@ const dataClass = 'dataset'
 export default {
   components: { CardPage },
   async asyncData({ $content, app }) {
-    // const path = dataClass + 's'
-    const datasetsPath = 'datacatalog0001-datasets'
-    const data = await $content(datasetsPath).fetch()
+    // datasets are not localized (yet)
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'https://schema.org/Dataset'
+    )
+    const datacatalog = data['@graph']
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
-    // DEV
-    // data.datasets = [
-    //   ...data.datasets,
-    //   ...Array.from(Array(15)).map((_, index) => randomDataSet({ id: index })),
-    // ]
-
-    const datasets = enrichDatasets(data.datasets)
     return { cards: datasets }
   },
   data: () => ({
