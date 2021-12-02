@@ -54,7 +54,7 @@
           color="primary"
           :to="
             localePath({
-              name: 'dataset-slug',
+              name: 'datasets-slug',
               params: { slug: dataset.slug },
             })
           "
