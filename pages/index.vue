@@ -198,7 +198,10 @@ export default {
               value !== [] &&
               value !== {}
           )
-          .reduce((obj, [key, value]) => ((obj[key] = value), obj), {})
+          .reduce((obj, [key, value]) => {
+            obj[key] = value
+            return obj
+          }, {})
         Object.assign(dataset, pageDefined, {
           color: parseColor(page.color),
         })
