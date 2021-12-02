@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0013
 color: ''
-image: ''
+image: "/uploads/maliebaan-210960.jpeg"
 tags: []
 
 ---
