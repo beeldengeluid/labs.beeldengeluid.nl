@@ -7,7 +7,7 @@ tags: []
 ---
 NSB propaganda films
 
-This dataset is a subset of the Open Images dataset. It contains film material of the Film service of the Dutch National Socialist Party. In 1941 Mussert appointed member of the National Socialist Movement (NSB) G.J. Teunissen as leader of the Film Service of the NSB. Under his supervision they started producing their own cinema news reels 'Spiegel der Beweging' (Mirror of the Movement). 
+This dataset is a subset of the Open Images dataset. It contains film material of the Film service of the Dutch National Socialist Movement (NSB). In 1941 Mussert appointed member of the NSB, G.J. Teunissen as leader of the Film Service of the NSB. Under his supervision they started producing their own cinema news reels 'Spiegel der Beweging' (Mirror of the Movement). 
 
 The dataset can be accessed via [Open Images](https://openbeelden.nl/media "Open Images") and [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Films_by_Filmdienst_der_NSB "Category of NSB films on Wikimedia Commons").
 
