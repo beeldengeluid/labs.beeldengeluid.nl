@@ -94,7 +94,7 @@ export default {
         value:
           dataset.distribution?.length > 0
             ? dataset.distribution[0].contentSize
-            : 0,
+            : 6666,
       }))
 
       // calculate circle pack layout
