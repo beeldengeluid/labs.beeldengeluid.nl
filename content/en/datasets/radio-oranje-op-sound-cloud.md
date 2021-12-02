@@ -3,7 +3,8 @@ id: http://data.beeldengeluid.nl/id/dataset/0006
 color: ''
 image: "/uploads/radio_oranje_poster.png"
 tags:
-- Radio, audio
+- Audio
+- Radio
 
 ---
 Radio Oranje on Soundcloud
