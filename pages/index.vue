@@ -188,10 +188,20 @@ export default {
         .catch((e) => {
           // ignore error of missing page
         })
-
       if (page) {
-        // assign page props to dataset, parse color vars (e.g. red.base)
-        Object.assign(dataset, page, { color: parseColor(page.color) })
+        // assign defined page props to dataset, parse color vars (e.g. red.base)
+        const pageDefined = Object.entries(page)
+          .filter(
+            ([key, value]) =>
+              value !== undefined &&
+              value !== '' &&
+              value !== [] &&
+              value !== {}
+          )
+          .reduce((obj, [key, value]) => ((obj[key] = value), obj), {})
+        Object.assign(dataset, pageDefined, {
+          color: parseColor(page.color),
+        })
       }
     }
 
