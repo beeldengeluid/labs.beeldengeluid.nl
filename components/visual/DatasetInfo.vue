@@ -101,13 +101,17 @@ export default {
           icon: 'mdi-domain',
           text: this.dataset.creator || this.dataset.publisher,
         },
-        {
-          icon: 'mdi-file-document-multiple',
-          text:
-            new Intl.NumberFormat().format(this.dataset.contentSize || '-') +
-            ' ' +
-            this.$t('records'),
-        },
+        ...(this.dataset.contentSize
+          ? [
+              {
+                icon: 'mdi-file-document-multiple',
+                text:
+                  new Intl.NumberFormat().format(this.dataset.contentSize) +
+                  ' ' +
+                  this.$t('records'),
+              },
+            ]
+          : []),
         {
           icon: 'mdi-calendar-range',
           // TODO: replace with real data
