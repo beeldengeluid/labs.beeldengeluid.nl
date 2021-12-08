@@ -36,7 +36,12 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     )?.['https://schema.org/name']?.['@value']
   }
 
-  // TODO enrich contentSize when available in source data
+  const distributionId = dataset['https://schema.org/distribution']?.['@id']
+  if (distributionId) {
+    dataset.contentSize = datacatalog.find(
+      (item) => item['@id'] === distributionId
+    )?.['https://schema.org/contentSize']
+  }
 
   // Random styling by default
   Object.assign(dataset, randomDatasetStyle())

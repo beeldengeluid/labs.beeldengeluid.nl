@@ -72,6 +72,7 @@ export default {
   data() {
     return {
       layout: [],
+      defaultSize: 1111,
     }
   },
   watch: {
@@ -91,10 +92,7 @@ export default {
         id: dataset.slug,
         dataset,
         color: dataset.color,
-        value:
-          dataset.distribution?.length > 0
-            ? dataset.distribution[0].contentSize
-            : 6666,
+        value: dataset.contentSize || this.defaultSize,
       }))
 
       // calculate circle pack layout
