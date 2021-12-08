@@ -112,11 +112,14 @@ export default {
               },
             ]
           : []),
-        {
-          icon: 'mdi-calendar-range',
-          // TODO: replace with real data
-          text: '1899 - 1978',
-        },
+        ...(this.dataset['https://schema.org/temporalCoverage']
+          ? [
+              {
+                icon: 'mdi-calendar-range',
+                text: this.dataset['https://schema.org/temporalCoverage'],
+              },
+            ]
+          : []),
       ]
     },
   },
