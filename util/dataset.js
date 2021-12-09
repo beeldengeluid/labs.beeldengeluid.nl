@@ -34,16 +34,18 @@ export const enrichDataset = (dataset, datacatalog = []) => {
 
   const creatorId = dataset['https://schema.org/creator']?.['@id']
   if (creatorId) {
-    dataset.creator = datacatalog.find((item) => item['@id'] === creatorId)?.[
-      'https://schema.org/name'
-    ]?.['@value']
+    dataset.creator =
+      datacatalog.find((item) => item['@id'] === creatorId)?.[
+        'https://schema.org/name'
+      ]?.['@value'] || creatorId
   }
 
   const publisherId = dataset['https://schema.org/publisher']?.['@id']
   if (publisherId) {
-    dataset.publisher = datacatalog.find(
-      (item) => item['@id'] === publisherId
-    )?.['https://schema.org/name']?.['@value']
+    dataset.publisher =
+      datacatalog.find((item) => item['@id'] === publisherId)?.[
+        'https://schema.org/name'
+      ]?.['@value'] || publisherId
   }
 
   const distributionId = dataset['https://schema.org/distribution']?.['@id']
