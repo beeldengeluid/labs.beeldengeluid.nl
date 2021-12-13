@@ -157,21 +157,25 @@ export default {
       .limit(4)
       .fetch()
 
-    // datasets
-    // const datasetsPath = 'datasets'
-    const datasetsPath = 'datacatalog0001-datasets'
-    const data = await $content(datasetsPath).fetch()
-    // data.datasets = [
-    //   ...data.datasets,
-    //   ...Array.from(Array(25)).map((_, index) => randomDataSet({ id: index })),
-    // ]
-
+    // datasets (are not localized (yet))
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'https://schema.org/Dataset'
+    )
+    const datacatalog = data['@graph']
     // enrich datasets with helper properties
-    const datasets = enrichDatasets(data.datasets)
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
+
+    // const dataPath = 'datasets'
+    // const data = await $content(dataPath).fetch()
+    // const datasetsRaw = data.datasets
+    // // enrich datasets with helper properties
+    // const datasets = enrichDatasets(datasetsRaw)
 
     // extend datasets with frontmatter
-    for (let i = 0, len = data.datasets.length; i < len; i++) {
-      const dataset = data.datasets[i]
+    for (let i = 0, len = datasets.length; i < len; i++) {
+      const dataset = datasets[i]
 
       // Custom markdown content for dataset
       const mdPath = await getLocalePath({
@@ -184,10 +188,23 @@ export default {
         .catch((e) => {
           // ignore error of missing page
         })
-
       if (page) {
-        // assign page props to dataset, parse color vars (e.g. red.base)
-        Object.assign(dataset, page, { color: parseColor(page.color) })
+        // assign defined page props to dataset, parse color vars (e.g. red.base)
+        const pageDefined = Object.entries(page)
+          .filter(
+            ([key, value]) =>
+              value !== undefined &&
+              value !== '' &&
+              value !== [] &&
+              value !== {}
+          )
+          .reduce((obj, [key, value]) => {
+            obj[key] = value
+            return obj
+          }, {})
+        Object.assign(dataset, pageDefined, {
+          color: parseColor(page.color),
+        })
       }
     }
 

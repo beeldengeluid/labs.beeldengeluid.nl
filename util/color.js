@@ -39,7 +39,7 @@ export const getRandomColor = () => {
 
 export const parseColor = (color) => {
   if (!color) {
-    return '#000000'
+    return getRandomColor()
   }
   if (color.startsWith('#') || color.startsWith('rgb')) {
     return color

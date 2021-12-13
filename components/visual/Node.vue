@@ -20,12 +20,7 @@
       <div
         class="content"
         :style="{
-          backgroundImage: getImageOverlayCSS(
-            node.dataset.image
-              ? require(`~/assets/images/${node.dataset.image}?size=300`).src
-              : '',
-            node.color
-          ),
+          backgroundImage: getImageOverlayCSS(imageSrc, node.color),
         }"
       >
         <span>{{ node.dataset.title }}</span>
@@ -61,6 +56,12 @@ export default {
       touchStart: null,
       touchActive: false,
       touchClick: false,
+      imageSrc: !this.node.dataset.image
+        ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
+            .src
+        : this.node.dataset.image.includes('/uploads/')
+        ? this.node.dataset.image
+        : require(`~/assets/images/${this.node.dataset.image}?size=300`).src,
     }
   },
   methods: {

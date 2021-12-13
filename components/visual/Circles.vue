@@ -8,7 +8,7 @@
         boundsPadding: 0.2,
         initialX: width / 2,
         initialY: height / 2,
-        initialZoom: 1,
+        initialZoom: 1.5,
       }"
     >
       <div
@@ -72,6 +72,7 @@ export default {
   data() {
     return {
       layout: [],
+      defaultSize: 111,
     }
   },
   watch: {
@@ -91,10 +92,7 @@ export default {
         id: dataset.slug,
         dataset,
         color: dataset.color,
-        value:
-          dataset.distribution?.length > 0
-            ? dataset.distribution[0].contentSize
-            : 0,
+        value: parseInt(dataset.contentSize) || this.defaultSize,
       }))
 
       // calculate circle pack layout

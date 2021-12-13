@@ -1,6 +1,6 @@
 <template>
   <CardPage
-    :cards="cards"
+    :cards="datasets"
     :title="title"
     :card-path="cardPath"
     :data-class="dataClass"
@@ -25,7 +25,7 @@ export default {
     const datacatalog = data['@graph']
     const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
-    return { cards: datasets }
+    return { datasets }
   },
   data: () => ({
     title: dataClass + 's',

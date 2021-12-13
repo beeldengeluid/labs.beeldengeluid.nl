@@ -6,10 +6,8 @@
       width="100%"
       max-width="100%"
       height="200px"
-      :src="require(`~/assets/images/${dataset.image}?size=300`).src"
-      :srcset="
-        require(`~/assets/images/${dataset.image}?{sizes:[300,600]}`).srcSet
-      "
+      :src="imageSrc"
+      :srcset="imageSrcset"
       :gradient="
         'to top right, ' +
         getRGBAColor(color, 0.85) +
@@ -81,6 +79,19 @@ export default {
   data() {
     return {
       color: classColors.dataset,
+      imageSrc: !this.dataset.image
+        ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
+            .src
+        : this.dataset.image.includes('/uploads/')
+        ? this.dataset.image
+        : require(`~/assets/images/${this.dataset.image}?size=300`).src,
+      imageSrcset: !this.dataset.image
+        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[300,600]}`)
+            .srcSet
+        : this.dataset.image.includes('/uploads/')
+        ? this.dataset.image
+        : require(`~/assets/images/${this.dataset.image}?{sizes:[300,600]}`)
+            .srcSet,
     }
   },
   computed: {
@@ -88,24 +99,27 @@ export default {
       return [
         {
           icon: 'mdi-domain',
-          text: this.dataset.creator,
+          text: this.dataset.creator || this.dataset.publisher,
         },
-        {
-          icon: 'mdi-file-document-multiple',
-          text:
-            new Intl.NumberFormat().format(
-              this.dataset.distribution?.length
-                ? this.dataset.distribution[0].contentSize
-                : '-'
-            ) +
-            ' ' +
-            this.$t('records'),
-        },
-        {
-          icon: 'mdi-calendar-range',
-          // TODO: replace with real data
-          text: '1899 - 1978',
-        },
+        ...(this.dataset.contentSize
+          ? [
+              {
+                icon: 'mdi-file-document-multiple',
+                text:
+                  new Intl.NumberFormat().format(this.dataset.contentSize) +
+                  ' ' +
+                  this.$t('records'),
+              },
+            ]
+          : []),
+        ...(this.dataset['https://schema.org/temporalCoverage']
+          ? [
+              {
+                icon: 'mdi-calendar-range',
+                text: this.dataset['https://schema.org/temporalCoverage'],
+              },
+            ]
+          : []),
       ]
     },
   },

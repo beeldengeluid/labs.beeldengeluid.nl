@@ -165,7 +165,7 @@ export default {
       return this.tagsFilter.length === 0
         ? this.datasets
         : this.datasets.filter((dataset) =>
-            this.tagsFilter.some((tag) => dataset.tags.includes(tag))
+            this.tagsFilter.some((tag) => dataset.tags?.includes(tag))
           )
     },
     stats() {
@@ -180,8 +180,8 @@ export default {
             new Intl.NumberFormat().format(
               this.filteredDatasets.reduce(
                 (sum, dataset) =>
-                  dataset.distribution?.length
-                    ? sum + dataset.distribution[0].contentSize
+                  dataset.contentSize
+                    ? sum + parseInt(dataset.contentSize)
                     : sum,
                 0
               )
@@ -189,8 +189,8 @@ export default {
         },
         {
           icon: 'mdi-calendar-range',
-          // TODO: replace with real data
-          text: '1899 - 2020',
+          // 1877 is the Beeld en Geluid catalogus temporalCoverage start
+          text: '1877/' + new Date().getFullYear(),
         },
       ]
     },
