@@ -1,7 +1,7 @@
 // https://www.crazygeeks.org/questions/packing-different-sized-circles-into-rectangle-d3-js  ?
 // https://observablehq.com/@mbostock/packing-circles-inside-a-rectangle
 
-const scaleValue = (v) => Math.pow(Math.log(v), 2)
+const scaleValue = (v) => 14 + Math.pow(Math.log(v), 2)
 
 export const createLayout = ({ nodes, width, height, padding = 1 }) => {
   nodes.forEach((d) => {
