@@ -165,7 +165,7 @@ export default {
       return this.tagsFilter.length === 0
         ? this.datasets
         : this.datasets.filter((dataset) =>
-            this.tagsFilter.some((tag) => dataset.tags.includes(tag))
+            this.tagsFilter.some((tag) => dataset.tags?.includes(tag))
           )
     },
     stats() {
