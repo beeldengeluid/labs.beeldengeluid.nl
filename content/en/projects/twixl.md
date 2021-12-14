@@ -2,9 +2,13 @@
 lab: content/en/labs/mediasuite.md
 sortOrder: 999
 title: TwiXL
-subtitle: 2021-2025
+subtitle: Facilitating analysis of social media data
 image: ''
 tags: []
 datasets: []
+website: https://twixl.humanities.uva.nl/
+contacts: []
+startDate: 
+endDate: 
 
 ---
