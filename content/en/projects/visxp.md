@@ -8,6 +8,8 @@ tags: []
 datasets: []
 website: ''
 contacts:
+- name: Nanne van Noord
+  email: nannevannoord@gmail.com
 - name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl
 startDate: 2021-12-31T23:00:00Z
