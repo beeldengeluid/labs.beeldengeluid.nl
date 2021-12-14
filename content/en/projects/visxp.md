@@ -2,10 +2,14 @@
 lab: content/en/labs/mediasuite.md
 sortOrder: 999
 title: VisXP
-subtitle: 2021-2023
+subtitle: ''
 image: "/uploads/screenshot-from-2021-11-03-08-55-46.png"
 tags: []
 datasets: []
+website: ''
+contacts: []
+startDate: 2021-12-31T23:00:00Z
+endDate: 2023-12-30T23:00:00Z
 
 ---
 Het VisXP project heeft het doel om AI technologie breed inzetbaar te maken binnen media archieven op basis van interactieve lerende interfaces die gebruikers zelf in staat stelt om de data visueel te verkennen. Dit vereist onderzoek naar het combineren van de verschillende soorten databronnen binnen archieven, voor zowel de analyse als voor het tonen en visualiseren in de interface. Het onderzoek hiervoor wordt gedaan in twee onderzoekslijnen:
