@@ -7,7 +7,9 @@ image: "/uploads/screenshot-from-2021-11-03-08-55-46.png"
 tags: []
 datasets: []
 website: ''
-contacts: []
+contacts:
+- name: Roeland Ordelman
+  email: rordelman@beeldengeluid.nl
 startDate: 2021-12-31T23:00:00Z
 endDate: 2023-12-30T23:00:00Z
 
