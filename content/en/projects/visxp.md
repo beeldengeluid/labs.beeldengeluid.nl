@@ -2,7 +2,7 @@
 lab: content/en/labs/mediasuite.md
 sortOrder: 999
 title: VisXP
-subtitle: ''
+subtitle: Flexible use of computer vision
 image: "/uploads/screenshot-from-2021-11-03-08-55-46.png"
 tags: []
 datasets: []
