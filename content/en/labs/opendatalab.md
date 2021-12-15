@@ -7,7 +7,8 @@ partners:
 - NOB
 - NDE
 funders: []
-sortOrder: 2
+sortOrder: 3
+
 ---
 **The Open Data Lab experiments with making open data sets (digital objects, metadata, terms and enrichments) optimally available in order to participate in an (inter)national ecosystem of Open Data.**
 
