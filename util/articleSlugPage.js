@@ -37,9 +37,15 @@ export const createArticleSlugPage = ({
       .surround(params.slug)
       .fetch()
 
-    const data = await $content('datasets').fetch()
-
-    const datasets = enrichDatasets(data.datasets)
+    // datasets (are not localized (yet))
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'https://schema.org/Dataset'
+    )
+    const datacatalog = data['@graph']
+    // enrich datasets with helper properties
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
     // populate datasets on article with dataset object
     article.datasets =
