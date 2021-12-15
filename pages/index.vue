@@ -142,6 +142,8 @@ export default {
       path: 'labs',
     })
     const labs = await $content(labsPath)
+      .sortBy('sortOrder', 'asc')
+      .sortBy('startDate', 'asc')
       .sortBy('createdAt', 'asc')
       .limit(4)
       .fetch()
@@ -153,6 +155,8 @@ export default {
       path: 'projects',
     })
     const projects = await $content(projectsPath)
+      .sortBy('sortOrder', 'asc')
+      .sortBy('startDate', 'asc')
       .sortBy('createdAt', 'asc')
       .limit(4)
       .fetch()
