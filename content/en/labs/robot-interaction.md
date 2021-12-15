@@ -8,7 +8,10 @@ partners:
 funders:
 - CLICKNL
 - SIDN fund
-sortOrder: 2
+sortOrder: 5
+startDate: 
+endDate: 
+
 ---
 In collaboration with the Beeld en Geluid museum team we are running a lab on robot interaction with the aim to investigate how robots could play a role as 'virtual librarians' that guide visitors of our museum and archive. Typically, we focus on technical feasibility, the added value for our users, specifically specific user groups such as children or the elderly, and responsible design.
 
