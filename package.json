@@ -45,6 +45,7 @@
     "sharp": "^0.29.3"
   },
   "resolutions": {
-    "nuxt/**/nth-check": "2.0.1"
+    "nuxt/**/nth-check": "2.0.1",
+    "nuxt/**/glob-parent": ">=5.1.2 "
   }
 }
