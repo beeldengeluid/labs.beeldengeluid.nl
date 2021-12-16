@@ -26,7 +26,7 @@
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.28.1",
     "nuxt-matomo": "^1.2.4",
-    "slugify": "^1.6.2",
+    "slugify": "^1.6.3",
     "vue-fragment": "^1.5.2",
     "vue-panzoom": "1.1.3"
   },
