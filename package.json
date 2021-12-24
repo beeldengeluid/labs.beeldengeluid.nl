@@ -6,7 +6,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "yarn fetch && nuxt generate",
+    "fetch:datacatalog": "node scripts/fetch-datacatalog.mjs",
+    "fetch": "yarn fetch:datacatalog",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
