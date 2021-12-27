@@ -13,7 +13,7 @@ axios
         console.log(`Data written to file: ${datacatalogPath}`)
       })
     } else {
-      console.log("Invalid DataCatalog response: ", response)
+      console.log('Invalid DataCatalog response: ', response)
     }
   })
   .catch(function (error) {
