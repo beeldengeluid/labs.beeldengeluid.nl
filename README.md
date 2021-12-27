@@ -1,4 +1,12 @@
-# opendatalab
+# BenG Labs Website
+
+Welcome to the online home of Sound and Vision Labs (BenG Labs in Dutch).
+
+## Ingredients
+
+- [Nuxt.js](https://nuxtjs.org)
+- [Forestry CMS](https://forestry.io/)
+- Datasets from [DataCatalog](https://data.beeldengeluid.nl/id/datacatalog/0001), fetched during build
 
 ## Build Setup
 
