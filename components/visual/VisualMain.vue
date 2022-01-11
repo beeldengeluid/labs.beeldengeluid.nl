@@ -2,7 +2,7 @@
   <div class="visual" :height="height">
     <!-- Visualization -->
     <div class="viewport">
-      <Circles
+      <VisualCircles
         :datasets="filteredDatasets"
         :width="width"
         :height="height"
@@ -22,7 +22,7 @@
       >
         <transition name="detailsContent" mode="out-in">
           <div v-if="activeDataset" :key="activeDataset.slug">
-            <DatasetInfo :dataset="activeDataset" />
+            <VisualDatasetInfo :dataset="activeDataset" />
           </div>
 
           <!-- Intro -->
@@ -101,9 +101,9 @@
         </v-icon>
       </v-btn>
 
-      <!-- Tags list -->
+      <!-- VisualTags list -->
       <transition name="slideInRight">
-        <Tags
+        <VisualTags
           v-if="showTags"
           :tags="tags"
           :filter="tagsFilter"
@@ -117,15 +117,15 @@
 </template>
 
 <script>
-import Tags from './Tags'
-import Circles from './Circles'
-import DatasetInfo from './DatasetInfo'
+import VisualTags from './VisualTags'
+import VisualCircles from './VisualCircles'
+import VisualDatasetInfo from './VisualDatasetInfo'
 
 export default {
   components: {
-    Tags,
-    Circles,
-    DatasetInfo,
+    VisualTags,
+    VisualCircles,
+    VisualDatasetInfo,
   },
   props: {
     datasets: {

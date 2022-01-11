@@ -4,7 +4,7 @@
       <!-- Datasets / Visualization -->
       <v-row class="justify-center white">
         <v-col class="pa-0">
-          <Visual :datasets="datasets" />
+          <VisualMain :datasets="datasets" />
         </v-col>
       </v-row>
 
@@ -107,7 +107,7 @@
 <script>
 import CardGrid from '~/components/CardGrid'
 import SectionHeading from '~/components/SectionHeading'
-import Visual from '~/components/visual/Visual'
+import VisualMain from '~/components/visual/VisualMain'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
@@ -118,7 +118,7 @@ export default {
   components: {
     CardGrid,
     SectionHeading,
-    Visual,
+    VisualMain,
   },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })

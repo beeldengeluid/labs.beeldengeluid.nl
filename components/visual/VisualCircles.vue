@@ -19,7 +19,7 @@
         }"
       >
         <transition-group name="node">
-          <Node
+          <VisualNode
             v-for="node in layout"
             :key="node.id"
             :node="node"
@@ -36,11 +36,11 @@
 
 <script>
 import { createLayout } from './pack'
-import Node from './Node'
+import VisualNode from './VisualNode'
 
 export default {
   components: {
-    Node,
+    VisualNode,
   },
   props: {
     datasets: {

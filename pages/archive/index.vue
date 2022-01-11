@@ -30,9 +30,9 @@
         </v-icon>
       </v-btn>
 
-      <!-- Tags list -->
+      <!-- VisualTags list -->
       <transition name="slideInRight">
-        <Tags
+        <VisualTags
           v-if="showTypes"
           :tags="types"
           :filter="typesFilter"
@@ -53,13 +53,13 @@
 
 <script>
 import CardPage from '~/components/CardPage'
-import Tags from '~/components/visual/Tags'
+import VisualTags from '~/components/visual/VisualTags'
 import { getLocalePath } from '~/util/contentFallback'
 
 const dataClass = 'archive'
 
 export default {
-  components: { Tags, CardPage },
+  components: { VisualTags, CardPage },
   async asyncData({ $content, app }) {
     const path = dataClass
 
