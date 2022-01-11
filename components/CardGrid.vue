@@ -6,16 +6,16 @@
       :cols="card.flex"
       class="mt-2 flex-md-grow-0"
     >
-      <Card :card="card" :path="path" :data-class="dataClass" />
+      <CardItem :card="card" :path="path" :data-class="dataClass" />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import Card from '~/components/Card'
+import CardItem from '~/components/CardItem'
 
 export default {
-  components: { Card },
+  components: { CardItem },
   props: {
     cards: { type: Array, required: true, default: () => [] },
     path: { type: String, required: true, default: '' },
