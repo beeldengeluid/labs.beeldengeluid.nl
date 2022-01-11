@@ -23,24 +23,24 @@
       <!-- Chiplist -->
       <v-row class="justify-center mt-5">
         <v-col class="limit-width px-3 py-3 mb-2">
-          <Relations :projects="projects" />
+          <ArticleRelations :projects="projects" />
         </v-col>
       </v-row>
       <v-row class="justify-center">
         <v-col class="limit-width px-3 py-3 mb-2">
-          <Relations :blogs="blogs" />
+          <ArticleRelations :blogs="blogs" />
         </v-col>
       </v-row>
     </section>
   </v-tab-item>
 </template>
 <script>
-import Relations from '../Relations'
+import ArticleRelations from '../ArticleRelations'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
 
 export default {
-  components: { Relations },
+  components: { ArticleRelations },
   props: {
     projects: { type: Array, required: false, default: () => [] },
     blogs: { type: Array, required: false, default: () => [] },
