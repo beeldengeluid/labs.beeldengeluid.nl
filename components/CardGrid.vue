@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CardItem from '~/components/CardItem'
+import CardItem from './CardItem'
 
 export default {
   components: { CardItem },
