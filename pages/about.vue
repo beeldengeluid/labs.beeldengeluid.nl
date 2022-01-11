@@ -1,8 +1,8 @@
 <template>
   <HeaderPage>
-    <!-- Heading -->
+    <!-- SectionHeading -->
     <template #header>
-      <Heading :title="page.title" data-class="dataset"
+      <SectionHeading :title="page.title" data-class="dataset"
     /></template>
 
     <!-- Content -->
@@ -18,10 +18,10 @@
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import HeaderPage from '~/components/HeaderPage'
-import Heading from '~/components/Heading'
+import SectionHeading from '~/components/SectionHeading'
 
 export default {
-  components: { HeaderPage, Heading },
+  components: { HeaderPage, SectionHeading },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })
     const page = await $content(aboutPath).fetch()

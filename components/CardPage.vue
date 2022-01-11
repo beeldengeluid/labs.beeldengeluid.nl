@@ -1,8 +1,8 @@
 <template>
   <HeaderPage>
-    <!-- Heading -->
+    <!-- SectionHeading -->
     <template #header>
-      <Heading :title="$t(title)" :data-class="dataClass" />
+      <SectionHeading :title="$t(title)" :data-class="dataClass" />
     </template>
 
     <!-- Content -->
@@ -15,10 +15,10 @@
 <script>
 import HeaderPage from './HeaderPage'
 import CardGrid from './CardGrid'
-import Heading from './Heading'
+import SectionHeading from './SectionHeading'
 
 export default {
-  components: { HeaderPage, CardGrid, Heading },
+  components: { HeaderPage, CardGrid, SectionHeading },
   props: {
     title: { type: String, required: true, default: '' },
     cards: { type: Array, required: true, default: () => [] },
