@@ -18,5 +18,11 @@ module.exports = {
   // add your custom rules here
   rules: {
     // 'prettier/prettier': 0, //disable prettier
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['default', 'index', 'error', 'about'],
+      },
+    ],
   },
 }
