@@ -45,7 +45,7 @@
       <!-- <v-divider class="my-5" /> -->
 
       <!-- relations -->
-      <Relations
+      <ArticleRelations
         :datasets="article.datasets"
         :projects="article.projects"
         :blogs="article.blogs"
@@ -58,14 +58,14 @@
 
 <script>
 import ArticleHeader from './ArticleHeader'
-import Relations from './Relations'
+import ArticleRelations from './ArticleRelations'
 import PrevNext from './PrevNext'
 import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
 import { classColorIndex } from '~/config/theme'
 
 export default {
-  components: { Relations, PrevNext, ArticleHeader, DataTable },
+  components: { ArticleRelations, PrevNext, ArticleHeader, DataTable },
   props: {
     article: {
       type: Object,

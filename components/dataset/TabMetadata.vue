@@ -1,9 +1,9 @@
 <template>
   <v-tab-item key="metadata" value="metadata">
     <section>
-      <!-- Metadata -->
+      <!-- MetadataTable -->
       <div>
-        <Metadata v-if="filteredDataset" :object="filteredDataset" />
+        <MetadataTable v-if="filteredDataset" :object="filteredDataset" />
       </div>
 
       <!-- Download button -->
@@ -19,7 +19,7 @@
   </v-tab-item>
 </template>
 <script>
-import Metadata from '../Metadata'
+import MetadataTable from '../MetadataTable'
 import icons from '~/config/icons'
 import { stripEnrichments, enrichProps } from '~/util/dataset'
 import { stripObject } from '~/util/objects'
@@ -37,7 +37,7 @@ const markdownProps = [
 ]
 
 export default {
-  components: { Metadata },
+  components: { MetadataTable },
   props: {
     dataset: {
       type: Object,

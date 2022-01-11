@@ -4,14 +4,14 @@
       <!-- Datasets / Visualization -->
       <v-row class="justify-center white">
         <v-col class="pa-0">
-          <Visual :datasets="datasets" />
+          <VisualMain :datasets="datasets" />
         </v-col>
       </v-row>
 
       <!-- Labs -->
       <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
-          <Heading
+          <SectionHeading
             :title="$t('labs')"
             :description="$t('labs_description')"
             data-class="lab"
@@ -31,7 +31,7 @@
       <!-- Projects -->
       <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
-          <Heading
+          <SectionHeading
             :title="$t('projects')"
             :description="$t('projects_description')"
             data-class="project"
@@ -51,7 +51,7 @@
       <!-- Blogs -->
       <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
-          <Heading
+          <SectionHeading
             :title="$t('blogs')"
             :description="$t('blogs_description')"
             data-class="blog"
@@ -70,7 +70,7 @@
       <!-- About -->
       <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width mb-4">
-          <Heading
+          <SectionHeading
             :title="$t('about')"
             :description="$t('about_description')"
           />
@@ -106,8 +106,8 @@
 
 <script>
 import CardGrid from '~/components/CardGrid'
-import Heading from '~/components/Heading'
-import Visual from '~/components/visual/Visual'
+import SectionHeading from '~/components/SectionHeading'
+import VisualMain from '~/components/visual/VisualMain'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
@@ -117,8 +117,8 @@ import { parseColor } from '~/util/color'
 export default {
   components: {
     CardGrid,
-    Heading,
-    Visual,
+    SectionHeading,
+    VisualMain,
   },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })

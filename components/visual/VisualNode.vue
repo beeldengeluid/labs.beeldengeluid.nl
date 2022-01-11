@@ -33,7 +33,6 @@
 import { getImageOverlayCSS, getRGBAColor } from '~/util/color'
 
 export default {
-  name: 'Node',
   props: {
     node: {
       type: Object,
