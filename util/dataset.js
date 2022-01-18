@@ -4,28 +4,11 @@ import { getRandomColor } from './color'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Props
-  dataset.title = dataset['https://schema.org/name']?.['@value']
-    ? dataset['https://schema.org/name']?.['@value']
-    : dataset['https://schema.org/name']?.filter((d) => d['@language'] === 'nl')
-        .length
-    ? dataset['https://schema.org/name']?.filter(
-        (d) => d['@language'] === 'nl'
-      )[0]['@value']
-    : dataset['https://schema.org/name']?.filter(
-        (d) => d['@language'] === 'en'
-      )[0]['@value']
+  dataset.title = getValueFromObjectOrArray(dataset['https://schema.org/name'])
 
-  dataset.subtitle = dataset['https://schema.org/description']?.['@value']
-    ? dataset['https://schema.org/description']?.['@value']
-    : dataset['https://schema.org/description']?.filter(
-        (d) => d['@language'] === 'nl'
-      ).length
-    ? dataset['https://schema.org/description']?.filter(
-        (d) => d['@language'] === 'nl'
-      )[0]['@value']
-    : dataset['https://schema.org/description']?.filter(
-        (d) => d['@language'] === 'en'
-      )[0]['@value']
+  dataset.subtitle = getValueFromObjectOrArray(
+    dataset['https://schema.org/description']
+  )
 
   dataset.slug = slugify(dataset.title, {
     lower: true,
