@@ -21,7 +21,7 @@
 <script>
 import MetadataTable from '../MetadataTable'
 import icons from '~/config/icons'
-import { stripEnrichments, enrichProps } from '~/util/dataset'
+import { stripEnrichments, enrichProps, augmentProps } from '~/util/dataset'
 import { stripObject } from '~/util/objects'
 import { download } from '~/util/download'
 
@@ -51,6 +51,7 @@ export default {
       filteredDataset: stripObject(this.dataset, [
         ...enrichProps,
         ...markdownProps,
+        ...Object.keys(augmentProps),
         '@context',
         '@type',
         '@id',

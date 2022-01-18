@@ -53,6 +53,14 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     dataset.contentSize = datacatalog.find(
       (item) => item['@id'] === distributionId
     )?.['https://schema.org/contentSize']
+
+    const distributionNameObject = datacatalog.find(
+      (item) => item['@id'] === distributionId
+    )?.['https://schema.org/name']
+
+    if (distributionNameObject) {
+      dataset.distribution = getValueFromObjectOrArray(distributionNameObject)
+    }
   }
 
   // Random styling by default
@@ -61,8 +69,22 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   return dataset
 }
 
+const getValueFromObjectOrArray = (objectOrArray) => {
+  return objectOrArray?.['@value']
+    ? objectOrArray?.['@value']
+    : objectOrArray?.filter((d) => d['@language'] === 'nl').length
+    ? objectOrArray?.filter((d) => d['@language'] === 'nl')[0]['@value']
+    : objectOrArray?.filter((d) => d['@language'] === 'en')[0]['@value']
+}
+
 export const enrichDatasets = (datasets, datacatalog = []) => {
   return datasets.map((dataset) => enrichDataset(dataset, datacatalog))
+}
+
+export const augmentProps = {
+  'https://schema.org/publisher': 'publisher',
+  'https://schema.org/creator': 'creator',
+  'https://schema.org/distribution': 'distribution',
 }
 
 export const enrichProps = [
@@ -79,11 +101,10 @@ export const enrichProps = [
   'image',
   'color',
   'tags',
-  'publisher',
-  'creator',
 ]
 
-export const stripEnrichments = (dataset) => stripObject(dataset, enrichProps)
+export const stripEnrichments = (dataset) =>
+  stripObject(dataset, [...enrichProps, ...Object.values(augmentProps)])
 
 export const randomDataSet = ({ id, name, contentSize }) => {
   return {
