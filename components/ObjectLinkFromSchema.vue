@@ -4,7 +4,7 @@
 
 <script>
 import ObjectLink from './ObjectLink'
-import { isObjectWithIdTypeName } from '~/util/objectsFromSchema'
+import { isObjectWithIdName } from '~/util/objectsFromSchema'
 
 export default {
   components: { ObjectLink },
@@ -12,7 +12,7 @@ export default {
     value: {
       type: Object,
       required: true,
-      validator: isObjectWithIdTypeName,
+      validator: isObjectWithIdName,
     },
   },
   data() {

@@ -54,7 +54,7 @@ export default {
       stats: [
         {
           icon: 'mdi-domain',
-          text: this.dataset.creator || this.dataset.publisher,
+          text: this.dataset.publisher?.name || this.dataset.creator?.name,
         },
         {
           icon: 'mdi-license',

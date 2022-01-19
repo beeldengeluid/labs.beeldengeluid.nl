@@ -27,6 +27,7 @@ export const enrichDataset = (dataset, datacatalog = []) => {
       dataset.creator = {
         ...dataset['https://schema.org/creator'],
         name: creatorName,
+        '@type': 'organization',
       }
     }
   }
@@ -42,6 +43,24 @@ export const enrichDataset = (dataset, datacatalog = []) => {
       dataset.publisher = {
         ...dataset['https://schema.org/publisher'],
         name: publisherName,
+        '@type': 'organization',
+      }
+    }
+  }
+
+  const dataCatalogId =
+    dataset['https://schema.org/includedInDataCatalog']?.['@id']
+  if (dataCatalogId) {
+    const dataCatalogNameObject = datacatalog.find(
+      (item) => item['@id'] === dataCatalogId
+    )?.['https://schema.org/name']
+
+    if (dataCatalogNameObject) {
+      const dataCatalogName = getValueFromObjectOrArray(dataCatalogNameObject)
+      dataset.dataCatalog = {
+        ...dataset['https://schema.org/includedInDataCatalog'],
+        name: dataCatalogName,
+        '@type': 'dataset',
       }
     }
   }
@@ -61,6 +80,7 @@ export const enrichDataset = (dataset, datacatalog = []) => {
       dataset.distribution = {
         ...dataset['https://schema.org/distribution'],
         name: distributionName,
+        '@type': 'download',
       }
     }
   }
@@ -87,6 +107,7 @@ export const augmentProps = {
   'https://schema.org/publisher': 'publisher',
   'https://schema.org/creator': 'creator',
   'https://schema.org/distribution': 'distribution',
+  'https://schema.org/includedInDataCatalog': 'dataCatalog',
 }
 
 export const enrichProps = [
