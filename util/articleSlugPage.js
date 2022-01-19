@@ -41,7 +41,7 @@ export const createArticleSlugPage = ({
     const dataPath = 'datacatalog0001'
     const data = await $content(dataPath).fetch()
     const datasetsRaw = data['@graph'].filter(
-      (node) => node['@type'] === 'https://schema.org/Dataset'
+      (node) => node['@type'] === 'sdo:Dataset'
     )
     const datacatalog = data['@graph']
     // enrich datasets with helper properties

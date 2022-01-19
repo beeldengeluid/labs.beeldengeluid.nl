@@ -66,10 +66,10 @@ export default {
               text: this.dataset.contentSize + ' ' + this.$t('records'),
             }
           : {},
-        this.dataset['https://schema.org/temporalCoverage']
+        this.dataset['sdo:temporalCoverage']
           ? {
               icon: 'mdi-calendar-range',
-              text: this.dataset['https://schema.org/temporalCoverage'],
+              text: this.dataset['sdo:temporalCoverage'],
             }
           : {},
       ],

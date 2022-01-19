@@ -41,10 +41,9 @@ export const isObjectWithLanguageValueOnly = (obj) => {
   )
 }
 
-export const isSchemaProp = (string) => string.startsWith('https://schema.org/')
+export const isSchemaProp = (string) => string.startsWith('sdo:')
 
-export const stripSchemaURL = (string) =>
-  string.replace('https://schema.org/', '')
+export const stripSchemaURL = (string) => string.replace('sdo:', '')
 
 export const camel2title = (camelCase) =>
   camelCase

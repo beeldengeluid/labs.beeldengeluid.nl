@@ -4,11 +4,9 @@ import { getRandomColor } from './color'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
-  dataset.title = getValueFromObjectOrArray(dataset['https://schema.org/name'])
+  dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
 
-  dataset.subtitle = getValueFromObjectOrArray(
-    dataset['https://schema.org/description']
-  )
+  dataset.subtitle = getValueFromObjectOrArray(dataset['sdo:description'])
 
   dataset.slug = slugify(dataset.title, {
     lower: true,
@@ -16,79 +14,78 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   })
 
   // Augmentations
-  const creatorId = dataset['https://schema.org/creator']?.['@id']
+  const creatorId = dataset['sdo:creator']?.['@id']
   if (creatorId) {
     const creatorNameObject = datacatalog.find(
       (item) => item['@id'] === creatorId
-    )?.['https://schema.org/name']
+    )?.['sdo:name']
 
     if (creatorNameObject) {
       const creatorName = getValueFromObjectOrArray(creatorNameObject)
       dataset.creator = {
-        ...dataset['https://schema.org/creator'],
+        ...dataset['sdo:creator'],
         name: creatorName,
         '@type': 'organization',
       }
     }
   }
 
-  const publisherId = dataset['https://schema.org/publisher']?.['@id']
+  const publisherId = dataset['sdo:publisher']?.['@id']
   if (publisherId) {
     const publisherNameObject = datacatalog.find(
       (item) => item['@id'] === publisherId
-    )?.['https://schema.org/name']
+    )?.['sdo:name']
 
     if (publisherNameObject) {
       const publisherName = getValueFromObjectOrArray(publisherNameObject)
       dataset.publisher = {
-        ...dataset['https://schema.org/publisher'],
+        ...dataset['sdo:publisher'],
         name: publisherName,
         '@type': 'organization',
       }
     }
   }
 
-  const dataCatalogId =
-    dataset['https://schema.org/includedInDataCatalog']?.['@id']
+  const dataCatalogId = dataset['sdo:includedInDataCatalog']?.['@id']
   if (dataCatalogId) {
     const dataCatalogNameObject = datacatalog.find(
       (item) => item['@id'] === dataCatalogId
-    )?.['https://schema.org/name']
+    )?.['sdo:name']
 
     if (dataCatalogNameObject) {
       const dataCatalogName = getValueFromObjectOrArray(dataCatalogNameObject)
       dataset.dataCatalog = {
-        ...dataset['https://schema.org/includedInDataCatalog'],
+        ...dataset['sdo:includedInDataCatalog'],
         name: dataCatalogName,
         '@type': 'dataset',
       }
     }
   }
 
-  const distributionId = dataset['https://schema.org/distribution']?.['@id']
+  const distributionId = dataset['sdo:distribution']?.['@id']
   if (distributionId) {
     dataset.contentSize = datacatalog.find(
       (item) => item['@id'] === distributionId
-    )?.['https://schema.org/contentSize']
+    )?.['sdo:contentSize']
 
     const distributionNameObject = datacatalog.find(
       (item) => item['@id'] === distributionId
-    )?.['https://schema.org/name']
+    )?.['sdo:name']
 
     if (distributionNameObject) {
       const distributionName = getValueFromObjectOrArray(distributionNameObject)
       dataset.distribution = {
-        ...dataset['https://schema.org/distribution'],
+        ...dataset['sdo:distribution'],
         name: distributionName,
         '@type': 'download',
       }
     }
   }
 
-  const licenseId = dataset['https://schema.org/license']?.['@id']
+  const licenseId = dataset['sdo:license']?.['@id']
   if (licenseId) {
     dataset.license = {
-      ...dataset['https://schema.org/license'],
+      ...dataset['sdo:license'],
       name:
         licenseId === 'https://creativecommons.org/publicdomain/zero/1.0/'
           ? 'CC0 1.0'
@@ -116,11 +113,11 @@ export const enrichDatasets = (datasets, datacatalog = []) => {
 }
 
 export const augmentProps = {
-  'https://schema.org/publisher': 'publisher',
-  'https://schema.org/creator': 'creator',
-  'https://schema.org/distribution': 'distribution',
-  'https://schema.org/includedInDataCatalog': 'dataCatalog',
-  'https://schema.org/license': 'license',
+  'sdo:publisher': 'publisher',
+  'sdo:creator': 'creator',
+  'sdo:distribution': 'distribution',
+  'sdo:includedInDataCatalog': 'dataCatalog',
+  'sdo:license': 'license',
 }
 
 export const enrichProps = [
