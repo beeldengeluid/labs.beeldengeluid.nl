@@ -17,7 +17,7 @@ export default {
   },
   data() {
     return {
-      iconKey: this.value['@type'].toLowerCase() || 'link',
+      iconKey: this.value['@type']?.toLowerCase() || 'link',
       href: this.value['@id'],
       name: this.value.name,
     }

@@ -48,6 +48,11 @@
             <ObjectLinkFromSchema :value="value" />
           </span>
 
+          <!-- Named URI -->
+          <span v-else-if="isObjectWithIdName(value)">
+            <ObjectLinkFromSchema :value="value" />
+          </span>
+
           <!-- URI -->
           <span v-else-if="isObjectWithIdOnly(value)">
             <LinkText :value="value['@id']" />
@@ -100,6 +105,7 @@ import DataTable from './DataTable'
 import LinkText from './LinkText'
 import {
   isObjectWithIdTypeName,
+  isObjectWithIdName,
   isObjectWithIdOnly,
   isObjectWithIdOnlyArray,
   isObjectWithLanguageValueOnly,
@@ -130,6 +136,7 @@ export default {
   },
   methods: {
     isObjectWithIdTypeName,
+    isObjectWithIdName,
     isObjectWithIdOnly,
     isObjectWithIdOnlyArray,
     isObjectWithLanguageValueOnly,
@@ -142,6 +149,7 @@ export default {
     renderable(value) {
       return (
         isObjectWithIdTypeName(value) ||
+        isObjectWithIdName(value) ||
         isObjectWithIdOnly(value) ||
         isObjectWithLanguageValueOnly(value) ||
         isObjectWithIdOnlyArray(value) ||

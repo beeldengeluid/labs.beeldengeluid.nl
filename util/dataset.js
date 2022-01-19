@@ -3,7 +3,7 @@ import { stripObject } from './objects'
 import { getRandomColor } from './color'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
-  // Props
+  // Enrichments
   dataset.title = getValueFromObjectOrArray(dataset['https://schema.org/name'])
 
   dataset.subtitle = getValueFromObjectOrArray(
@@ -15,20 +15,35 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     strict: true,
   })
 
+  // Augmentations
   const creatorId = dataset['https://schema.org/creator']?.['@id']
   if (creatorId) {
-    dataset.creator =
-      datacatalog.find((item) => item['@id'] === creatorId)?.[
-        'https://schema.org/name'
-      ]?.['@value'] || creatorId
+    const creatorNameObject = datacatalog.find(
+      (item) => item['@id'] === creatorId
+    )?.['https://schema.org/name']
+
+    if (creatorNameObject) {
+      const creatorName = getValueFromObjectOrArray(creatorNameObject)
+      dataset.creator = {
+        ...dataset['https://schema.org/creator'],
+        name: creatorName,
+      }
+    }
   }
 
   const publisherId = dataset['https://schema.org/publisher']?.['@id']
   if (publisherId) {
-    dataset.publisher =
-      datacatalog.find((item) => item['@id'] === publisherId)?.[
-        'https://schema.org/name'
-      ]?.['@value'] || publisherId
+    const publisherNameObject = datacatalog.find(
+      (item) => item['@id'] === publisherId
+    )?.['https://schema.org/name']
+
+    if (publisherNameObject) {
+      const publisherName = getValueFromObjectOrArray(publisherNameObject)
+      dataset.publisher = {
+        ...dataset['https://schema.org/publisher'],
+        name: publisherName,
+      }
+    }
   }
 
   const distributionId = dataset['https://schema.org/distribution']?.['@id']
@@ -42,7 +57,11 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     )?.['https://schema.org/name']
 
     if (distributionNameObject) {
-      dataset.distribution = getValueFromObjectOrArray(distributionNameObject)
+      const distributionName = getValueFromObjectOrArray(distributionNameObject)
+      dataset.distribution = {
+        ...dataset['https://schema.org/distribution'],
+        name: distributionName,
+      }
     }
   }
 

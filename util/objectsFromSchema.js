@@ -9,6 +9,15 @@ export const isObjectWithIdTypeName = (obj) => {
   )
 }
 
+export const isObjectWithIdName = (obj) => {
+  return (
+    typeof obj === 'object' &&
+    !Array.isArray(obj) &&
+    ['@id', 'name'].every((key) => key in obj) &&
+    isUrl(obj['@id'])
+  )
+}
+
 export const isObjectWithIdOnly = (obj) => {
   return (
     typeof obj === 'object' &&
