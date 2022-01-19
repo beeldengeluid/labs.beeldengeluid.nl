@@ -58,11 +58,7 @@ export default {
         },
         {
           icon: 'mdi-license',
-          text:
-            this.dataset['https://schema.org/license']['@id'] ===
-            'https://creativecommons.org/publicdomain/zero/1.0/'
-              ? 'CC0 1.0'
-              : this.dataset['https://schema.org/license']['@id'],
+          text: this.dataset.license?.name,
         },
         this.dataset.contentSize
           ? {

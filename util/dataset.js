@@ -85,6 +85,18 @@ export const enrichDataset = (dataset, datacatalog = []) => {
     }
   }
 
+  const licenseId = dataset['https://schema.org/license']?.['@id']
+  if (licenseId) {
+    dataset.license = {
+      ...dataset['https://schema.org/license'],
+      name:
+        licenseId === 'https://creativecommons.org/publicdomain/zero/1.0/'
+          ? 'CC0 1.0'
+          : licenseId,
+      '@type': 'license',
+    }
+  }
+
   // Random styling by default
   Object.assign(dataset, randomDatasetStyle())
 
@@ -108,6 +120,7 @@ export const augmentProps = {
   'https://schema.org/creator': 'creator',
   'https://schema.org/distribution': 'distribution',
   'https://schema.org/includedInDataCatalog': 'dataCatalog',
+  'https://schema.org/license': 'license',
 }
 
 export const enrichProps = [

@@ -12,4 +12,5 @@ export default {
   link: 'mdi-link-variant',
   download: 'mdi-download',
   email: 'mdi-email',
+  license: 'mdi-license',
 }
