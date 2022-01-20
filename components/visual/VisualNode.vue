@@ -6,6 +6,7 @@
       width: node.r * 2 + 'px',
       height: node.r * 2 + 'px',
       fontSize: 3 + node.r / 7 + 'px',
+      'z-index': node.r > 200 ? -1 : 0,
     }"
     @click.stop="onClick"
     @touchstart="onTouchStart"
