@@ -171,12 +171,6 @@ export default {
     // enrich datasets with helper properties
     const datasets = enrichDatasets(datasetsRaw, datacatalog)
 
-    // const dataPath = 'datasets'
-    // const data = await $content(dataPath).fetch()
-    // const datasetsRaw = data.datasets
-    // // enrich datasets with helper properties
-    // const datasets = enrichDatasets(datasetsRaw)
-
     // extend datasets with frontmatter
     for (let i = 0, len = datasets.length; i < len; i++) {
       const dataset = datasets[i]
