@@ -3,17 +3,17 @@ title: Mediascape
 subtitle: Finding happiness in audiovisual archives without searching for it
 image: projects/mediascape.png
 tags:
-- generous interfaces
-- UI
+  - generous interfaces
+  - UI
 datasets:
-- content/en/datasets/https-www-openbeelden-nl-users-beeldengeluid.md
+  - content/en/datasets/https-www-openbeelden-nl-users-beeldengeluid.md
 lab: content/en/labs/opendatalab.md
 website: https://open-images-browser.vercel.app/
 contacts:
-- name: Philo van Kemenade
-  email: pvkemenade@beeldengeluid.nl
-
+  - name: Philo van Kemenade
+    email: pvkemenade@beeldengeluid.nl
 ---
+
 The MediaScape project investigates how innovative interfaces can provide generous access to audiovisual collections in order to make connections between the interests of individuals and heritage objects. Or:
 
 > How to find happiness in AV collections without searching for it?
@@ -24,7 +24,7 @@ Most collection interfaces employ a query-based interface model, usually in the 
 2. has a clear idea of what they are looking for
 3. can express that idea as a textual keyword query
 
-If one or more of these requirements doesn't hold, the search bar's convenience quickly breaks down. 
+If one or more of these requirements doesn't hold, the search bar's convenience quickly breaks down.
 
 An alternative is to be more forthcoming about what can be found in a collection and offering readily available paths to access different parts of it. This idea of 'generous interfaces' was first formulated by [Mitchell Whitelaw in 2012](http://mtchl.net/towards-generous-interfaces-for-archival-collections/) and since applied and expanded in various directions in the Digital Cultural Heritage field.
 
@@ -51,4 +51,4 @@ Source Code:
 https://github.com/beeldengeluid/open-images-browser/
 
 Component Library:  
-[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://beeldengeluid.github.io/MediaScape)
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://beeldengeluid.github.io/open-images-browser)
