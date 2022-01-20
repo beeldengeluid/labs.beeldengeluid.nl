@@ -1,13 +1,21 @@
 ---
-title: GTAA API
-subtitle: Common Thesaurus for Audiovisual Archives
-image: placeholders/placeholder-dataset.jpg
+id: http://data.beeldengeluid.nl/id/dataset/0010
+color: ''
+image: "/uploads/gtaa.png"
+tags:
+- thesaurus
+
 ---
+TODO: translate to Dutch
 
-Since early 2022 the Netherlands Institute for Sound and Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and need replacement. 
-
-For backwards compatibility reasons the endpoint were counterfeit in the new service layer. The backend though is completely new.  
+Common Thesaurus for Audiovisual Archives, GTAA
 
 Sound and Vision has teamed up with other Dutch heritage organizations that manage audiovisual cultural heritage to develop the Common Thesaurus for Audiovisual Archives (Gemeenschappelijke Thesaurus voor Audiovisuele Archieven) or GTAA. The GTAA is used for characterization of the content of audiovisual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
 
 The GTAA is made available under the Open Database License (OdbL).
+
+The GTAA consists of SKOS Concepts grouped in several SKOS ConceptSchemes, that are available for download using the OAI-PMH data provider. 
+
+is available as SKOS in XML/RDF and can be harvested by OAI-PMH from...
+
+**--> add endpoints once ready** 
