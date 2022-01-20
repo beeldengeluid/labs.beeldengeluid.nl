@@ -52,12 +52,12 @@ export default {
   data: () => ({ theme }),
   methods: {
     getImageOverlayCSS,
-    getImageSrc(chipImage, size) {
+    getImageSrc(chipImage) {
       return !chipImage
         ? ''
         : chipImage.includes('/uploads/')
         ? chipImage
-        : require(`~/assets/images/${chipImage}?size=${size}`).src
+        : require(`~/assets/images/${chipImage}?size=200`).src
     },
   },
 }

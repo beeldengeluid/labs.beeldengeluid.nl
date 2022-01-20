@@ -6,7 +6,7 @@ tags:
   - generous interfaces
   - UI
 datasets:
-  - content/en/datasets/open-beelden.md
+  - http://data.beeldengeluid.nl/id/dataset/0002
 lab: content/en/labs/opendatalab.md
 website: https://open-images-browser.vercel.app/
 contacts:
