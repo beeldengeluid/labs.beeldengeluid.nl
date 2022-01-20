@@ -111,8 +111,7 @@ import VisualMain from '~/components/visual/VisualMain'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
-import { enrichDatasets } from '~/util/dataset'
-import { parseColor } from '~/util/color'
+import { enrichDatasets, extendDatasetsWithFrontmatter } from '~/util/dataset'
 
 export default {
   components: {
@@ -169,42 +168,13 @@ export default {
     )
     const datacatalog = data['@graph']
     // enrich datasets with helper properties
-    const datasets = enrichDatasets(datasetsRaw, datacatalog)
-
-    // extend datasets with frontmatter
-    for (let i = 0, len = datasets.length; i < len; i++) {
-      const dataset = datasets[i]
-
-      // Custom markdown content for dataset
-      const mdPath = await getLocalePath({
-        $content,
-        app,
-        path: 'datasets/' + dataset.slug,
-      })
-      const page = await $content(mdPath)
-        .fetch()
-        .catch((e) => {
-          // ignore error of missing page
-        })
-      if (page) {
-        // assign defined page props to dataset, parse color vars (e.g. red.base)
-        const pageDefined = Object.entries(page)
-          .filter(
-            ([key, value]) =>
-              value !== undefined &&
-              value !== '' &&
-              value !== [] &&
-              value !== {}
-          )
-          .reduce((obj, [key, value]) => {
-            obj[key] = value
-            return obj
-          }, {})
-        Object.assign(dataset, pageDefined, {
-          color: parseColor(page.color),
-        })
-      }
-    }
+    let datasets = enrichDatasets(datasetsRaw, datacatalog)
+    datasets = await extendDatasetsWithFrontmatter(
+      datasets,
+      $content,
+      app,
+      'datasets/'
+    )
 
     return {
       aboutPage,

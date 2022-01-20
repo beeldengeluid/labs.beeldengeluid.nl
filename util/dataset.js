@@ -1,6 +1,7 @@
 import slugify from 'slugify'
 import { stripObject } from './objects'
-import { getRandomColor } from './color'
+import { getRandomColor, parseColor } from './color'
+import { getLocalePath } from '~/util/contentFallback'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
@@ -98,6 +99,46 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   Object.assign(dataset, randomDatasetStyle())
 
   return dataset
+}
+
+// extend datasets with frontmatter from markdown content
+export async function extendDatasetsWithFrontmatter(
+  datasets,
+  $content,
+  app,
+  contentPathDir
+) {
+  for (let i = 0, len = datasets.length; i < len; i++) {
+    const dataset = datasets[i]
+
+    // Custom markdown content for dataset
+    const mdPath = await getLocalePath({
+      $content,
+      app,
+      path: contentPathDir + dataset.slug,
+    })
+    const page = await $content(mdPath)
+      .fetch()
+      .catch((e) => {
+        // ignore error of missing page
+      })
+    if (page) {
+      // assign defined page props to dataset, parse color vars (e.g. red.base)
+      const pageDefined = Object.entries(page)
+        .filter(
+          ([key, value]) =>
+            value !== undefined && value !== '' && value !== [] && value !== {}
+        )
+        .reduce((obj, [key, value]) => {
+          obj[key] = value
+          return obj
+        }, {})
+      Object.assign(dataset, pageDefined, {
+        color: parseColor(page.color),
+      })
+    }
+  }
+  return datasets
 }
 
 const getValueFromObjectOrArray = (objectOrArray) => {
