@@ -4,20 +4,16 @@ subtitle: Gemeenschappelijke Thesaurus Audiovisuele Archieven
 image: placeholders/placeholder-dataset.jpg
 ---
 
-Since early 2022 the Netherlands Institute for Sound and Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and needed replacement. 
+Sinsd begin 2022 stelt het Nederlands Instituut voor Beeld en Geluid een gloednieuwe service layer beschikbaar voor de thesaurus. OpenSKOS, het systeem waarin de beschikbaarstelling meerdere jaren is gedaan, was end-of-life en aan vervanging toe. 
 
-The service layer provides several endpoints that can be used to work with the GTAA data. Also, using the concept URI, the data for the concept can be found either in HTML or other formats, like RDF/XML, JSON-LD and Turtle. 
+In de nieuwe thesaurus service layer maakt  Beeld en Geluid meerdere endpoints beschikbaar om met de GTAA te werken. Ook kan een GTAA concept URI worden gebruikt om de bijbehorende data op te vragen in HTML of andere formaten als RDF/XML, JSON-LD of Turtle, etc.
 
- All the concepts within a ConceptScheme are available for download in RDF/XML using the [OAI-PMH](https://www.openarchives.org/pmh/) data provider. The service layer provides this so that others can harvest the contents of the GTAA, and keep track of the changes. Both SKOS modelled data and SKOS-XL (eXtension for Labels) can be found using the appropriate prefix.
-
-The available endpoints are:
+ Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
+ 
+De beschikbare endpoints zijn:
 * OAI-PMH
 * search
 * autocomplete
-* SPARQL
+* SPARQL (account nodig)
 
-Examples ...
-
-The GTAA is made available under the Open Database License (OdbL).
-
-[The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven)
+De [The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).

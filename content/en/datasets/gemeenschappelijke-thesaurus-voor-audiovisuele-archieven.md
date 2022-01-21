@@ -15,4 +15,4 @@ The GTAA is made available under the Open Database License (OdbL) and as [linked
 The GTAA has several parts, that contain content that corresponds to the same informational units, like: Person names, Names (corporation and other), Geographical Names, Subjects, Classification, Genre. SKOS Concepts that belong to the same category are grouped in SKOS ConceptSchemes. 
 
 
- [APIs page for the GTAA](apis/gtaa)
+For working with the GTAA several [APIs](apis/gtaa) are available.
