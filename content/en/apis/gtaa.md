@@ -11,7 +11,7 @@ The service layer provides several endpoints that can be used to work with the G
  All the concepts within a ConceptScheme are available for download in RDF/XML using the [OAI-PMH](https://www.openarchives.org/pmh/) data provider. The service layer provides this so that others can harvest the contents of the GTAA, and keep track of the changes. Both SKOS modelled data and SKOS-XL (eXtension for Labels) can be found using the appropriate prefix.
 
 The available endpoints are:
-* OAI-PMH
+* OAI-PMH, using this [baseUrl](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 * search
 * autocomplete
 * SPARQL

@@ -16,4 +16,17 @@ De beschikbare endpoints zijn:
 * autocomplete
 * SPARQL (account nodig)
 
+## Voorbeelden
+::: tabs
+  ::: tab OAI-PMH
+
+  [Identify](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
+
+  :::
+  ::: tab search
+  [Zoek naar een term](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
+
+  :::
+:::
+
 De [The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).
