@@ -1,6 +1,6 @@
 ---
 title: GTAA API
-subtitle: Common Thesaurus for Audiovisual Archives
+subtitle: Gemeenschappelijke Thesaurus Audiovisuele Archieven
 image: placeholders/placeholder-dataset.jpg
 ---
 

@@ -19,7 +19,7 @@ The Sound and Vision catalogue has its own datamodel, which caters to the needs 
 
 **Persistence is key**
 
-To fulfill the requirements of linked data, we set up an infrastructure to generate, manage and publish persistent identifiers to objects from the collection. These are published under the cat.data.beeldengeluid.nl domain. The gtaa.data.beeldengeluid.nl domain was already in use for terms in our thesaurus, the GTAA. Wherever thesaurus terms are used within the catalogue data these are accompanied by the URI of the thesaurus term.
+To fulfill the requirements of linked data, we set up an infrastructure to generate, manage and publish persistent identifiers to objects from the collection. These are published under the data.beeldengeluid.nl domain. The data.beeldengeluid.nl domain was already in use for terms in our thesaurus, the GTAA. Wherever thesaurus terms are used within the catalogue data these are accompanied by the URI of the thesaurus term.
 
 **SPARQL queries**
 
