@@ -20,4 +20,4 @@ Examples ...
 
 The GTAA is made available under the Open Database License (OdbL).
 
-[The GTAA dataset](datasets/gemeenschappelijke-thesaurus-voor-audiovisuele-archieven)
+[The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven)
