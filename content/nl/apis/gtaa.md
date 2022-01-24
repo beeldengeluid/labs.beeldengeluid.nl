@@ -8,25 +8,25 @@ Sinsd begin 2022 stelt het Nederlands Instituut voor Beeld en Geluid een gloedni
 
 In de nieuwe thesaurus service layer maakt  Beeld en Geluid meerdere endpoints beschikbaar om met de GTAA te werken. Ook kan een GTAA concept URI worden gebruikt om de bijbehorende data op te vragen in HTML of andere formaten als RDF/XML, JSON-LD of Turtle, etc.
 
- Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
- 
 De beschikbare endpoints zijn:
-* OAI-PMH
-* search
-* autocomplete
-* SPARQL (account nodig)
+* [OAI-PMH](#oai-pmh)
+* [Search](#search)
+* [autocomplete](#autocomplete)
+* [SPARQL](#sparql)
 
-## Voorbeelden
-::: tabs
-  ::: tab OAI-PMH
+### OAI-PMH
+ Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
 
   [Identify](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 
-  :::
-  ::: tab search
+### Search
+
+### Autocomplete
+
+### SPARQL
+
+
   [Zoek naar een term](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
 
-  :::
-:::
 
 De [The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).
