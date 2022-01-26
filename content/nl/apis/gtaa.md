@@ -1,7 +1,7 @@
 ---
 title: GTAA API
 subtitle: Gemeenschappelijke Thesaurus Audiovisuele Archieven
-image: apis/gtaa-network-image.jpg
+image: apis/gtaa_network_image.jpg
 ---
 
 Sinsd begin 2022 stelt het Nederlands Instituut voor Beeld en Geluid een gloednieuwe service layer beschikbaar voor de thesaurus. OpenSKOS, het systeem waarin de beschikbaarstelling meerdere jaren is gedaan, was end-of-life en aan vervanging toe. 
@@ -17,7 +17,10 @@ De beschikbare endpoints zijn:
 ## OAI-PMH
  Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
 
-#### Voorbeelden
+De OAI identifiers in de service layer zijn conform [OAI richtlijnen](http://www.openarchives.org/OAI/2.0/guidelines-oai-identifier.htm). Ten opzichte van OpenSKOS zijn deze gewijzigd en
+daardoor is het nodig om de repository opnieuw te harvesten. Daarna kunnen alle wijzigingen weer worden opgehaald.
+
+### Voorbeelden
 
   [Beschrijvende informatie over de repository ophalen](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 
@@ -35,14 +38,20 @@ L
 
   [Vraag één specifiek concept op in SKOS-XL](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=GetRecord&metadataPrefix=oai_rdf_xl&identifier=oai:gtaa.apis.beeldengeluid.nl:123456)
 
-### Search
+## Search
+### Voorbeelden
+  [Vind een term die het woord 'vinci' bevat ](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
+
+  [Vind een term met meerdere tekens match '*' wildcard](https://gtaa.apis.beeldengeluid.nl/search?q=vinc*)
+
+[Vind een term met enkel teken match '?' wildcard](https://gtaa.apis.beeldengeluid.nl/search?q=vin?i)
+
 
 ### Autocomplete
+### Voorbeelden
 
 ### SPARQL
-
-
-  [Zoek naar een term](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
+### Voorbeelden
 
 
 De [The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).

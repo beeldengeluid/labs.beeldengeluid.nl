@@ -1,7 +1,7 @@
 ---
 title: GTAA API
 subtitle: Common Thesaurus for Audiovisual Archives
-image: apis/gtaa-network-image.jpg
+image: apis/gtaa_network_image.jpg
 ---
 
 Since early 2022 the Netherlands Institute for Sound and Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and needed replacement. 
@@ -17,7 +17,7 @@ The available endpoints are:
 ## OAI-PMH
  All the concepts within a ConceptScheme are available for download in RDF/XML using the [OAI-PMH](https://www.openarchives.org/pmh/) data provider. The service layer provides this so that others can harvest the contents of the GTAA, and keep track of the changes. Both SKOS modelled data and SKOS-XL (eXtension for Labels) can be found using the appropriate prefix.
 
-#### Voorbeelden
+#### Examples
 
   [Retrieve descriptive information about the repository](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 
@@ -35,4 +35,31 @@ The available endpoints are:
 
   [Ask for one specific concept in SKOS-XL](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=GetRecord&metadataPrefix=oai_rdf_xl&identifier=oai:gtaa.apis.beeldengeluid.nl:123456)
 
-[The GTAA dataset](datasets/common-thesaurus-audiovisual-archives) is made available under the Open Database License (OdbL).
+## Search
+Het search endpoint ondersteunt een gebruiker in het zoeken naar de juiste term in de GTAA. 
+#### Examples
+  [Find a term that contains the word 'vinci'](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
+
+  [Find a term using a multiple character wildcard '*' match](https://gtaa.apis.beeldengeluid.nl/search?q=vinc*)
+
+[Find a term using a single character wildcard '?' match](https://gtaa.apis.beeldengeluid.nl/search?q=vin?i)
+
+
+## Autocomplete
+Autocomplete, or word completion, is a feature in which the service layer predicts the rest of a word a user is typing. Autocomplete speeds up human-computer interactions when it correctly predicts the word a user intends to enter after only a few characters have been typed into a text input field. [Wikipedia](https://en.wikipedia.org/wiki/Autocomplete)
+#### Examples
+
+[Suggestions for the partial search term 'aar', match and return alt- and prefLabels and include the context](https://gtaa.apis.beeldengeluid.nl/autocomplete?text=aar&collection=gtaa&tenant=beng&matchMode=MATCHMODE_PREFIXLABEL&searchLabel=prefLabel&searchLabel=altLabel&returnLabel=altLabel&returnLabel=prefLabel&includeContext=True)
+
+## SPARQL
+SKOS is an ontology build in RDF. RDF is a directed, labeled graph data format for representing information in the Web. RDF is often used to represent, among other things, personal information, social networks, metadata about digital artifacts, as well as to provide a means of integration over disparate sources of information. [W3C](https://www.w3.org/TR/rdf-sparql-query/#introduction)
+
+More specific information on the syntax and semantics of the SPARQL query language for RDF can be found [here](https://www.w3.org/TR/rdf-sparql-query/).
+
+The service layer provides a SPARQL endpoint to enable other parties to connect components, like the [network of terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq#what-is)
+
+#### Examples
+[SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
+
+## License
+The [GTAA dataset](datasets/common-thesaurus-audiovisual-archives) is made available under the Open Database License (OdbL).
