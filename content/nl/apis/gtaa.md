@@ -10,7 +10,7 @@ In de nieuwe thesaurus service layer maakt  Beeld en Geluid meerdere endpoints b
 
 De beschikbare endpoints zijn:
 * [OAI-PMH](#oai-pmh)
-* [Search](#search)
+* [search](#search)
 * [autocomplete](#autocomplete)
 * [SPARQL](#sparql)
 
@@ -39,6 +39,8 @@ L
   [Vraag één specifiek concept op in SKOS-XL](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=GetRecord&metadataPrefix=oai_rdf_xl&identifier=oai:gtaa.apis.beeldengeluid.nl:123456)
 
 ## Search
+Het full-text search endpoint ondersteunt een gebruiker bij het zoeken naar een concept in de GTAA, waarbij de gebruiker, door middel van het invoeren van de juiste zoekterm, het gewenste concept vindt in de zoekresultaten. 
+
 ### Voorbeelden
   [Vind een term die het woord 'vinci' bevat ](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
 
@@ -48,10 +50,21 @@ L
 
 
 ### Autocomplete
+Bij autocomplete voorspelt de service layer het woord of de zin die de gebruiker wil typen zonder dat deze dit al volledig heeft ingetikt. Automatische aanvulling maakt de interactie met de computer sneller en aangenamer. [(bron: Wikipedia)](https://nl.wikipedia.org/wiki/Automatische_aanvulling)
+
 ### Voorbeelden
+[Suggesties matchend op een gedeeltelijke zoekterm 'aar' in de alt- en/of prefLabels](https://gtaa.apis.beeldengeluid.nl/autocomplete?text=aar&collection=gtaa&tenant=beng&matchMode=MATCHMODE_PREFIXLABEL&searchLabel=prefLabel&searchLabel=altLabel&returnLabel=altLabel&returnLabel=prefLabel&includeContext=True)
 
 ### SPARQL
-### Voorbeelden
+SKOS is een ontologie in het Resource Description Framework of RDF, een standaard van het World Wide Web Consortium (W3C), oorspronkelijk ontworpen als een metadata-model, maar gaandeweg gebruikt als een formaat om gegevens in het algemeen voor te stellen en uit te wisselen. [(bron: Wikipedia)](https://nl.wikipedia.org/wiki/Resource_Description_Framework)
+
+Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal voor RDF is te vinden [hier](https://www.w3.org/TR/rdf-sparql-query/).
+
+De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in staat te stellen componenten te koppelen, zoals het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq).
+
+#### Examples
+[SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
+
 
 
 De [The GTAA dataset](datasets/gemeenschappelijke-thesaurus-voor-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).

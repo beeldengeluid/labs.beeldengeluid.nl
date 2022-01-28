@@ -1,5 +1,5 @@
 ---
-title: GTAA API
+title: GTAA APIs
 subtitle: Common Thesaurus for Audiovisual Archives
 image: apis/gtaa_network_image.jpg
 ---
@@ -36,7 +36,8 @@ The available endpoints are:
   [Ask for one specific concept in SKOS-XL](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=GetRecord&metadataPrefix=oai_rdf_xl&identifier=oai:gtaa.apis.beeldengeluid.nl:123456)
 
 ## Search
-Het search endpoint ondersteunt een gebruiker in het zoeken naar de juiste term in de GTAA. 
+The full-text search endpoint supports a user in searching for a concept in the GTAA, whereby the user, by entering the correct search term, finds the desired concept in the search results.
+
 #### Examples
   [Find a term that contains the word 'vinci'](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
 
@@ -46,7 +47,7 @@ Het search endpoint ondersteunt een gebruiker in het zoeken naar de juiste term 
 
 
 ## Autocomplete
-Autocomplete, or word completion, is a feature in which the service layer predicts the rest of a word a user is typing. Autocomplete speeds up human-computer interactions when it correctly predicts the word a user intends to enter after only a few characters have been typed into a text input field. [Wikipedia](https://en.wikipedia.org/wiki/Autocomplete)
+Autocomplete, or word completion, is a feature in which the service layer predicts the rest of a word a user is typing. Autocomplete speeds up human-computer interactions when it correctly predicts the word a user intends to enter after only a few characters have been typed into a text input field. [(source: Wikipedia)](https://en.wikipedia.org/wiki/Autocomplete)
 #### Examples
 
 [Suggestions for the partial search term 'aar', match and return alt- and prefLabels and include the context](https://gtaa.apis.beeldengeluid.nl/autocomplete?text=aar&collection=gtaa&tenant=beng&matchMode=MATCHMODE_PREFIXLABEL&searchLabel=prefLabel&searchLabel=altLabel&returnLabel=altLabel&returnLabel=prefLabel&includeContext=True)
