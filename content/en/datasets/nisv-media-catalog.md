@@ -8,10 +8,10 @@ tags:
 - Creative Commons
 
 ---
-# Sound and Vision Media Catalogue Open Data
+# Sound and Vision media catalog Open Data
 As an institute for media culture, Sound and Vision manages a media collection in the broadest sense of the word, from written press, film, radio and television to computer games, online video and websites, whether or not professionally produced. A large part of this collection is stored digitally. We manage this digital collection in such a reliable and sustainable way that we are the first national audiovisual archive in the world to be awarded the Data Seal of Approval.
 
-The collection is built on four thematic pillars: 'News, information and current affairs', 'Culture and entertainment', 'Amateur- and corporate productions', and 'Media landscape'. [Sound and Vision collection](https://www.beeldengeluid.nl/collectie)
+The collection is built on four thematic pillars: 'News, information and current affairs', 'Culture and entertainment', 'Amateur- and corporate productions', and 'Media landscape'.
 
 This dataset contains the catalogue metadata of the majority of the collections of the Netherlands Institute of Sound and Vision. We have selected those metadata fields that are not protected by copyright, or to which Sound and Vision itself is the rights holder, and released them under a [Creative Commons CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/ "CC0 License").
 
@@ -25,4 +25,4 @@ To facilitate users of this dataset we made the following decisions:
 We will continue to expand and improve on this dataset. Please contact us with any specific requirements or use case that you might have.
 
 ### APIs
-For working with the Open Data several [APIs](apis/nisv-media-catalog-apis) are available.
+For working with the Sound and Vision media catalog open data several [APIs](apis/nisv-media-catalog-apis) are available.

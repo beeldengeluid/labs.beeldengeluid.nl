@@ -1,15 +1,10 @@
 ---
 title: NIBG Media Catalog APIs 
-subtitle: SPARQL endpoint om de open data in de media catalogus te bevragen.
+subtitle: Bevraag de open data in de media catalogus van Beeld en Geluid
 image: datasets/beeld_en_geluid_wall.jpg
 ---
 
-As an institute for media culture, Sound and Vision manages a media collection in the broadest sense of the word, from written press, film, radio and television to computer games, online video and websites, whether or not professionally produced. A large part of this collection is stored digitally. We manage this digital collection in such a reliable and sustainable way that we are the first national audiovisual archive in the world to be awarded the Data Seal of Approval.
-
-The collection is built on four thematic pillars: 'News, information and current affairs', 'Culture and entertainment', 'Amateur and corporate productions', and 'Media landscape'.
-
-
-The available endpoints are:
+De beschikbare endpoints zijn:
 * [Search](#search)
 * [SPARQL](#sparql)
 
@@ -32,7 +27,10 @@ We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invo
 #### Examples
 [SPARQL endpoint in een browser](https://cat.apis.beeldengeluid.nl/sparql)
 
-[Stuur een query en krijg JSON terug](`curl -X GET -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="SELECT%20*%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%2010"`)
+Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
+
+`curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="SELECT%20*%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%2010"`
 
 ### License
-[Open metadata](datasets/beeld-en-geluid-media-catalogus) (not limited by copyright) for the NISV media catalog is made available under the Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld en Geluid media catalogus](datasets/beeld-en-geluid-media-catalogus) is beschikbaar gemaakt 
+onder de Creative Commons Zero License (CC0).

@@ -62,4 +62,4 @@ The service layer provides a SPARQL endpoint to enable other parties to connect 
 [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
 ## License
-The [GTAA dataset](datasets/common-thesaurus-audiovisual-archives) is made available under the Open Database License (OdbL).
+The [GTAA dataset](datasets/common-thesaurus-for-audiovisual-archives) is made available under the Open Database License (OdbL).

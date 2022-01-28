@@ -54,4 +54,4 @@ L
 ### Voorbeelden
 
 
-De [The GTAA dataset](datasets/gtaa-gemeenschappelijke-thesaurus-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).
+De [The GTAA dataset](datasets/gemeenschappelijke-thesaurus-voor-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).
