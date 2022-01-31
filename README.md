@@ -17,6 +17,9 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn dev
 
+# fetch latest datacatalog in JSON-LD format
+$ yarn fetch
+
 # build for production and launch server
 $ yarn build
 $ yarn start
