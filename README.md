@@ -10,6 +10,8 @@ Welcome to the online home of Sound and Vision Labs (BenG Labs in Dutch).
 
 ## Build Setup
 
+The following commands require [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) to be installed globally.
+
 ```bash
 # install dependencies
 $ yarn install
@@ -20,11 +22,7 @@ $ yarn dev
 # fetch latest datacatalog in JSON-LD format
 $ yarn fetch
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
+# generate static project (includes fetch)
 $ yarn generate
 ```
 
