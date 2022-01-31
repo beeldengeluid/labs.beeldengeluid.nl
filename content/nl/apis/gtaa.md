@@ -10,10 +10,10 @@ In de nieuwe thesaurus service layer maakt Beeld en Geluid meerdere endpoints be
 
 De beschikbare endpoints zijn:
 
-- [OAI-PMH](#oai-pmh)
-- [search](#search)
-- [autocomplete](#autocomplete)
-- [SPARQL](#sparql)
+- [OAI-PMH](/nl/apis/gtaa#oai-pmh)
+- [search](/nl/apis/gtaa#search)
+- [autocomplete](/nl/apis/gtaa#autocomplete)
+- [SPARQL](/nl/apis/gtaa#sparql)
 
 ## OAI-PMH
 

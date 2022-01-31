@@ -10,10 +10,10 @@ The service layer provides several endpoints that can be used to work with the G
 
 The available endpoints are:
 
-- [OAI-PMH](./#oai-pmh)
-- [Search](#search)
-- [autocomplete](#autocomplete)
-- [SPARQL](#sparql)
+- [OAI-PMH](/apis/gtaa#oai-pmh)
+- [Search](/apis/gtaa#search)
+- [autocomplete](/apis/gtaa#autocomplete)
+- [SPARQL](/apis/gtaa#sparql)
 
 ## OAI-PMH
 
