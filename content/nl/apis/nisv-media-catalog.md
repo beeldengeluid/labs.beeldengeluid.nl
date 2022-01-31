@@ -12,9 +12,10 @@ De beschikbare endpoints zijn:
 ## Search
 
 Doorzoek de mediacatalogus met behulp van een full-text zoekindex op de metadata. In een [full-text search](https://en.wikipedia.org/wiki/Full-text_search) wordt elk woord uit een opgeslagen set documenten geanalyseerd en geïndexeerd door de zoekmachine.
+
 Gebruikers kunnen proberen de informatie te vinden waarin ze geïnteresseerd zijn door een tekstquery te formuleren (bijvoorbeeld zoals in Google) die het beste past bij het document waarnaar ze op zoek zijn.
 
-#### Voorbeelden
+### Voorbeelden
 
 Nog toe te voegen
 
@@ -28,15 +29,14 @@ Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal
 
 We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invoeren in de adresbalk van een browser. Dezelfde URL kan direct worden gebruikt door machines (scripts of andere toepassingen) die met de server kunnen onderhandelen over het retourformaat.
 
-#### Examples
+### Voorbeelden
 
-[SPARQL endpoint in een browser](https://cat.apis.beeldengeluid.nl/sparql)
+- [SPARQL endpoint in een browser](https://cat.apis.beeldengeluid.nl/sparql)
 
 Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
 
 `curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="SELECT%20*%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%2010"`
 
-### License
+## License
 
-Open metadata voor de [Beeld en Geluid media catalogus](datasets/beeld-en-geluid-media-catalogus) is beschikbaar gemaakt
-onder de Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld en Geluid media catalogus](datasets/beeld-en-geluid-media-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
