@@ -6,8 +6,8 @@ image: datasets/beeld_en_geluid_wall.jpg
 
 The available endpoints are:
 
-- [Search](#search)
-- [SPARQL](#sparql)
+- [Search](/apis/nisv-media-catalog#search)
+- [SPARQL](/apis/nisv-media-catalog#sparql)
 
 ## Search
 
