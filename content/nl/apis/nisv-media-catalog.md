@@ -39,4 +39,4 @@ Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
 
 ## License
 
-Open metadata voor de [Beeld en Geluid media catalogus](datasets/beeld-en-geluid-media-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld en Geluid media catalogus](/datasets/beeld-en-geluid-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).

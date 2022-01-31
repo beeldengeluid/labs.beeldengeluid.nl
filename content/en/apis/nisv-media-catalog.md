@@ -39,4 +39,4 @@ Send a query, for example using **curl**, and get JSON results:
 
 ### License
 
-Open metadata for the [NISV media catalog](datasets/nisv-media-catalog) is made available under the Creative Commons Zero License (CC0).
+Open metadata for the [NISV media catalog](/nl/datasets/beeld-en-geluid-catalogus) is made available under the Creative Commons Zero License (CC0).
