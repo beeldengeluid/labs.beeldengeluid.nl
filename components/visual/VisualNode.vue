@@ -6,7 +6,6 @@
       width: node.r * 2 + 'px',
       height: node.r * 2 + 'px',
       fontSize: 3 + node.r / 7 + 'px',
-      'z-index': node.r > 200 ? -1 : 0,
     }"
     @click.stop="onClick"
     @touchstart="onTouchStart"
@@ -149,6 +148,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
+    border-radius: 100%;
     transition: transform 1.4s ease-out;
     transform: translateZ(1px);
 
