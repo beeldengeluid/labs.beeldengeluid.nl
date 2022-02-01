@@ -1,35 +1,37 @@
 ---
-title: NISV Muziekweb APIs
-subtitle: Query the music library of The Netherlands
+title: NIBG Muziekweb APIs 
+subtitle: Bevraag de muziekbibliotheek van Nederland
 image: apis/beng-muziekweb.jpg
 ---
 
-In Linked Open Data (LOD), data is offered in a structured way so that it can be easily interpreted by computers. This allows automatic linking of entities from different sources on the internet, also known as the semantic web. It makes the data richer and more useful for the user.
+In Linked Open Data (LOD) worden data op een gestructureerde manier aangeboden zodat deze eenvoudig door computers kunnen worden geïnterpreteerd. Hierdoor kunnen entiteiten uit verschillende bronnen op internet automatisch gekoppeld worden, ook wel het semantisch web genoemd. Het maakt de gegevens rijker en nuttiger voor de gebruiker.
 
-Muziekweb offers a large part of its metadata via Linked Data protocols. This makes it possible to deploy the information present on the website for wider use such as search engines that can search in multiple sources simultaneously (for example in the [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/) from Dutch Digital Heritage Network) or publishing enriched data from many sources as has been done on War Resources (Dutch).
+Muziekweb biedt een groot deel van haar metadata aan via Linked Data protocollen. Dit maakt het mogelijk de op de website aanwezige informatie in te zetten voor breder gebruik, zoals zoekmachines die in meerdere bronnen tegelijk kunnen zoeken (bijvoorbeeld in het [termennetwerk](termennetwerk.netwerkdigitaalerfgoed.nl/) van Netwerk Digitaal Erfgoed of het publiceren van verrijkte data uit vele bronnen zoals op Oorlogsbronnen is gebeurd.
 
-An ontology was designed for Muziekweb's data that extends the standards of schema.org. The full vocabulary can be found at the following location:
+Voor de gegevens van Muziekweb is een ontologie ontworpen die de standaarden van schema.org uitbreidt. Het volledige vocabulaire is te vinden op de volgende locatie:
 https://data.muziekweb.nl/MuziekwebOrganization/vocabulary
 
-The data offered as Linked Open Data is available at https://data.muziekweb.nl/. At this address, the Linked Data can be accessed directly and it is possible to perform searches using the SPARQL interface, a query language to search and select in data from Resource Description Framework (RDF) sources.
+De data die als Linked Open Data worden aangeboden zijn beschikbaar op https://data.muziekweb.nl/. Op dit adres zijn de Linked Data direct toegankelijk en is het mogelijk om zoekopdrachten uit te voeren met behulp van de SPARQL-interface, een zoektaal om te zoeken en selecteren in gegevens uit Resource Description Framework (RDF) bronnen.
 
-The available endpoints are:
-
-- [SPARQL](#sparql)
+De beschikbare endpoints zijn:
+* [SPARQL](#sparql)
 
 ## SPARQL
+Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal voor RDF vindt u [hier](https://www.w3.org/TR/rdf-sparql-query/).
 
-More specific information on the syntax and semantics of the SPARQL query language for RDF can be found [here](https://www.w3.org/TR/rdf-sparql-query/).
+#### Examples
+[Open een gebruikersinterface naar het SPARQL endpoint in een browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
 
-### Examples
+Use **curl** to send a query and get JSON results. For example: 
+``curl -H "Accept: application/sparql-results+json" https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql?query="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+} LIMIT 10"``
 
-- [Open a user interface to the SPARQL endpoint in a browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
-
-Use **curl** to send a query and get JSON results. For example:
-`curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10"`
-
-Please note that the query string must be [urlencoded](https://www.urlencoder.org/).
+Houd er rekening mee dat de query  [urlencoded](https://www.urlencoder.org/) moet zijn.
 
 ### License
+Linked open data voor [NISV Muziekweb](datasets/beeld-en-geluid-muziekweb) is beschikbaar gemaakt onder een Open Data Commons Attribution License (ODC-By).
 
-Linked open data for [NISV Muziekweb](datasets/nisv-muziekweb) is made available under the Open Data Commons Attribution License (ODC-By).
+
