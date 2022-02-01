@@ -2,6 +2,7 @@ import slugify from 'slugify'
 import { stripObject } from './objects'
 import { getRandomColor, parseColor } from './color'
 import { getLocalePath } from '~/util/contentFallback'
+import { filterUndefined } from '~/util/frontmatter'
 
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
@@ -124,15 +125,10 @@ export async function extendDatasetsWithFrontmatter(
       })
     if (page) {
       // assign defined page props to dataset, parse color vars (e.g. red.base)
-      const pageDefined = Object.entries(page)
-        .filter(
-          ([key, value]) =>
-            value !== undefined && value !== '' && value !== [] && value !== {}
-        )
-        .reduce((obj, [key, value]) => {
-          obj[key] = value
-          return obj
-        }, {})
+      const pageDefined = filterUndefined(page).reduce((obj, [key, value]) => {
+        obj[key] = value
+        return obj
+      }, {})
       Object.assign(dataset, pageDefined, {
         color: parseColor(page.color),
       })

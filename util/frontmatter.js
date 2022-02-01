@@ -21,3 +21,10 @@ export const isLinkObject = (value) => {
 export const isLinkArray = (value) => {
   return value.every((v) => isLinkObject(v))
 }
+
+export const filterUndefined = (article) => {
+  return Object.entries(article).filter(
+    ([key, value]) =>
+      value !== undefined && value !== '' && value !== [] && value !== {}
+  )
+}

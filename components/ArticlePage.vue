@@ -28,10 +28,18 @@
       <!-- Display selected article fiels if present -->
       <data-table
         :object="{
-          ...(article.contacts && { contacts: article.contacts }),
-          ...(article.website_url && { website: article.website_url }),
-          ...(article.website && { website: article.website }),
-          ...(article.partners && { partners: article.partners }),
+          ...(articleDefined.contacts && {
+            contacts: articleDefined.contacts,
+          }),
+          ...(articleDefined.website_url && {
+            website: articleDefined.website_url,
+          }),
+          ...(articleDefined.website && {
+            website: articleDefined.website,
+          }),
+          ...(articleDefined.partners && {
+            partners: articleDefined.partners,
+          }),
         }"
         class="mb-2"
       />
@@ -62,6 +70,7 @@ import ArticleRelations from './ArticleRelations'
 import PrevNext from './PrevNext'
 import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
+import { filterUndefined } from '~/util/frontmatter'
 import { classColorIndex } from '~/config/theme'
 
 export default {
@@ -115,6 +124,11 @@ export default {
   },
   methods: {
     formatDate,
+  },
+  computed: {
+    articleDefined() {
+      return filterUndefined(this.article)
+    },
   },
 }
 </script>
