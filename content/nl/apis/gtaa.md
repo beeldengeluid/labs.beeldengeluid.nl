@@ -59,9 +59,9 @@ Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal
 
 De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in staat te stellen componenten te koppelen, zoals het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq).
 
-### Examples
+### Voorbeelden
 
-- [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
+- [SPARQL endpoint (vereist een authenticatie sleutel)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
 ## License
 
