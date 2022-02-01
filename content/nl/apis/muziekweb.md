@@ -17,7 +17,7 @@ De data die als Linked Open Data worden aangeboden zijn beschikbaar op https://d
 
 ## SPARQL
 
-Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal voor RDF vindt u [hier](https://www.w3.org/TR/rdf-sparql-query/).
+Meer specifieke informatie over de syntax en semantiek van de SPARQL-querytaal voor RDF is [hier](https://www.w3.org/TR/rdf-sparql-query/) te vinden.
 
 ### Voorbeelden
 

@@ -24,4 +24,4 @@ We will continue to expand and improve on this dataset. Please contact us with a
 
 ### APIs
 
-For working with the Sound and Vision media catalog open data several [APIs](apis/nisv-media-catalog-apis) are available.
+For working with the Sound and Vision media catalog open data several [APIs](/apis/nisv-media-catalog) are available.

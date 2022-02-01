@@ -24,4 +24,4 @@ We zullen deze dataset blijven uitbreiden en verbeteren. Neem contact met ons op
 
 ### APIs
 
-Om met de open data uit de media catalogus te werken zijn er verschillende [APIs](apis/nibg-media-catalogus-apis) beschikbaar.
+Om met de open data uit de media catalogus te werken zijn er verschillende [APIs](/nl/apis/nisv-media-catalog) beschikbaar.

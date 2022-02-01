@@ -27,18 +27,17 @@ Het SPARQL-eindpunt vergemakkelijkt het opvragen van de open data van de mediaca
 
 Resource Description Framework of RDF is een standaard van het World Wide Web Consortium (W3C), oorspronkelijk ontworpen als een metadata-model, maar gaandeweg gebruikt als een formaat om gegevens in het algemeen voor te stellen en uit te wisselen. [Wikipedia](https://nl.wikipedia.org/wiki/Resource_Description_Framework)
 
-Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal voor RDF is [hier](https://www.w3.org/TR/rdf-sparql-query/) te vinden.
+Meer specifieke informatie over de syntax en semantiek van de SPARQL-querytaal voor RDF is [hier](https://www.w3.org/TR/rdf-sparql-query/) te vinden.
 
 We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invoeren in de adresbalk van een browser. Dezelfde URL kan direct worden gebruikt door machines (scripts of andere toepassingen) die met de server kunnen onderhandelen over het retourformaat.
 
 ### Voorbeelden
 
 - [SPARQL endpoint in een browser](https://cat.apis.beeldengeluid.nl/sparql)
-
-Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
+- Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
 
 `curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="SELECT%20*%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%2010"`
 
 ## License
 
-Open metadata voor de [Beeld en Geluid media catalogus](/datasets/beeld-en-geluid-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld en Geluid media catalogus](/nl/datasets/beeld-en-geluid-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).

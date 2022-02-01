@@ -20,4 +20,4 @@ Elke term in de GTAA is een SKOS Concept met minimaal één voorkeurslabel en ee
 
 Voor een groot aantal concepten uit GTAA/ Persoonsnamen is er een alignment gemaakt met Wikidata. Door het toevoegen van de property [GTAA ID](https://www.wikidata.org/wiki/Property:P1741) op Wikidata (bijv. voor http://www.wikidata.org/entity/Q345526), kan de GTAA aan een groot aantal andere bronnen gerelateerd worden.
 
-Om met de GTAA te werken zijn er verschillende [APIs](apis/gtaa) beschikbaar.
+Om met de GTAA te werken zijn er verschillende [APIs](/nl/apis/gtaa) beschikbaar.
