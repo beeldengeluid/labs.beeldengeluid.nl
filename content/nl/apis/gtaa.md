@@ -2,6 +2,8 @@
 title: GTAA APIs
 subtitle: Gemeenschappelijke Thesaurus Audiovisuele Archieven
 image: apis/gtaa_network_image.jpg
+datasets:
+  - http://data.beeldengeluid.nl/id/dataset/0010
 ---
 
 Sinds begin 2022 stelt het Nederlands Instituut voor Beeld en Geluid een gloednieuwe service layer beschikbaar voor de thesaurus. OpenSKOS, het systeem waarin de beschikbaarstelling meerdere jaren is gedaan, was end-of-life en aan vervanging toe.

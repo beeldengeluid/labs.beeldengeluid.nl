@@ -2,6 +2,8 @@
 title: BenG Media Catalog APIs
 subtitle: Bevraag de open data in de media catalogus van Beeld en Geluid
 image: datasets/beeld_en_geluid_wall.jpg
+datasets:
+  - http://data.beeldengeluid.nl/id/dataset/0001
 ---
 
 De beschikbare endpoints zijn:

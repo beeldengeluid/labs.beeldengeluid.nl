@@ -2,6 +2,8 @@
 title: GTAA APIs
 subtitle: Common Thesaurus for Audiovisual Archives
 image: apis/gtaa_network_image.jpg
+datasets:
+  - http://data.beeldengeluid.nl/id/dataset/0010
 ---
 
 Since early 2022 the Netherlands Institute for Sound and Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and needed replacement.

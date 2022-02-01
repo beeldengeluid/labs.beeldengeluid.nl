@@ -2,6 +2,8 @@
 title: BenG Muziekweb APIs
 subtitle: Bevraag de muziekbibliotheek van Nederland
 image: apis/beng-muziekweb.jpg
+datasets:
+  - http://data.beeldengeluid.nl/id/dataset/0026
 ---
 
 In Linked Open Data (LOD) worden data op een gestructureerde manier aangeboden zodat deze eenvoudig door computers kunnen worden geïnterpreteerd. Hierdoor kunnen entiteiten uit verschillende bronnen op internet automatisch gekoppeld worden, ook wel het semantisch web genoemd. Het maakt de gegevens rijker en nuttiger voor de gebruiker.

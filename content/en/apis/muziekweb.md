@@ -2,6 +2,8 @@
 title: NISV Muziekweb APIs
 subtitle: Query the music library of the Netherlands
 image: apis/beng-muziekweb.jpg
+datasets:
+  - http://data.beeldengeluid.nl/id/dataset/0026
 ---
 
 In Linked Open Data (LOD), data is offered in a structured way so that it can be easily interpreted by computers. This allows automatic linking of entities from different sources on the internet, also known as the semantic web. It makes the data richer and more useful for the user.

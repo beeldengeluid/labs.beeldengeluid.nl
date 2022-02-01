@@ -3,7 +3,7 @@ title: Open Images API
 subtitle: The API enables harvesting all metadata and links to the content
 image: datasets/openbeelden_beeldengeluid.jpg
 datasets:
-  - open-beelden
+  - http://data.beeldengeluid.nl/id/dataset/0002
 contacts:
   - organization: Nederlands Instituut voor Beeld en Geluid
     name: Maarten Brinkerink
