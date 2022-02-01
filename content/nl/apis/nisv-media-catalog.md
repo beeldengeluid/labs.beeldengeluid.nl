@@ -1,5 +1,5 @@
 ---
-title: NIBG Media Catalog APIs
+title: BenG Media Catalog APIs
 subtitle: Bevraag de open data in de media catalogus van Beeld en Geluid
 image: datasets/beeld_en_geluid_wall.jpg
 ---
