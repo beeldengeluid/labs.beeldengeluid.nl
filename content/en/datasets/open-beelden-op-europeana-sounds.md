@@ -5,4 +5,4 @@ image: ''
 tags: []
 ---
 
-Open Beelden op Europeana Sounds
+Open Beelden on Europeana Sounds
