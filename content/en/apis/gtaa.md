@@ -1,5 +1,5 @@
 ---
-title: GTAA
+title: GTAA APIs
 subtitle: Common Thesaurus for Audiovisual Archives
 image: apis/gtaa_network_image.jpg
 ---

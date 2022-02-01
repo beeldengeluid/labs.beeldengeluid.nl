@@ -1,5 +1,5 @@
 ---
-title: GTAA
+title: GTAA APIs
 subtitle: Gemeenschappelijke Thesaurus Audiovisuele Archieven
 image: apis/gtaa_network_image.jpg
 ---
