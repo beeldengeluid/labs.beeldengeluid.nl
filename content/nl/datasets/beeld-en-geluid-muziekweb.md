@@ -9,9 +9,9 @@ tags:
 
 ---
 # Muziekweb
-Muziekweb is the music library of the Netherlands. Musicweb aims to offer music and the information about music accessible to everyone. Muziekweb has since 1961 built a collection of 600,000 CDs, 300,000 LPs and 30,000 music DVDs. The site is a source of information about music that has been released in the Netherlands during the past fifty years, and an ideal place to get to know more music.
+Muziekweb is de muziekbibliotheek van Nederland. Muziekweb heeft als doel om muziek en de informatie over muziek voor iedereen toegankelijk te maken. Muziekweb heeft sinds 1961 een collectie opgebouwd van 600.000 cd's, 300.000 lp's en 30.000 muziek-dvd's. De site is een bron van informatie over muziek die de afgelopen vijftig jaar in Nederland is uitgebracht en een ideale plek om meer muziek te leren kennen.
 
-This dataset is available under a [Open Data Commons Attribution License (ODC-By)](https://opendatacommons.org/licenses/by/).
+Deze dataset is beschikbaar onder een [Open Data Commons Attribution License (ODC-By)](https://opendatacommons.org/licenses/by/).
 
 ### APIs
-For working with the Muziekweb data  [APIs](apis/nibg-muziekweb-apis) are available.
+Om met de Muziekweb data te werken zijn  [APIs](apis/nibg-muziekweb-apis) beschikbaar.
