@@ -19,9 +19,8 @@ Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal
 
 ### Voorbeelden
 
-[Open een gebruikersinterface naar het SPARQL endpoint in een browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
-
-Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
+- [Open een gebruikersinterface naar het SPARQL endpoint in een browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
+- Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:
 
 ```
 curl -H "Accept: application/sparql-results+json" https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql?query="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10"
@@ -31,4 +30,4 @@ Houd er rekening mee dat de query [urlencoded](https://www.urlencoder.org/) moet
 
 ## License
 
-Linked open data voor [NISV Muziekweb](datasets/beeld-en-geluid-muziekweb) is beschikbaar gemaakt onder een Open Data Commons Attribution License (ODC-By).
+Linked open data voor [NISV Muziekweb](/nl/datasets/muziekweb) is beschikbaar gemaakt onder een Open Data Commons Attribution License (ODC-By).

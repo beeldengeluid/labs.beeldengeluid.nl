@@ -20,8 +20,7 @@ More specific information on the syntax and semantics of the SPARQL query langua
 ### Examples
 
 - [Open a user interface to the SPARQL endpoint in a browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
-
-Use **curl** to send a query and get JSON results. For example:
+- Use **curl** to send a query and get JSON results. For example:
 
 ```
 curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10"
@@ -31,4 +30,4 @@ Please note that the query string must be [urlencoded](https://www.urlencoder.or
 
 ### License
 
-Linked open data for [NISV Muziekweb](datasets/nisv-muziekweb) is made available under the Open Data Commons Attribution License (ODC-By).
+Linked open data for [NISV Muziekweb](/datasets/muziekweb) is made available under the Open Data Commons Attribution License (ODC-By).
