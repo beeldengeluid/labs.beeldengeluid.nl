@@ -33,7 +33,7 @@
       "
     >
     </v-img>
-    <v-card-title class="pt-4 mb-2 h-24">
+    <v-card-title class="pt-4 mb-2">
       {{ card.title }}
     </v-card-title>
     <v-card-text>
@@ -166,14 +166,6 @@ export default {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
-    }
-  }
-
-  .v-card__title {
-    word-break: normal;
-
-    &.h-24 {
-      height: 6rem;
     }
   }
 }
