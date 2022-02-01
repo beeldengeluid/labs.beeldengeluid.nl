@@ -154,6 +154,10 @@ export default {
     }
   }
 
+  .v-card__title {
+    word-break: normal;
+  }
+
   .v-card__subtitle {
     font-size: 0.95rem;
 
