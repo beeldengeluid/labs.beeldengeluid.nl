@@ -33,18 +33,11 @@
       "
     >
     </v-img>
-    <v-card-title class="pt-4 mb-2">
+    <v-card-title>
       {{ card.title }}
     </v-card-title>
-    <v-card-text>
-      <v-chip
-        v-if="card.type"
-        :color="'primary'"
-        class="text-uppercase"
-        small
-        label
-        outlined
-      >
+    <v-card-text v-if="card.type">
+      <v-chip :color="'primary'" class="text-uppercase" small label outlined>
         {{ card.type }}
       </v-chip>
     </v-card-text>
