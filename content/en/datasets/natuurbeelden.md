@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0003
 color: green.base
-image: datasets/openbeelden_natuurbeelden.jpg
+image: /uploads/openbeelden_natuurbeelden.jpg
 tags:
   - cc by-sa 3.0
   - oai-pmh

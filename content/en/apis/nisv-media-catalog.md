@@ -1,7 +1,7 @@
 ---
 title: NISV Media Catalog APIs
 subtitle: Query the open data from the NISV media catalog
-image: datasets/beeld_en_geluid_wall.jpg
+image: /uploads/beeld_en_geluid_wall.jpg
 datasets:
   - http://data.beeldengeluid.nl/id/dataset/0001
 ---

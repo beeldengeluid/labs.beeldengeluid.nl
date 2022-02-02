@@ -1,7 +1,7 @@
 ---
 title: Open Beelden API
 subtitle: Deze harvesting API geeft toegang tot de Open Beelden metadata en links naar afspeelbare content
-image: datasets/openbeelden_beeldengeluid.jpg
+image: /uploads/openbeelden_beeldengeluid.jpg
 datasets:
   - http://data.beeldengeluid.nl/id/dataset/0002
 contacts:

@@ -2,7 +2,7 @@
 id: http://data.beeldengeluid.nl/id/dataset/0002
 # title: Override dataset title
 color: red.base
-image: datasets/openbeelden_beeldengeluid.jpg
+image: /uploads/openbeelden_beeldengeluid.jpg
 tags:
   - public domain
   - api

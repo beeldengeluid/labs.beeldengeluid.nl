@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0010
 color: ''
-image: datasets/gtaa_network_image.jpg
+image: /uploads/gtaa_network_image.jpg
 tags:
   - thesaurus
 ---

@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0026
 color: ''
-image: datasets/beng-muziekweb.jpg
+image: /uploads/beng-muziekweb.jpg
 tags:
   - Metadata
   - Linked Open Data

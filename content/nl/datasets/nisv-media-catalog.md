@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0001
 color: ''
-image: datasets/beeld_en_geluid_wall.jpg
+image: /uploads/beeld_en_geluid_wall.jpg
 tags:
   - Metadata
   - CC0

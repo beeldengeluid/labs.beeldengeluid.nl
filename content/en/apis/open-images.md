@@ -1,7 +1,7 @@
 ---
 title: Open Images API
 subtitle: The API enables harvesting all metadata and links to the content
-image: datasets/openbeelden_beeldengeluid.jpg
+image: /uploads/openbeelden_beeldengeluid.jpg
 datasets:
   - http://data.beeldengeluid.nl/id/dataset/0002
 contacts:
