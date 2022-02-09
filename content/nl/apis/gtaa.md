@@ -16,7 +16,8 @@ De beschikbare endpoints zijn:
 - [search](/nl/apis/gtaa#search)
 - [autocomplete](/nl/apis/gtaa#autocomplete)
 - [SPARQL](/nl/apis/gtaa#sparql)
-
+- [GraphQL](/apis/gtaa#graphql)
+- 
 ## OAI-PMH
 
 Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
@@ -64,6 +65,15 @@ De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in sta
 ### Voorbeelden
 
 - [SPARQL endpoint (vereist een authenticatie sleutel)](https://gtaa.apis.beeldengeluid.nl/sparql)
+
+## GraphQL
+Het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is een service ontwikkeld door het Netwerk Digitaal Erfgoed om termen te vinden in meerdere terminologiebronnen (zoals thesauri, classificatie systemen en referentielijsten) tegelijk.
+[Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
+
+### Voorbeelden
+[Zoek op de term 'film' in demonstrator termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-genres/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-geografischenamen/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-onderwerpen/sparql)
+
+[Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 
 ## License
 
