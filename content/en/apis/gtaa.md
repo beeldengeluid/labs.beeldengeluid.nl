@@ -16,6 +16,7 @@ The available endpoints are:
 - [Search](/apis/gtaa#search)
 - [autocomplete](/apis/gtaa#autocomplete)
 - [SPARQL](/apis/gtaa#sparql)
+- [GraphQL](/apis/gtaa#graphql)
 
 ## OAI-PMH
 
@@ -61,6 +62,14 @@ The service layer provides a SPARQL endpoint to enable other parties to connect 
 ### Examples
 
 - [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
+
+## GraphQL
+The [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is a new service being developed by the Dutch Digital Heritage Network for finding terms in terminology sources such as thesauri, classification systems, and reference lists. [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
+
+
+### Examples
+[Link to the demonstrator UI and search for the term 'film' ](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-genres/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-geografischenamen/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-onderwerpen/sparql)
+[Query interactively using the GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 
 ## License
 
