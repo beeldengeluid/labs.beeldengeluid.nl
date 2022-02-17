@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0026
+title: Muziekweb
+subtitle: This dataset has the latest linked data version of Muziekweb. Here you will find a linked data view in which all albums from the music web are displayed.
 color: ''
 image: /uploads/beng-muziekweb.jpg
 tags:

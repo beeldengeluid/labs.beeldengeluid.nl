@@ -1,12 +1,12 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0010
+title: Common Thesaurus Audiovisual Archives
+subtitle: Sound and Vision has teamed up with several other Dutch organizations that manage audiovisual cultural heritage to develop the Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (Common Thesaurus for Audiovisual Archives, GTAA). The GTAA is used for efficient characterization of the content of audio-visual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
 color: ''
 image: /uploads/gtaa_network_image.jpg
 tags:
   - thesaurus
 ---
-
-GTAA (Common Thesaurus for Audiovisual Archives)
 
 Sound and Vision has teamed up with other Dutch heritage organizations that manage audiovisual cultural heritage to develop the Common Thesaurus for Audiovisual Archives (Gemeenschappelijke Thesaurus voor Audiovisuele Archieven) or GTAA. The GTAA is used for characterization of the content of audiovisual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
 

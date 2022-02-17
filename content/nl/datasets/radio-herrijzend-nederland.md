@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0007
+title: Radio Herrijzend Nederland
+subtitle: De collectie uitzendingen van Radio Herrijzend Nederland bevat een selectie van de radio-uitzendingen die tussen 1944 en 1946 werden uitgezonden.
 color: ''
 image: '/uploads/radio_herrijzend_nederland_poster.png'
 tags:

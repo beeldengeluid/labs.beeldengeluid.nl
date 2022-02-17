@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0013
+title: NSB propagandafilms
+subtitle: The relatively new medium of film was of great importance in the propaganda machine of the NSB. This is made clear by the NSB film collection that Beeld en Geluid, in cooperation with Netwerk Oorlogsbronnen, is making available online within the WO2 Open Data Depot project.
 image: '/uploads/maliebaan-210960.jpeg'
 tags: []
 ---

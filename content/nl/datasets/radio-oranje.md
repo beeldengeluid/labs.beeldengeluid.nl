@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0006
+title: Radio Oranje
+subtitle: De collectie uitzendingen van Radio Oranje bevat een selectie van de radio-uitzendingen die tussen 1940 en 1945 werden uitgezonden. Het waren uitzendingen gemaakt door de Nederlandse regering in ballingschap in Londen, uitgezonden om het Nederlandse volk tijdens de bezetting aan te moedigen en te informeren.
 color: ''
 image: '/uploads/radio_oranje_poster.png'
 tags:

@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0003
+title: Natuurbeelden
+subtitle: The set contains raw footage of Dutch nature. This subset is part of a larger collection of video's from the project Natuurbeelden that has been made available under a Creative Commons license.
 color: green.base
 image: /uploads/openbeelden_natuurbeelden.jpg
 tags:

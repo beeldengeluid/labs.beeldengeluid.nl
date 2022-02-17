@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0001
+title: Beeld en Geluid catalogus
+subtitle: Metadata voor de catalogusobjecten die ter beschikking worden gesteld door het Nederlands Instituut voor Beeld en Geluid.
 color: ''
 image: /uploads/beeld_en_geluid_wall.jpg
 tags:

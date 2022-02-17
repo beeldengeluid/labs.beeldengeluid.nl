@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0005
+title: Radio de Brandaris
+subtitle: De collectie Radio De Brandaris bevat radio-uitzendingen die tussen 1944 en 1946 werden uitgezonden door Radio de Brandaris.
 color: ''
 image: '/uploads/radio_de_brandaris.png'
 tags:

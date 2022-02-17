@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0007
+title: Radio Herrijzend Nederland
+subtitle: The collection of broadcasts from Radio Herrijzend Nederland (Radio ‘The Netherlands Revived’) contains a selection of the radio broadcasts that were transmitted between 1944 and 1946.
 color: ''
 image: '/uploads/radio_herrijzend_nederland_poster.png'
 tags:
