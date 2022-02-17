@@ -7,9 +7,6 @@ import { filterUndefined } from '~/util/frontmatter'
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
-
-  dataset.subtitle = getValueFromObjectOrArray(dataset['sdo:description'])
-
   dataset.slug = slugify(dataset.title, {
     lower: true,
     strict: true,
@@ -103,12 +100,7 @@ export const enrichDataset = (dataset, datacatalog = []) => {
 }
 
 // extend datasets with frontmatter from markdown content
-export async function extendDatasetsWithFrontmatter(
-  datasets,
-  $content,
-  app,
-  contentPathDir
-) {
+export async function extendDatasetsWithFrontmatter(datasets, $content, app) {
   for (let i = 0, len = datasets.length; i < len; i++) {
     const dataset = datasets[i]
 
@@ -116,14 +108,16 @@ export async function extendDatasetsWithFrontmatter(
     const mdPath = await getLocalePath({
       $content,
       app,
-      path: contentPathDir + dataset.slug,
+      path: 'datasets',
     })
-    const page = await $content(mdPath)
+    const pages = await $content(mdPath)
+      .where({ id: { $eq: dataset['@id'] } })
       .fetch()
       .catch((e) => {
         // ignore error of missing page
       })
-    if (page) {
+    if (pages.length === 1) {
+      const page = pages[0]
       // assign defined page props to dataset, parse color vars (e.g. red.base)
       const pageDefined = filterUndefined(page).reduce((obj, [key, value]) => {
         obj[key] = value

@@ -169,12 +169,7 @@ export default {
     const datacatalog = data['@graph']
     // enrich datasets with helper properties
     let datasets = enrichDatasets(datasetsRaw, datacatalog)
-    datasets = await extendDatasetsWithFrontmatter(
-      datasets,
-      $content,
-      app,
-      'datasets/'
-    )
+    datasets = await extendDatasetsWithFrontmatter(datasets, $content, app)
 
     return {
       aboutPage,

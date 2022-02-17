@@ -66,7 +66,7 @@ export default {
   },
   computed: {
     path() {
-      return this.article.dir.split('/').pop()
+      return this.article.dir?.split('/').pop()
     },
     color() {
       return classColors[this.dataClass]
