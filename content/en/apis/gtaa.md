@@ -22,7 +22,7 @@ The available endpoints are:
 
 All the concepts within a ConceptScheme are available for download in RDF/XML using the [OAI-PMH](https://www.openarchives.org/pmh/) data provider. The service layer provides this so that others can harvest the contents of the GTAA, and keep track of the changes. Both SKOS modelled data and SKOS-XL (eXtension for Labels) can be found using the appropriate prefix.
 
-### Examples
+#### Examples
 
 - [Retrieve descriptive information about the repository](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 - [List of all available ConceptSchemes](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListSets)
@@ -37,7 +37,7 @@ All the concepts within a ConceptScheme are available for download in RDF/XML us
 
 The full-text search endpoint supports a user in searching for a concept in the GTAA, whereby the user, by entering the correct search term, finds the desired concept in the search results.
 
-### Examples
+#### Examples
 
 - [Find a term that contains the word 'vinci'](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
 - [Find a term using a multiple character wildcard '\*' match](https://gtaa.apis.beeldengeluid.nl/search?q=vinc*)
@@ -47,7 +47,7 @@ The full-text search endpoint supports a user in searching for a concept in the 
 
 Autocomplete, or word completion, is a feature in which the service layer predicts the rest of a word a user is typing. Autocomplete speeds up human-computer interactions when it correctly predicts the word a user intends to enter after only a few characters have been typed into a text input field. [(source: Wikipedia)](https://en.wikipedia.org/wiki/Autocomplete)
 
-### Examples
+#### Examples
 
 [Suggestions for the partial search term 'aar', match and return alt- and prefLabels and include the context](https://gtaa.apis.beeldengeluid.nl/autocomplete?text=aar&collection=gtaa&tenant=beng&matchMode=MATCHMODE_PREFIXLABEL&searchLabel=prefLabel&searchLabel=altLabel&returnLabel=altLabel&returnLabel=prefLabel&includeContext=True)
 
@@ -59,7 +59,7 @@ More specific information on the syntax and semantics of the SPARQL query langua
 
 The service layer provides a SPARQL endpoint to enable other parties to connect components, like the [network of terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq#what-is)
 
-### Examples
+#### Examples
 
 - [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
@@ -67,7 +67,7 @@ The service layer provides a SPARQL endpoint to enable other parties to connect 
 The [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is a new service being developed by the Dutch Digital Heritage Network for finding terms in terminology sources such as thesauri, classification systems, and reference lists. [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
 
 
-### Examples
+#### Examples
 [Link to the demonstrator UI and search for the term 'film' ](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-genres/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-geografischenamen/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-onderwerpen/sparql)
 [Query interactively using the GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 

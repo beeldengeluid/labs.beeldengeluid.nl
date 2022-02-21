@@ -17,7 +17,7 @@ Doorzoek de mediacatalogus met behulp van een full-text zoekindex op de metadata
 
 Gebruikers kunnen proberen de informatie te vinden waarin ze geïnteresseerd zijn door een tekstquery te formuleren (bijvoorbeeld zoals in Google) die het beste past bij het document waarnaar ze op zoek zijn.
 
-### Voorbeelden
+#### Voorbeelden
 
 Nog toe te voegen
 
@@ -31,7 +31,7 @@ Meer specifieke informatie over de syntax en semantiek van de SPARQL-querytaal v
 
 We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invoeren in de adresbalk van een browser. Dezelfde URL kan direct worden gebruikt door machines (scripts of andere toepassingen) die met de server kunnen onderhandelen over het retourformaat.
 
-### Voorbeelden
+#### Voorbeelden
 
 - [SPARQL endpoint in een browser](https://cat.apis.beeldengeluid.nl/sparql)
 - Gebruik een programma als **curl** om ruwe JSON resultaten op te vragen:

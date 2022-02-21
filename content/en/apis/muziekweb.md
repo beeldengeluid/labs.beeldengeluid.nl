@@ -19,7 +19,7 @@ The data offered as Linked Open Data is available at https://data.muziekweb.nl/.
 
 More specific information on the syntax and semantics of the SPARQL query language for RDF can be found [here](https://www.w3.org/TR/rdf-sparql-query/).
 
-### Examples
+#### Examples
 
 - [Open a user interface to the SPARQL endpoint in a browser](https://data.muziekweb.nl/MuziekwebOrganization/Muziekweb/sparql/Muziekweb)
 - Use **curl** to send a query and get JSON results. For example:

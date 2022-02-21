@@ -17,15 +17,15 @@ De beschikbare endpoints zijn:
 - [autocomplete](/nl/apis/gtaa#autocomplete)
 - [SPARQL](/nl/apis/gtaa#sparql)
 - [GraphQL](/apis/gtaa#graphql)
-- 
-## OAI-PMH
+
+### OAI-PMH
 
 Met de [OAI-PMH](https://www.openarchives.org/pmh/) data provider kunnen alle concepten in een concept schema kunnen gedownload worden in RDF/XML formaat. Ook de wijzigingen kunnen op deze manier opgevraagd worden. Door gebruik te maken van de juiste metadataPrefix kunnen concepten opgevraagd worden in zowel het SKOS model als in SKOS-XL (eXtension for Labels).
 
 De OAI identifiers in de service layer zijn conform [OAI richtlijnen](http://www.openarchives.org/OAI/2.0/guidelines-oai-identifier.htm). Ten opzichte van OpenSKOS zijn deze gewijzigd en
 daardoor is het nodig om de repository opnieuw te harvesten. Daarna kunnen alle wijzigingen weer worden opgehaald.
 
-### Voorbeelden
+#### Voorbeelden
 
 - [Beschrijvende informatie over de repository ophalen](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=Identify)
 - [Lijst met alle beschikbare ConceptSchemes](https://gtaa.apis.beeldengeluid.nl/oai-pmh?verb=ListSets)
@@ -40,7 +40,7 @@ daardoor is het nodig om de repository opnieuw te harvesten. Daarna kunnen alle 
 
 Het full-text search endpoint ondersteunt een gebruiker bij het zoeken naar een concept in de GTAA, waarbij de gebruiker, door middel van het invoeren van de juiste zoekterm, het gewenste concept vindt in de zoekresultaten.
 
-### Voorbeelden
+#### Voorbeelden
 
 - [Vind een term die het woord 'vinci' bevat ](https://gtaa.apis.beeldengeluid.nl/search?q=vinci)
 - [Vind een term met meerdere tekens match '\*' wildcard](https://gtaa.apis.beeldengeluid.nl/search?q=vinc*)
@@ -50,7 +50,7 @@ Het full-text search endpoint ondersteunt een gebruiker bij het zoeken naar een 
 
 Bij autocomplete voorspelt de service layer het woord of de zin die de gebruiker wil typen zonder dat deze dit al volledig heeft ingetikt. Automatische aanvulling maakt de interactie met de computer sneller en aangenamer. [(bron: Wikipedia)](https://nl.wikipedia.org/wiki/Automatische_aanvulling)
 
-### Voorbeelden
+#### Voorbeelden
 
 [Suggesties matchend op een gedeeltelijke zoekterm 'aar' in de alt- en/of prefLabels](https://gtaa.apis.beeldengeluid.nl/autocomplete?text=aar&collection=gtaa&tenant=beng&matchMode=MATCHMODE_PREFIXLABEL&searchLabel=prefLabel&searchLabel=altLabel&returnLabel=altLabel&returnLabel=prefLabel&includeContext=True)
 
@@ -62,7 +62,7 @@ Meer specifieke informatie over de syntaxis en semantiek van de SPARQL-querytaal
 
 De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in staat te stellen componenten te koppelen, zoals het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq).
 
-### Voorbeelden
+#### Voorbeelden
 
 - [SPARQL endpoint (vereist een authenticatie sleutel)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
@@ -70,7 +70,7 @@ De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in sta
 Het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is een service ontwikkeld door het Netwerk Digitaal Erfgoed om termen te vinden in meerdere terminologiebronnen (zoals thesauri, classificatie systemen en referentielijsten) tegelijk.
 [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
 
-### Voorbeelden
+#### Voorbeelden
 [Zoek op de term 'film' in demonstrator termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-genres/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-geografischenamen/sparql,https://data.netwerkdigitaalerfgoed.nl/beeldengeluid/gtaa-onderwerpen/sparql)
 
 [Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
