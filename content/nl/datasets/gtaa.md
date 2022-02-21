@@ -8,6 +8,7 @@ tags:
 
 Gemeenschappelijke Thesaurus Audiovisuele Archieven GTAA)
 
+
 Het Nederlands Instituut voor Beeld en Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus.
 
 Een thesaurus is een gecontroleerde woordenschat met onderlinge semantische relaties en verwijzingen tussen de termen, waardoor het zoeken in de catalogus gerichter en eenvoudiger kan plaatsvinden. Deze relaties tussen de termen zijn hiërarchisch of associatief van aard. Ze geven antwoord op vragen als: welke termen worden gebruikt die ruimer of juist specifieker het gewenste onderwerp aanduiden; op welke termen kan ik zoeken die met het onderwerp te maken hebben? Daarnaast wordt met behulp van de thesaurus voorzien in het vraagstuk van synoniemen, quasi-synoniemen, spellingvarianten en homoniemen.
