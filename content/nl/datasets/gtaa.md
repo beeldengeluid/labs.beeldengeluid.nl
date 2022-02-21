@@ -24,15 +24,19 @@ De GTAA heeft meerdere delen waarin termen die tot eenzelfde categorie behoren z
 #### [Classificatie](https://data.beeldengeluid.nl/gtaa/Classificatie) 
 
 Classificatie-as uit de GTAA met hoofd- en subrubrieken bij de as Onderwerpen. Elke hoofd- en subrubriek is een SKOS Concept met labels, notes, onderlinge relaties en relaties met topconcepten uit Onderwerpen.
+
 #### [Genre](https://data.beeldengeluid.nl/gtaa/Genre)
 
 Genres en programmasoorten: deze termen geven een typering of aanduiding van de productie als geheel, ze verwijzen naar de vorm, het genre of het type programma (bijvoorbeeld: 'korte film', 'lifestyleprogramma', 'hoorspel', 'politieserie'). Elk genre, inclusief labels, notes en relaties, is een SKOS Concept.
+
 #### [Geografische Namen](https://data.beeldengeluid.nl/gtaa/GeografischeNamen)
 
 As met geografische namen in de GTAA. Bevat namen van steden, dorpen, provincies, snelwegen, landen, etc. Elke geografische naam, inclusief labels en notes, is een SKOS Concept.
+
 #### [Namen](https://data.beeldengeluid.nl/gtaa/Namen)
 
 As met diverse soorten eigennamen van o.a. organisaties, muziekensembles, bevolkingsgroepen, oorlogen, verdragen, feest(dag)en, prijzen, producten, en titels van tijdschriften, boeken, films, radio- en televisieprogramma’s (bijvoorbeeld: 'KLM', 'Hindoestanen', 'Kerstmis', 'Golfoorlog', 'De aanslag'). Elke naam, inclusief labels en notes, is een SKOS Concept.
+
 #### [Onderwerpen](https://data.beeldengeluid.nl/gtaa/Onderwerpen)
 
 Onderwerpen of wel begrippen (bijv. 'zwemmen', 'daklozen', 'binnenvaartschepen', 'audiovisuele archieven'). Hierbij hoort de as Classificatie. Elk onderwerp, inclusief labels, notes en relaties, is een SKOS Concept.
@@ -47,9 +51,11 @@ Daarnaast is er voor intern gebruik:
 #### [Genre_Filmmuseum](https://data.beeldengeluid.nl/gtaa/Genre_Filmmuseum)
 Genres in gebruik voor EYE filmmuseum.
 
-  
+
+### Opschoonactie
 In 2020 is de data in de GTAA opgeschoond: Het betreft hoofdzakelijk niet gecontroleerde persoonsnamen en namen die rond de muziekcollectie van Beeld en Geluid ingestroomd waren. Via een aantal [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) hebben we zoveel mogelijk niet gecontroleerde termen gematcht en goedgekeurd. Wat overbleef hebben we uiteindelijk uit de thesaurus verwijderd.
 
+### Verbinding Wikidata
 Voor een groot aantal concepten uit GTAA/Persoonsnamen is er een alignment gemaakt met Wikidata. Door het toevoegen van de property [GTAA ID](https://www.wikidata.org/wiki/Property:P1741) op Wikidata (bijv. voor http://www.wikidata.org/entity/Q345526), kan de GTAA aan een groot aantal andere bronnen gerelateerd worden.
 
 Om met de GTAA te werken zijn er verschillende [APIs](/nl/apis/gtaa) beschikbaar.
