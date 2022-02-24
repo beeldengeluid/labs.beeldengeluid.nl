@@ -17,7 +17,7 @@
     />
 
     <h2 class="my-3">{{ dataset.title }}</h2>
-    <p>{{ dataset.description }}</p>
+    <p>{{ dataset.subtitle }}</p>
 
     <!-- Stats -->
     <div
