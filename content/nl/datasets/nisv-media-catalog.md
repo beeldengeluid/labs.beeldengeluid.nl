@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0001
+title: Beeld en Geluid Catalogus Open Data
+subtitle: Metadata voor de catalogusobjecten die ter beschikking worden gesteld door het Nederlands Instituut voor Beeld en Geluid.
 color: ''
 image: /uploads/beeld_en_geluid_wall.jpg
 tags:
@@ -7,8 +9,6 @@ tags:
   - CC0
   - Creative Commons
 ---
-
-# Beeld en Geluid Media Catalogus Open Data
 
 Deze dataset bevat de catalogusmetadata van het merendeel van de [collecties van het Nederlands Instituut voor Beeld en Geluid](https://www.beeldengeluid.nl/collectie). We hebben die metadatavelden geselecteerd die niet auteursrechtelijk beschermd zijn, of waarvan Beeld en Geluid zelf de rechthebbende is, en vrijgegeven onder een [Creative Commons CC0-licentie](https://creativecommons.org/publicdomain/zero/1.0).
 

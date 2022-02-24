@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0024
+title: Barend & van Dorp
+subtitle: Politics, culture and sports, in short, all facets of life are discussed at the table of Frits Barend and Henk van Dorp, always assisted by former football player and columnist Jan Mulder.
 color: ''
 image: ''
 tags: []

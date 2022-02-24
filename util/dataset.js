@@ -1,4 +1,3 @@
-import slugify from 'slugify'
 import { stripObject } from './objects'
 import { getRandomColor, parseColor } from './color'
 import { getLocalePath } from '~/util/contentFallback'
@@ -7,13 +6,6 @@ import { filterUndefined } from '~/util/frontmatter'
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
-
-  dataset.subtitle = getValueFromObjectOrArray(dataset['sdo:description'])
-
-  dataset.slug = slugify(dataset.title, {
-    lower: true,
-    strict: true,
-  })
 
   // Augmentations
   const creatorId = dataset['sdo:creator']?.['@id']
@@ -102,13 +94,35 @@ export const enrichDataset = (dataset, datacatalog = []) => {
   return dataset
 }
 
+export function extendDatasetPagesWithDatasets(datasetPages, datasets) {
+  for (let i = 0; i < datasetPages.length; i++) {
+    const datasetPage = datasetPages[i]
+    const datasetId = datasetPage.id
+    const dataset = datasets.find((item) => item['@id'] === datasetId)
+    if (dataset) {
+      // overwrite dataset props with defined datasetPage props
+      // and assign parsed color
+      const datasetPageDefined = filterUndefined(datasetPage).reduce(
+        (obj, [key, value]) => {
+          obj[key] = value
+          return obj
+        },
+        {}
+      )
+      Object.assign(dataset, datasetPageDefined, {
+        color: parseColor(datasetPage.color),
+      })
+      // then assign to current datasetPage
+      Object.assign(datasetPage, dataset)
+    } else {
+      console.warn('datasetPage could not be extended: ', datasetPage.title)
+    }
+  }
+  return datasetPages
+}
+
 // extend datasets with frontmatter from markdown content
-export async function extendDatasetsWithFrontmatter(
-  datasets,
-  $content,
-  app,
-  contentPathDir
-) {
+export async function extendDatasetsWithFrontmatter(datasets, $content, app) {
   for (let i = 0, len = datasets.length; i < len; i++) {
     const dataset = datasets[i]
 
@@ -116,14 +130,16 @@ export async function extendDatasetsWithFrontmatter(
     const mdPath = await getLocalePath({
       $content,
       app,
-      path: contentPathDir + dataset.slug,
+      path: 'datasets',
     })
-    const page = await $content(mdPath)
+    const pages = await $content(mdPath)
+      .where({ id: { $eq: dataset['@id'] } })
       .fetch()
       .catch((e) => {
         // ignore error of missing page
       })
-    if (page) {
+    if (pages.length === 1) {
+      const page = pages[0]
       // assign defined page props to dataset, parse color vars (e.g. red.base)
       const pageDefined = filterUndefined(page).reduce((obj, [key, value]) => {
         obj[key] = value

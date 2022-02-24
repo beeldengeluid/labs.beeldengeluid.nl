@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0024
+title: Barend & van Dorp
+subtitle: Politiek, cultuur en sport, kortom alle facetten van het leven komen aan bod aan de tafel van Frits Barend en Henk van Dorp, immer bijgestaan door oud-voetballer en columnist Jan Mulder.
 color: ''
 image: ''
 tags: []

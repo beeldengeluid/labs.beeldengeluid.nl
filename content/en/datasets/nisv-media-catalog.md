@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0001
+title: Sound and Vision Catalog Open Data
+subtitle: Metadata for the catalogue objects that are provided by Netherlands Institue for Sound and Vision.
 color: ''
 image: /uploads/beeld_en_geluid_wall.jpg
 tags:
@@ -7,8 +9,6 @@ tags:
   - CC0
   - Creative Commons
 ---
-
-# Sound and Vision media catalog Open Data
 
 This dataset contains the [catalogue metadata of the majority of the collections of the Netherlands Institute of Sound and Vision](https://www.beeldengeluid.nl/collectie). We have selected those metadata fields that are not protected by copyright, or to which Sound and Vision itself is the rights holder, and released them under a [Creative Commons CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/ 'CC0 License').
 

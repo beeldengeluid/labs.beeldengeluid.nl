@@ -1,5 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0003
+title: Natuurbeelden
+subtitle: Een verzameling van ruwe videoregistraties van Nederlandse flora en fauna onder een Creative Commons licentie, afkomstig van Stichting Natuurbeelden.
 color: green.base
 image: /uploads/openbeelden_natuurbeelden.jpg
 tags:

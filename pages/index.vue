@@ -4,7 +4,7 @@
       <!-- Datasets / Visualization -->
       <v-row class="justify-center white">
         <v-col class="pa-0">
-          <VisualMain :datasets="datasets" />
+          <VisualMain :datasets="datasetPages" />
         </v-col>
       </v-row>
 
@@ -111,7 +111,7 @@ import VisualMain from '~/components/visual/VisualMain'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
-import { enrichDatasets, extendDatasetsWithFrontmatter } from '~/util/dataset'
+import { enrichDatasets, extendDatasetPagesWithDatasets } from '~/util/dataset'
 
 export default {
   components: {
@@ -160,25 +160,33 @@ export default {
       .limit(4)
       .fetch()
 
-    // datasets (are not localized (yet))
+    // datasets
+    // Custom markdown content for datasets
+    const mdPath = await getLocalePath({
+      $content,
+      app,
+      path: 'datasets',
+    })
+    let datasetPages = await $content(mdPath)
+      .fetch()
+      .catch((e) => {
+        // ignore error of missing page
+      })
+
+    // datasets from Datacatalog are not localized (yet)
     const dataPath = 'datacatalog0001'
     const data = await $content(dataPath).fetch()
+    const datacatalog = data['@graph']
     const datasetsRaw = data['@graph'].filter(
       (node) => node['@type'] === 'sdo:Dataset'
     )
-    const datacatalog = data['@graph']
     // enrich datasets with helper properties
-    let datasets = enrichDatasets(datasetsRaw, datacatalog)
-    datasets = await extendDatasetsWithFrontmatter(
-      datasets,
-      $content,
-      app,
-      'datasets/'
-    )
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
+    datasetPages = extendDatasetPagesWithDatasets(datasetPages, datasets)
 
     return {
       aboutPage,
-      datasets,
+      datasetPages,
       blogs,
       labs,
       projects,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ArticleHeader :article="dataset" data-class="dataset" />
+    <ArticleHeader :article="datasetPage" data-class="dataset" />
 
     <!-- Dataset -->
     <v-row class="justify-center pb-3">
@@ -28,12 +28,12 @@
             <!-- Overview -->
             <TabOverview
               :dataset="dataset"
-              :page="page"
+              :page="datasetPage"
               :projects="projects"
               :blogs="blogs"
             />
             <!-- Metadata -->
-            <TabMetadata :dataset="dataset" />
+            <TabMetadata v-if="dataset" :dataset="dataset" />
           </v-tabs-items>
         </section>
       </v-col>
@@ -59,84 +59,66 @@ export default {
   },
 
   async asyncData({ $content, app, params, error }) {
-    // datasets are not localized (yet)
-    const dataPath = 'datacatalog0001'
-    const data = await $content(dataPath).fetch()
-    const datasetsRaw = data['@graph'].filter(
-      (node) => node['@type'] === 'sdo:Dataset'
-    )
-    const datacatalog = data['@graph']
-    const datasets = enrichDatasets(datasetsRaw, datacatalog)
-
-    const dataset = datasets.find((dataset) => dataset.slug === params.slug)
-
-    if (!dataset) {
-      error({ statusCode: 404, message: 'Dataset not found' })
-      return
-    }
-
-    // blogs
-    const blogsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'blogs',
-    })
-
-    const blogs = await $content(blogsPath)
-      .where({ datasets: { $contains: dataset['@id'] } })
-      .fetch()
-
-    // projects
-    const projectsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'projects',
-    })
-
-    const projects = await $content(projectsPath)
-      .where({ datasets: { $contains: dataset['@id'] } })
-      .fetch()
-
-    // Related datasets, excluding current
-    const datasetCount = {}
-    projects.concat(blogs).forEach((article) => {
-      article.datasets &&
-        article.datasets
-          .filter((ds) => ds !== dataset['@id'])
-          .forEach((ds) => {
-            ds in datasetCount ? datasetCount[ds]++ : (datasetCount[ds] = 1)
-          })
-    })
-
-    const relatedDatasets = datasets
-      .filter((ds) => ds['@id'] in datasetCount)
-      .sort((a, b) => datasetCount[b['@id']] - datasetCount[a['@id']])
-
     // Custom markdown content for dataset
     const datasetsPath = await getLocalePath({
       $content,
       app,
-      path: 'datasets',
+      path: `datasets/${params.slug}`,
     })
-    const pages = await $content(datasetsPath)
-      .where({ id: dataset['@id'] })
+    const datasetPage = await $content(datasetsPath)
       .fetch()
       .catch((e) => {
-        // ignore error of missing page
+        // ignore error of missing datasetPage
       })
-    const page = pages[0]
 
-    if (page) {
-      // assign page props to dataset, parse color vars (e.g. red.base)
-      Object.assign(dataset, page, { color: parseColor(page.color) })
+    // datasets from DataCatalog are not localized (yet)
+    const dataPath = 'datacatalog0001'
+    const data = await $content(dataPath).fetch()
+    const datacatalog = data['@graph']
+    const datasetsRaw = data['@graph'].filter(
+      (node) => node['@type'] === 'sdo:Dataset'
+    )
+    const datasets = enrichDatasets(datasetsRaw, datacatalog)
+    const dataset = datasets.find(
+      (dataset) => dataset['@id'] === datasetPage.id
+    )
+
+    if (datasetPage) {
+      // assign parsed color vars (e.g. red.base)
+      Object.assign(datasetPage, {
+        color: parseColor(datasetPage.color),
+      })
+    }
+
+    let blogs = []
+    let projects = []
+    if (dataset) {
+      // blogs that refer to this dataset
+      const blogsPath = await getLocalePath({
+        $content,
+        app,
+        path: 'blogs',
+      })
+      blogs = await $content(blogsPath)
+        .where({ datasets: { $contains: dataset['@id'] } })
+        .fetch()
+
+      // projects that refer to this dataset
+      const projectsPath = await getLocalePath({
+        $content,
+        app,
+        path: 'projects',
+      })
+      projects = await $content(projectsPath)
+        .where({ datasets: { $contains: dataset['@id'] } })
+        .fetch()
     }
 
     return {
       dataset,
       blogs,
       projects,
-      relatedDatasets,
-      page,
+      datasetPage,
     }
   },
   data: () => ({
@@ -149,7 +131,7 @@ export default {
     activeSubmenu: null,
   }),
   head() {
-    const title = this.dataset.title
+    const title = this.datasetPage.title
     return {
       title,
     }
