@@ -29,26 +29,31 @@ sections:
   - topic
 - type: directory
   path: content/en/datasets
-  label: Data sets
+  label: Datasets (EN)
+  create: documents
+  match: "**/*.md"
+  templates:
+  - dataset
+- type: directory
+  path: content/nl/datasets
+  label: Datasets (NL)
   create: documents
   match: "**/*.md"
   templates:
   - dataset
 - type: directory
   path: content/en/apis
-  label: APIs
+  label: APIs (EN)
+  create: documents
+  match: "**/*.md"
+- type: directory
+  path: content/nl/apis
+  label: APIs (NL)
   create: documents
   match: "**/*.md"
 - type: directory
   path: content/en/blogs
-  label: Blog Posts EN
-  create: documents
-  match: "**/*.md"
-  templates:
-  - blog-post
-- type: directory
-  path: content/nl/blogs
-  label: Blog Posts NL
+  label: Blog Posts
   create: documents
   match: "**/*.md"
   templates:
@@ -62,10 +67,7 @@ sections:
   label: Pages
 - type: document
   path: content/en/about.md
-  label: About EN
-- type: document
-  path: content/nl/about.md
-  label: About NL
+  label: About
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
