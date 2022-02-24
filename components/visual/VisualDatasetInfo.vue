@@ -97,10 +97,15 @@ export default {
   computed: {
     stats() {
       return [
-        {
-          icon: 'mdi-domain',
-          text: this.dataset.publisher?.name || this.dataset.creator?.name,
-        },
+        ...(this.dataset.publisher?.name || this.dataset.creator?.name
+          ? [
+              {
+                icon: 'mdi-domain',
+                text:
+                  this.dataset.publisher?.name || this.dataset.creator?.name,
+              },
+            ]
+          : []),
         ...(this.dataset.contentSize
           ? [
               {

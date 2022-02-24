@@ -33,7 +33,7 @@
               :blogs="blogs"
             />
             <!-- Metadata -->
-            <TabMetadata :dataset="dataset" />
+            <TabMetadata v-if="dataset" :dataset="dataset" />
           </v-tabs-items>
         </section>
       </v-col>
@@ -90,25 +90,29 @@ export default {
       })
     }
 
-    // blogs that refer to this dataset
-    const blogsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'blogs',
-    })
-    const blogs = await $content(blogsPath)
-      .where({ datasets: { $contains: dataset['@id'] } })
-      .fetch()
+    let blogs = []
+    let projects = []
+    if (dataset) {
+      // blogs that refer to this dataset
+      const blogsPath = await getLocalePath({
+        $content,
+        app,
+        path: 'blogs',
+      })
+      blogs = await $content(blogsPath)
+        .where({ datasets: { $contains: dataset['@id'] } })
+        .fetch()
 
-    // projects that refer to this dataset
-    const projectsPath = await getLocalePath({
-      $content,
-      app,
-      path: 'projects',
-    })
-    const projects = await $content(projectsPath)
-      .where({ datasets: { $contains: dataset['@id'] } })
-      .fetch()
+      // projects that refer to this dataset
+      const projectsPath = await getLocalePath({
+        $content,
+        app,
+        path: 'projects',
+      })
+      projects = await $content(projectsPath)
+        .where({ datasets: { $contains: dataset['@id'] } })
+        .fetch()
+    }
 
     return {
       dataset,
@@ -127,7 +131,7 @@ export default {
     activeSubmenu: null,
   }),
   head() {
-    const title = this.dataset.title
+    const title = this.datasetPage.title
     return {
       title,
     }

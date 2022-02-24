@@ -16,7 +16,7 @@ const dataClass = 'dataset'
 export default {
   components: { CardPage },
   async asyncData({ $content, app }) {
-    // Custom markdown content for dataset
+    // Custom markdown content for datasets
     const mdPath = await getLocalePath({
       $content,
       app,

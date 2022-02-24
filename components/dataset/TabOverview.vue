@@ -3,6 +3,7 @@
     <section class="mt-0">
       <!-- Stats -->
       <v-row
+        v-if="dataset"
         :style="{ fontSize: '0.8em' }"
         class="justify-start text-uppercase grey--text darken-4 title-font pb-2 mb-3 flex-wrap"
       >
@@ -54,19 +55,19 @@ export default {
       stats: [
         {
           icon: 'mdi-domain',
-          text: this.dataset.publisher?.name || this.dataset.creator?.name,
+          text: this.dataset?.publisher?.name || this.dataset?.creator?.name,
         },
         {
           icon: 'mdi-license',
-          text: this.dataset.license?.name,
+          text: this.dataset?.license?.name,
         },
-        this.dataset.contentSize
+        this.dataset?.contentSize
           ? {
               icon: 'mdi-file-document-multiple',
-              text: this.dataset.contentSize + ' ' + this.$t('records'),
+              text: this.dataset?.contentSize + ' ' + this.$t('records'),
             }
           : {},
-        this.dataset['sdo:temporalCoverage']
+        this.dataset?.['sdo:temporalCoverage']
           ? {
               icon: 'mdi-calendar-range',
               text: this.dataset['sdo:temporalCoverage'],
