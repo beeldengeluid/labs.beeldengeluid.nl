@@ -1,5 +1,6 @@
 ---
 title: NISV Muziekweb APIs
+hidden: true
 subtitle: Query the music library of the Netherlands
 image: apis/beng-muziekweb.jpg
 datasets:
