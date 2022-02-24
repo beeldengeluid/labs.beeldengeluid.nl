@@ -44,3 +44,7 @@ fields:
       path: 
   label: Color
   description: Color to be used in home page visualisation
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Turn on if the content should be hidden from index pages
