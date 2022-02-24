@@ -26,8 +26,9 @@ More specific information on the syntax and semantics of the SPARQL query langua
 - Use **curl** to send a query and get JSON results. For example:
 
 ```
-curl -H "Accept: application/sparql-results+json" https://cat.apis.beeldengeluid.nl/sparql?query="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT * WHERE { ?sub ?pred ?obj . } LIMIT 10"
+curl -H "Accept: application/sparql-results+json" https://api.data.muziekweb.nl/datasets/MuziekwebOrganization/Muziekweb/services/Muziekweb/sparql?query="PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%20PREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%20SELECT%20%2A%20WHERE%20%7B%20%3Fsub%20%3Fpred%20%3Fobj%20.%20%7D%20LIMIT%2010"
 ```
+
 
 Please note that the query string must be [urlencoded](https://www.urlencoder.org/).
 
