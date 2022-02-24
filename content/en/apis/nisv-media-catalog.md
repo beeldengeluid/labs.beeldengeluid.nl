@@ -15,7 +15,7 @@ The available endpoints are:
 
 Search the media catalog using a full-text search index on the metadata. In a [full-text search](https://en.wikipedia.org/wiki/Full-text_search), every word from a stored set of documents is analysed and indexed by the search engine. Users can try to find the information they are interested in by formulating a text query (e.g. like in Google) that matches best to the document they are looking for.
 
-### Examples
+#### Examples
 
 To be added
 
@@ -29,7 +29,7 @@ More specific information on the syntax and semantics of the SPARQL query langua
 
 We provide an HTML interface for human users that entering the endpoint URL in a browser address bar. The same URL can be used directly by machines (scripts or other applications) that can negotiate the return format with the server.
 
-### Examples
+#### Examples
 
 - [SPARQL endpoint in a browser](https://cat.apis.beeldengeluid.nl/sparql)
 
