@@ -46,11 +46,15 @@ sections:
   label: APIs (EN)
   create: documents
   match: "**/*.md"
+  templates:
+  - api
 - type: directory
   path: content/nl/apis
   label: APIs (NL)
   create: documents
   match: "**/*.md"
+  templates:
+  - api
 - type: directory
   path: content/en/blogs
   label: Blog Posts
