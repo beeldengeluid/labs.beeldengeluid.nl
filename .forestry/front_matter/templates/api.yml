@@ -1,0 +1,16 @@
+---
+label: API
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: file
+  name: image
+  label: image
+- type: list
+  name: datasets
+  label: datasets
