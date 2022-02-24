@@ -60,6 +60,10 @@ fields:
     date_format: DD-MM-YYYY
     time_format: 
     display_utc: false
+- name: hidden
+  type: boolean
+  label: Hidden
+  description: Turn on to hide this content from index pages
 pages:
 - content/en/labs/benchmarking-ai.md
 - content/en/labs/media-suite-data-stories.md
