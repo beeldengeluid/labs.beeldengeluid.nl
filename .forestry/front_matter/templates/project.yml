@@ -93,6 +93,10 @@ fields:
     date_format: DD-MM-YYYY
     time_format: 
     display_utc: false
+- name: hidden
+  type: boolean
+  description: Turn on to hide this content from index pages
+  label: Hidden
 pages:
 - content/en/projects/ai4media.md
 - content/en/projects/clariah-plus.md
