@@ -69,6 +69,7 @@ export default {
       path,
     })
     const articles = await $content(articlesPath)
+      .where({ hidden: { $ne: true } })
       .sortBy('createdAt', 'desc')
       .sortBy('title', 'asc')
       .fetch()

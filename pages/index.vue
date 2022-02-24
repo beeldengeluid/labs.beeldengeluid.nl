@@ -130,6 +130,7 @@ export default {
       path: 'blogs',
     })
     const blogs = await $content(blogsPath)
+      .where({ hidden: { $ne: true } })
       .sortBy('createdAt', 'asc')
       .limit(4)
       .fetch()
@@ -141,6 +142,7 @@ export default {
       path: 'labs',
     })
     const labs = await $content(labsPath)
+      .where({ hidden: { $ne: true } })
       .sortBy('sortOrder', 'asc')
       .sortBy('startDate', 'asc')
       .sortBy('createdAt', 'asc')
@@ -154,6 +156,7 @@ export default {
       path: 'projects',
     })
     const projects = await $content(projectsPath)
+      .where({ hidden: { $ne: true } })
       .sortBy('sortOrder', 'asc')
       .sortBy('startDate', 'asc')
       .sortBy('createdAt', 'asc')
@@ -168,6 +171,7 @@ export default {
       path: 'datasets',
     })
     let datasetPages = await $content(mdPath)
+      .where({ hidden: { $ne: true } })
       .fetch()
       .catch((e) => {
         // ignore error of missing page
