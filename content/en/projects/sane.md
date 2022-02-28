@@ -3,18 +3,18 @@ lab: content/en/labs/media-suite-data-stories.md
 sortOrder: 999
 title: SANE
 subtitle: Secure Analysis Environment
-image: "/uploads/panning-photography-of-group-of-people-on-pedestrian-lane_cc.jpg"
+image: '/uploads/panning-photography-of-group-of-people-on-pedestrian-lane_cc.jpg'
 tags: []
 datasets:
-- content/en/datasets/beeld-en-geluid-catalogus.md
+  - content/en/datasets/nisv-media-catalog.md
 website: ''
 contacts:
-- name: Roeland Ordelman
-  email: rordelman@beeldengeluid.nl
+  - name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 startDate: 2021-12-31T23:00:00.000+00:00
 endDate: 2024-12-30T23:00:00.000+00:00
-
 ---
+
 Privacy, copyright, and competition barriers limit the sharing of sensitive data for scientific purposes. We developed the Secure Analysis Environment (SANE): a virtual container in which the researcher can analyse sensitive data, and yet leaves the data provider in complete control. By following the Five Safes principles, SANE will enable researchers to conduct research on data that up until now are hardly available to them.
 
 Although non-academic parties have an increasing number of interesting datasets available, there is currently no infrastructure available allowing researchers to analyse sensitive data in a way that data providers remain in control. As a result, most potential data providers are reluctant to share their datasets and so they remain unused (such as governments, heritage institutions or commercial parties like the Chamber of Commerce or Funda). Yet scientific breakthroughs would be possible if these datasets were available.

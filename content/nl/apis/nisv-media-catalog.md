@@ -40,4 +40,4 @@ We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invo
 
 ## License
 
-Open metadata voor de [Beeld en Geluid media catalogus](/nl/datasets/beeld-en-geluid-catalogus) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld en Geluid media catalogus](/nl/datasets/nisv-media-catalog) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
