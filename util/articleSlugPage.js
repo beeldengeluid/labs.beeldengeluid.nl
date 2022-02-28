@@ -18,7 +18,7 @@ export const createArticleSlugPage = ({
       .where({ hidden: { $ne: true } })
       .fetch()
       .catch(() => {
-        error({ statusCode: 404, message: 'Article not found' })
+        error({ statusCode: 404, message: 'Content not found' })
       })
 
     if (!article) {
