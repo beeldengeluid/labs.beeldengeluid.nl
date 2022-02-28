@@ -66,59 +66,61 @@ export default {
       path: `datasets/${params.slug}`,
     })
     const datasetPage = await $content(datasetsPath)
+      .where({ hidden: { $ne: true } })
       .fetch()
       .catch((e) => {
-        // ignore error of missing datasetPage
+        error({ statusCode: 404, message: 'Page not found' })
       })
 
-    // datasets from DataCatalog are not localized (yet)
-    const dataPath = 'datacatalog0001'
-    const data = await $content(dataPath).fetch()
-    const datacatalog = data['@graph']
-    const datasetsRaw = data['@graph'].filter(
-      (node) => node['@type'] === 'sdo:Dataset'
-    )
-    const datasets = enrichDatasets(datasetsRaw, datacatalog)
-    const dataset = datasets.find(
-      (dataset) => dataset['@id'] === datasetPage.id
-    )
-
+    let blogs = []
+    let projects = []
+    let dataset = null
     if (datasetPage) {
       // assign parsed color vars (e.g. red.base)
       Object.assign(datasetPage, {
         color: parseColor(datasetPage.color),
       })
-    }
 
-    let blogs = []
-    let projects = []
-    if (dataset) {
-      // blogs that refer to this dataset
-      const blogsPath = await getLocalePath({
-        $content,
-        app,
-        path: 'blogs',
-      })
-      blogs = await $content(blogsPath)
-        .where({ datasets: { $contains: dataset['@id'] } })
-        .fetch()
+      // datasets from DataCatalog are not localized (yet)
+      const dataPath = 'datacatalog0001'
+      const data = await $content(dataPath).fetch()
+      const datacatalog = data['@graph']
+      const datasetsRaw = data['@graph'].filter(
+        (node) => node['@type'] === 'sdo:Dataset'
+      )
+      const datasets = enrichDatasets(datasetsRaw, datacatalog)
+      dataset = datasets.find((dataset) => dataset['@id'] === datasetPage.id)
 
-      // projects that refer to this dataset
-      const projectsPath = await getLocalePath({
-        $content,
-        app,
-        path: 'projects',
-      })
-      projects = await $content(projectsPath)
-        .where({ datasets: { $contains: dataset['@id'] } })
-        .fetch()
+      if (dataset) {
+        // blogs that refer to this dataset
+        const blogsPath = await getLocalePath({
+          $content,
+          app,
+          path: 'blogs',
+        })
+        blogs = await $content(blogsPath)
+          .where({ datasets: { $contains: dataset['@id'] } })
+          .fetch()
+
+        // projects that refer to this dataset
+        const projectsPath = await getLocalePath({
+          $content,
+          app,
+          path: 'projects',
+        })
+        projects = await $content(projectsPath)
+          .where({ datasets: { $contains: dataset['@id'] } })
+          .fetch()
+      }
+    } else {
+      error({ statusCode: 404, message: 'Page not found' })
     }
 
     return {
+      datasetPage,
       dataset,
       blogs,
       projects,
-      datasetPage,
     }
   },
   data: () => ({
