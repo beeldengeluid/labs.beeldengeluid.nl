@@ -15,6 +15,7 @@ export const createArticleSlugPage = ({
       path: `${source}/${params.slug}`,
     })
     const article = await $content(path)
+      .where({ hidden: { $ne: true } })
       .fetch()
       .catch(() => {
         error({ statusCode: 404, message: 'Article not found' })
