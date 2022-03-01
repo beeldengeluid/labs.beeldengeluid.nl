@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/media-suite-data-stories.md
-sortOrder: 99
+sortOrder: 9
 title: SANE
 subtitle: Secure Analysis Environment
 image: '/uploads/panning-photography-of-group-of-people-on-pedestrian-lane_cc.jpg'

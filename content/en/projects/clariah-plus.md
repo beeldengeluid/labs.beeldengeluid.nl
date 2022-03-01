@@ -6,7 +6,7 @@ image: '/uploads/clariah_kl_rgb.png'
 tags:
   - research infrastructure
 datasets: []
-sortOrder: 99
+sortOrder: 9
 website: ''
 contacts:
   - organization: Nederlands Instituut voor Beeld en Geluid

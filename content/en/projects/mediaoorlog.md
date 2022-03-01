@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 99
+sortOrder: 9
 title: Mediaoorlog
 subtitle:
 image: ''

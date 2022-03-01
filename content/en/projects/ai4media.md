@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 99
+sortOrder: 9
 title: AI4Media
 subtitle:
 image: '/uploads/v_logo-ai4media-01_1623015206670-png.png'

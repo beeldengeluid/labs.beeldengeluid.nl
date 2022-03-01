@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/opendatalab.md
-sortOrder: 99
+sortOrder: 9
 title: Podiumkunst.net
 subtitle:
 image: '/uploads/download.png'
