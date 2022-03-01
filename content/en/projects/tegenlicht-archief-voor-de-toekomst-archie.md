@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/media-suite-data-stories.md
-sortOrder: 999
+sortOrder: 99
 title: Tegenlicht Archief voor de Toekomst (ARCHIE)
 subtitle:
 image: ''

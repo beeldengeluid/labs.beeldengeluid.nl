@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 999
+sortOrder: 99
 title: TwiXL
 subtitle: Facilitating analysis of social media data
 image: ''

@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/opendatalab.md
-sortOrder: 999
+sortOrder: 99
 title: Polifonia
 subtitle:
 image: '/uploads/polifonia_logo_hn_w.jpg'

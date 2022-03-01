@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 999
+sortOrder: 99
 title: VisXP
 subtitle: Flexible use of computer vision
 image: '/uploads/screenshot-from-2021-11-03-08-55-46.png'
