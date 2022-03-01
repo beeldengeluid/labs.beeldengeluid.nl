@@ -2,19 +2,19 @@
 lab: content/en/labs/opendatalab.md
 sortOrder: 999
 title: Podiumkunst.net
-subtitle: 2021-2024
-image: "/uploads/download.png"
+subtitle:
+image: '/uploads/download.png'
 tags: []
 datasets: []
 website: ''
 contacts: []
-startDate: 
-endDate: 
-
+startDate: 2021-01-01T23:00:00Z
+endDate: 2024-01-01T23:00:00Z
 ---
+
 # Podiumkunst.net
 
-[Podiumkunst.net](https://www.podiumkunst.net/over-ons "podiumkunst.net") is a network with at its core seven consortium partners that are active in the performing arts in the Netherlands.
+[Podiumkunst.net](https://www.podiumkunst.net/over-ons 'podiumkunst.net') is a network with at its core seven consortium partners that are active in the performing arts in the Netherlands.
 
 In the Netherlands a lot of high quality theater and music is produced. Of many performances video and sound recordings are produces. In addition the sector produces program leaflets, sheet music, reviews, photographs and other memories to performances.
 

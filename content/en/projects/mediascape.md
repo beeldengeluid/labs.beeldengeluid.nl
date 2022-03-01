@@ -12,6 +12,8 @@ website: https://open-images-browser.vercel.app/
 contacts:
   - name: Philo van Kemenade
     email: pvkemenade@beeldengeluid.nl
+startDate: 2019-11-01T23:00:00Z
+endDate: 2020-12-01T23:00:00Z
 ---
 
 The MediaScape project investigates how innovative interfaces can provide generous access to audiovisual collections in order to make connections between the interests of individuals and heritage objects. Or:
