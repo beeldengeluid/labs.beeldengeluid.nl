@@ -1,6 +1,6 @@
 ---
 lab: content/en/labs/robot-interaction.md
-sortOrder: 99
+sortOrder: 9
 title: Kind in Gesprek met Media
 subtitle:
 image: '/uploads/kind-robot-interactie.png'
