@@ -7,11 +7,20 @@
     <v-col>
       <!-- Content -->
       <section>
-        <h3>
-          <NuxtLink class="category" :to="localePath(path)">
-            {{ $t(dataClass) }}
-          </NuxtLink>
-        </h3>
+        <div class="d-flex justify-space-between align-center">
+          <h3>
+            <NuxtLink class="category" :to="localePath(path)">
+              {{ $t(dataClass) }}
+            </NuxtLink>
+          </h3>
+          <span
+            v-if="article.startDate && article.endDate"
+            class="category font-weight-bold"
+          >
+            {{ formatDateAsYear(article.startDate) }} -
+            {{ formatDateAsYear(article.endDate) }}
+          </span>
+        </div>
 
         <div class="d-flex justify-space-between align-center mb-4">
           <h1>{{ article.title }}</h1>
@@ -34,6 +43,7 @@
 <script>
 import { classColorIndex, classColors } from '~/config/theme'
 import { getDarkenedImageOverlayCSS } from '~/util/color'
+import { formatDateAsYear } from '~/util/date'
 
 export default {
   props: {
@@ -81,6 +91,9 @@ export default {
       }
     },
   },
+  methods: {
+    formatDateAsYear,
+  },
 }
 </script>
 <style scoped lang="scss">
@@ -94,13 +107,15 @@ h1 {
   color: white;
 }
 
-a.category {
+.category {
   text-decoration: none;
   color: white;
   opacity: 0.6;
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
+}
+a.category {
   transition: opacity 0.3s ease-out;
   &:hover {
     opacity: 1;
