@@ -1,10 +1,11 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 999
+sortOrder: 99
 title: Mediaoorlog
-subtitle: 2020-2023
+subtitle:
 image: ''
 tags: []
 datasets: []
-
+startDate: 2020-01-01T23:00:00Z
+endDate: 2023-01-01T23:00:00Z
 ---

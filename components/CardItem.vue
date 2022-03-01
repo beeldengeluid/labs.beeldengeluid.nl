@@ -48,12 +48,14 @@
     <v-spacer></v-spacer>
 
     <v-card-actions>
-      <!-- <v-card-text
+      <v-card-text
+        v-if="card.startDate && card.endDate"
         class="text-caption grey--text"
         :style="{ marginLeft: '-8px' }"
       >
-        {{ formatDate(card.updatedAt) }}
-      </v-card-text> -->
+        {{ formatDateAsYear(card.startDate) }} -
+        {{ formatDateAsYear(card.endDate) }}
+      </v-card-text>
 
       <v-spacer></v-spacer>
 
@@ -65,7 +67,7 @@
 </template>
 
 <script>
-import { formatDate } from '~/util/date'
+import { formatDate, formatDateAsYear } from '~/util/date'
 import { getRGBAColor } from '~/util/color'
 import icons from '~/config/icons'
 import { classColors, classColorIndex } from '~/config/theme'
@@ -103,6 +105,7 @@ export default {
   },
   methods: {
     formatDate,
+    formatDateAsYear,
     getRGBAColor,
   },
 }

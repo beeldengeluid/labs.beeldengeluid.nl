@@ -1,20 +1,20 @@
 ---
 lab: content/en/labs/mediasuite.md
-sortOrder: 500
+sortOrder: 5
 title: OH-Smart
 subtitle: Stories at the Museum around Artworks
 image: ''
 tags:
-- ''
+  - ''
 datasets: []
 website: ''
 contacts:
-- name: Roeland Ordelman
-  email: rordelman@beeldengeluid.nl
+  - name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 startDate: 2021-12-31T23:00:00Z
 endDate: 2023-12-30T23:00:00Z
-
 ---
+
 ‘Oral History – Stories at the Museum around Artworks’ (OH-SMArt) is a long term initiative to significantly improve the digital research chain around using Oral History and spoken narratives, with research into artworks and museums as a use case. Holding unique audiovisual recordings about artworks in their archives, museums have a severe backlog in disclosing and sharing this information, because of the laborious workflow of storing and transcribing, the sensitivity of some of the material, and the lack of tools to use and reflect upon the content. These are generic problems for all researchers engaging with spoken narratives. An improved and user friendly deposition workflow that automatically connects to an automatic speech transcription service will resolve a significant part of this problem. Additionally, the improved workflow enables the development of new tools that especially aim at facilitating reflection by contextualizing the source material with layers of user interpretations, placing the researcher’s viewpoint into perspective. Opening up the behind the scenes of museums in a smart way, OH-SMArt advances research with spoken narratives around artworks and contributes to existing digital research infrastructures with domain-wide applications for knowledge development.
 
 Goals:
@@ -31,7 +31,7 @@ OH-SMArt focuses on three aspects: new methods to archive, disclose and link inf
    data deposition workflow, and connection between the repository services of  
    DANS-KNAW and CLARIAH, adhering to policies around sensitive material, which is  
    currently not possible.
-2.  In addition, a new instrumentalized methodological approach to engage reflexivity is designed, based on combined SSH methods, to collect user interpretations and  
+2. In addition, a new instrumentalized methodological approach to engage reflexivity is designed, based on combined SSH methods, to collect user interpretations and  
    archive these alongside the primary source to reflect the dynamics of doing  
    research. Consulting a source in a context of various other interpretations is vital for  
    conscious management of our cultural heritage. It provides better insight into the  
