@@ -68,9 +68,9 @@ The [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is a
 
 
 #### Examples
-[Link to the demonstrator UI and search for the term 'film' ](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
+- [Link to the demonstrator UI and search for the term 'film' ](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
 
-[Query interactively using the GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
+- [Query interactively using the GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 
 ## License
 

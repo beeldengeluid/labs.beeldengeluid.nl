@@ -71,9 +71,9 @@ Het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is een 
 [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
 
 #### Voorbeelden
-[Zoek op de term 'film' in demonstrator termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
+- [Zoek op de term 'film' in demonstrator termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
 
-[Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
+- [Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 
 ## License
 
