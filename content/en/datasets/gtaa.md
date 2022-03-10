@@ -22,7 +22,7 @@ The GTAA has several parts in which terms belonging to the same category are gro
 
 #### [Classification](https://data.beeldengeluid.nl/gtaa/Classificatie)
 
-Classification axis from the GTAA with main and sub-categories at the Onderwerpen axis. Each main and sub-section is a SKOS Concept with labels, notes, interrelations and relationships with top concepts from Onderwerpen.
+Classification axis from the GTAA with main and sub-categories at the Subjects axis. Each main and sub-section is a SKOS Concept with labels, notes, interrelations and relationships with top concepts from Subjects.
 
 #### [Genre](https://data.beeldengeluid.nl/gtaa/Genre)
 
@@ -41,19 +41,25 @@ As with various types of proper names of organizations, music ensembles, populat
 Subjects or concepts (eg 'swimming', 'homeless people', 'inland vessels', 'audiovisual archives'). This includes the Classification axis. Every subject, including labels, notes and relations, is a SKOS Concept.
 
 #### [SubjectsBenG](https://data.beeldengeluid.nl/gtaa/OnderwerpenBenG)
+
 Axis for subject terms, contains additional concepts for specific images (shots and stock shots) and sound in addition to the concepts from the Subjects axis. Examples: 'village images', 'barking', 'greeting', 'yawning', etc. This includes the Classification axis. Every subject, including labels, notes and relations, is a SKOS Concept.
 
 #### [Person names](https://data.beeldengeluid.nl/gtaa/Persoonsnamen)
+
 Person names are proper names of persons who may appear as an element of content in a production, or as Speaker, Cast member or Performer. It also contains the names of program makers and employees involved in the creation of audiovisual productions. (This used to be the separate axis Makers). Each person's name, including labels and notes, is a SKOS Concept.
 
 In addition, there is for internal use:
+
 #### [Genre_Filmmuseum](https://data.beeldengeluid.nl/gtaa/Genre_Filmmuseum)
+
 Genres in use for EYE film museum.
 
 ### Concept Cleanup
+
 In 2020, the data in the GTAA has been cleaned up: It mainly concerns unverified personal names and names that had flown into the music collection of Sound and Vision. Through a number of [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) we matched and approved as many unchecked terms as possible. We eventually removed what was left from the thesaurus.
 
 ### Alignment Wikidata
+
 An alignment has been made with Wikidata for a large number of concepts from GTAA Person names. By adding the property [GTAA ID](https://www.wikidata.org/wiki/Property:P1741) on Wikidata (e.g. for http://www.wikidata.org/entity/Q345526), the GTAA can be related to many other sources.
 
 ### APIs
