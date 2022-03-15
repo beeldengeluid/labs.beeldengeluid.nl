@@ -1,5 +1,5 @@
 import { getLocalePath } from './contentFallback'
-import { enrichDatasets } from './dataset'
+import { enrichDatasets, extendDatasetsWithFrontmatter } from './dataset'
 import { formatDate } from './date'
 
 // Generic article slug page creator from given article source, e.g. blogs, projects
@@ -56,6 +56,12 @@ export const createArticleSlugPage = ({
           datasets.find((dataset) => dataset['@id'] === datasetId)
         )
         .filter((d) => d)
+
+    article.datasets = await extendDatasetsWithFrontmatter(
+      article.datasets,
+      $content,
+      app
+    )
 
     // (for article of type lab) populate projects on article with project content that refers to this lab
     const projectsPath = await getLocalePath({
