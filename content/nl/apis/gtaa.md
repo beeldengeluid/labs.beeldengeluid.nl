@@ -75,6 +75,4 @@ Het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is een 
 
 - [Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
 
-## License
 
-De [The GTAA dataset](datasets/gemeenschappelijke-thesaurus-voor-audiovisuele-archieven) is beschikbaar gemaakt onder de Open Database License (OdbL).

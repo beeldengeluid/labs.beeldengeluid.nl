@@ -16,7 +16,8 @@ Een thesaurus is een gecontroleerde woordenschat met onderlinge semantische rela
 
 Beeld en Geluid beheert de GTAA en is verantwoordelijkheid voor het regelmatig aanpassen van de thesaurus aan de actualiteit en het beschikbaar maken voor externe partijen. Voor meer informatie over (het gebruik van) de GTAA kunt u contact opnemen met de afdeling Metadatabeheer van het Nederlands Instituut voor Beeld en Geluid: [thesaurus@beeldengeluid.nl](mailto:thesaurus@beeldengeluid.nl).
 
-De GTAA is beschikbaar gemaakt onder de Open Database License (OdbL) en als [linked open data](https://nl.wikipedia.org/wiki/Linked_data). Voor het beschrijven van de termen is gebruik gemaakt van het wijdverbreide [SKOS](https://www.w3.org/2004/02/skos/) model dat onder andere één van de [standaarden](https://www.forumstandaardisatie.nl/open-standaarden/skos) is voor de Nederlandse overheid en een best practice voor [terminologiebronnen](https://netwerk-digitaal-erfgoed.github.io/requirements-terminologiebronnen/) in het Netwerk Digitaal Erfgoed .
+
+De GTAA is beschikbaar gemaakt onder de [Open Database License (OdbL)](https://opendatacommons.org/licenses/odbl/1.0/) en als [linked open data](https://nl.wikipedia.org/wiki/Linked_data). Voor het beschrijven van de termen is gebruik gemaakt van het wijdverbreide [SKOS](https://www.w3.org/2004/02/skos/) model dat onder andere één van de [standaarden](https://www.forumstandaardisatie.nl/open-standaarden/skos) is voor de Nederlandse overheid en een best practice voor [terminologiebronnen](https://netwerk-digitaal-erfgoed.github.io/requirements-terminologiebronnen/) in het Netwerk Digitaal Erfgoed .
 
 Elke term in de GTAA is een SKOS Concept met minimaal één voorkeurslabel en een [HTTP URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier). De URI's worden uitgegeven op het domein **data.beeldengeluid.nl**, met daarachter het pad **/gtaa/{nummer}**. Een voorbeeld is: http://data.beeldengeluid.nl/gtaa/123456.
 
