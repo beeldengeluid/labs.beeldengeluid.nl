@@ -37,8 +37,5 @@
     "responsive-loader": "^2.3.0",
     "sharp": "^0.30.3"
   },
-  "resolutions": {
-    "nuxt/**/nth-check": "2.0.1",
-    "nuxt/**/glob-parent": ">=5.1.2 "
-  }
+  "packageManager": "yarn@3.2.0"
 }
