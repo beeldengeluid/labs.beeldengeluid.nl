@@ -57,11 +57,14 @@ export const createArticleSlugPage = ({
         )
         .filter((d) => d)
 
-    article.datasets = await extendDatasetsWithFrontmatter(
-      article.datasets,
-      $content,
-      app
-    )
+    // extend datasets with frontmatter
+    if (article.datasets) {
+      article.datasets = await extendDatasetsWithFrontmatter(
+        article.datasets,
+        $content,
+        app
+      )
+    }
 
     // (for article of type lab) populate projects on article with project content that refers to this lab
     const projectsPath = await getLocalePath({
