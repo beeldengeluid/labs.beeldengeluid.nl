@@ -1,11 +1,11 @@
 ---
-title: 'Research Theme X'
-subtitle: 'In quis, saepe revulsum. Cava novo conlapsus quaque primoque, in cupiens, nam.'
+title: Samenwerkingen met anderen
+subtitle: 'Infrastructuren en Ecosystemen '
 image: placeholders/placeholder-dataset.jpg
-tags:
-datasets:
----
+tags: 
+datasets: 
 
+---
 ## Loqui sine adulter augusta et deceat
 
 Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula
