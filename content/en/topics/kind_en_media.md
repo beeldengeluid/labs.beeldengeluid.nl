@@ -17,7 +17,7 @@ used_sources:
   url: https://www.utwente.nl/nieuws/2019/1/191048/project-kinderen-in-gesprek-met-media-van-start
 - name: Verantwoorde kind-robot dialoog
   url: https://www.sidnfonds.nl/projecten/kinderen-in-gesprek-met-media-een-verantwoorde-kind-robot-dialoog
-sortOrder: 5
+sortOrder: 4
 
 ---
 How children interact with media has our special attention. We are specifically interested in how can we provide children with search and browse facilities for video content that is both play-full and responsible. This includes topics such as: 
