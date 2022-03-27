@@ -1,5 +1,5 @@
 ---
-title: Een inclusief archief
+title: Inclusief archief
 categories:
 - IR for kids
 - responsable AI
