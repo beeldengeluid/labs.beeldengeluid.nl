@@ -13,6 +13,7 @@ contacts:
   email: rordelman@beeldengeluid.nl
 - name: Maarten Brinkerink
   email: mbrinkerink@beeldengeluid.nl
+sortOrder: 3
 
 ---
 Having lots data is cool, being able to provide access to users generously is what matters at the end of the day for an archive such as Netherlands Institute for Sound and Vision. As "access to data" is often seen as "providing means for searching", there is a long tradition in providing search tools for various use scenarios that nowadays often drills down to the "Google type" search interfaces people are used to. Although such interfaces may work perfectly for many use cases, the type of content (audiovisual media) and specific types of usage we see in our archive (re-use for new television production, research and journalism, education, entertainment) invites us to look a bit further and explore if there are better means than a standard search box to:
