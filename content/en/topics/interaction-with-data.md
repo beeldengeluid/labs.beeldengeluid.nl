@@ -1,12 +1,12 @@
 ---
-title: Interactie met het archief
+title: Interactief archief
 date: '2020-06-15T08:55:00.000+00:00'
 categories:
 - access
 - serendipity
 - generous interfaces
 image: themes/browse.png
-subtitle: Alternatieve vormen van toegang en gebruik
+subtitle: Verbeterde en nieuwe vormen van toegang en gebruik
 related_project: MediaScape
 contacts:
 - name: Roeland Ordelman
