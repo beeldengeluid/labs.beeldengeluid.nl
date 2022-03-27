@@ -1,5 +1,5 @@
 ---
-title: 'Een toegankelijker archief '
+title: Beter doorzoekbaar
 date: '2020-06-10T10:53:00.000+00:00'
 categories:
 - digital humanities
