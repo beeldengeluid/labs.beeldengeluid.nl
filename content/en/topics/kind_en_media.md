@@ -1,11 +1,11 @@
 ---
-title: Bijzondere doelgroepen
+title: Een inclusief archief
 categories:
 - IR for kids
 - responsable AI
 menu: research
 image: themes/kind_en_media.png
-subtitle: Play-full Responsible Media Interaction
+subtitle: Toegang en gebruik voor bijzondere doelgroepen
 related_project: Kinderen in Gesprek met Media
 contacts:
 - name: Roeland Ordelman
@@ -17,6 +17,7 @@ used_sources:
   url: https://www.utwente.nl/nieuws/2019/1/191048/project-kinderen-in-gesprek-met-media-van-start
 - name: Verantwoorde kind-robot dialoog
   url: https://www.sidnfonds.nl/projecten/kinderen-in-gesprek-met-media-een-verantwoorde-kind-robot-dialoog
+sortOrder: 5
 
 ---
 How children interact with media has our special attention. We are specifically interested in how can we provide children with search and browse facilities for video content that is both play-full and responsible. This includes topics such as: 
