@@ -27,6 +27,7 @@ publications:
 - title: A Workflow Analysis Perspective to Scholarly Research Tasks, Koolen, Kumpulainen,
     Melgar-Estrada (2020)
   url: doi.org/10.1145/3343413.3377969
+sortOrder: 0
 
 ---
 Data science is about analyzing data to extract useful information to better **understand** things and to tell stories about it. At the Netherlands Institute for Sound and Vision, we are interested in the stories that can be told with archival data. In particular, how we can do '**multimedia storytelling**' given that our archive consists of multimedia data (audio, video, images, text) that need special treatment in order to analyze it and extract information from it. For example, manually or automatically provide descriptions of the *pixels and samples* that make up the archive.
