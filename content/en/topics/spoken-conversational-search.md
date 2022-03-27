@@ -1,5 +1,5 @@
 ---
-title: Archief van oude en nieuwe media
+title: Oude en nieuwe media
 menu: research
 image: themes/spokenconversationalsearch.png
 subtitle: 'Beschikbaarstelling en gebruik in de volle breedte '
