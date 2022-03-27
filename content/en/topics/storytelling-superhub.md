@@ -1,5 +1,5 @@
 ---
-title: Nieuwe verhalen vertellen met het archief
+title: Nieuwe verhalen
 date: '2020-06-15T08:57:00.000+00:00'
 image: "/uploads/screenshot-from-2022-03-27-12-56-44.png"
 subtitle: 'Vormen en perspectieven '
