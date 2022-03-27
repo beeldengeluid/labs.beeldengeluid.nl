@@ -27,8 +27,14 @@ _Projecten_:
 
 * [CLARIAH-Plus](https://labs.beeldengeluid.nl/projects/clariah-plus) (Data Stories binnen onderzoek)
 * [SANE](https://labs.beeldengeluid.nl/projects/sane) (Beveiligde data analyse voor sensitieve of copyright data)
-  * **Fact-checking**
 
-Relaties met:
+### Fact-checking
 
-* Beschrijven en verrijken van
+_Relatie met andere thema's:_
+
+* Als Beeld en Geluid kunnen we zelf Data Stories maken, maar het is juist ook interessant om externen zoals onderzoekers, journalisten of binnen het onderwijs te faciliteren. Dit heeft de nodige voeten in aarde. Zie ook: "Samenwerkingen: infrastructuren en ecosystemen".
+
+_Projecten_:
+
+* EDMO (Tools voor fact-checking)
+* AI4Media 
