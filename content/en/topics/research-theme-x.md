@@ -1,7 +1,7 @@
 ---
 title: Samen met anderen
 subtitle: 'Knooppunten, Infrastructuren, Ecosystemen en Communities '
-image: placeholders/placeholder-dataset.jpg
+image: "/uploads/gtaa_network_image.jpg"
 tags: 
 datasets: 
 sortOrder: 5
