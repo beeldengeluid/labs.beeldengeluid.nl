@@ -1,8 +1,8 @@
 ---
-title: Verhalen vertellen met het archief
+title: Nieuwe verhalen vertellen met het archief
 date: '2020-06-15T08:57:00.000+00:00'
 image: "/uploads/screenshot-from-2022-03-27-12-56-44.png"
-subtitle: 'Nieuwe vormen en perspectieven '
+subtitle: 'Vormen en perspectieven '
 related_project: CLARIAH, NDE
 contacts:
 - name: Roeland Ordelman
