@@ -7,6 +7,7 @@ related_project: CLARIAH, NDE
 contacts:
 - name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl
+sortOrder: 2
 
 ---
 **In het archief zitten ontelbare verhalen verstopt. We zoeken naar nieuwe vormen en perspectieven om die verhalen te ontdekken en te vertellen. De "kritische blik" speelt hierbij een belangrijk rol.**
