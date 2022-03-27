@@ -1,6 +1,6 @@
 ---
-title: Samenwerkingen met anderen
-subtitle: 'Infrastructuren en Ecosystemen '
+title: Samen met anderen
+subtitle: 'Knooppunten, Infrastructuren en Ecosystemen '
 image: placeholders/placeholder-dataset.jpg
 tags: 
 datasets: 
