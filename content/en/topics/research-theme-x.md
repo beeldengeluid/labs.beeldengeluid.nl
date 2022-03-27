@@ -1,28 +1,23 @@
 ---
 title: Samen met anderen
-subtitle: 'Knooppunten, Infrastructuren en Ecosystemen '
+subtitle: 'Knooppunten, Infrastructuren, Ecosystemen en Communities '
 image: placeholders/placeholder-dataset.jpg
 tags: 
 datasets: 
 sortOrder: 5
 
 ---
-## Samen met anderen
-
-### Knooppunten, Infrastructuren en Ecosystemen
-
-#### 
-
-Onderwerpen
 
 #### Beeld en Geluid als onderdeel van de Nederlandse onderzoeksinfrastructuur voor de Sociale- en Geesteswetenschappen
 
-projecten:
+_projecten:_
 
 * CLARIAH-Plus
 * OH-Smart
 * SANE
 * Twi-XL
+
+_Relatie met andere thema's:_
 
 #### Beeld en Geluid als knooppunt binnen het Nederlands Digitaal Erfgoed (Europeana)
 
