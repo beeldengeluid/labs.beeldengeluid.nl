@@ -1,5 +1,5 @@
 ---
-title: AI, in en met het archief
+title: AI in en met het archief
 date: '2020-06-15T08:44:00.000+00:00'
 image: themes/media.png
 subtitle: Using media for machine learning, using machine learning for media
