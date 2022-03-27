@@ -1,8 +1,8 @@
 ---
-title: Conversational Search
+title: Archief van oude en nieuwe media
 menu: research
 image: themes/spokenconversationalsearch.png
-subtitle: Archive Search using a (Spoken) Dialogue
+subtitle: 'Beschikbaarstelling en gebruik in de volle breedte '
 contacts:
 - name: Roeland Ordelman
   email: rordelman@beeldengeluid.nl
@@ -25,4 +25,4 @@ Research questions we can think of:
 * how to implement a search dialogue in a VR environment with the librarian as an omnipresent oracle?
 * could we enrich the information of archival content by using the information we obtain from the human-computer dialogue?
 
-Please contact us if you are interested to engage with our data and APIs for your research or development project. A relatively straightforward starting point could be harvesting and indexing our [Open Images data set](https://labs.beeldengeluid.nl/api/dbd1c7ee-edb3-11e4-8099-005056a71e3a).  
+Please contact us if you are interested to engage with our data and APIs for your research or development project. A relatively straightforward starting point could be harvesting and indexing our [Open Images data set](https://labs.beeldengeluid.nl/api/dbd1c7ee-edb3-11e4-8099-005056a71e3a).
