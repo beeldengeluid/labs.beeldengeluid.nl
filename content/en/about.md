@@ -18,6 +18,8 @@ For more information about Sound and Vision Lab activities, please contact: [ror
 
 ## What about Sound and Vision?
 
+![Sound & Vision](/uploads/images/B&G_logo_RGB_liggend_RL.png)
+
 [The Netherlands Institute for Sound and Vision](https://www.beeldengeluid.nl) is one of Europe's largest audiovisual archives that is progressively making its way into the digital realm. It maintains and provides access to over 1 million hours of television, radio, music, film and web video. Sound and Vision provides access to its collections online for various end-user services, including dedicated services for the creative industries, education and research. The institute operates as a visitor attraction aimed at the general public and is visited by over 250.000 people annually.
 
 Read about our activities on our [blog](https://www.beeldengeluid.nl/kennis/blog) or follow us on Twitter via [@benglabs](https://twitter.com/benglabs)
