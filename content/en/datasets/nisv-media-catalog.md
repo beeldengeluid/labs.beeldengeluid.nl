@@ -16,7 +16,8 @@ To facilitate users of this dataset we made the following decisions:
 
 - We map relevant metadata fields from our internal metadata format to [Schema.org](https://schema.org/ 'Schema.org').
 - We provide links from the catalog items metadata to our General Public Portal, where materials can be ordered or played.
-- The metadata about the objects contains machine-readable rights and licensing information from [rightsstatement.org](https://rightsstatements.org/en/ 'rightsstatement.org') and [creativecommons.org](https://creativecommons.org/ 'creativecommons.org'). If the material described in the metadata is available under an open license we have included a direct link to that item on our [Open Images](https://openimages.eu/) platform, from where it can be downloaded in various formats.
+- The metadata about the objects contains machine-readable rights and licensing information from [rightsstatement.org](https://rightsstatements.org/en/ 'rightsstatement.org') and [creativecommons.org](https://creativecommons.org/ 'creativecommons.org'). 
+- If an object is also available on our [Open Images](https://openimages.eu/) platform, we included a link to this item in the metadata. Using this link media can be downloaded in various formats.
 - We offer a SPARQL endpoint, which allows users to build their own queries or use and modify sample queries in the user interface.
 - The items are presented with a [coolURI](https://www.w3.org/TR/cooluris/), of the form `http://data.beeldengeluid.nl/id/{cat_type}/{daan_id }`, where **cat_type** is one of these values: 'series', 'season', 'program', 'scene' and **daan_id** is a unique number given to the object in DAAN. Items of cat_type 'scene' correspond to a logtrackitem of type 'scene description' in DAAN.
 
