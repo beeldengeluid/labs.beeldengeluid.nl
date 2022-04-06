@@ -215,35 +215,6 @@ export default {
     tabMenu: menu.filter((m) => m.title !== 'home'),
     activeMenu: 'blogs',
   }),
-  watch: {
-    // Listen for route change
-    $route() {
-      this.updateActiveTab()
-    },
-  },
-  mounted() {
-    this.updateActiveTab()
-  },
-  methods: {
-    updateActiveTab() {
-      // Active menu for to paths
-      const to = this.$route.name
-      switch (true) {
-        case to.startsWith('index'):
-          this.activeMenu = 'index'
-          break
-        case to.startsWith('blog-to'):
-          this.activeMenu = this.localePath('blogs')
-          break
-        case to.startsWith('dataset-to'):
-          this.activeMenu = this.localePath('datasets')
-          break
-        case to.startsWith('project-to'):
-          this.activeMenu = this.localePath('projects')
-          break
-      }
-    },
-  },
 }
 </script>
 
