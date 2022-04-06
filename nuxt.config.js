@@ -13,7 +13,7 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - Sound & Vision · Labs',
-    title: 'Beeld en Geluid',
+    title: 'Beeld & Geluid',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

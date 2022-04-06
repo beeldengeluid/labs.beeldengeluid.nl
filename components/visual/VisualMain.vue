@@ -189,7 +189,7 @@ export default {
         },
         {
           icon: 'mdi-calendar-range',
-          // 1877 is the Beeld en Geluid catalogus temporalCoverage start
+          // 1877 is the Beeld & Geluid catalogus temporalCoverage start
           text: '1877/' + new Date().getFullYear(),
         },
       ]
