@@ -1,7 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 const theme = {
-  primary: '#05c8f0', //colors.blue.darken2, // dataset
+  nisvlightblue: '#05c8f0',
+  nisvdarkblue: '#0f238c',
+  primary: '#0f238c', //colors.blue.darken2, // dataset
   secondary: colors.amber.darken3, // project
   tertiary: colors.pink.darken1, // blog
   quaternary: colors.purple.darken1, // theme
