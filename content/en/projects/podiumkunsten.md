@@ -20,4 +20,4 @@ In the Netherlands a lot of high quality theater and music is produced. Of many 
 
 Podiumkunst.net aims to connect these treasure chambers of the Dutch performing arts and make them accessible to creators, researchers and the general public. The goal is to realise an integrated, accessible overview of Dutch performing art-related cultural heritage. This overview will keep the history of Dutch performing arts alive and serve a source of inspiration for the creators now and into the future.
 
-Sound and Vision is the program manager of the Podiumkunst.net. The Open Data Lab supports the development of the infrastructure which ensure meaningful and sustainable connections between performing arts related heritage collections.
+Sound & Vision is the program manager of the Podiumkunst.net. The Open Data Lab supports the development of the infrastructure which ensure meaningful and sustainable connections between performing arts related heritage collections.

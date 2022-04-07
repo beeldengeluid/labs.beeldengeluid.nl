@@ -4,18 +4,18 @@ subtitle: Automatically creating meaningful links between dynamically expanding 
 type: project
 date: 2019-03-14 16:47:00 +01:00
 tags:
-- Digital Humanities
-- Semantic Web
-- LOD
+  - Digital Humanities
+  - Semantic Web
+  - LOD
 website_url: http://vps46235.public.cloudvps.com/bridge/
 themes:
-- Access
-- Use and context
-- Humanities
+  - Access
+  - Use and context
+  - Humanities
 partners:
-- University of Amsterdam
-- Utrecht University
-- Sound and Vision
+  - University of Amsterdam
+  - Utrecht University
+  - Sound & Vision
 ---
 
 BRIDGE focusses on access to television archives. Broadcasting organizations have moved to cross-media production companies where users are directly involved in online discussions afterwards. To be meaningful, these additional materials must be linked to the traditionally archived television material in order to arrive at a useful web of information.
