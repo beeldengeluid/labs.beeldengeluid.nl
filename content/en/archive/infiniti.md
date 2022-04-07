@@ -2,41 +2,41 @@
 title: Infiniti
 type: project
 tags:
-- Radio stories
-- ASR
-- Content Enrichments
-- COMMIT
+  - Radio stories
+  - ASR
+  - Content Enrichments
+  - COMMIT
 website_url: http://project-infiniti.nl/
 subtitle: Develops and enables the exploitation of open source and open standards tools to support semantic search
 themes:
-- Access
-- Use and Context
-- Users
+  - Access
+  - Use and Context
+  - Users
 partners:
-- Netherlands Institute for Sound and Vision
-- CWI
-- EUR
-- Radboud University
-- UvA
-- UT Twente
-- ANP
-- Ilse Media
-- TrendLight
-- De Persgroep
-- EUVision
-- Internet Recherche Netwerk
-- Talking Trends
-- Teezir
-- Textkernel
-- ThirdSight
-- WCC
+  - Netherlands Institute for Sound & Vision
+  - CWI
+  - EUR
+  - Radboud University
+  - UvA
+  - UT Twente
+  - ANP
+  - Ilse Media
+  - TrendLight
+  - De Persgroep
+  - EUVision
+  - Internet Recherche Netwerk
+  - Talking Trends
+  - Teezir
+  - Textkernel
+  - ThirdSight
+  - WCC
 contacts:
-- organization: Netherlands Institute for Sound and Vision
-  name: Roeland Ordelman
-  email: rordelman@beeldengeluid.nl
+  - organization: Netherlands Institute for Sound & Vision
+    name: Roeland Ordelman
+    email: rordelman@beeldengeluid.nl
 publications:
-- title: INFINITI (Information Retrieval for Information Services)
-  url: http://www.commit-nl.nl/projects/information-retrieval-for-information-services
+  - title: INFINITI (Information Retrieval for Information Services)
+    url: http://www.commit-nl.nl/projects/information-retrieval-for-information-services
 ---
 
 Project Infiniti develops and enables the exploitation of open source and open standards tools to support semantic search. We develop retrieval models, algorithms and implementations that combine information retrieval and information extraction technology to provide genuine information access.

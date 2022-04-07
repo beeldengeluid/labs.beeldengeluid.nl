@@ -1,6 +1,6 @@
 {
-  "site_name": "Sound and Vision · Labs",
-  "site_author": "The Netherlands Institute for Sound and Vision",
+  "site_name": "Sound & Vision · Labs",
+  "site_author": "The Netherlands Institute for Sound & Vision",
   "dataset": "Dataset",
   "datasets": "Datasets",
   "all_datasets": "All datasets",
@@ -31,6 +31,6 @@
   "metadata": "Metadata",
   "download_metadata": "JSON-LD",
   "explore_dataset": "Explore dataset",
-  "intro_title": "Welcome to Sound and Vision Labs!",
-  "intro_text": "Here we offer you information, projects and the latest articles about the research and innovation activities at Sound and Vision."
+  "intro_title": "Welcome to Sound & Vision Labs!",
+  "intro_text": "Here we offer you information, projects and the latest articles about the research and innovation activities at Sound & Vision."
 }

@@ -1,6 +1,6 @@
 ---
-title: BenG Media Catalog APIs
-subtitle: Bevraag de open data in de media catalogus van Beeld en Geluid
+title: B&G Media Catalog APIs
+subtitle: Bevraag de open data in de media catalogus van Beeld & Geluid
 image: /uploads/beeld_en_geluid_wall.jpg
 datasets:
   - http://data.beeldengeluid.nl/id/dataset/0001
@@ -40,4 +40,4 @@ We bieden een HTML-interface voor menselijke gebruikers die de eindpunt-URL invo
 
 ## License
 
-Open metadata voor de [Beeld en Geluid media catalogus](/nl/datasets/nisv-media-catalog) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).
+Open metadata voor de [Beeld & Geluid media catalogus](/nl/datasets/nisv-media-catalog) is beschikbaar gemaakt onder de Creative Commons Zero License (CC0).

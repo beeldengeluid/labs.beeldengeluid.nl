@@ -9,7 +9,7 @@ datasets: []
 sortOrder: 9
 website: ''
 contacts:
-  - organization: Nederlands Instituut voor Beeld en Geluid
+  - organization: Nederlands Instituut voor Beeld & Geluid
     name: Roeland Ordelman
     email: rordelman@beeldengeluid.nl
 startDate: 2017-12-31T23:00:00Z
