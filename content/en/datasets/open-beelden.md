@@ -13,4 +13,4 @@ The Sound & Vision dataset on Open Images contains more than 7000 videos. It con
 
 Open Images also contains datasets from other providers and content (mostly remixes) added by users. Access to the material on Open Images is provided under the [Creative Commons](http://www.creativecommons.org/ 'Creative Commons') licensing model.
 
-The Sound & Vision dataset on Open Images is downloadable via the [Open Images OAI-PMH API](/apis/open-images). The dataset is also available via the [Europeana API](http://labs.europeana.eu/data/newsreels-from-sound-and-vision-on-the-netherlands-in-the-20th-century/).
+The Sound & Vision dataset on Open Images is downloadable via the [Open Images OAI-PMH API](/apis/open-images).

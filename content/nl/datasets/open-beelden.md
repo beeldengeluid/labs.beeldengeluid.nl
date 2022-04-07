@@ -13,4 +13,4 @@ De dataset Beeld & Geluid op Open Beelden bevat meer dan 7000 video's. Het besta
 
 Open Beelden bevat ook datasets van andere aanbieders en content (veelal remixes) die door gebruikers is toegevoegd. Toegang tot het materiaal op Open Beelden wordt verleend onder het [Creative Commons](http://www.creativecommons.org/ 'Creative Commons') licentiemodel.
 
-De Beeld & Geluid dataset op Open Beelden is te downloaden via de [Open Beelden OAI-PMH provider](http://www.openimages.eu/api). De dataset is ook beschikbaar via de [Europeana API](http://labs.europeana.eu/data/newsreels-from-sound-and-vision-on-the-netherlands-in-the-20th-century/).
+De Beeld & Geluid dataset op Open Beelden is te downloaden via de [Open Beelden OAI-PMH API](/nl/apis/open-images).
