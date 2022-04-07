@@ -80,7 +80,7 @@
       app
       dark
       elevate-on-scroll
-      class="blue-grey darken-4 white--text"
+      class="nisvdarkblue darken-4 white--text"
     >
       <v-app-bar-nav-icon
         class="d-sm-flex d-md-none"
@@ -109,7 +109,7 @@
       <v-tabs v-model="activeMenu" class="d-none d-md-flex" right center-active>
         <v-tabs-slider
           v-if="activeMenu !== 'index'"
-          color="primary"
+          color="nisvlightblue"
           class="v-tabs-slider-wrapper"
         />
         <v-tab :to="localePath(home.to)" class="d-none" />
@@ -130,7 +130,7 @@
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
           class="text-decoration-none grey--text text--lighten-1 text-uppercase"
-          color="blue-grey darken-3 "
+          color="nisvdarkblue "
           rounded
           :style="{ minWidth: '36px', padding: '0' }"
         >
@@ -149,7 +149,7 @@
 
     <v-footer
       :absolute="!fixed"
-      class="blue-grey darken-4 white--text"
+      class="nisvdarkblue darken-4 white--text"
       app
       :style="{ minHeight: '400px' }"
     >
@@ -174,7 +174,11 @@
         <!-- Column right -->
         <v-col>
           <!-- Footer menu -->
-          <v-list v-model="activeMenu" class="blue-grey darken-4" color="white">
+          <v-list
+            v-model="activeMenu"
+            class="nisvdarkblue darken-4"
+            color="white"
+          >
             <v-list-item
               v-for="item in menu"
               :key="item.to"

@@ -1,18 +1,18 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0010
 title: Common Thesaurus Audiovisual Archives
-subtitle: Sound and Vision has teamed up with several other Dutch organizations that manage audiovisual cultural heritage to develop the Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (Common Thesaurus for Audiovisual Archives, GTAA). The GTAA is used for efficient characterization of the content of audio-visual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
+subtitle: Sound & Vision has teamed up with several other Dutch organizations that manage audiovisual cultural heritage to develop the Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (Common Thesaurus for Audiovisual Archives, GTAA). The GTAA is used for efficient characterization of the content of audio-visual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
 color: ''
 image: /uploads/gtaa_network_image.jpg
 tags:
   - thesaurus
 ---
 
-Sound and Vision has teamed up with other Dutch heritage organizations that manage audiovisual cultural heritage to develop the Common Thesaurus for Audiovisual Archives (Gemeenschappelijke Thesaurus voor Audiovisuele Archieven) or GTAA. The GTAA is used for characterization of the content of audiovisual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
+Sound & Vision has teamed up with other Dutch heritage organizations that manage audiovisual cultural heritage to develop the Common Thesaurus for Audiovisual Archives (Gemeenschappelijke Thesaurus voor Audiovisuele Archieven) or GTAA. The GTAA is used for characterization of the content of audiovisual material from the archive with labels derived from a controlled and structured list of terms, a thesaurus.
 
 A thesaurus is a controlled vocabulary with mutual semantic relationships and references between the terms, which makes searching in the catalog more focused and easier. These relationships between the terms are hierarchical or associative in nature. They answer questions such as: which terms are used that more broadly or more specifically indicate the desired subject; What terms can I search for that have to do with the subject? In addition, the thesaurus helps to solve the problem of synonyms, quasi-synonyms, spelling variants and homonyms.
 
-Sound and Vision manages the GTAA and is responsible for regularly updating the thesaurus to reflect current events and making it available to external parties. For more information about (the use of) the GTAA, please contact the Metadata Management department of the Netherlands Institute for Sound and Vision: [thesaurus@beeldengeluid.nl](mailto:thesaurus@beeldengeluid.nl).
+Sound & Vision manages the GTAA and is responsible for regularly updating the thesaurus to reflect current events and making it available to external parties. For more information about (the use of) the GTAA, please contact the Metadata Management department of the Netherlands Institute for Sound & Vision: [thesaurus@beeldengeluid.nl](mailto:thesaurus@beeldengeluid.nl).
 
 The GTAA is made available under the [Open Database License (OdbL)](https://opendatacommons.org/licenses/odbl/1.0/) and as [linked open data](https://www.den.nl/aan-de-slag/uitvoeren/hoe-maak-je-het-beschikbaar/linked-open-data). For describing terms we use the [SKOS](https://www.w3.org/2004/02/skos/) model that is widely used. Every term in the GTAA is a SKOS Concept with at least one preferred label and an [HTTP URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier). In general, the labels and notes are in the Dutch language only.
 
@@ -56,7 +56,7 @@ Genres in use for EYE film museum.
 
 ### Concept Cleanup
 
-In 2020, the data in the GTAA has been cleaned up: It mainly concerns unverified personal names and names that had flown into the music collection of Sound and Vision. Through a number of [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) we matched and approved as many unchecked terms as possible. We eventually removed what was left from the thesaurus.
+In 2020, the data in the GTAA has been cleaned up: It mainly concerns unverified personal names and names that had flown into the music collection of Sound & Vision. Through a number of [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) we matched and approved as many unchecked terms as possible. We eventually removed what was left from the thesaurus.
 
 ### Alignment Wikidata
 

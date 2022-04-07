@@ -1,17 +1,17 @@
 ---
 title: Enriched Open Images videos
 tags:
-- term extraction
-- speech recognition
+  - term extraction
+  - speech recognition
 type: example
 image: archive/examples/open_images_enriched_poster.png
 subtitle: Video enriched with open data sources
 related_project: Nederlands Opent Data
 creators:
-- Jaap Blom
+  - Jaap Blom
 partners:
-- name: Netherlands Institute for Sound and Vision
-  url: http://www.beeldengeluid.nl
+  - name: Netherlands Institute for Sound & Vision
+    url: http://www.beeldengeluid.nl
 datasets:
   - https://www.openbeelden.nl/users/beeldengeluid
 ---

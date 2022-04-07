@@ -18,4 +18,4 @@ endDate: 2024-09-01T23:00:00Z
 
 Funded under the European Union’s Horizon 2020 research and innovation programme, AI4media aspires to become a Centre of Excellence engaging a wide network of researchers across Europe and beyond, focusing on delivering the next generation of core AI advances and training to serve the Media sector, while ensuring that the European values of ethical and trustworthy AI are embedded in future AI deployments.
 
-Within the project Sound and Vision is a use case partner. We collect requirements from users from the social sciences and humanities for AI-based functionality to support their work. Based on the technologies developed in AI4media we will look to implement these in the [CLARIAH research ecosystem](https://www.clariah.nl/ 'CLARIAH').
+Within the project Sound & Vision is a use case partner. We collect requirements from users from the social sciences and humanities for AI-based functionality to support their work. Based on the technologies developed in AI4media we will look to implement these in the [CLARIAH research ecosystem](https://www.clariah.nl/ 'CLARIAH').

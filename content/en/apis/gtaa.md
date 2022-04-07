@@ -6,7 +6,7 @@ datasets:
   - http://data.beeldengeluid.nl/id/dataset/0010
 ---
 
-Since early 2022 the Netherlands Institute for Sound and Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and needed replacement.
+Since early 2022 the Netherlands Institute for Sound & Vision has deployed a brand new service layer for the thesaurus. The OpenSKOS repository that was used for several years was end-of-life and needed replacement.
 
 The service layer provides several endpoints that can be used to work with the GTAA data. Also, using the concept URI, the data for the concept can be found either in HTML or other formats, like RDF/XML, JSON-LD and Turtle.
 
@@ -64,10 +64,11 @@ The service layer provides a SPARQL endpoint to enable other parties to connect 
 - [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
 ## GraphQL
+
 The [Network of Terms](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is a new service being developed by the Dutch Digital Heritage Network for finding terms in terminology sources such as thesauri, classification systems, and reference lists. [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
 
-
 #### Examples
+
 - [Link to the demonstrator UI and search for the term 'film' ](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
 
 - [Query interactively using the GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)

@@ -8,7 +8,6 @@
 // vuetify.treeShake = true
 // $body-font-family: 'Open Sans Condensed', sans-serif;
 
-$primary: #008adb;
 $lightBackground: rgba(244, 249, 253);
 $lightBackground: rgba(243, 248, 252);
 
@@ -27,12 +26,12 @@ $border-radius-root: 3px;
 
 $material-light: (
   'states': (
-    'hover': 0.15,
-  ),
+    'hover': 0.15
+  )
 );
 
 $material-dark: (
   'states': (
-    'hover': 0.15,
-  ),
+    'hover': 0.15
+  )
 );

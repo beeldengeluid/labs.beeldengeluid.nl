@@ -1,15 +1,25 @@
 ---
-title: 'Research Theme X'
-subtitle: 'In quis, saepe revulsum. Cava novo conlapsus quaque primoque, in cupiens, nam.'
-image: placeholders/placeholder-dataset.jpg
+title: Samen met anderen
+subtitle: 'Knooppunten, Infrastructuren, Ecosystemen en Communities '
+image: '/uploads/gtaa_network_image.jpg'
 tags:
 datasets:
+sortOrder: 5
 ---
 
-## Loqui sine adulter augusta et deceat
+#### Beeld & Geluid als onderdeel van de Nederlandse onderzoeksinfrastructuur voor de Sociale- en Geesteswetenschappen
 
-Lorem markdownum perdidit ad loco occallescere dextrum more est, pabula
-tantique. Minantia tigres corpora [parvos](http://ad.io/cancer) destinat
-venabula simulavit poples ego ardentis Opheltes violentior huius natum; utque
-ipse modo lumina. Iugulare _demens simul_ se neque unde per erroresque repellit
-quamvis. Oneri [et tristis](http://pennae-temesaea.com/).
+_projecten:_
+
+- CLARIAH-Plus
+- OH-Smart
+- SANE
+- Twi-XL
+
+_Relatie met andere thema's:_
+
+#### Beeld & Geluid als knooppunt binnen het Nederlands Digitaal Erfgoed (Europeana)
+
+#### Beeld & Geluid als onderdeel van de Nederlandse Digitale infrastructuur voor de podiumkunsten
+
+#### Beeld & Geluid als onderdeel van de Europese erfgoedinfrastructuur (Europeana)

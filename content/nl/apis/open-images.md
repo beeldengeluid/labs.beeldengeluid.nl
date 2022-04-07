@@ -5,7 +5,7 @@ image: /uploads/openbeelden_beeldengeluid.jpg
 datasets:
   - http://data.beeldengeluid.nl/id/dataset/0002
 contacts:
-  - organization: Nederlands Instituut voor Beeld en Geluid
+  - organization: Nederlands Instituut voor Beeld & Geluid
     name: Maarten Brinkerink
     email: mbrinkerink@beeldengeluid.nl
 website_url: http://www.openimages.eu/api

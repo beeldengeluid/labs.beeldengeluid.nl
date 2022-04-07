@@ -1,11 +1,11 @@
-# BenG Labs Website
+# B&G Labs Website
 
-Welcome to the online home of Sound and Vision Labs (BenG Labs in Dutch).
+Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 
 - [Node.js installed](https://nodejs.org/en/download/) (Vercel currently uses v14 for deployments, so that version is recommended for local development)
-- [Modern version of Yarn installed](https://yarnpkg.com/getting-started/install) 
+- [Modern version of Yarn installed](https://yarnpkg.com/getting-started/install)
 
 ## Ingredients
 
@@ -35,4 +35,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Deployment
 
-This project uses [Vercel for Github](https://vercel.com/docs/concepts/git/vercel-for-github), enabling automatic production deployments on every push to the `main` branch. Any other pushes and PRs get their own atomic preview deployments on a unique URL. 
+This project uses [Vercel for Github](https://vercel.com/docs/concepts/git/vercel-for-github), enabling automatic production deployments on every push to the `main` branch. Any other pushes and PRs get their own atomic preview deployments on a unique URL.
