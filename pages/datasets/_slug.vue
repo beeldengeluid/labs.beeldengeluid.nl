@@ -138,15 +138,15 @@ export default {
       title,
     }
   },
-  mounted() {
-    // Set default submenu to hash
-    if (!this.$route.hash) {
-      window.history.replaceState(
-        null,
-        window.title,
-        this.$route.path + '#' + this.submenu[0]
-      )
-    }
-  },
+  // mounted() {
+  //   Set default submenu to hash
+  //   if (!this.$route.hash) {
+  //     window.history.replaceState(
+  //       null,
+  //       window.title,
+  //       this.$route.path + '#' + this.submenu[0]
+  //     )
+  //   }
+  // },
 }
 </script>
