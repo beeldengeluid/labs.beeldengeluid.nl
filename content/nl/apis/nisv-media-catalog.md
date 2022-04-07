@@ -1,5 +1,5 @@
 ---
-title: BenG Media Catalog APIs
+title: B&G Media Catalog APIs
 subtitle: Bevraag de open data in de media catalogus van Beeld & Geluid
 image: /uploads/beeld_en_geluid_wall.jpg
 datasets:

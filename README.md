@@ -1,6 +1,6 @@
-# BenG Labs Website
+# B&G Labs Website
 
-Welcome to the online home of Sound & Vision Labs (BenG Labs in Dutch).
+Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 

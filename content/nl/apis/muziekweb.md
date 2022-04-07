@@ -1,5 +1,5 @@
 ---
-title: BenG Muziekweb APIs
+title: B&G Muziekweb APIs
 hidden: true
 subtitle: Bevraag de muziekbibliotheek van Nederland
 image: apis/beng-muziekweb.jpg
