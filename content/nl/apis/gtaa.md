@@ -6,9 +6,9 @@ datasets:
   - http://data.beeldengeluid.nl/id/dataset/0010
 ---
 
-Sinds begin 2022 stelt het Nederlands Instituut voor Beeld en Geluid een gloednieuwe service layer beschikbaar voor de thesaurus. OpenSKOS, het systeem waarin de beschikbaarstelling meerdere jaren is gedaan, was end-of-life en aan vervanging toe.
+Sinds begin 2022 stelt het Nederlands Instituut voor Beeld & Geluid een gloednieuwe service layer beschikbaar voor de thesaurus. OpenSKOS, het systeem waarin de beschikbaarstelling meerdere jaren is gedaan, was end-of-life en aan vervanging toe.
 
-In de nieuwe thesaurus service layer maakt Beeld en Geluid meerdere endpoints beschikbaar om met de GTAA te werken. Ook kan een GTAA concept URI worden gebruikt om de bijbehorende data op te vragen in HTML of andere formaten als RDF/XML, JSON-LD of Turtle, etc.
+In de nieuwe thesaurus service layer maakt Beeld & Geluid meerdere endpoints beschikbaar om met de GTAA te werken. Ook kan een GTAA concept URI worden gebruikt om de bijbehorende data op te vragen in HTML of andere formaten als RDF/XML, JSON-LD of Turtle, etc.
 
 De beschikbare endpoints zijn:
 
@@ -67,12 +67,12 @@ De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in sta
 - [SPARQL endpoint (vereist een authenticatie sleutel)](https://gtaa.apis.beeldengeluid.nl/sparql)
 
 ## GraphQL
+
 Het [termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/faq) is een service ontwikkeld door het Netwerk Digitaal Erfgoed om termen te vinden in meerdere terminologiebronnen (zoals thesauri, classificatie systemen en referentielijsten) tegelijk.
 [Github](https://github.com/netwerk-digitaal-erfgoed/network-of-terms-api)
 
 #### Voorbeelden
+
 - [Zoek op de term 'film' in demonstrator termennetwerk](https://termennetwerk.netwerkdigitaalerfgoed.nl/?q=film&datasets=https://data.beeldengeluid.nl/id/datadownload/0028,https://data.beeldengeluid.nl/id/datadownload/0029,https://data.beeldengeluid.nl/id/datadownload/0031)
 
 - [Zoek interactief, gebruikmakend van de GraphiQL UI](https://termennetwerk-api.netwerkdigitaalerfgoed.nl/graphiql)
-
-

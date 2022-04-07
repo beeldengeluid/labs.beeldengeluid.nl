@@ -1,5 +1,5 @@
 ---
-title: Beeld en Geluid Webarchief
+title: Beeld & Geluid Webarchief
 type: application
 tags:
   - Speech Search

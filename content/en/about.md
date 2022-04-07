@@ -32,7 +32,7 @@ Media Parkboulevard 1
 
 ### Postal Addres
 
-Nederlands Instituut voor Beeld en Geluid  
+Nederlands Instituut voor Beeld & Geluid  
 Postbus 1060  
 1200 BB Hilversum
 

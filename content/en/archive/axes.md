@@ -29,7 +29,7 @@ partners:
   - Cassidian
   - Erasmus University Rotterdam
 contacts:
-  - organization: Nederlands Instituut voor Beeld en Geluid
+  - organization: Nederlands Instituut voor Beeld & Geluid
     name: Roeland Ordelman
     email: rordelman@beeldengeluid.nl
 ---

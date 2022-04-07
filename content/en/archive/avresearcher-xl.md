@@ -31,7 +31,7 @@ blogposts:
     url: http://www.beeldengeluid.nl/blogs/research-and-development/201502/door-de-ogen-van-een-geesteswetenschapper-verslag
   - title:
       'Door de ogen van een journalist: verslag masterclass onderzoeksjournalistiek
-      Beeld en Geluid en VondelCS'
+      Beeld & Geluid en VondelCS'
     url: http://www.beeldengeluid.nl/blogs/research-and-development/201410/door-de-ogen-van-een-journalist-verslag-masterclass
 ---
 

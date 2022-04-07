@@ -1,5 +1,5 @@
 ---
-title: Beeld en Geluid Webarchief
+title: Beeld & Geluid Webarchief
 subtitle: Broadcaster's websites and other media related websites are archived and presented in Sound & Visions webarchive
 type: project
 tags:
@@ -21,7 +21,7 @@ contacts:
     name: Arnoud Goos
     email: agoos@beeldengeluid.nl
 blogposts:
-  - title: Are you being crawled? Webarchivering bij Beeld en Geluid
+  - title: Are you being crawled? Webarchivering bij Beeld & Geluid
     url: https://www.beeldengeluid.nl/kennis/blog/are-you-being-crawled-webarchivering-bij-beeld-en-geluid
 predecessors:
   - name: LiWA

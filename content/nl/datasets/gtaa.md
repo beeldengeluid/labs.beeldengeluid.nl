@@ -1,7 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0010
 title: GTAA (Gemeenschappelijke Thesaurus Audiovisuele Archieven)
-subtitle: Het Nederlands Instituut voor Beeld en Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus.
+subtitle: Het Nederlands Instituut voor Beeld & Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus.
 color: ''
 image: /uploads/gtaa_network_image.jpg
 tags:
@@ -10,12 +10,11 @@ tags:
 
 Gemeenschappelijke Thesaurus Audiovisuele Archieven GTAA)
 
-Het Nederlands Instituut voor Beeld en Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus.
+Het Nederlands Instituut voor Beeld & Geluid heeft samen met andere Nederlandse organisaties die audiovisueel cultureel erfgoed beheren de Gemeenschappelijke Thesaurus voor Audiovisuele Archieven (GTAA) ontwikkeld. De GTAA wordt gebruikt voor het doeltreffend karakteriseren van de inhoud van audiovisueel materiaal uit het archief met labels afkomstig uit een gecontroleerde en gestructureerde lijst van termen, een thesaurus.
 
 Een thesaurus is een gecontroleerde woordenschat met onderlinge semantische relaties en verwijzingen tussen de termen, waardoor het zoeken in de catalogus gerichter en eenvoudiger kan plaatsvinden. Deze relaties tussen de termen zijn hiërarchisch of associatief van aard. Ze geven antwoord op vragen als: welke termen worden gebruikt die ruimer of juist specifieker het gewenste onderwerp aanduiden; op welke termen kan ik zoeken die met het onderwerp te maken hebben? Daarnaast wordt met behulp van de thesaurus voorzien in het vraagstuk van synoniemen, quasi-synoniemen, spellingvarianten en homoniemen.
 
-Beeld en Geluid beheert de GTAA en is verantwoordelijkheid voor het regelmatig aanpassen van de thesaurus aan de actualiteit en het beschikbaar maken voor externe partijen. Voor meer informatie over (het gebruik van) de GTAA kunt u contact opnemen met de afdeling Metadatabeheer van het Nederlands Instituut voor Beeld en Geluid: [thesaurus@beeldengeluid.nl](mailto:thesaurus@beeldengeluid.nl).
-
+Beeld & Geluid beheert de GTAA en is verantwoordelijkheid voor het regelmatig aanpassen van de thesaurus aan de actualiteit en het beschikbaar maken voor externe partijen. Voor meer informatie over (het gebruik van) de GTAA kunt u contact opnemen met de afdeling Metadatabeheer van het Nederlands Instituut voor Beeld & Geluid: [thesaurus@beeldengeluid.nl](mailto:thesaurus@beeldengeluid.nl).
 
 De GTAA is beschikbaar gemaakt onder de [Open Database License (OdbL)](https://opendatacommons.org/licenses/odbl/1.0/) en als [linked open data](https://nl.wikipedia.org/wiki/Linked_data). Voor het beschrijven van de termen is gebruik gemaakt van het wijdverbreide [SKOS](https://www.w3.org/2004/02/skos/) model dat onder andere één van de [standaarden](https://www.forumstandaardisatie.nl/open-standaarden/skos) is voor de Nederlandse overheid en een best practice voor [terminologiebronnen](https://netwerk-digitaal-erfgoed.github.io/requirements-terminologiebronnen/) in het Netwerk Digitaal Erfgoed .
 
@@ -59,7 +58,7 @@ Genres in gebruik voor EYE filmmuseum.
 
 ### Opschoonactie
 
-In 2020 is de data in de GTAA opgeschoond: Het betreft hoofdzakelijk niet gecontroleerde persoonsnamen en namen die rond de muziekcollectie van Beeld en Geluid ingestroomd waren. Via een aantal [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) hebben we zoveel mogelijk niet gecontroleerde termen gematcht en goedgekeurd. Wat overbleef hebben we uiteindelijk uit de thesaurus verwijderd.
+In 2020 is de data in de GTAA opgeschoond: Het betreft hoofdzakelijk niet gecontroleerde persoonsnamen en namen die rond de muziekcollectie van Beeld & Geluid ingestroomd waren. Via een aantal [alignments](https://www.pldn.nl/wiki/Vocabulary_alignment) hebben we zoveel mogelijk niet gecontroleerde termen gematcht en goedgekeurd. Wat overbleef hebben we uiteindelijk uit de thesaurus verwijderd.
 
 ### Verbinding Wikidata
 
