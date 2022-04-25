@@ -1,12 +1,12 @@
 ---
-title: Samen met anderen
+title: Archief als Knooppunt
 subtitle: 'Knooppunten, Infrastructuren, Ecosystemen en Communities '
-image: '/uploads/gtaa_network_image.jpg'
-tags:
-datasets:
+image: "/uploads/gtaa_network_image.jpg"
+tags: 
+datasets: 
 sortOrder: 5
----
 
+---
 #### Beeld & Geluid als onderdeel van de Nederlandse onderzoeksinfrastructuur voor de Sociale- en Geesteswetenschappen
 
 _projecten:_
