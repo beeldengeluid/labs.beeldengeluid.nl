@@ -4,7 +4,7 @@ subtitle: 'Knooppunten, Infrastructuren, Ecosystemen en Communities '
 image: "/uploads/gtaa_network_image.jpg"
 tags: 
 datasets: 
-sortOrder: 5
+sortOrder: 0
 
 ---
 #### Beeld & Geluid als onderdeel van de Nederlandse onderzoeksinfrastructuur voor de Sociale- en Geesteswetenschappen
