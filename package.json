@@ -37,5 +37,5 @@
     "responsive-loader": "^2.3.0",
     "sharp": "^0.30.3"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
