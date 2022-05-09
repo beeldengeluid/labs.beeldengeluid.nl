@@ -11,7 +11,7 @@ tags:
 
 Stichting Natuurbeelden consists of eleven nature organisations: ARK Natuurontwikkeling, IUCN NL, Natuurmonumenten, Vogelbescherming Nederland, De Waddenvereniging, De 12 Landschappen, Instituut voor natuureducatie en duurzaamheid, Vereniging Nederlands Cultuurlandschap, Dierenbescherming, Dutch Caribbean Nature Alliance and the Goois Natuurreservaat.
 
-In recent years, the foundation has collected exceptional moving images of nature. The collection now consists of over 4,000 fragments of plants, animals and landscapes. The Netherlands Institute for Sound and Vision provides a description of the images and places them on [www.natuurbeelden.nl](http://www.natuurbeelden.nl). The site gives a unique insight into the special nature of the Netherlands. All images on the site can be ordered. This way, nature organisations, educational and media professionals can use the material as they see fit in various communications.
+In recent years, the foundation has collected exceptional moving images of nature. The collection now consists of over 4,000 fragments of plants, animals and landscapes. The Netherlands Institute for Sound & Vision provides a description of the images and places them on [www.natuurbeelden.nl](http://www.natuurbeelden.nl). The site gives a unique insight into the special nature of the Netherlands. All images on the site can be ordered. This way, nature organisations, educational and media professionals can use the material as they see fit in various communications.
 
 Part of the collection has been made available for reuse under a Creative Commons licence and can be found at [natuurbeelden.openbeelden.nl](https://natuurbeelden.openbeelden.nl/).
 

@@ -1,6 +1,6 @@
 {
-  "site_name": "Beeld en Geluid · Labs",
-  "site_author": "Nederlands Instituut voor Beeld en Geluid",
+  "site_name": "Beeld & Geluid · Labs",
+  "site_author": "Nederlands Instituut voor Beeld & Geluid",
   "blogs": "Artikelen",
   "all_blogs": "Alle artikelen",
   "blogs_description": "Het laatste niews en achtergrondinformatie",
@@ -20,4 +20,3 @@
   "read_more": "Lees meer",
   "explore_dataset": "Dataset verkennen"
 }
-
