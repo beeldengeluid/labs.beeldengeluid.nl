@@ -4,8 +4,7 @@ Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 
-- [Node.js installed](https://nodejs.org/en/download/) (Vercel currently uses v14 for deployments, so that version is recommended for local development)
-- [Modern version of Yarn installed](https://yarnpkg.com/getting-started/install)
+- [Node.js installed](https://nodejs.org/en/download/) (Vercel currently uses v16 for deployments, so that version is recommended for local development)
 
 ## Ingredients
 
