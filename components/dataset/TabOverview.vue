@@ -61,10 +61,10 @@ export default {
           icon: 'mdi-license',
           text: this.dataset?.license?.name,
         },
-        this.dataset?.contentSize
+        this.dataset?.size
           ? {
               icon: 'mdi-file-document-multiple',
-              text: this.dataset?.contentSize + ' ' + this.$t('records'),
+              text: this.dataset?.size + ' ' + this.$t('records'),
             }
           : {},
         this.dataset?.['sdo:temporalCoverage']

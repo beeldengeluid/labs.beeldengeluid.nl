@@ -106,12 +106,12 @@ export default {
               },
             ]
           : []),
-        ...(this.dataset.contentSize
+        ...(this.dataset.size
           ? [
               {
                 icon: 'mdi-file-document-multiple',
                 text:
-                  new Intl.NumberFormat().format(this.dataset.contentSize) +
+                  new Intl.NumberFormat().format(this.dataset.size) +
                   ' ' +
                   this.$t('records'),
               },

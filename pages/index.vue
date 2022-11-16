@@ -172,7 +172,7 @@ export default {
     })
     let datasetPages = await $content(mdPath)
       .where({ hidden: { $ne: true } })
-      .sortBy('contentSize', 'desc')
+      .sortBy('size', 'desc')
       .fetch()
       .catch((e) => {
         // ignore error of missing page

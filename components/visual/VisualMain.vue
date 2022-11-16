@@ -180,8 +180,8 @@ export default {
             new Intl.NumberFormat().format(
               this.filteredDatasets.reduce(
                 (sum, dataset) =>
-                  dataset.contentSize
-                    ? sum + parseInt(dataset.contentSize)
+                  dataset.size
+                    ? sum + parseInt(dataset.size)
                     : sum,
                 0
               )

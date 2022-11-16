@@ -92,7 +92,7 @@ export default {
         id: dataset.slug,
         dataset,
         color: dataset.color,
-        value: parseInt(dataset.contentSize) || this.defaultSize,
+        value: parseInt(dataset.size) || this.defaultSize,
       }))
 
       // calculate circle pack layout

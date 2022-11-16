@@ -6,6 +6,7 @@ import { filterUndefined } from '~/util/frontmatter'
 export const enrichDataset = (dataset, datacatalog = []) => {
   // Enrichments
   dataset.title = getValueFromObjectOrArray(dataset['sdo:name'])
+  dataset.size = dataset['sdo:size']
 
   // Augmentations
   const creatorId = dataset['sdo:creator']?.['@id']
@@ -58,10 +59,6 @@ export const enrichDataset = (dataset, datacatalog = []) => {
 
   const distributionId = dataset['sdo:distribution']?.['@id']
   if (distributionId) {
-    dataset.contentSize = datacatalog.find(
-      (item) => item['@id'] === distributionId
-    )?.['sdo:contentSize']
-
     const distributionNameObject = datacatalog.find(
       (item) => item['@id'] === distributionId
     )?.['sdo:name']
@@ -171,6 +168,7 @@ export const augmentProps = {
   'sdo:distribution': 'distribution',
   'sdo:includedInDataCatalog': 'dataCatalog',
   'sdo:license': 'license',
+  'sdo:size': 'size',
 }
 
 export const enrichProps = [
@@ -192,7 +190,7 @@ export const enrichProps = [
 export const stripEnrichments = (dataset) =>
   stripObject(dataset, [...enrichProps, ...Object.values(augmentProps)])
 
-export const randomDataSet = ({ id, name, contentSize }) => {
+export const randomDataSet = ({ id, name, size }) => {
   return {
     '@context': {
       '@vocab': 'http://schema.org/',
@@ -228,7 +226,7 @@ export const randomDataSet = ({ id, name, contentSize }) => {
         inLanguage: ['nl-NL'],
         datePublished: '2010-01-01T08:51',
         dateModified: '2021-01-19T08:52',
-        contentSize: contentSize || Math.round(Math.random() * 1200 + id * 133),
+        size: size || Math.round(Math.random() * 1200 + id * 133),
       },
     ],
     tags: ['public domain', 'linked data', 'api', 'oai-pmh'].filter(
