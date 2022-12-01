@@ -25,10 +25,10 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# fetch latest datacatalog in JSON-LD format
+# (optionally) fetch latest datacatalog in JSON-LD format
 $ npm run fetch
 
-# generate static project (includes fetch)
+# generate static project (does not include fetch)
 $ npm run generate
 ```
 
