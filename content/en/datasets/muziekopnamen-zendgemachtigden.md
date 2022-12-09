@@ -9,4 +9,4 @@ tags: []
 
 Original concert and studio recordings made by public broadcasters. Integral recordings across many genres.
 
-This dataset is part of the dataset [Open data from the Sound & Vision catalogue](/en/datasets/nisv-media-catalog).
+This dataset is part of the dataset [Open data from the Sound & Vision catalogue](/datasets/nisv-media-catalog).
