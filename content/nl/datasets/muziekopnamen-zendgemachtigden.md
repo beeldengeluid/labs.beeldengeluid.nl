@@ -1,5 +1,5 @@
 ---
-id: 
+id: http://data.beeldengeluid.nl/id/dataset/0028
 title: Muziekopnamen zendgemachtigden (MOZ)
 subtitle: De audiocollectie Muziekopnamen Zendgemachtigden (MOZ) met originele, al of niet uitgezonden concert- en studioregistraties. De collectie bestaat uit ruw materiaal. 
 color: ''
