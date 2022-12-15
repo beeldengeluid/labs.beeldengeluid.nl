@@ -16,14 +16,14 @@ en <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> pr
 
 <iframe src='https://flo.uri.sh/visualisation/12101408/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12101408/?utm_source=embed&utm_campaign=visualisation/12101408' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Number of concerts in the MOZ collection_
+_Aantal concerten in de MOZ collectie_
 
 De vroegste opnames stammen van vroeg in de 20e eeuw, en nieuwe concerten worden steeds uitgezonden. Let op: het concert in 1900 is een artefact van onduidelijkheid in de metadata - deze concert
 heeft geen precies datum maar is van ergens in de 20e eeuw.
 
 <iframe src='https://flo.uri.sh/visualisation/12101513/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12101513/?utm_source=embed&utm_campaign=visualisation/12101513' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Number of concerts per year_
+_Aantal concerten per jaar_
 
 
 De concerten zijn heel divers, en veel verschillende genres van muziek zijn vertegenwoordigd.
@@ -40,7 +40,7 @@ Om echt iets te kunnen zeggen over de geografische distributie van concerten, zo
 
 _Distributie van concerten over opnamelocaties_
 
-Concerten zijn vaak verbonden aan bepaalde evenementen. Sommige terugkerende evenementen vallen minder op, omdat de evenement elk jaar een nieuwe naam heeft, bijv. Pinkpop 2022
+Concerten zijn vaak verbonden aan bepaalde evenementen. Sommige terugkerende evenementen vallen minder op, omdat de evenement elk jaar een nieuwe naam heeft, bijv. 'Pinkpop 2022'
 
 <iframe src='https://flo.uri.sh/visualisation/12159010/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12159010/?utm_source=embed&utm_campaign=visualisation/12159010' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
@@ -63,20 +63,19 @@ Artiesten kunnen betrokken worden in verschillende rollen. Als uitvoerenden of m
 
 _Distributie van artiesten over rollen_
 
-De top tien makers bevatten zowel bekende internationale componisten, als Nederlandse programmamakers. Hover over de grafiek om meer te ontdeken over hen.
+De top tien makers bevatten zowel bekende internationale componisten als ook Nederlandse programmamakers. Hover over de grafiek om meer te ontdekken over hen.
 
 <iframe src='https://flo.uri.sh/visualisation/12154373/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12154373/?utm_source=embed&utm_campaign=visualisation/12154373' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _De top tien makers, op basis van aantal concerten_
 
-De top tien uitvoerenden zijn een mix van orkesten, chors en dirigenten. Hover over de grafiek om meer te ontdeken over hen.
+De top tien uitvoerenden zijn een mix van orkesten, chors en dirigenten. Hover over de grafiek om meer te ontdekken over hen.
 
 <iframe src='https://flo.uri.sh/visualisation/12154672/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12154672/?utm_source=embed&utm_campaign=visualisation/12154672' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _De top tien uitvoerenden, op basis van aantal concerten_
 
-De meest vaak voorkomende maker in de metadata is Jean-Pierre Gabriël. Maar met welke andere makers en uitvoerenden werkte hij vaak? Dit netwerk toont zijn top tien connecties, en voor iedere connectie zijn/haar top tien connecties 
-op de beurt zijn/haar top tien connecties. 
+De meest vaak voorkomende maker in de metadata is Jean-Pierre Gabriël. Maar met welke andere makers en uitvoerenden werkt hij vaak? Dit netwerk toont zijn top tien connecties, en voor iedere connectie op de beurt zijn/haar top tien connecties. 
 
 <iframe src='https://flo.uri.sh/visualisation/12142893/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12142893/?utm_source=embed&utm_campaign=visualisation/12142893' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
@@ -84,13 +83,13 @@ _Netwerk van de top tien connecties van Jean-Pierre Gabriël, met ieder zijn/haa
 
 **De organisaties**
 
-De concerten worden gemaakt bij diverse productiebedrijven, die vaak ook omroepen zijn. Hover over de grafiek om meer te ontdeken over hen.
+De concerten worden gemaakt bij diverse productiebedrijven, die vaak ook omroepen zijn. Hover over de grafiek om meer te ontdekken over hen.
 
 <iframe src='https://flo.uri.sh/visualisation/12154930/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12154930/?utm_source=embed&utm_campaign=visualisation/12154930' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _De top tien productiebedrijven, op basis van aantal concerten_
 
-De concerten worden uitgezonden in de zendtijd van de publieke omroepen. Hover over de grafiek om meer te ontdeken over hen.
+De concerten worden uitgezonden in de zendtijd van de publieke omroepen. Hover over de grafiek om meer te ontdekken over hen.
 
 <iframe src='https://flo.uri.sh/visualisation/12155051/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12155051/?utm_source=embed&utm_campaign=visualisation/12155051' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
