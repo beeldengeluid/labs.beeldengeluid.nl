@@ -26,3 +26,7 @@ We will continue to expand and improve on this dataset. Please contact us with a
 ### APIs
 
 For working with the Sound & Vision media catalog open data several [APIs](/apis/nisv-media-catalog) are available.
+
+### ASR availability
+
+<iframe src="https://kibana-test.rdlabs.beeldengeluid.nl/s/mari/app/dashboards#/view/4c029410-7d4b-11ed-9f58-27cb5c3626eb?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-15m%2Cto%3Anow))&hide-filter-bar=true" height="600" width="800"></iframe>
