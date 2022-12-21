@@ -8,6 +8,8 @@ datasets: []
 ---
 Photo by Danny Howe on Unsplash
 
+<span style="color:red;font-weight:bold;outline: 2px solid darkred">WAARSCHUWING: Deze data story is nog in ontwikkeling!!</span>
+
 **Van Beethoven tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten uitgezonden door Nederlandse publieke omroepen op TV en Radio. 
 Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit de <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
 en <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> projecten**
