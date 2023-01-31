@@ -137,7 +137,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     extractCSS: process.env.NODE_ENV === 'production',
-    transiple: ['axios'],
+    transpile: ['axios'],
   },
 
   // Watch asset files (prevent manual reload when adding new assets)
