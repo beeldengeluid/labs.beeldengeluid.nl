@@ -4,7 +4,9 @@ Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 
-- [Node.js installed](https://nodejs.org/en/download/) (Vercel currently uses v16 for deployments, so that version is recommended for local development)
+- [Node.js](https://nodejs.org/) v16.x.
+
+If you use [`nvm`](https://github.com/nvm-sh/nvm) to manage different Node versions, running `nvm use` will activate the required version through `.nvmrc`.
 
 ## Ingredients
 
