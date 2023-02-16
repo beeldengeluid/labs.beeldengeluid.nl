@@ -34,6 +34,12 @@
             />
             <!-- Metadata -->
             <TabMetadata v-if="dataset" :dataset="dataset" />
+            <TabDashboard
+              :dataset="dataset"
+              :page="datasetPage"
+              :projects="projects"
+              :blogs="blogs"
+            />
           </v-tabs-items>
         </section>
       </v-col>
@@ -44,6 +50,7 @@
 <script>
 import TabOverview from '~/components/dataset/TabOverview'
 import TabMetadata from '~/components/dataset/TabMetadata'
+import TabDashboard from '~/components/dataset/TabDashboard'
 import ArticleHeader from '~/components/ArticleHeader'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
@@ -56,6 +63,7 @@ export default {
     ArticleHeader,
     TabMetadata,
     TabOverview,
+    TabDashboard,
   },
 
   async asyncData({ $content, app, params, error }) {
@@ -128,8 +136,7 @@ export default {
     classColors,
     icon: icons.dataset,
     color: classColors.dataset,
-
-    submenu: ['overview', 'metadata'],
+    submenu: ['overview', 'metadata', 'dashboard'],
     activeSubmenu: null,
   }),
   head() {
