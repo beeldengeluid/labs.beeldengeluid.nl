@@ -34,7 +34,9 @@
             />
             <!-- Metadata -->
             <TabMetadata v-if="dataset" :dataset="dataset" />
+            <!-- Dashboard -->
             <TabDashboard
+              v-if="datasetPage.showDashboard"
               :dataset="dataset"
               :page="datasetPage"
               :projects="projects"
@@ -136,7 +138,7 @@ export default {
     classColors,
     icon: icons.dataset,
     color: classColors.dataset,
-    submenu: ['overview', 'metadata', 'dashboard'],
+    submenu: ['overview', 'metadata'],
     activeSubmenu: null,
   }),
   head() {
@@ -145,15 +147,18 @@ export default {
       title,
     }
   },
-  // mounted() {
-  //   Set default submenu to hash
-  //   if (!this.$route.hash) {
-  //     window.history.replaceState(
-  //       null,
-  //       window.title,
-  //       this.$route.path + '#' + this.submenu[0]
-  //     )
-  //   }
-  // },
+  mounted() {
+    if (this.datasetPage.showDashboard) {
+      this.submenu.push('dashboard')
+    }
+    // Set default submenu to hash
+    // if (!this.$route.hash) {
+    //   window.history.replaceState(
+    //     null,
+    //     window.title,
+    //     this.$route.path + '#' + this.submenu[0]
+    //   )
+    // }
+  },
 }
 </script>

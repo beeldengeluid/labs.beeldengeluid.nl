@@ -5,6 +5,7 @@ subtitle: The audio collection 'Music recordings broadcasting agents' (MOZ) with
 color: ''
 image: '/uploads/NL-HaNA_2.24.01.05_0_923-3652-groot.jpg'
 tags: []
+showDashboard: true
 ---
 
 Original concert and studio recordings made by public broadcasters. Integral recordings across many genres.
