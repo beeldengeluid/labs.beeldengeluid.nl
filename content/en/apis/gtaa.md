@@ -61,7 +61,7 @@ The service layer provides a SPARQL endpoint to enable other parties to connect 
 
 #### Examples
 
-- [SPARQL endpoint (a key is needed)](https://gtaa.apis.beeldengeluid.nl/sparql)
+- [SPARQL endpoint](https://gtaa.apis.beeldengeluid.nl/sparql?&query=SELECT%20%3Fsubject%20%3Fpredicate%20%3Fobject%0AWHERE%20%7B%0A%20%20VALUES%20%3Fsubject%20%7B%20%3Chttp%3A%2F%2Fdata.beeldengeluid.nl%2Fgtaa%2F123456%3E%20%7D%0A%20%20%3Fsubject%20%3Fpredicate%20%3Fobject%0A%7D%20%0A)
 
 ## GraphQL
 
