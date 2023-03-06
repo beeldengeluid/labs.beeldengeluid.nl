@@ -64,7 +64,7 @@ De service layer stelt een SPARQL endpoint beschikbaar om andere partijen in sta
 
 #### Voorbeelden
 
-- [SPARQL endpoint (vereist een authenticatie sleutel)](https://gtaa.apis.beeldengeluid.nl/sparql)
+- [SELECT een concept](https://gtaa.apis.beeldengeluid.nl/sparql?&query=SELECT%20%3Fsubject%20%3Fpredicate%20%3Fobject%0AWHERE%20%7B%0A%20%20VALUES%20%3Fsubject%20%7B%20%3Chttp%3A%2F%2Fdata.beeldengeluid.nl%2Fgtaa%2F123456%3E%20%7D%0A%20%20%3Fsubject%20%3Fpredicate%20%3Fobject%0A%7D%20%0A)
 
 ## GraphQL
 
