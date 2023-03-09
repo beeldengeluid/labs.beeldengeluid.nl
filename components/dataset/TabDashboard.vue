@@ -18,11 +18,6 @@
         </v-col>
       </v-row>
 
-      <v-alert type="warning"
-        >For now this dashboard tab contains the content of the Overview tab as
-        placeholder.</v-alert
-      >
-
       <!-- Description -->
       <nuxt-content :document="page" />
 

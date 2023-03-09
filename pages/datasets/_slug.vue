@@ -38,7 +38,7 @@
             <TabDashboard
               v-if="datasetPage.showDashboard"
               :dataset="dataset"
-              :page="datasetPage"
+              :page="dashboardPage"
               :projects="projects"
               :blogs="blogs"
             />
@@ -76,6 +76,18 @@ export default {
       path: `datasets/${params.slug}`,
     })
     const datasetPage = await $content(datasetsPath)
+      .where({ hidden: { $ne: true } })
+      .fetch()
+      .catch((e) => {
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+
+    const dashboardPath = await getLocalePath({
+      $content,
+      app,
+      path: `datasets/dashboard-${params.slug}`,
+    })
+    const dashboardPage = await $content(dashboardPath)
       .where({ hidden: { $ne: true } })
       .fetch()
       .catch((e) => {
@@ -128,6 +140,7 @@ export default {
 
     return {
       datasetPage,
+      dashboardPage,
       dataset,
       blogs,
       projects,
