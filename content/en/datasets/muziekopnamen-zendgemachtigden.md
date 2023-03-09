@@ -15,7 +15,7 @@ The earliest recordings are from early in the 20th century. New concerts are sti
 The concerts are very diverse; almost 200 different musical genres are represented.
 The largest genre is classical music, but jazz, theatre music, folk, indie and pop also appear.
 
-The largest part of the collection contains information about the artists involved. There are more than 36,000 artists, both individuals and musical groups.
+Most of the concerts in the collection contain information about the artists involved. There are more than 36,000 artists, both individuals and musical groups.
 Some of the persons are linked to WikiData or Discogs.
 The concerts are predominantly - but not exclusively - produced by public broadcasters. 
 
