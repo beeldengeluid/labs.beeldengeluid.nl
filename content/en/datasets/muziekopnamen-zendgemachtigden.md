@@ -1,8 +1,7 @@
 ---
 id: http://data.beeldengeluid.nl/id/dataset/0028
 title: Muziekopnamen zendgemachtigden (MOZ)
-subtitle: The audio collection (with also a small amount of video) 'Muziekopnamen zendgemachtigden (MOZ)' contains original concert and studio recordings intended for broadcast, 
-whether or not they were actually broadcast. The collection consists of raw material.
+subtitle: The audio collection (with also a small amount of video) 'Muziekopnamen zendgemachtigden (MOZ)' contains original concert and studio recordings intended for broadcast, whether or not they were actually broadcast. The collection consists of raw material.
 color: ''
 image: '/uploads/NL-HaNA_2.24.01.05_0_923-3652-groot.jpg'
 tags: []
