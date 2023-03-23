@@ -117,16 +117,7 @@
 </template>
 
 <script>
-import VisualTags from './VisualTags'
-import VisualCircles from './VisualCircles'
-import VisualDatasetInfo from './VisualDatasetInfo'
-
 export default {
-  components: {
-    VisualTags,
-    VisualCircles,
-    VisualDatasetInfo,
-  },
   props: {
     datasets: {
       type: Array,
@@ -180,9 +171,7 @@ export default {
             new Intl.NumberFormat().format(
               this.filteredDatasets.reduce(
                 (sum, dataset) =>
-                  dataset.size
-                    ? sum + parseInt(dataset.size)
-                    : sum,
+                  dataset.size ? sum + parseInt(dataset.size) : sum,
                 0
               )
             ) + ' records',

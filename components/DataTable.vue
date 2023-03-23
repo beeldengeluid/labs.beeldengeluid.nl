@@ -98,11 +98,6 @@
 </template>
 
 <script>
-import { Fragment } from 'vue-fragment'
-import ObjectLinkFromSchema from './ObjectLinkFromSchema'
-import ObjectLink from './ObjectLink'
-import DataTable from './DataTable'
-import LinkText from './LinkText'
 import {
   isObjectWithIdTypeName,
   isObjectWithIdName,
@@ -120,13 +115,6 @@ const isObjectArray = (value) =>
 
 export default {
   name: 'DataTable',
-  components: {
-    DataTable,
-    Fragment,
-    LinkText,
-    ObjectLink,
-    ObjectLinkFromSchema,
-  },
   props: {
     object: {
       type: Object,

@@ -11,10 +11,7 @@
 </template>
 
 <script>
-import DataTable from './DataTable'
-
 export default {
-  components: { DataTable },
   props: {
     object: {
       type: Object,

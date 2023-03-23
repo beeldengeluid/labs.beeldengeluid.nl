@@ -36,12 +36,10 @@
   </v-tab-item>
 </template>
 <script>
-import ArticleRelations from '../ArticleRelations'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
 
 export default {
-  components: { ArticleRelations },
   props: {
     projects: { type: Array, required: false, default: () => [] },
     blogs: { type: Array, required: false, default: () => [] },

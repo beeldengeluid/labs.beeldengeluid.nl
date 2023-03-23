@@ -3,11 +3,9 @@
 </template>
 
 <script>
-import ObjectLink from './ObjectLink'
 import { isObjectWithIdName } from '~/util/objectsFromSchema'
 
 export default {
-  components: { ObjectLink },
   props: {
     value: {
       type: Object,

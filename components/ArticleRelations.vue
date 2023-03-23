@@ -18,12 +18,10 @@
 </template>
 
 <script>
-import ChipList from './ChipList'
 import icons from '~/config/icons'
 import { classColorIndex } from '~/config/theme'
 
 export default {
-  components: { ChipList },
   props: {
     projects: { type: Array, required: false, default: null },
     blogs: { type: Array, required: false, default: null },

@@ -12,10 +12,7 @@
 </template>
 
 <script>
-import CardItem from './CardItem'
-
 export default {
-  components: { CardItem },
   props: {
     cards: { type: Array, required: true, default: () => [] },
     path: { type: String, required: true, default: '' },

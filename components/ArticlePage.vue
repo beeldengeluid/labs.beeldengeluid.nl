@@ -65,16 +65,11 @@
 </template>
 
 <script>
-import ArticleHeader from './ArticleHeader'
-import ArticleRelations from './ArticleRelations'
-import PrevNext from './PrevNext'
-import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
 import { filterUndefined } from '~/util/frontmatter'
 import { classColorIndex } from '~/config/theme'
 
 export default {
-  components: { ArticleRelations, PrevNext, ArticleHeader, DataTable },
   props: {
     article: {
       type: Object,

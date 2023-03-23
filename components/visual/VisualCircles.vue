@@ -36,12 +36,8 @@
 
 <script>
 import { createLayout } from './pack'
-import VisualNode from './VisualNode'
 
 export default {
-  components: {
-    VisualNode,
-  },
   props: {
     datasets: {
       type: Array,

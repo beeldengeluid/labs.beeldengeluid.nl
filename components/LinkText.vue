@@ -12,11 +12,9 @@
 </template>
 
 <script>
-import { Fragment } from 'vue-fragment'
 import { isUrl } from '~/util/url'
 
 export default {
-  components: { Fragment },
   props: {
     value: {
       type: [String, Number, Object],

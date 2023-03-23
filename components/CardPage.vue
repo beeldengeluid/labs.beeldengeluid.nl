@@ -13,12 +13,7 @@
 </template>
 
 <script>
-import HeaderPage from './HeaderPage'
-import CardGrid from './CardGrid'
-import SectionHeading from './SectionHeading'
-
 export default {
-  components: { HeaderPage, CardGrid, SectionHeading },
   props: {
     title: { type: String, required: true, default: '' },
     cards: { type: Array, required: true, default: () => [] },

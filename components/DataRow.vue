@@ -9,11 +9,8 @@
 </template>
 
 <script>
-import DataTable from './DataTable'
-
 export default {
   name: 'DataRow',
-  components: { DataTable },
   props: {
     title: {
       type: String,

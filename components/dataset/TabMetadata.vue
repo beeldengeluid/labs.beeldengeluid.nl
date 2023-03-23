@@ -19,7 +19,6 @@
   </v-tab-item>
 </template>
 <script>
-import MetadataTable from '../MetadataTable'
 import icons from '~/config/icons'
 import { stripEnrichments, enrichProps, augmentProps } from '~/util/dataset'
 import { stripObject } from '~/util/objects'
@@ -37,7 +36,6 @@ const markdownProps = [
 ]
 
 export default {
-  components: { MetadataTable },
   props: {
     dataset: {
       type: Object,
