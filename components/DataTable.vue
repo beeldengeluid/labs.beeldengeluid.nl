@@ -114,7 +114,6 @@ const isObjectArray = (value) =>
   Array.isArray(value) && value.length > 0 && typeof value[0] === 'object'
 
 export default {
-  name: 'DataTable',
   props: {
     object: {
       type: Object,
