@@ -8,13 +8,11 @@
 </template>
 
 <script>
-import CardPage from '~/components/CardPage'
 import { getLocalePath } from '~/util/contentFallback'
 
 const dataClass = 'topic'
 
 export default {
-  components: { CardPage },
   async asyncData({ $content, app }) {
     const path = dataClass + 's'
 

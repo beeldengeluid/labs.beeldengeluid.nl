@@ -8,13 +8,11 @@
 </template>
 
 <script>
-import CardPage from '~/components/CardPage'
 import { getLocalePath } from '~/util/contentFallback'
 
 const dataClass = 'dataset'
 
 export default {
-  components: { CardPage },
   async asyncData({ $content, app }) {
     // Custom markdown content for datasets
     const mdPath = await getLocalePath({

@@ -105,20 +105,12 @@
 </template>
 
 <script>
-import CardGrid from '~/components/CardGrid'
-import SectionHeading from '~/components/SectionHeading'
-import VisualMain from '~/components/visual/VisualMain'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
 import { classColors } from '~/config/theme'
 import { enrichDatasets, extendDatasetPagesWithDatasets } from '~/util/dataset'
 
 export default {
-  components: {
-    CardGrid,
-    SectionHeading,
-    VisualMain,
-  },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })
     const aboutPage = await $content(aboutPath).fetch()
@@ -127,7 +119,7 @@ export default {
     const blogsPath = await getLocalePath({
       $content,
       app,
-      path: 'blogs',
+      path: 'blogs'
     })
     const blogs = await $content(blogsPath)
       .where({ hidden: { $ne: true } })
@@ -139,7 +131,7 @@ export default {
     const labsPath = await getLocalePath({
       $content,
       app,
-      path: 'labs',
+      path: 'labs'
     })
     const labs = await $content(labsPath)
       .where({ hidden: { $ne: true } })
@@ -153,7 +145,7 @@ export default {
     const projectsPath = await getLocalePath({
       $content,
       app,
-      path: 'projects',
+      path: 'projects'
     })
     const projects = await $content(projectsPath)
       .where({ hidden: { $ne: true } })
@@ -168,13 +160,13 @@ export default {
     const mdPath = await getLocalePath({
       $content,
       app,
-      path: 'datasets',
+      path: 'datasets'
     })
     let datasetPages = await $content(mdPath)
       .where({ hidden: { $ne: true } })
       .sortBy('size', 'desc')
       .fetch()
-      .catch((e) => {
+      .catch(e => {
         // ignore error of missing page
       })
 
@@ -183,7 +175,7 @@ export default {
     const data = await $content(dataPath).fetch()
     const datacatalog = data['@graph']
     const datasetsRaw = data['@graph'].filter(
-      (node) => node['@type'] === 'sdo:Dataset'
+      node => node['@type'] === 'sdo:Dataset'
     )
     // enrich datasets with helper properties
     const datasets = enrichDatasets(datasetsRaw, datacatalog)
@@ -194,18 +186,18 @@ export default {
       datasetPages,
       blogs,
       labs,
-      projects,
+      projects
     }
   },
   data: () => ({
     icons,
-    classColors,
+    classColors
   }),
   head() {
     const title = this.$t('home')
     return {
-      title,
+      title
     }
-  },
+  }
 }
 </script>

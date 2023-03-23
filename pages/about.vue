@@ -17,30 +17,27 @@
 <script>
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
-import HeaderPage from '~/components/HeaderPage'
-import SectionHeading from '~/components/SectionHeading'
 
 export default {
-  components: { HeaderPage, SectionHeading },
   async asyncData({ $content, app }) {
     const aboutPath = await getLocalePath({ $content, app, path: 'about' })
     const page = await $content(aboutPath).fetch()
     return {
-      page,
+      page
     }
   },
   nuxtI18n: {
     paths: {
       en: '/about',
-      nl: '/over-ons',
-    },
+      nl: '/over-ons'
+    }
   },
   data: () => ({ icon: icons.about, color: 'primary' }),
   head() {
     const title = this.$t('about')
     return {
-      title,
+      title
     }
-  },
+  }
 }
 </script>
