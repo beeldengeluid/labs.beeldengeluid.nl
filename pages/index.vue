@@ -90,7 +90,7 @@
               md="6"
               class="pa-10 d-flex flex-column justify-center align-start"
             >
-              <!-- <nuxt-content :document="{ body: aboutPage.excerpt }" /> -->
+              <ContentRenderer :value="aboutPage" :excerpt="true" />
               <v-btn color="primary" :to="localePath('about')" nuxt>
                 {{ $t("read_more") }}
               </v-btn>
@@ -104,100 +104,121 @@
   </v-row>
 </template>
 
+<script setup>
+const { data: aboutPage } = await useAsyncData("get-document", () =>
+  queryContent()
+    .where({ title: "About" })
+    .findOne()
+);
+</script>
+
 <script>
 // import { getLocalePath } from "~/util/contentFallback";
 // import icons from "~/config/icons";
 // import { classColors } from "~/config/theme";
 // import { enrichDatasets, extendDatasetPagesWithDatasets } from "~/util/dataset";
 
-// export default {
-//   async asyncData({ $content, app }) {
-//     const aboutPath = await getLocalePath({ $content, app, path: "about" });
-//     const aboutPage = await $content(aboutPath).fetch();
+export default {
+  // const { data } = await useAsyncData('get-document', () => queryContent('about').findOne())
+  // console.log("data", data);
 
-//     // blogs
-//     const blogsPath = await getLocalePath({
-//       $content,
-//       app,
-//       path: "blogs",
-//     });
-//     const blogs = await $content(blogsPath)
-//       .where({ hidden: { $ne: true } })
-//       .sortBy("createdAt", "asc")
-//       .limit(4)
-//       .fetch();
+  async asyncData({ $content, app }) {
+    // const { data: aboutPage } = await useAsyncData("about", () =>
+    //   queryContent("blog").find()
+    // );
+    // const { data: aboutPage } = await useAsyncData("about-page", () =>
+    //   queryContent("/about")
+    //     // .only(["title"])
+    //     .findOne()
+    // );
+    // console.log("aboutPage", aboutPage);
 
-//     // labs
-//     const labsPath = await getLocalePath({
-//       $content,
-//       app,
-//       path: "labs",
-//     });
-//     const labs = await $content(labsPath)
-//       .where({ hidden: { $ne: true } })
-//       .sortBy("sortOrder", "asc")
-//       .sortBy("startDate", "asc")
-//       .sortBy("createdAt", "asc")
-//       .limit(4)
-//       .fetch();
+    // const aboutPath = await getLocalePath({ $content, app, path: "about" });
+    // const aboutPage = await $content(aboutPath).fetch();
 
-//     // projects
-//     const projectsPath = await getLocalePath({
-//       $content,
-//       app,
-//       path: "projects",
-//     });
-//     const projects = await $content(projectsPath)
-//       .where({ hidden: { $ne: true } })
-//       .sortBy("sortOrder", "asc")
-//       .sortBy("startDate", "asc")
-//       .sortBy("createdAt", "asc")
-//       .limit(4)
-//       .fetch();
+    // // blogs
+    // const blogsPath = await getLocalePath({
+    //   $content,
+    //   app,
+    //   path: "blogs",
+    // });
+    // const blogs = await $content(blogsPath)
+    //   .where({ hidden: { $ne: true } })
+    //   .sortBy("createdAt", "asc")
+    //   .limit(4)
+    //   .fetch();
 
-//     // datasets
-//     // Custom markdown content for datasets
-//     const mdPath = await getLocalePath({
-//       $content,
-//       app,
-//       path: "datasets",
-//     });
-//     let datasetPages = await $content(mdPath)
-//       .where({ hidden: { $ne: true } })
-//       .sortBy("size", "desc")
-//       .fetch()
-//       .catch((e) => {
-//         // ignore error of missing page
-//       });
+    // // labs
+    // const labsPath = await getLocalePath({
+    //   $content,
+    //   app,
+    //   path: "labs",
+    // });
+    // const labs = await $content(labsPath)
+    //   .where({ hidden: { $ne: true } })
+    //   .sortBy("sortOrder", "asc")
+    //   .sortBy("startDate", "asc")
+    //   .sortBy("createdAt", "asc")
+    //   .limit(4)
+    //   .fetch();
 
-//     // datasets from Datacatalog are not localized (yet)
-//     const dataPath = "datacatalog0001";
-//     const data = await $content(dataPath).fetch();
-//     const datacatalog = data["@graph"];
-//     const datasetsRaw = data["@graph"].filter(
-//       (node) => node["@type"] === "sdo:Dataset"
-//     );
-//     // enrich datasets with helper properties
-//     const datasets = enrichDatasets(datasetsRaw, datacatalog);
-//     datasetPages = extendDatasetPagesWithDatasets(datasetPages, datasets);
+    // // projects
+    // const projectsPath = await getLocalePath({
+    //   $content,
+    //   app,
+    //   path: "projects",
+    // });
+    // const projects = await $content(projectsPath)
+    //   .where({ hidden: { $ne: true } })
+    //   .sortBy("sortOrder", "asc")
+    //   .sortBy("startDate", "asc")
+    //   .sortBy("createdAt", "asc")
+    //   .limit(4)
+    //   .fetch();
 
-//     return {
-//       aboutPage,
-//       datasetPages,
-//       blogs,
-//       labs,
-//       projects,
-//     };
-//   },
-//   data: () => ({
-//     icons,
-//     classColors,
-//   }),
-//   head() {
-//     const title = this.$t("home");
-//     return {
-//       title,
-//     };
-//   },
-// };
+    // // datasets
+    // // Custom markdown content for datasets
+    // const mdPath = await getLocalePath({
+    //   $content,
+    //   app,
+    //   path: "datasets",
+    // });
+    // let datasetPages = await $content(mdPath)
+    //   .where({ hidden: { $ne: true } })
+    //   .sortBy("size", "desc")
+    //   .fetch()
+    //   .catch((e) => {
+    //     // ignore error of missing page
+    //   });
+
+    // // datasets from Datacatalog are not localized (yet)
+    // const dataPath = "datacatalog0001";
+    // const data = await $content(dataPath).fetch();
+    // const datacatalog = data["@graph"];
+    // const datasetsRaw = data["@graph"].filter(
+    //   (node) => node["@type"] === "sdo:Dataset"
+    // );
+    // // enrich datasets with helper properties
+    // const datasets = enrichDatasets(datasetsRaw, datacatalog);
+    // datasetPages = extendDatasetPagesWithDatasets(datasetPages, datasets);
+
+    return {
+      // aboutPage,
+      // datasetPages,
+      // blogs,
+      // labs,
+      // projects,
+    };
+  },
+  // data: () => ({
+  //   icons,
+  //   classColors,
+  // }),
+  // head() {
+  //   const title = this.$t("home");
+  //   return {
+  //     title,
+  //   };
+  // },
+};
 </script>

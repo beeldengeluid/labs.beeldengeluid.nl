@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@nuxt/content"],
   i18n: {
     locales: ["en", "nl"],
     defaultLocale: "en",
