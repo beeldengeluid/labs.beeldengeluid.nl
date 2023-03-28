@@ -2,6 +2,10 @@
   <v-row>
     <v-col>
       <!-- Datasets / Visualization -->
+      <h1>datasets</h1>
+      <div v-for="dataset in datasets">
+        {{ dataset.title }}
+      </div>
       <!-- <v-row class="justify-center white">
         <v-col class="pa-0">
           <VisualMain :datasets="datasetPages" />
@@ -9,6 +13,10 @@
       </v-row> -->
 
       <!-- Labs -->
+      <h1>labs</h1>
+      <div v-for="lab in labs">
+        {{ lab.title }}
+      </div>
       <!-- <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
           <SectionHeading
@@ -29,6 +37,10 @@
       </v-row> -->
 
       <!-- Projects -->
+      <h1>projects</h1>
+      <div v-for="project in projects">
+        {{ project.title }}
+      </div>
       <!-- <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
           <SectionHeading
@@ -49,6 +61,10 @@
       </v-row> -->
 
       <!-- Blogs -->
+      <h1>blogs</h1>
+      <div v-for="blog in blogs">
+        {{ blog.title }}
+      </div>
       <!-- <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
           <SectionHeading
@@ -105,11 +121,56 @@
 </template>
 
 <script setup>
-const { data: aboutPage } = await useAsyncData("get-document", () =>
+// datasets
+const { data: datasets } = await useAsyncData("get-datasets", () =>
+  queryContent("datasets")
+    .where({ hidden: { $ne: true } })
+    .sort("size", "desc")
+    .find()
+);
+
+// labs
+const { data: labs } = await useAsyncData("get-labs", () =>
+  queryContent("labs")
+    .where({ hidden: { $ne: true } })
+    .sort("sortOrder", "asc")
+    .sort("startDate", "asc")
+    .sort("createdAt", "asc")
+    .find()
+);
+
+// projects
+const { data: projects } = await useAsyncData("get-projects", () =>
+  queryContent("projects")
+    .where({ hidden: { $ne: true } })
+    .sort("sortOrder", "asc")
+    .sort("startDate", "asc")
+    .sort("createdAt", "asc")
+    .limit(4)
+    .find()
+);
+
+// blogs
+const { data: blogs } = await useAsyncData("get-blogs", () =>
+  queryContent("blogs")
+    .where({ hidden: { $ne: true } })
+    .sort("createdAt", "asc")
+    .limit(4)
+    .find()
+);
+
+// data
+const { data: aboutPage } = await useAsyncData("get-about", () =>
   queryContent()
     .where({ title: "About" })
     .findOne()
 );
+
+// const blogs = await $content(blogsPath)
+//   .where({ hidden: { $ne: true } })
+//   .sortBy("createdAt", "asc")
+//   .limit(4)
+//   .fetch();
 </script>
 
 <script>
