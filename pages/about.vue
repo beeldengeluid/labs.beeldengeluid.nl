@@ -1,6 +1,6 @@
 <template>
-  <ContentRenderer :value="page" />
-  <!-- <HeaderPage>
+  <!-- <ContentRenderer :value="page" /> -->
+  <HeaderPage>
     <template #header>
       <SectionHeading :title="page.title" data-class="dataset"
     /></template>
@@ -10,7 +10,7 @@
         <ContentRenderer :value="page" />
       </section>
     </template>
-  </HeaderPage> -->
+  </HeaderPage>
 </template>
 
 <script setup>
