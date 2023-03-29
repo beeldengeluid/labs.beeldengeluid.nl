@@ -12,19 +12,17 @@
       class="d-sm-flex d-md-none"
     >
       <v-list-item>
-        <v-list-item-content>
-          <v-list-item-title class="pb-2">
-            <NuxtLink
-              :to="localePath('index')"
-              :style="{
-                textDecoration: 'none',
-              }"
-              class="black--text d-flex align-center"
-            >
-              <LogoMarkLabs />
-            </NuxtLink>
-          </v-list-item-title>
-        </v-list-item-content>
+        <v-list-item-title class="pb-2">
+          <NuxtLink
+            :to="localePath('index')"
+            :style="{
+              textDecoration: 'none',
+            }"
+            class="black--text d-flex align-center"
+          >
+            <LogoMarkLabs />
+          </NuxtLink>
+        </v-list-item-title>
       </v-list-item>
 
       <v-divider></v-divider>
@@ -42,11 +40,9 @@
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title class="text-uppercase">
-              <h4>{{ $t(item.title) }}</h4>
-            </v-list-item-title>
-          </v-list-item-content>
+          <v-list-item-title class="text-uppercase">
+            <h4>{{ $t(item.title) }}</h4>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
 
@@ -65,11 +61,9 @@
           <v-list-item-action>
             <v-icon>mdi-earth</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title class="text-uppercase">
-              <h4>{{ locale.code }}</h4>
-            </v-list-item-title>
-          </v-list-item-content>
+          <v-list-item-title class="text-uppercase">
+            <h4>{{ locale.code }}</h4>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -190,11 +184,9 @@
               exact
               dark
             >
-              <v-list-item-content>
-                <v-list-item-title class="text-uppercase white--text">
-                  <h4>{{ $t(item.title) }}</h4>
-                </v-list-item-title>
-              </v-list-item-content>
+              <v-list-item-title class="text-uppercase white--text">
+                <h4>{{ $t(item.title) }}</h4>
+              </v-list-item-title>
             </v-list-item>
           </v-list>
         </v-col>
