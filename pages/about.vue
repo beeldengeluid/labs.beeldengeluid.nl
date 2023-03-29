@@ -1,5 +1,4 @@
 <template>
-  <!-- <ContentRenderer :value="page" /> -->
   <HeaderPage>
     <template #header>
       <SectionHeading :title="page.title" data-class="dataset"
