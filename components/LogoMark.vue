@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { getRandomColor } from '~/util/color'
+import { getRandomColor } from "~/util/color";
 
 export default {
   props: {
@@ -27,15 +27,15 @@ export default {
     color: {
       type: String,
       required: false,
-      default: '#008adb',
+      default: "#008adb",
     },
   },
   data() {
     const tile = {
-      width: this.size + 'px',
-      height: this.size + 'px',
+      width: this.size + "px",
+      height: this.size + "px",
       backgroundColor: this.color,
-    }
+    };
 
     return {
       tiles: [
@@ -52,33 +52,33 @@ export default {
         { opacity: 0.66, ...tile },
       ],
       container: {
-        width: this.size * 3 + 2 + 'px',
-        height: this.size * 3 + 2 + 'px',
-        borderRadius: this.size + 2 + 'px',
+        width: this.size * 3 + 2 + "px",
+        height: this.size * 3 + 2 + "px",
+        borderRadius: this.size + 2 + "px",
       },
-    }
+    };
   },
   methods: {
     getPosition(index) {
       return {
-        left: this.size * (index % 3) + (index % 3) + 'px',
-        top: Math.floor(index / 3) * (this.size + 1) + 'px',
-      }
+        left: this.size * (index % 3) + (index % 3) + "px",
+        top: Math.floor(index / 3) * (this.size + 1) + "px",
+      };
     },
     onMouseEnter() {
       this.tiles = this.tiles.map((tile) => ({
         ...tile,
         backgroundColor: getRandomColor(),
-      }))
+      }));
     },
     onMouseLeave() {
       this.tiles = this.tiles.map((tile) => ({
         ...tile,
         backgroundColor: this.color,
-      }))
+      }));
     },
   },
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -104,8 +104,8 @@ export default {
       animation-iteration-count: infinite;
       @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
-          animation-delay: #{random(100) / -200}s;
-          animation-duration: #{0.1 + random(100) / 50}s;
+          animation-delay: #{calc(random(100) / -200)}s;
+          animation-duration: #{0.1 + calc(random(100) / 50)}s;
         }
       }
     }

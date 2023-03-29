@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { getImageOverlayCSS, getRGBAColor } from '~/util/color'
+import { getImageOverlayCSS, getRGBAColor } from "~/util/color";
 
 export default {
   props: {
@@ -58,54 +58,54 @@ export default {
       imageSrc: !this.node.dataset.image
         ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
             .src
-        : this.node.dataset.image.includes('/uploads/')
+        : this.node.dataset.image.includes("/uploads/")
         ? this.node.dataset.image
         : require(`~/assets/images/${this.node.dataset.image}?size=300`).src,
-    }
+    };
   },
   methods: {
     getImageOverlayCSS,
     getRGBAColor,
     onTouchStart(e) {
       if (!this.touchActive && e.touches?.length === 1) {
-        this.touchStart = { x: e.touches[0].screenX, y: e.touches[0].screenY }
-        this.touchClick = true
-        this.touchActive = true
+        this.touchStart = { x: e.touches[0].screenX, y: e.touches[0].screenY };
+        this.touchClick = true;
+        this.touchActive = true;
       } else {
-        this.touchClick = false
+        this.touchClick = false;
       }
     },
     onTouchMove(e) {
       if (this.touchClick && e.touches?.length === 1) {
-        const diff = { x: e.touches[0].screenX, y: e.touches[0].screenY }
-        const dx = diff.x - this.touchStart.x
-        const dy = diff.y - this.touchStart.y
+        const diff = { x: e.touches[0].screenX, y: e.touches[0].screenY };
+        const dx = diff.x - this.touchStart.x;
+        const dy = diff.y - this.touchStart.y;
 
         if (Math.sqrt(dx * dx + dy * dy) > 5) {
-          this.touchClick = false
+          this.touchClick = false;
         }
       }
     },
     onTouchEnd(e) {
       if (this.touchActive && e.touches?.length === 0) {
-        this.touchActive = false
+        this.touchActive = false;
         if (this.touchClick) {
-          this.$emit('click', this.node.id)
+          this.$emit("click", this.node.id);
         }
       }
-      this.touchClick = false
+      this.touchClick = false;
     },
     onClick() {
-      this.$emit('click', this.node.id)
+      this.$emit("click", this.node.id);
     },
     onStartHover() {
-      this.$emit('hover', this.node.id)
+      this.$emit("hover", this.node.id);
     },
     onStopHover() {
-      this.$emit('hover', '')
+      this.$emit("hover", "");
     },
   },
-}
+};
 </script>
 
 <style lang="scss">
@@ -171,8 +171,8 @@ export default {
       border-radius: 50%;
       width: calc(100% - #{$borderSize});
       height: calc(100% - #{$borderSize});
-      left: $borderSize/2;
-      top: $borderSize/2;
+      left: calc($borderSize/2);
+      top: calc($borderSize/2);
       display: flex;
       align-items: center;
       justify-content: center;
