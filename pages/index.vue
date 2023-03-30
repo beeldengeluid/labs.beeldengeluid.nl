@@ -13,11 +13,7 @@
       </v-row> -->
 
       <!-- Labs -->
-      <h1>labs</h1>
-      <div v-for="lab in labs">
-        {{ lab.title }}
-      </div>
-      <!-- <v-row class="justify-center light-background my-3 pb-3">
+      <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
           <SectionHeading
             :title="$t('labs')"
@@ -34,14 +30,10 @@
             row-class="justify-center justify-md-start px-5"
           />
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <!-- Projects -->
-      <h1>projects</h1>
-      <div v-for="project in projects">
-        {{ project.title }}
-      </div>
-      <!-- <v-row class="justify-center light-background my-3 pb-3">
+      <v-row class="justify-center light-background my-3 pb-3">
         <v-col class="limit-width px-3 py-4 mb-2">
           <SectionHeading
             :title="$t('projects')"
@@ -58,7 +50,7 @@
             row-class="justify-center justify-md-start px-5"
           />
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <!-- Blogs -->
       <v-row class="justify-center light-background pb-3">
