@@ -56,11 +56,10 @@ export default {
       touchActive: false,
       touchClick: false,
       imageSrc: !this.node.dataset.image
-        ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
-            .src
+        ? `/images/placeholders/placeholder-dataset.jpg`)
         : this.node.dataset.image.includes("/uploads/")
         ? this.node.dataset.image
-        : require(`~/assets/images/${this.node.dataset.image}?size=300`).src,
+        : `/images/${this.node.dataset.image}`,
     };
   },
   methods: {

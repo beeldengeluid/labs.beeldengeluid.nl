@@ -10,9 +10,9 @@
       :srcset="imageSrcset"
       :gradient="
         'to top right, ' +
-        getRGBAColor(color, 0.85) +
-        ', ' +
-        getRGBAColor(color, 0.3)
+          getRGBAColor(color, 0.85) +
+          ', ' +
+          getRGBAColor(color, 0.3)
       "
     />
 
@@ -58,7 +58,7 @@
           "
           nuxt
         >
-          {{ $t('explore_dataset') }}
+          {{ $t("explore_dataset") }}
         </v-btn>
       </v-col>
     </v-row>
@@ -80,18 +80,15 @@ export default {
     return {
       color: classColors.dataset,
       imageSrc: !this.dataset.image
-        ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
-            .src
+        ? `/images/placeholders/placeholder-dataset.jpg`)
         : this.dataset.image.includes('/uploads/')
         ? this.dataset.image
-        : require(`~/assets/images/${this.dataset.image}?size=300`).src,
+        : `/images/${this.dataset.image}`,
       imageSrcset: !this.dataset.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[300,600]}`)
-            .srcSet
+        ? `/images/placeholders/placeholder-blog.jpg`
         : this.dataset.image.includes('/uploads/')
         ? this.dataset.image
-        : require(`~/assets/images/${this.dataset.image}?{sizes:[300,600]}`)
-            .srcSet,
+        : `/images/${this.dataset.image}`
     }
   },
   computed: {

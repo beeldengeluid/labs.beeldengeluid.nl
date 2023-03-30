@@ -47,7 +47,7 @@
       <v-divider class="my-5" />
 
       <p class="caption">
-        {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
+        {{ $t("last_update") }}: {{ formatDate(article.updatedAt) }}
       </p>
 
       <!-- <v-divider class="my-5" /> -->
@@ -103,18 +103,15 @@ export default {
     return {
       colorClass: classColorIndex[this.dataClass] + '--text',
       imageSrc: !this.article.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
-            .src
+        ? `/images/placeholders/placeholder-blog.jpg`)
         : this.article.image.includes('/uploads/')
         ? this.article.image
-        : require(`~/assets/images/${this.article.image}?size=930`).src,
+        : `/images/${this.article.image}`,
       imageSrcset: !this.article.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[620,930,1200,1600]}`)
-            .srcSet
+        ? `/images/placeholders/placeholder-blog.jpg`
         : this.article.image.includes('/uploads/')
         ? this.article.image
-        : require(`~/assets/images/${this.article.image}?{sizes:[620,930,1200,1600]}`)
-            .srcSet,
+        : `/images/${this.article.image}`
     }
   },
   methods: {

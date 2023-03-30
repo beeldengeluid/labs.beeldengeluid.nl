@@ -61,11 +61,7 @@
       </v-row> -->
 
       <!-- Blogs -->
-      <h1>blogs</h1>
-      <div v-for="blog in blogs">
-        {{ blog.title }}
-      </div>
-      <!-- <v-row class="justify-center light-background pb-3">
+      <v-row class="justify-center light-background pb-3">
         <v-col class="limit-width px-3 py-3 mb-2">
           <SectionHeading
             :title="$t('blogs')"
@@ -81,7 +77,7 @@
             row-class="justify-center justify-md-start px-5"
           />
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <!-- About -->
       <v-row class="justify-center light-background my-3 pb-3">

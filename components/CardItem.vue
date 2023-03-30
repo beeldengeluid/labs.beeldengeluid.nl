@@ -7,7 +7,7 @@
     hover
     link
     nuxt
-    :ripple="{ class: rippleClass }"
+    ripple
     :to="
       localePath({
         name: path,
@@ -67,48 +67,52 @@
 </template>
 
 <script>
-import { formatDate, formatDateAsYear } from '~/util/date'
-import { getRGBAColor } from '~/util/color'
-import icons from '~/config/icons'
-import { classColors, classColorIndex } from '~/config/theme'
+import { formatDate, formatDateAsYear } from "~/util/date";
+import { getRGBAColor } from "~/util/color";
+import icons from "~/config/icons";
+import { classColors, classColorIndex } from "~/config/theme";
 
 export default {
   props: {
     card: {
       type: Object,
       required: true,
-      default: () => ({ title: 'Empty card' }),
+      default: () => ({ title: "Empty card" }),
     },
     path: {
       type: String,
       required: true,
-      default: '',
+      default: "",
     },
     dataClass: {
       type: String,
       required: false,
-      default: '',
+      default: "",
     },
   },
   data() {
     return {
       icon: icons[this.dataClass],
       color: classColors[this.dataClass],
-      rippleClass: classColorIndex[this.dataClass] + '--text',
+      // image: !this.card.image
+      //   ? `/images/placeholders/placeholder-generic.jpg`)
+      //       .src
+      //   : this.card.image.includes("/uploads/")
+      //   ? this.card.image
+      //   : `/images/${this.card.image}  `,
       image: !this.card.image
-        ? require(`~/assets/images/placeholders/placeholder-generic.jpg?size=400`)
-            .src
-        : this.card.image.includes('/uploads/')
+        ? `/images/placeholders/placeholder-generic.jpg`
+        : this.card.image.includes("/uploads/")
         ? this.card.image
-        : require(`~/assets/images/${this.card.image}?size=400`).src,
-    }
+        : `/images/${this.card.image}`,
+    };
   },
   methods: {
     formatDate,
     formatDateAsYear,
     getRGBAColor,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -65,11 +65,10 @@ export default {
   data() {
     return {
       imageSrc: !this.article.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
-            .src
+        ? `/images/placeholders/placeholder-blog.jpg`)
         : this.article.image.includes('/uploads/')
         ? this.article.image
-        : require(`~/assets/images/${this.article.image}?size=930`).src,
+        : `/images/${this.article.image}`,
       colorClass: classColorIndex[this.dataClass],
       id: 'article-heading',
     }

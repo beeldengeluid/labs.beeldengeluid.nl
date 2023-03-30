@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import theme from '~/config/theme'
-import { getImageOverlayCSS } from '~/util/color'
+import theme from "~/config/theme";
+import { getImageOverlayCSS } from "~/util/color";
 
 export default {
   props: {
@@ -41,12 +41,12 @@ export default {
     color: {
       type: String,
       required: false,
-      default: 'primary',
+      default: "primary",
     },
     icon: {
       type: String,
       required: false,
-      default: '',
+      default: "",
     },
   },
   data: () => ({ theme }),
@@ -54,13 +54,13 @@ export default {
     getImageOverlayCSS,
     getImageSrc(chipImage) {
       return !chipImage
-        ? ''
-        : chipImage.includes('/uploads/')
+        ? ""
+        : chipImage.includes("/uploads/")
         ? chipImage
-        : require(`~/assets/images/${chipImage}?size=200`).src
+        : `/images/${chipImage}`;
     },
   },
-}
+};
 </script>
 
 <style scoped lang="scss">
