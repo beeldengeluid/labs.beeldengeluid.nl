@@ -2,15 +2,11 @@
   <v-row>
     <v-col>
       <!-- Datasets / Visualization -->
-      <h1>datasets</h1>
-      <div v-for="dataset in datasets">
-        {{ dataset.title }}
-      </div>
-      <!-- <v-row class="justify-center white">
+      <v-row class="justify-center white">
         <v-col class="pa-0">
-          <VisualMain :datasets="datasetPages" />
+          <VisualMain :datasets="datasetPagesExtended" />
         </v-col>
-      </v-row> -->
+      </v-row>
 
       <!-- Labs -->
       <v-row class="justify-center light-background my-3 pb-3">
@@ -109,12 +105,31 @@
 </template>
 
 <script setup>
+import { enrichDatasets, extendDatasetPagesWithDatasets } from "~/util/dataset";
+
 // datasets
-const { data: datasets } = await useAsyncData("get-datasets", () =>
+const { data: datasetPages } = await useAsyncData("get-dataset-pages", () =>
   queryContent("datasets")
     .where({ hidden: { $ne: true } })
     .sort("size", "desc")
     .find()
+);
+
+const { data: datacatalogRaw } = await useAsyncData("get-dataset-catalog", () =>
+  queryContent("/")
+    .where({ _path: "/datacatalog0001" })
+    .findOne()
+);
+
+const datacatalog = datacatalogRaw["_value"]["@graph"];
+const datasetsRaw = datacatalogRaw["_value"]["@graph"].filter(
+  (node) => node["@type"] === "sdo:Dataset"
+);
+// enrich datasets with helper properties
+const datasetsEnriched = enrichDatasets(datasetsRaw, datacatalog);
+const datasetPagesExtended = extendDatasetPagesWithDatasets(
+  datasetPages,
+  datasetsEnriched
 );
 
 // labs
