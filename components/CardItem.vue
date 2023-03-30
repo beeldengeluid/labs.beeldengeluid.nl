@@ -94,12 +94,6 @@ export default {
     return {
       icon: icons[this.dataClass],
       color: classColors[this.dataClass],
-      // image: !this.card.image
-      //   ? `/images/placeholders/placeholder-generic.jpg`)
-      //       .src
-      //   : this.card.image.includes("/uploads/")
-      //   ? this.card.image
-      //   : `/images/${this.card.image}  `,
       image: !this.card.image
         ? `/images/placeholders/placeholder-generic.jpg`
         : this.card.image.includes("/uploads/")
