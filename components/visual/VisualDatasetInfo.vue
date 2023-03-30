@@ -66,8 +66,8 @@
 </template>
 
 <script>
-import { getRGBAColor } from '~/util/color'
-import { classColors } from '~/config/theme'
+import { getRGBAColor } from "~/util/color";
+import { classColors } from "~/config/theme";
 
 export default {
   props: {
@@ -80,16 +80,16 @@ export default {
     return {
       color: classColors.dataset,
       imageSrc: !this.dataset.image
-        ? `/images/placeholders/placeholder-dataset.jpg`)
-        : this.dataset.image.includes('/uploads/')
+        ? `/images/placeholders/placeholder-dataset.jpg`
+        : this.dataset.image.includes("/uploads/")
         ? this.dataset.image
         : `/images/${this.dataset.image}`,
       imageSrcset: !this.dataset.image
         ? `/images/placeholders/placeholder-blog.jpg`
-        : this.dataset.image.includes('/uploads/')
+        : this.dataset.image.includes("/uploads/")
         ? this.dataset.image
-        : `/images/${this.dataset.image}`
-    }
+        : `/images/${this.dataset.image}`,
+    };
   },
   computed: {
     stats() {
@@ -97,7 +97,7 @@ export default {
         ...(this.dataset.publisher?.name || this.dataset.creator?.name
           ? [
               {
-                icon: 'mdi-domain',
+                icon: "mdi-domain",
                 text:
                   this.dataset.publisher?.name || this.dataset.creator?.name,
               },
@@ -106,29 +106,29 @@ export default {
         ...(this.dataset.size
           ? [
               {
-                icon: 'mdi-file-document-multiple',
+                icon: "mdi-file-document-multiple",
                 text:
                   new Intl.NumberFormat().format(this.dataset.size) +
-                  ' ' +
-                  this.$t('records'),
+                  " " +
+                  this.$t("records"),
               },
             ]
           : []),
-        ...(this.dataset['sdo:temporalCoverage']
+        ...(this.dataset["sdo:temporalCoverage"]
           ? [
               {
-                icon: 'mdi-calendar-range',
-                text: this.dataset['sdo:temporalCoverage'],
+                icon: "mdi-calendar-range",
+                text: this.dataset["sdo:temporalCoverage"],
               },
             ]
           : []),
-      ]
+      ];
     },
   },
   methods: {
     getRGBAColor,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

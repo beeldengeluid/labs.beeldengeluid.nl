@@ -65,9 +65,9 @@
 </template>
 
 <script>
-import { formatDate } from '~/util/date'
-import { filterUndefined } from '~/util/frontmatter'
-import { classColorIndex } from '~/config/theme'
+import { formatDate } from "~/util/date";
+import { filterUndefined } from "~/util/frontmatter";
+import { classColorIndex } from "~/config/theme";
 
 export default {
   props: {
@@ -75,9 +75,9 @@ export default {
       type: Object,
       required: true,
       default: () => ({
-        title: 'Empty article',
-        subtitle: '',
-        slug: '',
+        title: "Empty article",
+        subtitle: "",
+        slug: "",
         updatedAt: new Date(),
         datasets: [],
         tags: [],
@@ -96,33 +96,33 @@ export default {
     dataClass: {
       type: String,
       required: true,
-      default: '',
+      default: "",
     },
   },
   data() {
     return {
-      colorClass: classColorIndex[this.dataClass] + '--text',
+      colorClass: classColorIndex[this.dataClass] + "--text",
       imageSrc: !this.article.image
-        ? `/images/placeholders/placeholder-blog.jpg`)
-        : this.article.image.includes('/uploads/')
+        ? `/images/placeholders/placeholder-blog.jpg`
+        : this.article.image.includes("/uploads/")
         ? this.article.image
         : `/images/${this.article.image}`,
       imageSrcset: !this.article.image
         ? `/images/placeholders/placeholder-blog.jpg`
-        : this.article.image.includes('/uploads/')
+        : this.article.image.includes("/uploads/")
         ? this.article.image
-        : `/images/${this.article.image}`
-    }
+        : `/images/${this.article.image}`,
+    };
   },
   methods: {
     formatDate,
   },
   computed: {
     articleDefined() {
-      return filterUndefined(this.article)
+      return filterUndefined(this.article);
     },
   },
-}
+};
 </script>
 
 <style scoped lang="scss">

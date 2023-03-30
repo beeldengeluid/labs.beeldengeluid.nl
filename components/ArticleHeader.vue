@@ -41,9 +41,9 @@
 </template>
 
 <script>
-import { classColorIndex, classColors } from '~/config/theme'
-import { getDarkenedImageOverlayCSS } from '~/util/color'
-import { formatDateAsYear } from '~/util/date'
+import { classColorIndex, classColors } from "~/config/theme";
+import { getDarkenedImageOverlayCSS } from "~/util/color";
+import { formatDateAsYear } from "~/util/date";
 
 export default {
   props: {
@@ -52,33 +52,33 @@ export default {
       required: true,
       default: null,
       validator: (object) => {
-        return object && object.title && object.subtitle
+        return object && object.title && object.subtitle;
       },
     },
     dataClass: {
       type: String,
       required: true,
-      default: '',
+      default: "",
     },
   },
 
   data() {
     return {
       imageSrc: !this.article.image
-        ? `/images/placeholders/placeholder-blog.jpg`)
-        : this.article.image.includes('/uploads/')
+        ? `/images/placeholders/placeholder-blog.jpg`
+        : this.article.image.includes("/uploads/")
         ? this.article.image
         : `/images/${this.article.image}`,
       colorClass: classColorIndex[this.dataClass],
-      id: 'article-heading',
-    }
+      id: "article-heading",
+    };
   },
   computed: {
     path() {
-      return this.article.dir?.split('/').pop()
+      return this.article.dir?.split("/").pop();
     },
     color() {
-      return classColors[this.dataClass]
+      return classColors[this.dataClass];
     },
     backgroundImageStyle() {
       return {
@@ -87,13 +87,13 @@ export default {
           this.color,
           0.9
         ),
-      }
+      };
     },
   },
   methods: {
     formatDateAsYear,
   },
-}
+};
 </script>
 <style scoped lang="scss">
 .article-heading {

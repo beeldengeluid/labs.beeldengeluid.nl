@@ -56,7 +56,7 @@ export default {
       touchActive: false,
       touchClick: false,
       imageSrc: !this.node.dataset.image
-        ? `/images/placeholders/placeholder-dataset.jpg`)
+        ? `/images/placeholders/placeholder-dataset.jpg`
         : this.node.dataset.image.includes("/uploads/")
         ? this.node.dataset.image
         : `/images/${this.node.dataset.image}`,
