@@ -46,7 +46,7 @@
 
       <v-divider class="my-5" />
 
-      <p class="caption">
+      <p class="text-caption">
         {{ $t("last_update") }}: {{ formatDate(article.updatedAt) }}
       </p>
 

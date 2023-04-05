@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto d-flex flex-column white"
+    class="mx-auto d-flex flex-column bg-white"
     max-width="100%"
     width="270"
     height="100%"
@@ -16,7 +16,7 @@
     "
   >
     <v-img
-      class="white--text align-end"
+      class="text-white align-end"
       width="270px"
       height="180px"
       max-width="100%"
@@ -37,7 +37,7 @@
       {{ card.title }}
     </v-card-title>
     <v-card-text v-if="card.type">
-      <v-chip :color="'primary'" class="text-uppercase" small label outlined>
+      <v-chip :color="'primary'" class="text-uppercase" small label variant="outlined">
         {{ card.type }}
       </v-chip>
     </v-card-text>
@@ -50,7 +50,7 @@
     <v-card-actions>
       <v-card-text
         v-if="card.startDate && card.endDate"
-        class="text-caption grey--text"
+        class="text-caption text-grey"
         :style="{ marginLeft: '-8px' }"
       >
         {{ formatDateAsYear(card.startDate) }} -
@@ -59,7 +59,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn fab :color="color || 'blue lighten-2'" text>
+      <v-btn fab :color="color || 'blue lighten-2'" variant="text">
         <v-icon>mdi-arrow-right</v-icon>
       </v-btn>
     </v-card-actions>

@@ -37,7 +37,7 @@
               <!-- Stats -->
               <div
                 :style="{ fontSize: '0.8em' }"
-                class="text-uppercase grey--text lighten-4 title-font pb-4"
+                class="text-uppercase text-grey lighten-4 title-font pb-4"
               >
                 <div
                   v-for="(stat, index) of stats"
@@ -51,7 +51,7 @@
                 >
                   <v-icon
                     size="17"
-                    color="grey lighten-4"
+                    color="grey-lighten-4"
                     class="pb-0 mr-2"
                     v-text="stat.icon"
                   >
@@ -85,7 +85,7 @@
         class="ma-1 d-block d-md-none"
         fab
         dark
-        small
+        size="small"
         color="primary"
         @click.stop="showTags = !showTags"
       >
@@ -93,7 +93,7 @@
           v-if="tagsFilter.length > 0"
           :content="tagsFilter.length"
           :style="{ transform: 'translate(22px,-12px)' }"
-          color="red darken-1"
+          color="red-darken-1"
         />
 
         <v-icon dark>

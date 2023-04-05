@@ -18,7 +18,7 @@
             :style="{
               textDecoration: 'none',
             }"
-            class="black--text d-flex align-center"
+            class="text-black d-flex align-center"
           >
             <LogoMarkLabs />
           </NuxtLink>
@@ -74,7 +74,7 @@
       app
       dark
       elevate-on-scroll
-      class="nisvdarkblue darken-4 white--text"
+      class="nisvdarkblue darken-4 text-white"
     >
       <v-app-bar-nav-icon
         class="d-sm-flex d-md-none"
@@ -123,7 +123,7 @@
           v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          class="text-decoration-none grey--text text--lighten-1 text-uppercase"
+          class="text-decoration-none text-grey-lighten-1 text-uppercase"
           color="nisvdarkblue "
           rounded
           :style="{ minWidth: '36px', padding: '0' }"
@@ -145,7 +145,7 @@
 
     <v-footer
       :absolute="!fixed"
-      class="nisvdarkblue darken-4 white--text"
+      class="nisvdarkblue darken-4 text-white"
       app
       :style="{ minHeight: '400px' }"
     >
@@ -184,7 +184,7 @@
               exact
               dark
             >
-              <v-list-item-title class="text-uppercase white--text">
+              <v-list-item-title class="text-uppercase text-white">
                 <h4>{{ $t(item.title) }}</h4>
               </v-list-item-title>
             </v-list-item>

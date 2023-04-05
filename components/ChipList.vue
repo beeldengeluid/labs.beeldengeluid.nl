@@ -18,7 +18,7 @@
         ),
       }"
     >
-      <v-icon v-if="icon" left size="24" v-text="icon"></v-icon>
+      <v-icon v-if="icon" start size="24" v-text="icon"></v-icon>
       {{ chip.title }}
     </v-chip>
   </div>

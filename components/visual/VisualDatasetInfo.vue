@@ -22,7 +22,7 @@
     <!-- Stats -->
     <div
       :style="{ fontSize: '0.8em' }"
-      class="text-uppercase grey--text lighten-4 title-font pb-4"
+      class="text-uppercase text-grey lighten-4 title-font pb-4"
     >
       <div
         v-for="(stat, index) of stats"
@@ -36,7 +36,7 @@
       >
         <v-icon
           size="17"
-          color="grey lighten-4"
+          color="grey-lighten-4"
           class="pb-0 mr-2"
           v-text="stat.icon"
         >
