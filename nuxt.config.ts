@@ -4,8 +4,7 @@ export default defineNuxtConfig({
   // Global CSS (https://nuxt.com/docs/api/configuration/nuxt-config#css)
   css: [
     "vuetify/lib/styles/main.sass",
-    "@/assets/scss/vuetify/variables.scss",
-    "@/assets/scss/vuetify/customizations.scss",
+    "@/assets/scss/vuetify/index.scss",
     "@/assets/scss/layout/index.scss",
   ],
   build: {
