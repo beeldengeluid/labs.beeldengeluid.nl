@@ -1,6 +1,6 @@
 ---
 title: De MOZ concert collectie
-subtitle: Van Beethoven tot Metallica - een kijk in de rijke aanbod van concerten op de publieke omroepen
+subtitle: Van Mozart tot Metallica - een kijk in de rijke aanbod van concerten op de publieke omroepen
 image: datasets/moz.jpg
 tags: Metadata, Linked Open Data, Muziek
 lab: opendatalab
@@ -8,9 +8,7 @@ datasets: []
 ---
 Photo by Danny Howe on Unsplash
 
-<span style="color:red;font-weight:bold;outline: 2px solid darkred">WAARSCHUWING: Deze data story is nog in ontwikkeling!!</span>
-
-**Van Beethoven tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten uitgezonden door Nederlandse publieke omroepen op TV en Radio. 
+**Van Mozart tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio. 
 Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit de <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
 en <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> projecten**
 
@@ -77,12 +75,18 @@ De top tien uitvoerenden zijn een mix van orkesten, chors en dirigenten. Hover o
 
 _De top tien uitvoerenden, op basis van aantal concerten_
 
-De meest vaak voorkomende maker in de metadata is Jean-Pierre Gabriël. Maar met welke andere makers en uitvoerenden werkt hij vaak? Dit netwerk toont zijn top tien connecties, en voor iedere connectie op de beurt zijn/haar top tien connecties. 
+### Van Mozart tot Metallica
+De meest vaak voorkomende maker in de metadata is Mozart. Maar welke andere makers en uitvoerenden zijn geassocieerd met concerten met de muziek van Mozart? Dit netwerk toont zijn top tien connecties, en voor iedere connectie op de beurt hun top tien connecties. 
 Hover over de punten om de namen te zien
 
-<iframe src='https://flo.uri.sh/visualisation/12142893/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12142893/?utm_source=embed&utm_campaign=visualisation/12142893' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+<iframe src='https://flo.uri.sh/visualisation/13399472/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13399472/?utm_source=embed&utm_campaign=visualisation/13399472' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Netwerk van de top tien connecties van Jean-Pierre Gabriël, met ieder zijn/haar top tien connecties_
+_Netwerk van de top tien connecties van Wolfgang Amadeus Mozart, met ieder hun top tien connecties_
+
+We kunnen een hele andere blik krijgen op de MOZ collectie als we kijken naar de connecties van Metallica. Het netwerk is veel kleiner, en bevat total andere soorten artiesten.
+
+<iframe src='https://flo.uri.sh/visualisation/13399512/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13399512/?utm_source=embed&utm_campaign=visualisation/13399512' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+_Netwerk van de top connecties van Metallica, met ieder hun top connecties_
 
 **De organisaties**
 
