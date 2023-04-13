@@ -86,6 +86,7 @@ _Netwerk van de top tien connecties van Wolfgang Amadeus Mozart, met ieder hun t
 We kunnen een hele andere blik krijgen op de MOZ collectie als we kijken naar de connecties van Metallica. Het netwerk is veel kleiner, en bevat total andere soorten artiesten.
 
 <iframe src='https://flo.uri.sh/visualisation/13399512/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13399512/?utm_source=embed&utm_campaign=visualisation/13399512' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
 _Netwerk van de top connecties van Metallica, met ieder hun top connecties_
 
 **De organisaties**
@@ -106,7 +107,7 @@ _De top tien omroepen, op basis van aantal concerten_
 
 De personen in de MOZ collectie zijn deels gelinkt aan andere collecties. Bijvoorbeeld, Mozart wordt aangeduid in de collectie met 
 <a target="_blank" href="https://data.beeldengeluid.nl/gtaa/134672">zijn identifier in de GTAA thesaurus</a>. Maar dit is ook gelinkt aan 
-<a target="_blank" href="https://api.discogs.com/artists/95546">zijn identifier in de de Discogs collectie </a>, 
+<a target="_blank" href="https://api.discogs.com/artists/95546">zijn identifier in de Discogs collectie </a>, 
 en aan <a target="_blank" href="https://www.wikidata.org/wiki/Q254"> zijn Wikidata pagina</a>. Zo wordt de MOZ collectie rijker.
 
 Het Nederlands Instituut voor Beeld en Geluid beheert ook de Muziekweb collectie van albums. Sommige van de top tien makers en uitvoerenden in de MOZ collectie
