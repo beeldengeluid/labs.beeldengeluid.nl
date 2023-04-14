@@ -10,7 +10,7 @@ Photo by Danny Howe on Unsplash
 
 **From Mozart to Metallica, from Pinkpop to The Big Sing. The MOZ (Muziekopnamen Zendgemachtigden = Music recordings of licensed broadcasters) collection contains recordings of concerts intended for broadcast on the Dutch public service broadcasters, on TV and radio. 
 This collection has been made available as Linked Data, with the support of the <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
-and <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> projects**
+and <a target="_blank" href="https://www.podiumkunst.net/">Podiumkunst.net</a> projects.**
 
 **The concerts**
 
@@ -53,7 +53,7 @@ For most concerts we have information about the artists involved. Be aware that 
 
 _Percentage of concerts with information about artists_
 
-There is a large number of artists featured in total
+There is a large number of artists featured in total:
  
 <iframe src='https://flo.uri.sh/visualisation/13400413/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400413/?utm_source=embed&utm_campaign=visualisation/13400413' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
@@ -76,7 +76,7 @@ The top ten performers are a mix of orchestras, choirs and conductors. Hover ove
 _The top ten performers, on the basis of number of concerts_
 
 ### From Mozart to Metallica
-The most frequently occuring creator in the metadata is Mozart. But which other creators and performers are associated with concerts with music from Mozart? This network shows his top ten connections, and per connection in turn their top ten connections.
+The most frequently occurring creator in the metadata is Mozart. But which other creators and performers are associated with concerts with music from Mozart? This network shows his top ten connections, and per connection in turn their top ten connections.
 Hover over the dots to see the names.
 
 <iframe src='https://flo.uri.sh/visualisation/13399472/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13399472/?utm_source=embed&utm_campaign=visualisation/13399472' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
@@ -121,6 +121,6 @@ _The number of music albums on Muziekweb for the top ten creators in MOZ_
 _The number of music albums on Muziekweb for the top ten performers in MOZ_
 
 **Finding the collection**
-
-The MOZ collection is registered in the NDE and Clariah data registries. It can be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=7f0656ea-6567-41d1-b0ae-cece67f8ef05e">Media Suite</a> 
+ 
+The MOZ collection is registered in the <a target="_blank" href="https://datasetregister.netwerkdigitaalerfgoed.nl/"> NDE</a> and Clariah data registries. It can be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=7f0656ea-6567-41d1-b0ae-cece67f8ef05e">Media Suite</a> 
 (metadata available for everyone, users with Media Suite accounts can also view the recordings of some concerts) and as Linked Data on the Sound and Vision <a target="_blank" href="https://cat.apis.beeldengeluid.nl/#transientDatasources=https%3A%2F%2Fcat.apis.beeldengeluid.nl%2Fsparql&query=PREFIX%20sdo%3A%20%3Chttps%3A%2F%2Fschema.org%2F%3E%0A%0A%23%20Show%20the%20ID%20and%20title%20of%20all%20concerts%20that%20are%20part%20of%20the%20Dutch%20Broadcast%20Concert%20%0A%23%20(MOZ)%20collection%2C%20in%20alphabetical%20order%0A%0ASELECT%20DISTINCT%20%3FprogramUri%20%3FprogramName%0AWHERE%0A%7B%0A%20%23%20Filter%20for%20programmes%20belonging%20to%20the%20series%20%22Muziekopnamen%20Zendgemachtigden%20(MOZ)%22%2C%20using%20its%20ID%0A%20%3FprogramUri%20sdo%3ApartOfSeason%2Fsdo%3ApartOfSeries%20%3Chttp%3A%2F%2Fdata.beeldengeluid.nl%2Fid%2Fseries%2F2101608030025711131%3E%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20sdo%3Aname%20%3FprogramName%20.%20%0A%7D%20ORDER%20BY%20%3FprogramName">linked data endpoint</a>.
