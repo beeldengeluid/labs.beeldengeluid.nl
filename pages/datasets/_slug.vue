@@ -85,7 +85,7 @@ export default {
     const dashboardPath = await getLocalePath({
       $content,
       app,
-      path: `datasets/dashboard-${params.slug}`,
+      path: `dashboards/${params.slug}`,
     })
     const dashboardPage = await $content(dashboardPath)
       .where({ hidden: { $ne: true } })
