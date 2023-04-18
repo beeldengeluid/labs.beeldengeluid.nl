@@ -82,17 +82,21 @@ export default {
         error({ statusCode: 404, message: 'Page not found' })
       })
 
-    const dashboardPath = await getLocalePath({
-      $content,
-      app,
-      path: `dashboards/${params.slug}`,
-    })
-    const dashboardPage = await $content(dashboardPath)
-      .where({ hidden: { $ne: true } })
-      .fetch()
-      .catch((e) => {
-        error({ statusCode: 404, message: 'Page not found' })
-      })
+    const dashboardPath = datasetPage.showDashboard
+      ? await getLocalePath({
+          $content,
+          app,
+          path: `dashboards/${params.slug}`,
+        })
+      : undefined
+    const dashboardPage = datasetPage.showDashboard
+      ? await $content(dashboardPath)
+          .where({ hidden: { $ne: true } })
+          .fetch()
+          .catch((e) => {
+            error({ statusCode: 404, message: 'Page not found' })
+          })
+      : undefined
 
     let blogs = []
     let projects = []
