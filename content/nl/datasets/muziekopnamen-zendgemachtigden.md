@@ -10,11 +10,11 @@ tags: []
 Van Beethoven tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten 
 bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio. 
 
-De vroegste opnames stammen van vroeg in de 20e eeuw. Nieuwe concerten worden steeds uitgezonden en periodiek toegevoegd aan de collectie. 
+De eerste opnames stammen van vroeg in de 20e eeuw. Nieuwe concerten worden steeds uitgezonden en periodiek toegevoegd aan de collectie. 
 De concerten zijn heel divers; bijna 200 verschillende muziekgenres zijn vertegenwoordigd. 
-De grootste genre is klassieke muziek, maar jazz, theatermuziek, volksmuziek, indie en pop komen ook voor.
+Het grootste genre is klassieke muziek, maar jazz, theatermuziek, volksmuziek, indie en pop komen ook voor.
 
-De meeste concerten in de collectie bevatten informatie over de betrokkene artiesten. Er zijn meer dan 30.000 artiesten, zowel individueen als muziekgezelschappen. 
+De meeste concerten in de collectie bevatten informatie over de betrokken artiesten. Er zijn meer dan 30.000 artiesten, zowel individueen als muziekgezelschappen. 
 De personen zijn deels gelinkt aan Wikidata en Discogs.
 De concerten zijn overwegend - maar niet uitsluitend - geproduceerd door publieke omroepen.
 
