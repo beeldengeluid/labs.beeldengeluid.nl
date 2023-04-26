@@ -1,5 +1,5 @@
 <template>
-  <v-tab-item key="overview" value="overview">
+  <v-tab-item key="dashboard" value="dashboard">
     <section class="mt-0">
       <!-- Stats -->
       <v-row

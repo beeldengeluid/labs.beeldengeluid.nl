@@ -34,6 +34,14 @@
             />
             <!-- Metadata -->
             <TabMetadata v-if="dataset" :dataset="dataset" />
+            <!-- Dashboard -->
+            <TabDashboard
+              v-if="datasetPage.showDashboard"
+              :dataset="dataset"
+              :page="dashboardPage"
+              :projects="projects"
+              :blogs="blogs"
+            />
           </v-tabs-items>
         </section>
       </v-col>
@@ -44,6 +52,7 @@
 <script>
 import TabOverview from '~/components/dataset/TabOverview'
 import TabMetadata from '~/components/dataset/TabMetadata'
+import TabDashboard from '~/components/dataset/TabDashboard'
 import ArticleHeader from '~/components/ArticleHeader'
 import { getLocalePath } from '~/util/contentFallback'
 import icons from '~/config/icons'
@@ -56,6 +65,7 @@ export default {
     ArticleHeader,
     TabMetadata,
     TabOverview,
+    TabDashboard,
   },
 
   async asyncData({ $content, app, params, error }) {
@@ -71,6 +81,22 @@ export default {
       .catch((e) => {
         error({ statusCode: 404, message: 'Page not found' })
       })
+
+    const dashboardPath = datasetPage.showDashboard
+      ? await getLocalePath({
+          $content,
+          app,
+          path: `dashboards/${params.slug}`,
+        })
+      : undefined
+    const dashboardPage = datasetPage.showDashboard
+      ? await $content(dashboardPath)
+          .where({ hidden: { $ne: true } })
+          .fetch()
+          .catch((e) => {
+            error({ statusCode: 404, message: 'Page not found' })
+          })
+      : undefined
 
     let blogs = []
     let projects = []
@@ -118,6 +144,7 @@ export default {
 
     return {
       datasetPage,
+      dashboardPage,
       dataset,
       blogs,
       projects,
@@ -128,7 +155,6 @@ export default {
     classColors,
     icon: icons.dataset,
     color: classColors.dataset,
-
     submenu: ['overview', 'metadata'],
     activeSubmenu: null,
   }),
@@ -138,15 +164,18 @@ export default {
       title,
     }
   },
-  // mounted() {
-  //   Set default submenu to hash
-  //   if (!this.$route.hash) {
-  //     window.history.replaceState(
-  //       null,
-  //       window.title,
-  //       this.$route.path + '#' + this.submenu[0]
-  //     )
-  //   }
-  // },
+  mounted() {
+    if (this.datasetPage.showDashboard) {
+      this.submenu.push('dashboard')
+    }
+    // Set default submenu to hash
+    // if (!this.$route.hash) {
+    //   window.history.replaceState(
+    //     null,
+    //     window.title,
+    //     this.$route.path + '#' + this.submenu[0]
+    //   )
+    // }
+  },
 }
 </script>
