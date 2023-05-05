@@ -21,5 +21,5 @@ Some of the persons are linked to WikiData or Discogs.
 The concerts are predominantly - but not exclusively - produced by public broadcasters. 
 
 This dataset is part of the dataset [Sound & Vision catalog Open Data](/nl/datasets/nisv-media-catalog).
-This collection has been made available as Linked Data, with support from the [Polifonia](https://polifonia-project.eu/) and [Podiumkunst.net](https://www.podiumkunst.net/) projects.
+This collection has been made available as Linked Data, with support from the [Polifonia](https://polifonia-project.eu/) and [Podiumkunst.net](https://www.podiumkunst.net/) projects. It can also be viewed in the <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=7f0656ea-6567-41d1-b0ae-cece67f8ef05e">Media Suite</a>  (metadata available for everyone, users with a Media Suite account can also play certain concerts)
 
