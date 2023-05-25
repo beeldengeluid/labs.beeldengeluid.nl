@@ -19,4 +19,5 @@ De personen zijn deels gelinkt aan Wikidata en Discogs.
 De concerten zijn overwegend - maar niet uitsluitend - geproduceerd door publieke omroepen.
 
 Deze dataset is een onderdeel van de dataset [Open data uit de Beeld & Geluid catalogus](/nl/datasets/nisv-media-catalog).
-Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit de [Polifonia](https://polifonia-project.eu/) en [Podiumkunst.net](https://www.podiumkunst.net/) projecten
+Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit de [Polifonia](https://polifonia-project.eu/) en [Podiumkunst.net](https://www.podiumkunst.net/) projecten. Hij kan ook bekeken worden in de <a target="_blank" href="https://mediasuite.clariah.nl/tool/single-search?queryId=6688eee0-db29-4f6e-9eae-fdc28d38cc64">Media Suite</a>  (metadata beschikbaar voor iedereen, gebruikers met een Media Suite gebruikersnaam kunnen
+ook bepaalde concerten afspelen)
