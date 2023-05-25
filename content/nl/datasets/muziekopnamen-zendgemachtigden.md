@@ -5,6 +5,7 @@ subtitle: De audiocollectie (met een kleine hoeveelheid videomateriaal) Muziekop
 color: ''
 image: '/uploads/NL-HaNA_2.24.01.05_0_923-3652-groot.jpg'
 tags: []
+showDashboard: true
 ---
 
 Van Beethoven tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten 
