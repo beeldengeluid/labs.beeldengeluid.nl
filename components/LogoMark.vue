@@ -104,8 +104,8 @@ export default {
       animation-iteration-count: infinite;
       @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
-          animation-delay: #{random(100) / -200}s;
-          animation-duration: #{0.1 + random(100) / 50}s;
+          animation-delay: #{calc(random(100) / -200)}s;
+          animation-duration: #{0.1 + calc(random(100) / 50)}s;
         }
       }
     }
