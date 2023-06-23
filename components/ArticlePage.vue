@@ -25,7 +25,7 @@
 
       <v-divider class="my-5" />
 
-      <!-- Display selected article fiels if present -->
+      <!-- Display selected article fields if present -->
       <data-table
         :object="{
           ...(articleDefined.contacts && {
@@ -46,7 +46,11 @@
 
       <v-divider class="my-5" />
 
-      <p class="caption">
+      <p v-if="article.createdOn != null" class="caption">
+        {{ $t('created_on') }}: {{ formatDate(article.createdOn) }}
+      </p>
+
+      <p v-if="article.createdOn == null" class="caption">
         {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
       </p>
 
@@ -83,7 +87,7 @@ export default {
         title: 'Empty article',
         subtitle: '',
         slug: '',
-        updatedAt: new Date(),
+        createdAt: new Date(),
         datasets: [],
         tags: [],
       }),
