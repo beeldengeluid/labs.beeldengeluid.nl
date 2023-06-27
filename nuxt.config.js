@@ -63,9 +63,6 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-
-    // Adapted from https://github.com/geeogi/nuxt-responsive-loader
-    '~/modules/nuxt-responsive-loader',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
