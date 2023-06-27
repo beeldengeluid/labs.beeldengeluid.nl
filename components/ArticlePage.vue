@@ -75,6 +75,7 @@ import ArticleRelations from './ArticleRelations'
 import PrevNext from './PrevNext'
 import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
+import { generateSrcset } from '~/util/srcset'
 import { filterUndefined } from '~/util/frontmatter'
 
 export default {
@@ -112,18 +113,23 @@ export default {
   data() {
     return {
       imageSrc: !this.article.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
-            .src
+        ? this.$img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
         : this.article.image.includes('/uploads/')
         ? this.article.image
-        : require(`~/assets/images/${this.article.image}?size=930`).src,
+        : this.$img(`/images/${this.article.image}`, { width: 930 }),
       imageSrcset: !this.article.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[620,930,1200,1600]}`)
-            .srcSet
+        ? generateSrcset(
+            this.$img,
+            '/images/placeholders/placeholder-blog.jpg',
+            [620, 930, 1200, 1600]
+          )
         : this.article.image.includes('/uploads/')
         ? this.article.image
-        : require(`~/assets/images/${this.article.image}?{sizes:[620,930,1200,1600]}`)
-            .srcSet,
+        : generateSrcset(
+            this.$img,
+            `/images/${this.article.image}`,
+            [620, 930, 1200, 1600]
+          ),
     }
   },
   computed: {

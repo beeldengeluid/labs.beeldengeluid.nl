@@ -94,11 +94,12 @@ export default {
       color: classColors[this.dataClass],
       rippleClass: classColorIndex[this.dataClass] + '--text',
       image: !this.card.image
-        ? require(`~/assets/images/placeholders/placeholder-generic.jpg?size=400`)
-            .src
+        ? this.$img('/images/placeholders/placeholder-generic.jpg', {
+            width: 400,
+          })
         : this.card.image.includes('/uploads/')
         ? this.card.image
-        : require(`~/assets/images/${this.card.image}?size=400`).src,
+        : this.$img(`/images/${this.card.image}`, { width: 400 }),
     }
   },
   methods: {
