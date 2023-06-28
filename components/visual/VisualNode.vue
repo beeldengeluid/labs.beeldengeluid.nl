@@ -171,8 +171,8 @@ export default {
       border-radius: 50%;
       width: calc(100% - #{$borderSize});
       height: calc(100% - #{$borderSize});
-      left: calc($borderSize / 2);
-      top: calc($borderSize / 2);
+      left: calc(#{$borderSize} / 2);
+      top: calc(#{$borderSize} / 2);
       display: flex;
       align-items: center;
       justify-content: center;
