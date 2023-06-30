@@ -4,7 +4,7 @@ subtitle: From Mozart to Metallica - a look at the rich variety of concerts reco
 image: datasets/moz.jpg
 tags: Metadata, Linked Open Data, Music
 lab: opendatalab
-createdOn: "2023-04-03"
+publishedOn: "2023-04-03"
 datasets: []
 ---
 Photo by Danny Howe on Unsplash

@@ -27,7 +27,7 @@
   "about": "About",
   "about_description": "Who we are, what we do",
   "last_update": "Last update",
-  "created_on": "Created on",
+  "published_on": "Published on",
   "read_more": "Read more",
   "metadata": "Metadata",
   "download_metadata": "JSON-LD",
