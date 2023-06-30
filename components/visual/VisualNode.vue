@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { getImageOverlayCSS, getRGBAColor } from '~/util/color'
+import { getImageOverlayCSS } from '~/util/color'
 
 export default {
   props: {
@@ -65,7 +65,6 @@ export default {
   },
   methods: {
     getImageOverlayCSS,
-    getRGBAColor,
     onTouchStart(e) {
       if (!this.touchActive && e.touches?.length === 1) {
         this.touchStart = { x: e.touches[0].screenX, y: e.touches[0].screenY }

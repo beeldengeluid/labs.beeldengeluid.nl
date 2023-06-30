@@ -132,7 +132,7 @@ export async function extendDatasetsWithFrontmatter(datasets, $content, app) {
     const pages = await $content(mdPath)
       .where({ id: { $eq: dataset['@id'] } })
       .fetch()
-      .catch((e) => {
+      .catch(() => {
         // ignore error of missing page
       })
     if (pages.length === 1) {

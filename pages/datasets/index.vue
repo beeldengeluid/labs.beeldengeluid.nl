@@ -25,7 +25,7 @@ export default {
     const datasetPages = await $content(mdPath)
       .where({ hidden: { $ne: true } })
       .fetch()
-      .catch((e) => {
+      .catch(() => {
         // ignore error of missing page
       })
     return { datasetPages }

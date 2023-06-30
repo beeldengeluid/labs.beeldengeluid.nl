@@ -16,7 +16,6 @@
 
 <script>
 import { getLocalePath } from '~/util/contentFallback'
-import icons from '~/config/icons'
 import HeaderPage from '~/components/HeaderPage'
 import SectionHeading from '~/components/SectionHeading'
 
@@ -35,7 +34,6 @@ export default {
       nl: '/over-ons',
     },
   },
-  data: () => ({ icon: icons.about, color: 'primary' }),
   head() {
     const title = this.$t('about')
     return {

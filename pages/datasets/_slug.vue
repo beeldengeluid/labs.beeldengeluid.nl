@@ -55,8 +55,6 @@ import TabMetadata from '~/components/dataset/TabMetadata'
 import TabDashboard from '~/components/dataset/TabDashboard'
 import ArticleHeader from '~/components/ArticleHeader'
 import { getLocalePath } from '~/util/contentFallback'
-import icons from '~/config/icons'
-import { classColors } from '~/config/theme'
 import { enrichDatasets } from '~/util/dataset'
 import { parseColor } from '~/util/color'
 
@@ -78,7 +76,7 @@ export default {
     const datasetPage = await $content(datasetsPath)
       .where({ hidden: { $ne: true } })
       .fetch()
-      .catch((e) => {
+      .catch(() => {
         error({ statusCode: 404, message: 'Page not found' })
       })
 
@@ -93,7 +91,7 @@ export default {
       ? await $content(dashboardPath)
           .where({ hidden: { $ne: true } })
           .fetch()
-          .catch((e) => {
+          .catch(() => {
             error({ statusCode: 404, message: 'Page not found' })
           })
       : undefined
@@ -151,10 +149,6 @@ export default {
     }
   },
   data: () => ({
-    icons,
-    classColors,
-    icon: icons.dataset,
-    color: classColors.dataset,
     submenu: ['overview', 'metadata'],
     activeSubmenu: null,
   }),
