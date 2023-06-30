@@ -49,12 +49,8 @@
                     textOverflow: 'ellipsis',
                   }"
                 >
-                  <v-icon
-                    size="17"
-                    color="grey lighten-4"
-                    class="pb-0 mr-2"
-                    v-text="stat.icon"
-                  >
+                  <v-icon size="17" color="grey lighten-4" class="pb-0 mr-2">
+                    {{ stat.icon }}
                   </v-icon>
                   <strong> {{ stat.text }} </strong>
                 </div>
@@ -180,9 +176,7 @@ export default {
             new Intl.NumberFormat().format(
               this.filteredDatasets.reduce(
                 (sum, dataset) =>
-                  dataset.size
-                    ? sum + parseInt(dataset.size)
-                    : sum,
+                  dataset.size ? sum + parseInt(dataset.size) : sum,
                 0
               )
             ) + ' records',
