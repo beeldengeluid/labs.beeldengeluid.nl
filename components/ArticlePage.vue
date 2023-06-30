@@ -122,13 +122,13 @@ export default {
             .srcSet,
     }
   },
-  methods: {
-    formatDate,
-  },
   computed: {
     articleDefined() {
       return filterUndefined(this.article)
     },
+  },
+  methods: {
+    formatDate,
   },
 }
 </script>
