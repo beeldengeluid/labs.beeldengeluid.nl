@@ -12,6 +12,11 @@
         :srcset="imageSrcset"
       />
 
+      <!-- Published date -->
+      <p  v-if="article.publishedOn" class="caption text-right">
+        {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
+      </p>
+
       <!-- Optional article navigation -->
       <!-- <nav>
       <ul>
@@ -25,7 +30,7 @@
 
       <v-divider class="my-5" />
 
-      <!-- Display selected article fiels if present -->
+      <!-- Display selected article fields if present -->
       <data-table
         :object="{
           ...(articleDefined.contacts && {
@@ -46,7 +51,7 @@
 
       <v-divider class="my-5" />
 
-      <p class="caption">
+      <p v-if="article.updatedAt" class="caption">
         {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
       </p>
 
@@ -83,6 +88,7 @@ export default {
         title: 'Empty article',
         subtitle: '',
         slug: '',
+        publishedOn: new Date(),
         updatedAt: new Date(),
         datasets: [],
         tags: [],
