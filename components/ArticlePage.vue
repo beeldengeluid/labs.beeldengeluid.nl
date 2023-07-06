@@ -76,7 +76,6 @@ import PrevNext from './PrevNext'
 import DataTable from './DataTable'
 import { formatDate } from '~/util/date'
 import { filterUndefined } from '~/util/frontmatter'
-import { classColorIndex } from '~/config/theme'
 
 export default {
   components: { ArticleRelations, PrevNext, ArticleHeader, DataTable },
@@ -112,7 +111,6 @@ export default {
   },
   data() {
     return {
-      colorClass: classColorIndex[this.dataClass] + '--text',
       imageSrc: !this.article.image
         ? require(`~/assets/images/placeholders/placeholder-blog.jpg?size=930`)
             .src

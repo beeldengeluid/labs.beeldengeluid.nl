@@ -174,7 +174,7 @@ export default {
       .where({ hidden: { $ne: true } })
       .sortBy('size', 'desc')
       .fetch()
-      .catch((e) => {
+      .catch(() => {
         // ignore error of missing page
       })
 

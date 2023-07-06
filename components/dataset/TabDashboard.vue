@@ -37,8 +37,6 @@
 </template>
 <script>
 import ArticleRelations from '../ArticleRelations'
-import icons from '~/config/icons'
-import { classColors } from '~/config/theme'
 
 export default {
   components: { ArticleRelations },
@@ -50,8 +48,6 @@ export default {
   },
   data() {
     return {
-      icons,
-      classColors,
       stats: [
         {
           icon: 'mdi-domain',

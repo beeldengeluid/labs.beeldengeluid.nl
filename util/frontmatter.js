@@ -24,7 +24,7 @@ export const isLinkArray = (value) => {
 
 export const filterUndefined = (article) => {
   return Object.entries(article).filter(
-    ([key, value]) =>
+    ([, value]) =>
       value !== undefined && value !== '' && value !== [] && value !== {}
   )
 }

@@ -67,9 +67,8 @@
 </template>
 
 <script>
-import { formatDate, formatDateAsYear } from '~/util/date'
+import { formatDateAsYear } from '~/util/date'
 import { getRGBAColor } from '~/util/color'
-import icons from '~/config/icons'
 import { classColors, classColorIndex } from '~/config/theme'
 
 export default {
@@ -92,7 +91,6 @@ export default {
   },
   data() {
     return {
-      icon: icons[this.dataClass],
       color: classColors[this.dataClass],
       rippleClass: classColorIndex[this.dataClass] + '--text',
       image: !this.card.image
@@ -104,7 +102,6 @@ export default {
     }
   },
   methods: {
-    formatDate,
     formatDateAsYear,
     getRGBAColor,
   },
