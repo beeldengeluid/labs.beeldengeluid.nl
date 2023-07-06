@@ -63,6 +63,7 @@
 
 <script>
 import { getRGBAColor } from '~/util/color'
+import { generateSrcset } from '~/util/srcset'
 import { classColors } from '~/config/theme'
 
 export default {
@@ -76,18 +77,25 @@ export default {
     return {
       color: classColors.dataset,
       imageSrc: !this.dataset.image
-        ? require(`~/assets/images/placeholders/placeholder-dataset.jpg?size=300`)
-            .src
+        ? this.$img('/images/placeholders/placeholder-dataset.jpg', {
+            width: 300,
+          })
         : this.dataset.image.includes('/uploads/')
         ? this.dataset.image
-        : require(`~/assets/images/${this.dataset.image}?size=300`).src,
+        : this.$img(`/images/${this.dataset.image}`, { width: 300 }),
       imageSrcset: !this.dataset.image
-        ? require(`~/assets/images/placeholders/placeholder-blog.jpg?{sizes:[300,600]}`)
-            .srcSet
+        ? generateSrcset(
+            this.$img,
+            '/images/placeholders/placeholder-blog.jpg',
+            [300, 600]
+          )
         : this.dataset.image.includes('/uploads/')
         ? this.dataset.image
-        : require(`~/assets/images/${this.dataset.image}?{sizes:[300,600]}`)
-            .srcSet,
+        : generateSrcset(
+            this.$img,
+            `/images/${this.dataset.image}`,
+            [300, 600]
+          ),
     }
   },
   computed: {

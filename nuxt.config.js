@@ -63,9 +63,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-
-    // Adapted from https://github.com/geeogi/nuxt-responsive-loader
-    '~/modules/nuxt-responsive-loader',
+    // https://nuxt.com/modules/image
+    '@nuxt/image',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -142,4 +141,15 @@ export default {
 
   // Watch asset files (prevent manual reload when adding new assets)
   watch: ['~/assets/images/*.*'],
+
+  // Configuration for @nuxt/image, see:
+  // https://github.com/nuxt/image/blob/v0/docs/content/1.getting-started/1.installation.md
+  image: {
+    provider: 'static',
+    static: {
+      modifiers: {
+        quality: 100,
+      },
+    },
+  },
 }

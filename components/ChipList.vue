@@ -57,7 +57,7 @@ export default {
         ? ''
         : chipImage.includes('/uploads/')
         ? chipImage
-        : require(`~/assets/images/${chipImage}?size=200`).src
+        : this.$img(`~/assets/images/${chipImage}`, { width: 200 })
     },
   },
 }

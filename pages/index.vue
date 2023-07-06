@@ -81,7 +81,7 @@
                 max-height="400"
                 max-width="100%"
                 width="100%"
-                :src="require(`~/assets/images/about.jpg?size=700`).src"
+                :src="$img('/images/about.jpg', { width: 700 })"
                 class="float-right"
                 gradient="to top right, rgba(0,138,219,0.85), rgba(0,138,219,0.2)"
               ></v-img>
