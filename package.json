@@ -18,7 +18,6 @@
     "core-js": "^3.29.1",
     "nuxt": "^2.16.3",
     "nuxt-i18n": "^6.28.1",
-    "nuxt-matomo": "^1.2.4",
     "slugify": "^1.6.5",
     "vue-fragment": "^1.5.2",
     "vue-panzoom": "1.1.3"
