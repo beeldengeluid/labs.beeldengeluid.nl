@@ -51,9 +51,12 @@
 
       <v-divider class="my-5" />
 
+      <!-- hide update date until the updatedAt value is correct
+      see: https://github.com/beeldengeluid/labs.beeldengeluid.nl/issues/526
       <p v-if="article.updatedAt" class="caption">
         {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
       </p>
+      -->
 
       <!-- <v-divider class="my-5" /> -->
 
