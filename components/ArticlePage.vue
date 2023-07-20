@@ -13,7 +13,7 @@
       />
 
       <!-- Published date -->
-      <p  v-if="article.publishedOn" class="caption text-right">
+      <p v-if="article.publishedOn" class="caption text-right">
         {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
       </p>
 
