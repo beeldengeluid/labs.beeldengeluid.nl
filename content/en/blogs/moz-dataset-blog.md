@@ -32,10 +32,12 @@ The concerts are very diverse, and many different genres of music are represente
 _Distribution of concerts over musical genres_
 
 An interesting question is, where do the recordings take place? Are these spread over the whole country, or do they mainly occur in the 'Randstad', the dominant Dutch conurbation that contains the four biggest cities of Amsterdam, Rotterdam, The Hague and Utrecht?
-Unfortunately, we cannot answer this question with the data in its current form. If we look at the top ten locations, then we see the same locations recurring, only written slightly differently.
-To be able to say something meaningful about the geographical distribution of concerts, then this data would first need to be cleaned.
+We cannot answer this question with the data in its original form. If we look at the top ten locations, then we see the same locations recurring multiple times, only written slightly differently.
+To be able to say something meaningful about the geographical distribution of concerts, we have cleaned this data by mapping a large number of locations to Wikidata. Now *** fill in number! *** 
+of the MOZ concerts have a standardised location at program or scene level. As we have not been able to map all locations, the picture is still not complete. However, we can already give a better
+idea of the distribution of concerts over recording locations.  ***discuss result***
 
-<iframe src='https://flo.uri.sh/visualisation/13400290/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400290/?utm_source=embed&utm_campaign=visualisation/13400290' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+<iframe src='https://flo.uri.sh/visualisation/14530224/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14530224/?utm_source=embed&utm_campaign=visualisation/14530224' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _Distribution of concerts over recording location_
 
