@@ -91,7 +91,6 @@ export default {
         title: 'Empty article',
         subtitle: '',
         slug: '',
-        publishedOn: new Date(),
         updatedAt: new Date(),
         datasets: [],
         tags: [],
