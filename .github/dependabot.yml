@@ -15,3 +15,7 @@ updates:
     prefix: fix
     prefix-development: chore
     include: scope
+  ignore:
+  # Nuxt has it's own update mechanism:
+  # https://github.com/nuxt/nuxt/blob/7b35a1fe4faed49fffe3427a0db4aabae138f4ae/docs/3.api/5.commands/upgrade.md
+    - dependency-name: "nuxt"
