@@ -30,25 +30,18 @@ const props = defineProps({
   },
 })
 
-const tile = {
+// prettier-ignore
+const tilesOpacities = [
+  1, 0.66, 0.33,
+  1, 0.05, 0.66,
+  1, 1, 0.66,
+]
+const tiles = tilesOpacities.map((opacity) => ({
   width: props.size + 'px',
   height: props.size + 'px',
   backgroundColor: props.color,
-}
-
-const tiles = [
-  { opacity: 1, ...tile },
-  { opacity: 0.66, ...tile },
-  { opacity: 0.33, ...tile },
-
-  { opacity: 1, ...tile },
-  { opacity: 0.05, ...tile },
-  { opacity: 0.66, ...tile },
-
-  { opacity: 1, ...tile },
-  { opacity: 1, ...tile },
-  { opacity: 0.66, ...tile },
-]
+  opacity,
+}))
 
 const container = {
   width: props.size * 3 + 2 + 'px',

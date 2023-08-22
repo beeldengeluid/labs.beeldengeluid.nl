@@ -113,7 +113,9 @@ const onStopHover = () => {
 .node {
   position: absolute;
   border-radius: 100%;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out,
     filter 0.3s ease-out;
   cursor: pointer;
   // render on gpu, prevent glitches
@@ -154,7 +156,9 @@ const onStopHover = () => {
     transform: translateZ(1px);
 
     .border {
-      transition: opacity 1s ease-out, transform 1.4s ease-out;
+      transition:
+        opacity 1s ease-out,
+        transform 1.4s ease-out;
       opacity: 0.5;
       border-radius: 50%;
       width: 100%;

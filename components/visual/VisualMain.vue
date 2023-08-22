@@ -297,7 +297,9 @@ $clDark: rgba(5, 37, 68, 1);
 
 .detailsIntro-enter-active,
 .detailsIntro-leave-active {
-  transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+  transition:
+    opacity 0.1s ease-out,
+    transform 0.1s ease-out;
 }
 .detailsIntro-enter,
 .detailsIntro-leave-to {
@@ -316,7 +318,9 @@ $clDark: rgba(5, 37, 68, 1);
 
 .slideInRight-enter-active,
 .slideInRight-leave-active {
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
   transform: translateX(0);
 }
 .slideInRight-enter,
