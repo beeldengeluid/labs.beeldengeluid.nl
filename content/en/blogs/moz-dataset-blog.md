@@ -39,6 +39,7 @@ the picture is still not complete. However, we can already give a better
 idea of the distribution of concerts over recording locations.  The 'Randstad' indeed dominates. However, concerts have been recorded all over the country, often in churches.
 
 <iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
 _Distribution of concerts over recording location_
 
 Concerts are often linked to certain events. Top are the festivals linked to certain times of the day, e.g. 'avondconcert (evening concert)' and 'zondagochtendconcert (Sunday morning concert)'.
