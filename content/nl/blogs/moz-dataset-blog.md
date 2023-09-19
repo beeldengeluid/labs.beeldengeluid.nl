@@ -33,11 +33,14 @@ De concerten zijn heel divers, en veel verschillende genres van muziek zijn vert
 
 _Distributie van concerten over muziekgenres_
 
-Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Helaas valt deze vraag niet te beantwoorden
-met de data in zijn huidige vorm. Als we kijken naar de top tien locaties, dan zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
-Om echt iets te kunnen zeggen over de geografische distributie van concerten, zouden deze data eerst opgeschoond moeten worden.  
+Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Met de data in zijn oorspronkelijke vorm viel deze vraag niet te beantwoorden. 
+Daarin zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
+Om echt iets te kunnen zeggen over de geografische distributie van concerten, hebben we de data opgeruimd door een groot aantal van de locaties te mappen naar Wikidata.
+Nu hebben 29.758 (ongeveer een derde) van de MOZ concerten een gestandardiseerde locatie op programmaniveau. 
+Omdat we niet alle programmalocaties hebben kunnen mappen, en we locaties van scenes binnen programma's nog niet hebben gemapt, is het plaatje nog niet compleet. 
+Toch kunnen we al een beter idee geven van de distributie van concerten over opnamelocaties. De Randstad domineert inderdaad. Maar concerten wordt opgenomen over het hele land, vaak in kerken.
 
-<iframe src='https://flo.uri.sh/visualisation/12101803/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12101803/?utm_source=embed&utm_campaign=visualisation/12101803' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+<iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _Distributie van concerten over opnamelocaties_
 
@@ -58,7 +61,8 @@ _Percentage van de concerten met artiesteninformatie_
 Het gaat hier om een hoog aantal artiesten in totaal. 
 <iframe src='https://flo.uri.sh/visualisation/12153924/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12153924/?utm_source=embed&utm_campaign=visualisation/12153924' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-Artiesten kunnen betrokken worden in verschillende rollen. Als uitvoerenden of maker, of misschien worden ze genoemd, of hebben ze op een andere wijze een bijdrage geleverd.
+Artiesten kunnen bij een concert betrokken als uitvoerende of maker (NB: de data bevat ook enkele personen met de rol 'gast' of simpelweg 'persoon', 
+maar dit komt door een conversiefout, dus deze worden uit deze grafiek weggelaten)..
 
 <iframe src='https://flo.uri.sh/visualisation/12145770/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12145770/?utm_source=embed&utm_campaign=visualisation/12145770' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 

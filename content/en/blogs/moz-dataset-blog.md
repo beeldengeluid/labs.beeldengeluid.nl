@@ -32,10 +32,13 @@ The concerts are very diverse, and many different genres of music are represente
 _Distribution of concerts over musical genres_
 
 An interesting question is, where do the recordings take place? Are these spread over the whole country, or do they mainly occur in the 'Randstad', the dominant Dutch conurbation that contains the four biggest cities of Amsterdam, Rotterdam, The Hague and Utrecht?
-Unfortunately, we cannot answer this question with the data in its current form. If we look at the top ten locations, then we see the same locations recurring, only written slightly differently.
-To be able to say something meaningful about the geographical distribution of concerts, then this data would first need to be cleaned.
+We cannot answer this question with the data in its original form. There we see the same locations recurring multiple times, only written slightly differently.
+To be able to say something meaningful about the geographical distribution of concerts, we have cleaned this data by mapping a large number of locations to Wikidata. Now 29.758 (approximately a third)
+of the MOZ concerts have a standardised location at program level. As we have not been able to map all program locations, and we have not yet mapped locations of clips within programs, 
+the picture is still not complete. However, we can already give a better
+idea of the distribution of concerts over recording locations.  The 'Randstad' indeed dominates. However, concerts have been recorded all over the country, often in churches.
 
-<iframe src='https://flo.uri.sh/visualisation/13400290/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400290/?utm_source=embed&utm_campaign=visualisation/13400290' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+<iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _Distribution of concerts over recording location_
 
@@ -58,7 +61,8 @@ There is a large number of artists featured in total:
  
 <iframe src='https://flo.uri.sh/visualisation/13400413/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400413/?utm_source=embed&utm_campaign=visualisation/13400413' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-Artists can have different roles. As a performer or creator, or perhaps they are mentioned, or contributed to a concert in some other way.
+Artists can participate in a concert as a performer or creator. (NB: the data also contains some persons with the role 'guest' or simply 'person', 
+but this is due to a conversion error, so these are excluded here).
 
 <iframe src='https://flo.uri.sh/visualisation/13400434/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400434/?utm_source=embed&utm_campaign=visualisation/13400434' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
