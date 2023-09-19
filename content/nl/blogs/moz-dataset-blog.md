@@ -33,14 +33,14 @@ De concerten zijn heel divers, en veel verschillende genres van muziek zijn vert
 
 _Distributie van concerten over muziekgenres_
 
-Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Helaas valt deze vraag niet te beantwoorden
-met de data in zijn huidige vorm. Als we kijken naar de top tien locaties, dan zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
+Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Met de data in zijn oorspronkelijke vorm viel deze vraag niet te beantwoorden
+Daarin zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
 Om echt iets te kunnen zeggen over de geografische distributie van concerten, hebben we de data opgeruimd door een groot aantal van de locaties te mappen naar Wikidata.
-Nu hebben *** fill in number! *** van de MOZ concerten een gestandardiseerde locatie op programma- of scene-niveau. 
-Omdat we niet alle locaties hebben kunnen mappen, is het plaatje nog niet compleet. Toch kunnen we al een beter idee geven van de distributie van concerten over opnamelocaties ***discuss result***
+Nu hebben 29.758 (ongeveer een derde) van de MOZ concerten een gestandardiseerde locatie op programmaniveau. 
+Omdat we niet alle programmalocaties hebben kunnen mappen, en we locaties van scenes binnen programma's nog niet hebben gemapt, is het plaatje nog niet compleet. 
+Toch kunnen we al een beter idee geven van de distributie van concerten over opnamelocaties. De Randstad domineert inderdaad. Maar concerten wordt opgenomen over het hele land, vaak in kerken.
 
-<iframe src='https://flo.uri.sh/visualisation/14530244/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14530244/?utm_source=embed&utm_campaign=visualisation/14530244' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> 
-
+<iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 _Distributie van concerten over opnamelocaties_
 
 Concerten zijn vaak verbonden aan bepaalde evenementen. Sommige terugkerende evenementen vallen minder op, omdat de evenement elk jaar een nieuwe naam heeft, bijv. 'Pinkpop 2022'
