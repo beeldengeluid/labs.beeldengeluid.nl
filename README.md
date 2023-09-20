@@ -56,3 +56,9 @@ For detailed explanation on how things work, the [Nuxt docs](https://nuxt.com) a
 ## Development Process
 
 We branch from `main` to work on changes to the labs website. Use the steps under _Development Setup_ to work on your changes locally. To share your changes with others, create a draft pull request on GitHub. This deploys your branch through [Vercel for Github](https://vercel.com/docs/concepts/git/vercel-for-github) to a new environment, and posts a shareable preview URL to the pull request. If your changes are ready to be released, set the pull request to 'ready for review' and ask someone for a code review. After review, the change is deployed by merging to `main`.
+
+
+## Further docs:
+
+- [Troubelshooting](./docs/troubleshooting.md)
+- [Workarounds](./docs/workarounds.md)
