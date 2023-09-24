@@ -21,7 +21,7 @@ Most of the concerts in the collection contain information about the artists inv
 Some of the persons are linked to WikiData or Discogs.
 
 Persons are linked to a concert in a particular role, such as artist or creator. For some persons, more specific role information is available, such as the instrument
-they played. There are 282 roles that are simple text, 311 roles that are linked to [Wikidata](https://www.wikidata.org/) entities, and 201 roles that are linked to the [Performance Medium]((https://rdacommissie.home.blog/uitvoeringsmedium/)) ontology.
+they played. There are 282 roles that are simple text, 311 roles that are linked to [Wikidata](https://www.wikidata.org/) entities, and 201 roles that are linked to the [Performance Medium](https://rdacommissie.home.blog/uitvoeringsmedium/) ontology.
 Note that the same role may be linked to both Wikidata and Performance Medium.
 
 The metadata includes recording locations. For approximately a third of the concerts, these locations have been linked to Wikidata locations.
