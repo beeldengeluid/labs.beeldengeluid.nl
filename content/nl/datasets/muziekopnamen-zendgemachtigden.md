@@ -9,7 +9,7 @@ showDashboard: true
 ---
 
 Van Beethoven tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten 
-bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio. 
+bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio. De collectie bevat overwegend audio-opnames voor radio.
 
 De eerste opnames stammen van vroeg in de 20e eeuw. Nieuwe concerten worden steeds uitgezonden en periodiek toegevoegd aan de collectie. 
 De concerten zijn heel divers; bijna 200 verschillende muziekgenres zijn vertegenwoordigd. 
