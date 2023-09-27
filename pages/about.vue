@@ -8,37 +8,39 @@
     <!-- Content -->
     <template #content>
       <section class="mt-4">
-        <nuxt-content :document="page" />
+        <ContentRenderer class="nuxt-content" :value="page" />
       </section>
     </template>
   </HeaderPage>
 </template>
 
-<script>
-import { getLocalePath } from '~/util/contentFallback'
-import HeaderPage from '~/components/HeaderPage'
-import SectionHeading from '~/components/SectionHeading'
+<script setup>
+const i18n = useI18n()
 
-export default {
-  components: { HeaderPage, SectionHeading },
-  async asyncData({ $content, app }) {
-    const aboutPath = await getLocalePath({ $content, app, path: 'about' })
-    const page = await $content(aboutPath).fetch()
-    return {
-      page,
-    }
+const aboutPath = 'about'
+const { data: aboutPathLocalized } = await useAsyncData(async () => {
+  const content = await queryContent(`${i18n.locale.value}/${aboutPath}`)
+    .find()
+    .catch(() => {
+      // ignore 404s
+    })
+  const locale =
+    content.length > 0 ? i18n.locale.value : i18n.fallbackLocale.value
+  return `${locale}/${aboutPath}`
+})
+
+const { data: page } = await useAsyncData(async () => {
+  return queryContent(aboutPathLocalized.value).findOne()
+})
+
+defineI18nRoute({
+  paths: {
+    en: '/about',
+    nl: '/over-ons',
   },
-  nuxtI18n: {
-    paths: {
-      en: '/about',
-      nl: '/over-ons',
-    },
-  },
-  head() {
-    const title = this.$t('about')
-    return {
-      title,
-    }
-  },
-}
+})
+
+useHead({
+  title: i18n.t('about'),
+})
 </script>

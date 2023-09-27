@@ -14,70 +14,60 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { getRandomColor } from '~/util/color'
 
-export default {
-  props: {
-    size: {
-      type: Number,
-      required: false,
-      default: 14,
-    },
-    color: {
-      type: String,
-      required: false,
-      default: '#008adb',
-    },
+const props = defineProps({
+  size: {
+    type: Number,
+    required: false,
+    default: 14,
   },
-  data() {
-    const tile = {
-      width: this.size + 'px',
-      height: this.size + 'px',
-      backgroundColor: this.color,
-    }
-
-    return {
-      tiles: [
-        { opacity: 1, ...tile },
-        { opacity: 0.66, ...tile },
-        { opacity: 0.33, ...tile },
-
-        { opacity: 1, ...tile },
-        { opacity: 0.05, ...tile },
-        { opacity: 0.66, ...tile },
-
-        { opacity: 1, ...tile },
-        { opacity: 1, ...tile },
-        { opacity: 0.66, ...tile },
-      ],
-      container: {
-        width: this.size * 3 + 2 + 'px',
-        height: this.size * 3 + 2 + 'px',
-        borderRadius: this.size + 2 + 'px',
-      },
-    }
+  color: {
+    type: String,
+    required: false,
+    default: '#008adb',
   },
-  methods: {
-    getPosition(index) {
-      return {
-        left: this.size * (index % 3) + (index % 3) + 'px',
-        top: Math.floor(index / 3) * (this.size + 1) + 'px',
-      }
-    },
-    onMouseEnter() {
-      this.tiles = this.tiles.map((tile) => ({
-        ...tile,
-        backgroundColor: getRandomColor(),
-      }))
-    },
-    onMouseLeave() {
-      this.tiles = this.tiles.map((tile) => ({
-        ...tile,
-        backgroundColor: this.color,
-      }))
-    },
-  },
+})
+
+// prettier-ignore
+const tilesOpacities = [
+  1, 0.66, 0.33,
+  1, 0.05, 0.66,
+  1, 1, 0.66,
+]
+const tiles = tilesOpacities.map((opacity) => ({
+  width: props.size + 'px',
+  height: props.size + 'px',
+  backgroundColor: props.color,
+  opacity,
+}))
+
+const container = {
+  width: props.size * 3 + 2 + 'px',
+  height: props.size * 3 + 2 + 'px',
+  borderRadius: props.size + 2 + 'px',
+}
+
+const getPosition = (index) => {
+  return {
+    left: props.size * (index % 3) + (index % 3) + 'px',
+    top: Math.floor(index / 3) * (props.size + 1) + 'px',
+  }
+}
+
+const onMouseEnter = () => {
+  tiles = tiles.map((tile) => ({
+    ...tile,
+    backgroundColor: getRandomColor(),
+  }))
+}
+
+const onMouseLeave = () => {
+  tiles = tiles.map((tile) => ({
+    ...tile,
+    backgroundColor: props.color,
+  }))
 }
 </script>
 
@@ -93,13 +83,17 @@ export default {
 
   .tile {
     position: absolute;
-    transition: opacity 1.3s ease-out, background-color 5.6s ease-in-out;
+    transition:
+      opacity 1.3s ease-out,
+      background-color 5.6s ease-in-out;
   }
 
   &:hover {
     filter: brightness(1.2);
     .tile {
-      transition: opacity 0.5s ease-out, background-color 0.4s ease-out;
+      transition:
+        opacity 0.5s ease-out,
+        background-color 0.4s ease-out;
       animation-name: blink;
       animation-iteration-count: infinite;
       @for $i from 1 through 9 {

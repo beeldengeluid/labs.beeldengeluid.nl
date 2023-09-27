@@ -1,11 +1,11 @@
 <template>
-  <v-tab-item key="dashboard" value="dashboard">
+  <v-window-item key="dashboard" value="dashboard">
     <section class="mt-0">
       <!-- Stats -->
       <v-row
         v-if="dataset"
         :style="{ fontSize: '0.8em' }"
-        class="justify-start text-uppercase grey--text darken-4 title-font pb-2 mb-3 flex-wrap"
+        class="justify-start text-uppercase text-grey-darken-4 title-font pb-2 mb-3 flex-wrap"
       >
         <v-col
           v-for="(stat, index) of stats"
@@ -19,7 +19,7 @@
       </v-row>
 
       <!-- Description -->
-      <nuxt-content :document="page" />
+      <ContentRenderer :value="page" />
 
       <!-- Chiplist -->
       <v-row class="justify-center mt-5">
@@ -33,44 +33,39 @@
         </v-col>
       </v-row>
     </section>
-  </v-tab-item>
+  </v-window-item>
 </template>
-<script>
-import ArticleRelations from '../ArticleRelations'
+<script setup>
+const i18n = useI18n()
 
-export default {
-  components: { ArticleRelations },
-  props: {
-    projects: { type: Array, required: false, default: () => [] },
-    blogs: { type: Array, required: false, default: () => [] },
-    page: { type: Object, required: false, default: null },
-    dataset: { type: Object, required: true, default: null },
+defineProps({
+  projects: { type: Array, required: false, default: () => [] },
+  blogs: { type: Array, required: false, default: () => [] },
+  page: { type: Object, required: false, default: null },
+  dataset: { type: Object, required: true, default: null },
+})
+
+// reactive data
+const stats = ref(() => [
+  {
+    icon: 'mdi-domain',
+    text: props.dataset?.publisher?.name || props.dataset?.creator?.name,
   },
-  data() {
-    return {
-      stats: [
-        {
-          icon: 'mdi-domain',
-          text: this.dataset?.publisher?.name || this.dataset?.creator?.name,
-        },
-        {
-          icon: 'mdi-license',
-          text: this.dataset?.license?.name,
-        },
-        this.dataset?.size
-          ? {
-              icon: 'mdi-file-document-multiple',
-              text: this.dataset?.size + ' ' + this.$t('records'),
-            }
-          : {},
-        this.dataset?.['sdo:temporalCoverage']
-          ? {
-              icon: 'mdi-calendar-range',
-              text: this.dataset['sdo:temporalCoverage'],
-            }
-          : {},
-      ],
-    }
+  {
+    icon: 'mdi-license',
+    text: props.dataset?.license?.name,
   },
-}
+  props.dataset?.size
+    ? {
+        icon: 'mdi-file-document-multiple',
+        text: props.dataset?.size + ' ' + i18n.t('records'),
+      }
+    : {},
+  props.dataset?.['sdo:temporalCoverage']
+    ? {
+        icon: 'mdi-calendar-range',
+        text: props.dataset['sdo:temporalCoverage'],
+      }
+    : {},
+])
 </script>

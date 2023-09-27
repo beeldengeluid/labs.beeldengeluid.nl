@@ -1,5 +1,5 @@
 <template>
-  <v-tab-item key="metadata" value="metadata">
+  <v-window-item key="metadata" value="metadata">
     <section>
       <!-- MetadataTable -->
       <div>
@@ -9,17 +9,17 @@
       <!-- Download button -->
       <v-row>
         <v-col>
-          <v-btn outlined color="primary" @click="downloadDataset">
-            <v-icon size="20" left>{{ icons.download }}</v-icon>
+          <v-btn variant="outlined" color="primary" @click="downloadDataset">
+            <v-icon size="20" start>{{ icons.download }}</v-icon>
             {{ $t('download_metadata') }}
           </v-btn>
         </v-col>
       </v-row>
     </section>
-  </v-tab-item>
+  </v-window-item>
 </template>
-<script>
-import MetadataTable from '../MetadataTable'
+
+<script setup>
 import icons from '~/config/icons'
 import { stripEnrichments, enrichProps, augmentProps } from '~/util/dataset'
 import { stripObject } from '~/util/objects'
@@ -36,39 +36,31 @@ const markdownProps = [
   'updatedAt',
 ]
 
-export default {
-  components: { MetadataTable },
-  props: {
-    dataset: {
-      type: Object,
-      required: true,
-      default: null,
-    },
+const props = defineProps({
+  dataset: {
+    type: Object,
+    required: true,
+    default: null,
   },
-  data() {
-    return {
-      icons,
-      filteredDataset: stripObject(this.dataset, [
-        ...enrichProps,
-        ...markdownProps,
-        ...Object.keys(augmentProps),
-        '@context',
-        '@type',
-        '@id',
-        'name',
-        'description',
-      ]),
-    }
-  },
-  methods: {
-    downloadDataset() {
-      const data = stripEnrichments(this.dataset)
-      download(
-        JSON.stringify(data, null, 3),
-        this.dataset.slug + '.jsonld',
-        'application/ld+json'
-      )
-    },
-  },
+})
+
+const filteredDataset = stripObject(props.dataset, [
+  ...enrichProps,
+  ...markdownProps,
+  ...Object.keys(augmentProps),
+  '@context',
+  '@type',
+  '@id',
+  'name',
+  'description',
+])
+
+const downloadDataset = () => {
+  const data = stripEnrichments(props.dataset)
+  download(
+    JSON.stringify(data, null, 3),
+    props.dataset.slug + '.jsonld',
+    'application/ld+json'
+  )
 }
 </script>

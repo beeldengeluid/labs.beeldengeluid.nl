@@ -1,43 +1,39 @@
 {
-  "name": "opendatalab",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate --fail-on-error",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
     "fetch:datacatalog": "node scripts/fetch-datacatalog.mjs",
-    "fetch": "npm run fetch:datacatalog",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
-  },
-  "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxtjs/axios": "^5.13.6",
-    "core-js": "^3.29.1",
-    "nuxt": "^2.16.3",
-    "nuxt-i18n": "^6.28.1",
-    "slugify": "^1.6.5",
-    "vue-fragment": "^1.5.2",
-    "vue-panzoom": "1.1.3"
+    "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.21.3",
-    "@nuxt/image": "^0.7.1",
-    "@nuxtjs/eslint-config": "^12.0.0",
-    "@nuxtjs/eslint-module": "^4.0.2",
-    "@nuxtjs/vuetify": "^1.12.3",
-    "axios": "^1.3.4",
-    "eslint": "^8.36.0",
+    "@intlify/core-base": "^9.3.0-beta.22",
+    "@intlify/shared": "^9.3.0-beta.24",
+    "@mdi/font": "^7.2.96",
+    "@nuxt/content": "^2.7.2",
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.13",
+    "@types/node": "^18.16.19",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.8.6"
-  },
-  "engines": {
-    "npm": ">=8",
-    "node": "16.x",
-    "yarn": "YARN NO LONGER USED - use npm instead."
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "eslint-plugin-vuetify": "^2.0.4",
+    "nuxt": "^3.6.5",
+    "prettier": "3.0.0",
+    "sass": "^1.64.0",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue-panzoom": "^1.1.6",
+    "vuetify": "^3.3.9"
   }
 }
