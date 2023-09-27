@@ -21,7 +21,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image": "^1.0.0-rc.1",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/i18n": "^8.0.0-beta.13",
+    "@nuxtjs/i18n": "^8.0.0-rc.4",
     "@types/node": "^18.16.19",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^8.8.0",
