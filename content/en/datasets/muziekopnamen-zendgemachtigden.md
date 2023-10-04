@@ -10,7 +10,7 @@ showDashboard: true
 
 
 From Beethoven to Metallica, from Pinkpop to The Big Sing. The MOZ (Muziekopnamen Zendgemachtigden) collection contains concert
-recordings intended for broadcast by the Dutch public TV and radio broadcasters. 
+recordings intended for broadcast by the Dutch public TV and radio broadcasters. The collection primarily consists of audio recordings for radio.
 
 The earliest recordings are from early in the 20th century. New concerts are still broadcast and periodically added to the collection.
 The concerts are very diverse; almost 200 different musical genres are represented.
