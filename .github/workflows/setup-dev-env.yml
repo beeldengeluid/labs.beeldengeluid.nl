@@ -16,7 +16,7 @@ jobs:
         node-version-file: '.nvmrc'
     - name: Setup project
       run: npm install
-    - name: Start Dev server
+    - name: Run Dev Server
       run: |
-        timeout --preserve-status 90s
-        npm run dev
+        timeout --preserve-status 90s npm run dev
+        test $? -ne 1
