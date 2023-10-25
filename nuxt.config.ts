@@ -58,10 +58,7 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
     vueI18n: './i18n.config.ts',
-    locales: [
-      { code: 'en', iso: 'en-US' },
-      { code: 'nl', iso: 'nl-NL' },
-    ],
+    locales: ['en', 'nl'],
     defaultLocale: 'en',
   },
   app: {

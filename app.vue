@@ -47,9 +47,9 @@
       <!-- Locales -->
       <v-list>
         <v-list-item
-          v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
+          v-for="locale of $i18n.locales.filter((l) => l !== $i18n.locale)"
+          :key="locale"
+          :to="switchLocalePath(locale)"
           router
           exact
         >
@@ -58,7 +58,7 @@
           </v-list-item-action>
 
           <v-list-item-title class="text-uppercase">
-            <h4>{{ locale.code }}</h4>
+            <h4>{{ locale }}</h4>
           </v-list-item-title>
         </v-list-item>
       </v-list>
@@ -113,14 +113,14 @@
       <!-- Language selector -->
       <div class="language-selector d-none d-lg-block">
         <v-btn
-          v-for="locale of $i18n.locales.filter((l) => l.code !== $i18n.locale)"
-          :key="locale.code"
-          :to="switchLocalePath(locale.code)"
+          v-for="locale of $i18n.locales.filter((l) => l !== $i18n.locale)"
+          :key="locale"
+          :to="switchLocalePath(locale)"
           class="bg-nisvdarkblue text-decoration-none text-grey-lighten-1 text-uppercase"
           rounded
           :style="{ minWidth: '36px', padding: '0' }"
         >
-          {{ locale.code }}
+          {{ locale }}
         </v-btn>
       </div>
     </v-app-bar>
