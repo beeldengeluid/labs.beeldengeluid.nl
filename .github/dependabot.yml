@@ -22,3 +22,7 @@ updates:
   # Nuxt Image also has its own update mechanism. See e.g.:
   # https://github.com/nuxt/image/releases/tag/v1.0.0-rc.2
     - dependency-name: "@nuxt/image"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
