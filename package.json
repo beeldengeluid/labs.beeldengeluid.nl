@@ -13,7 +13,7 @@
     "fetch": "npm run fetch:datacatalog"
   },
   "devDependencies": {
-    "@mdi/font": "^7.2.96",
+    "@mdi/font": "^7.3.67",
     "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.1.1",
