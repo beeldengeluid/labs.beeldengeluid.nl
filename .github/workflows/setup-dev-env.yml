@@ -17,5 +17,6 @@ jobs:
     - name: Setup project
       run: npm install
     - name: Start Dev server
-      run: npm run dev
-      timeout-minutes: 2
+      run: |
+        timeout --preserve-status 90s
+        npm run dev
