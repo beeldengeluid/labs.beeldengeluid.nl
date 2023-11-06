@@ -15,6 +15,10 @@ module.exports = {
     'plugin:prettier/recommended',
     // NOTE: don't append here, 'plugin:prettier/recommended' should be last.
   ],
+  ignorePatterns: [
+    // use exact code given by Matomo, to track changes
+    "**/matomo-tracking-code.js",
+  ],
   rules: {
     'vue/multi-word-component-names': [
       'error',
