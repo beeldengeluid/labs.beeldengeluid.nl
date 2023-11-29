@@ -36,7 +36,7 @@ _Distributie van concerten over muziekgenres_
 Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Met de data in zijn oorspronkelijke vorm viel deze vraag niet te beantwoorden. 
 Daarin zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
 Om echt iets te kunnen zeggen over de geografische distributie van concerten, hebben we de data opgeruimd door een groot aantal van de locaties te mappen naar Wikidata.
-Nu hebben 29.758 (ongeveer een derde) van de MOZ concerten een gestandardiseerde locatie op programmaniveau. 
+Nu hebben 30.634 van de MOZ concerten een gestandardiseerde locatie op programma- of sceneniveau. 
 Omdat we niet alle programmalocaties hebben kunnen mappen, is het plaatje nog niet compleet. 
 Toch kunnen we al een beter idee geven van de distributie van concerten over opnamelocaties. De Randstad domineert inderdaad. Maar concerten wordt opgenomen over het hele land, vaak in kerken.
 
