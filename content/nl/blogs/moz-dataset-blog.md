@@ -36,8 +36,8 @@ _Distributie van concerten over muziekgenres_
 Een interessante vraag is, waar gebeuren de opnames? Worden die verspreid over het hele land, of gebeuren ze vooral in de Randstad? Met de data in zijn oorspronkelijke vorm viel deze vraag niet te beantwoorden. 
 Daarin zien we dat dezelfde locaties meerdere keren terugkomen, alleen met een iets andere spelling of schrijfwijze. 
 Om echt iets te kunnen zeggen over de geografische distributie van concerten, hebben we de data opgeruimd door een groot aantal van de locaties te mappen naar Wikidata.
-Nu hebben 30.634 van de MOZ concerten een gestandardiseerde locatie op programma- of sceneniveau. 
-Omdat we niet alle programmalocaties hebben kunnen mappen, is het plaatje nog niet compleet. 
+Nu hebben 30.634 van de MOZ concerten een gestandardiseerde locatie op concert- of clipniveau. 
+Omdat we niet alle locaties hebben kunnen mappen, is het plaatje nog niet compleet. 
 Toch kunnen we al een beter idee geven van de distributie van concerten over opnamelocaties. De Randstad domineert inderdaad. Maar concerten wordt opgenomen over het hele land, vaak in kerken.
 
 <iframe src='https://flo.uri.sh/visualisation/14539726/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/14539726/?utm_source=embed&utm_campaign=visualisation/14539726' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
