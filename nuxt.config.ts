@@ -58,10 +58,7 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
     vueI18n: './i18n.config.ts',
-    locales: [
-      { code: 'en', iso: 'en-US' },
-      { code: 'nl', iso: 'nl-NL' },
-    ],
+    locales: ['en', 'nl'],
     defaultLocale: 'en',
   },
   app: {
@@ -102,6 +99,7 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap',
         },
       ],
+      script: [{ src: '/matomo-tracking-code.js' }],
     },
   },
   content: {

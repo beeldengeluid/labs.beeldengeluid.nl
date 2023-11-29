@@ -1,17 +1,6 @@
 # Workarounds
 Some issues that arose during the Nuxt3 Upgrade were worked around. These should be undone, but until that time we at least document them here:
 
-## i18n module does not provide export named `compile`
-
-Worked around this by installing specific versions of two `@intlify` packages:
-```bash
-npm i -D @intlify/core-base@9.3.0-beta.22
-npm i -D @intlify/shared@9.3.0-beta.24
-``` 
-
-According to:
-https://github.com/nuxt-modules/i18n/issues/2243
-
 ## sourcemap points to missing sourcefiles
 This error occurred (at least) in dev mode.
 

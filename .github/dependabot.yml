@@ -1,16 +1,9 @@
 version: 2
 updates:
-# Fetch and update latest `npm` packages
 - package-ecosystem: npm
   directory: '/'
   schedule:
     interval: daily
-    time: '00:00'
-  open-pull-requests-limit: 10
-  reviewers:
-    - gb-beng
-  assignees:
-    - gb-beng
   commit-message:
     prefix: fix
     prefix-development: chore
@@ -19,6 +12,7 @@ updates:
   # Nuxt has it's own update mechanism:
   # https://github.com/nuxt/nuxt/blob/7b35a1fe4faed49fffe3427a0db4aabae138f4ae/docs/3.api/5.commands/upgrade.md
     - dependency-name: "nuxt"
-  # Nuxt Image also has its own update mechanism. See e.g.:
-  # https://github.com/nuxt/image/releases/tag/v1.0.0-rc.2
-    - dependency-name: "@nuxt/image"
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "weekly"
