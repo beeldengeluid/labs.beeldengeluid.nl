@@ -45,7 +45,7 @@ _The top ten performers, based on number of concerts_
 
 _Number of concerts per location_
 
-Note: Only locations mapped to Wikidata are included, and only on a concert level (no locations for clips within concerts)
+Note: Only locations mapped to Wikidata are included. Locations are mostly noted at the level of the concert, but sometimes at the level of a clip within the concert.
 
 **The organisations**
 

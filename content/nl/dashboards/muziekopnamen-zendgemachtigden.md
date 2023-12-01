@@ -43,7 +43,7 @@ _De top tien uitvoerenden, op basis van aantal concerten_
 
 _Aantal concerten per locatie_
 
-NB: Alleen locaties gelinkt aan Wikidata worden meegenomen, en alleen op concertniveau (geen locaties voor clips binnen concerten)
+NB: Alleen locaties gelinkt aan Wikidata worden meegenomen. De meeste locaties zijn aangegeven op concertniveau, maar sommige zijn op het niveau van een clip binnen het concert.
 
 
 **De organisaties**
