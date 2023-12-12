@@ -90,13 +90,14 @@ Uitvoerenden hebben verschillende rollen. Sommige rollen bevatten informatie ove
 Deze visualisatie toont de tien meest vaak voorkomende instrumenten in de concert collectie, voor de instrumenten die zijn gelinkt. Hover over de rondjes voor meer informatie
 
 <iframe src='https://flo.uri.sh/visualisation/16062130/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/16062130/?utm_source=embed&utm_campaign=visualisation/16062130' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
 _De top tien meest vaak voorkomende instrumenten, op basis van aantal concerten_
 
 Als we de instrumenten aan andere ontologieen linken, krijgen we meer informatie over de instrumenten. De visualisatie boven gebruikt beelden van  Wikidata. We kunnen deze informatie uitbreiden, bijvoorbeeld de profiel-visualisatie hieronder laat je luisteren naar de instrumenten.
 
 <iframe src='https://flo.uri.sh/visualisation/15966461/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/15966461/?utm_source=embed&utm_campaign=visualisation/15966461' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
-_Profielene van de top tien meest vaak voorkomende instrumenten, inclusief audio van Wikidata_
+_Profielen van de top tien meest vaak voorkomende instrumenten, inclusief audio van Wikidata_
 
 ### Van Mozart tot Metallica
 De meest vaak voorkomende maker in de metadata is Mozart. Maar welke andere makers en uitvoerenden zijn geassocieerd met concerten met de muziek van Mozart? Dit netwerk toont zijn top tien connecties, en voor iedere connectie op de beurt hun top tien connecties. 
