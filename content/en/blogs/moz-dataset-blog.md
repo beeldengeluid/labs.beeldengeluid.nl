@@ -85,8 +85,8 @@ The top ten performers are a mix of orchestras, choirs and conductors. Hover ove
 
 _The top ten performers, on the basis of number of concerts_
 
-Performers appear in different roles. Some of these roles contain information about the instruments played. We have linked a large number of instruments to Wikidata and the Performance Medium ontology.
-This visualisation shows the top ten most frequently occurring instruments in the Concert collection, for those instruments that have been linked. Hover over the bubbles for more information
+Performers appear in different roles. Some of these roles contain information about the instruments played. We have linked a large number of instruments to [Wikidata](https://www.wikidata.org/) and the [Performance Medium](https://rdacommissie.home.blog/uitvoeringsmedium/) ontology.
+This visualisation shows the top ten most frequently occurring instruments in the Concert collection, for those instruments that have been linked. Hover over the bubbles for more information.
 
 <iframe src='https://flo.uri.sh/visualisation/16062269/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/16062269/?utm_source=embed&utm_campaign=visualisation/16062269' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
