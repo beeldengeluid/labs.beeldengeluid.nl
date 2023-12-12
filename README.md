@@ -4,7 +4,7 @@ Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) v18.x.
+- [Node.js](https://nodejs.org/) v20.x.
 
 If you use [`nvm`](https://github.com/nvm-sh/nvm) to manage different Node versions, running `nvm use` will activate the required version through `.nvmrc`.
 
