@@ -74,11 +74,28 @@ De top tien makers zijn allemaal bekende internationale componisten. Hover over 
 
 _De top tien makers, op basis van aantal concerten_
 
+Makers kunnen verschillende rollen hebben, bijvoorbeeld componist of arrangeur. Deze grafiek toont de meest vaak voorkomende rollen voor makers.
+
+<iframe src='https://flo.uri.sh/visualisation/15235269/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/15235269/?utm_source=embed&utm_campaign=visualisation/15235269' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+_De top tien rollen voor makers, op basis van aantal makers in die rol
+
 De top tien uitvoerenden zijn een mix van orkesten, chors en dirigenten. Hover over de grafiek om meer te ontdekken over hen.
 
 <iframe src='https://flo.uri.sh/visualisation/12154672/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/12154672/?utm_source=embed&utm_campaign=visualisation/12154672' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _De top tien uitvoerenden, op basis van aantal concerten_
+
+Uitvoerenden hebben verschillende rollen. Sommige rollen bevatten informatie over de instrumenten die worden gespeeld. We hebben een groot aantal instrumenten gelinkt aan Wikidata en de Uitvoeringsmedium ontologie.
+Deze visualisatie toont de tien meest vaak voorkomende instrumenten in de concert collectie, voor de instrumenten die zijn gelinkt. Hover over de rondjes voor meer informatie
+
+<iframe src='https://flo.uri.sh/visualisation/16062269/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/16062269/?utm_source=embed&utm_campaign=visualisation/16062269' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+_De top tien meest vaak voorkomende instrumenten, op basis van aantal concerten_
+
+Als we de instrumenten aan andere ontologieen linken, krijgen we meer informatie over de instrumenten. De visualisatie boven gebruikt beelden van  Wikidata. We kunnen deze informatie uitbreiden, bijvoorbeeld de profiel-visualisatie hieronder laat je luisteren naar de instrumenten.
+
+<iframe src='https://flo.uri.sh/visualisation/15966461/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/15966461/?utm_source=embed&utm_campaign=visualisation/15966461' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+_Profiles of the top ten most frequently occuring instruments, including audio samples from Wikidata_
 
 ### Van Mozart tot Metallica
 De meest vaak voorkomende maker in de metadata is Mozart. Maar welke andere makers en uitvoerenden zijn geassocieerd met concerten met de muziek van Mozart? Dit netwerk toont zijn top tien connecties, en voor iedere connectie op de beurt hun top tien connecties. 
