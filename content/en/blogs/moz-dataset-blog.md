@@ -73,11 +73,30 @@ The top ten creators are all well-known international composers. Hover over the 
 
 _The top ten creators, on the basis of number of concerts_
 
+Creators can have different roles, for example composer, or music arranger. This chart shows the most frequently occurring roles for creators.
+
+<iframe src='https://flo.uri.sh/visualisation/16062404/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/16062404/?utm_source=embed&utm_campaign=visualisation/16062404' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+_The top ten creator roles, on the basis of number of creators in that role_
+
 The top ten performers are a mix of orchestras, choirs and conductors. Hover over the chart to discover more about them.
 
 <iframe src='https://flo.uri.sh/visualisation/13400512/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13400512/?utm_source=embed&utm_campaign=visualisation/13400512' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
 
 _The top ten performers, on the basis of number of concerts_
+
+Performers appear in different roles. Some of these roles contain information about the instruments played. We have linked a large number of instruments to [Wikidata](https://www.wikidata.org/) and the [Performance Medium](https://rdacommissie.home.blog/uitvoeringsmedium/) ontology.
+This visualisation shows the top ten most frequently occurring instruments in the Concert collection, for those instruments that have been linked. Hover over the bubbles for more information.
+
+<iframe src='https://flo.uri.sh/visualisation/16062269/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/16062269/?utm_source=embed&utm_campaign=visualisation/16062269' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+_The top ten most frequently occuring instruments, on the basis of number of concerts_
+
+Linking the instruments to other ontologies allows us to incorporate more information about them. The above visualisation uses images from Wikidata. We can extend this to more information, for example the profile visualisation below allows you to listen to the instruments.
+
+<iframe src='https://flo.uri.sh/visualisation/15966465/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/15966465/?utm_source=embed&utm_campaign=visualisation/15966465' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+
+_Profiles of the top ten most frequently occuring instruments, including audio samples from Wikidata_
 
 ### From Mozart to Metallica
 The most frequently occurring creator in the metadata is Mozart. But which other creators and performers are associated with concerts with music from Mozart? This network shows his top ten connections, and per connection in turn their top ten connections.
