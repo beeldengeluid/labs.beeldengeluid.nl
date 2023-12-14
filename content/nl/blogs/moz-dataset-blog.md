@@ -2,12 +2,12 @@
 title: De MOZ concert collectie
 subtitle: Van Mozart tot Metallica - een kijk in de rijke aanbod van concerten op de publieke omroepen
 image: datasets/moz.jpg
+imageCaption: Photo by Danny Howe on Unsplash
 tags: Metadata, Linked Open Data, Muziek
 lab: opendatalab
 publishedOn: "2023-04-03"
 datasets: []
 ---
-Photo by Danny Howe on Unsplash
 
 **Van Mozart tot Metallica, van Pinkpop tot The Big Sing. De MOZ (Muziekopnamen Zendgemachtigden) collectie bevat opnames van concerten bedoeld voor uitzending door Nederlandse publieke omroepen op TV en Radio. 
 Deze collectie is beschikbaar gemaakt als Linked Data, met ondersteuning vanuit de <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
