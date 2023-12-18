@@ -3,18 +3,23 @@
     <ArticleHeader :article="article" :data-class="dataClass" />
 
     <section class="markdown-style pt-5">
-      <v-img
-        v-if="article.image"
-        width="930px"
-        class="header-image"
-        :src="imageSrc"
-        :srcset="imageSrcset"
-      />
-
       <!-- Published date -->
-      <p v-if="article.publishedOn" class="text-caption text-right">
+      <p v-if="article.publishedOn" class="text-overline">
         {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
       </p>
+
+      <figure>
+        <v-img
+          v-if="article.image"
+          width="930px"
+          class="header-image"
+          :src="imageSrc"
+          :srcset="imageSrcset"
+        />
+        <figcaption v-if="article.imageCaption" class="text-caption">
+          {{ article.imageCaption }}
+        </figcaption>
+      </figure>
 
       <!-- Optional article navigation -->
       <!-- <nav>
@@ -135,6 +140,10 @@ const articleDefined = computed(() => filterUndefined(props.article))
 </script>
 
 <style scoped lang="scss">
+figcaption {
+  margin-bottom: 16px;
+}
+
 .header-image {
   max-width: calc(100% + 100px);
   margin: 20px -50px;
