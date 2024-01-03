@@ -28,7 +28,7 @@
             v-if="article.type"
             color="primary"
             class="text-uppercase"
-            small
+            size="small"
             label
           >
             {{ article.type }}

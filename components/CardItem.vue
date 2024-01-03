@@ -39,7 +39,7 @@
       <v-chip
         :color="'primary'"
         class="text-uppercase"
-        small
+        size="small"
         label
         variant="outlined"
       >

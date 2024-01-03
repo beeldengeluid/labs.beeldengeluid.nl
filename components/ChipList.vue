@@ -6,7 +6,7 @@
       class="ma-2 color-chip text-white"
       :color="color"
       label
-      large
+      size="large"
       link
       :to="localePath('/' + path + '/' + chip.slug)"
       :style="{
