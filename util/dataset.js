@@ -142,8 +142,8 @@ const getValueFromObjectOrArray = (objectOrArray) => {
   return objectOrArray?.['@value']
     ? objectOrArray?.['@value']
     : objectOrArray?.filter((d) => d['@language'] === 'nl').length
-    ? objectOrArray?.filter((d) => d['@language'] === 'nl')[0]['@value']
-    : objectOrArray?.filter((d) => d['@language'] === 'en')[0]['@value']
+      ? objectOrArray?.filter((d) => d['@language'] === 'nl')[0]['@value']
+      : objectOrArray?.filter((d) => d['@language'] === 'en')[0]['@value']
 }
 
 export const enrichDatasets = (datasets, datacatalog = []) => {
