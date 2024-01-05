@@ -121,8 +121,8 @@ const props = defineProps({
 const imageSrc = !props.article.image
   ? img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
   : props.article.image.includes('/uploads/')
-  ? props.article.image
-  : img(`/images/${props.article.image}`, { width: 930 })
+    ? props.article.image
+    : img(`/images/${props.article.image}`, { width: 930 })
 const imageSrcset = !props.article.image
   ? generateSrcset(
       img,
@@ -130,12 +130,12 @@ const imageSrcset = !props.article.image
       [620, 930, 1200, 1600]
     )
   : props.article.image.includes('/uploads/')
-  ? props.article.image
-  : generateSrcset(
-      img,
-      `/images/${props.article.image}`,
-      [620, 930, 1200, 1600]
-    )
+    ? props.article.image
+    : generateSrcset(
+        img,
+        `/images/${props.article.image}`,
+        [620, 930, 1200, 1600]
+      )
 const articleDefined = computed(() => filterUndefined(props.article))
 </script>
 
