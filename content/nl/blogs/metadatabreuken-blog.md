@@ -1,10 +1,10 @@
 ---
 title: Metadatabreuken - laat ze jouw werk niet afbreken! 
-date: "2023-02-12T16:12:03.284Z"
-description: "Het Beeld en Geluid archief legt de geschiedenis van de Nederlandse publieke media vast. Items in een archief worden voorzien van metadata, die een item beschrijven. 
-Bijvoorbeeld, de titel, de uitzenddatum, welke personen er in voorkomen. Zonder deze metadata zou het onmogelijk zijn om iets 
-te vinden in een archief. Elke verandering in hoe deze metadata wordt verzameld veroorzaakt een 'breuk' in de metadata. Deze breuken hebben een impact
-op het vinden en analyseren van archiefmateriaal. Wil je effectief werken met het archief, dan is het essentieel dat je bewust bent van deze databreuken."
+image: datasets/moz.jpg
+tags: Metadata
+lab: opendatalab
+publishedOn: "2024-01-12"
+datasets: []
 ---
 
 Tim Manders (Beeld en Geluid), Mari Wigham (Beeld en Geluid)
