@@ -3,18 +3,23 @@
     <ArticleHeader :article="article" :data-class="dataClass" />
 
     <section class="markdown-style pt-5">
-      <v-img
-        v-if="article.image"
-        width="930px"
-        class="header-image"
-        :src="imageSrc"
-        :srcset="imageSrcset"
-      />
-
       <!-- Published date -->
-      <p v-if="article.publishedOn" class="text-caption text-right">
+      <p v-if="article.publishedOn" class="text-overline">
         {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
       </p>
+
+      <figure>
+        <v-img
+          v-if="article.image"
+          width="930px"
+          class="header-image"
+          :src="imageSrc"
+          :srcset="imageSrcset"
+        />
+        <figcaption v-if="article.imageCaption" class="text-caption">
+          {{ article.imageCaption }}
+        </figcaption>
+      </figure>
 
       <!-- Optional article navigation -->
       <!-- <nav>
@@ -116,8 +121,8 @@ const props = defineProps({
 const imageSrc = !props.article.image
   ? img('/images/placeholders/placeholder-blog.jpg', { width: 930 })
   : props.article.image.includes('/uploads/')
-  ? props.article.image
-  : img(`/images/${props.article.image}`, { width: 930 })
+    ? props.article.image
+    : img(`/images/${props.article.image}`, { width: 930 })
 const imageSrcset = !props.article.image
   ? generateSrcset(
       img,
@@ -125,16 +130,20 @@ const imageSrcset = !props.article.image
       [620, 930, 1200, 1600]
     )
   : props.article.image.includes('/uploads/')
-  ? props.article.image
-  : generateSrcset(
-      img,
-      `/images/${props.article.image}`,
-      [620, 930, 1200, 1600]
-    )
+    ? props.article.image
+    : generateSrcset(
+        img,
+        `/images/${props.article.image}`,
+        [620, 930, 1200, 1600]
+      )
 const articleDefined = computed(() => filterUndefined(props.article))
 </script>
 
 <style scoped lang="scss">
+figcaption {
+  margin-bottom: 16px;
+}
+
 .header-image {
   max-width: calc(100% + 100px);
   margin: 20px -50px;

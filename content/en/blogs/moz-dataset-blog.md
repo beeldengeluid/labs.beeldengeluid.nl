@@ -2,12 +2,12 @@
 title: The MOZ concert collection
 subtitle: From Mozart to Metallica - a look at the rich variety of concerts recorded for Dutch public service broadcasters
 image: datasets/moz.jpg
+imageCaption: Photo by Danny Howe on Unsplash
 tags: Metadata, Linked Open Data, Music
 lab: opendatalab
 publishedOn: "2023-04-03"
 datasets: []
 ---
-Photo by Danny Howe on Unsplash
 
 **From Mozart to Metallica, from Pinkpop to The Big Sing. The MOZ (Muziekopnamen Zendgemachtigden = Music recordings of licensed broadcasters) collection contains recordings of concerts intended for broadcast on the Dutch public service broadcasters, on TV and radio. 
 This collection has been made available as Linked Data, with the support of the <a target="_blank" href="https://polifonia-project.eu/">Polifonia</a> 
