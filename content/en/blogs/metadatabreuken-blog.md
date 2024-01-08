@@ -1,5 +1,6 @@
 ---
 title: Metadata fractures - don't let them undermine your work! 
+subtitle: An introduction to metadata fractures in an archive - what they are and how you can deal with them
 image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
 tags: Metadata
 lab: opendatalab

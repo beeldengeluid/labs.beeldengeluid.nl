@@ -1,5 +1,6 @@
 ---
 title: Metadatabreuken - laat ze jouw werk niet afbreken! 
+subtitle: Een introductie tot metadatabreuken in een archief - wat ze zijn en hoe je ermee om kunt gaan
 image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
 tags: Metadata
 lab: opendatalab
