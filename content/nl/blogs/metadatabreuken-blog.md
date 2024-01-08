@@ -1,11 +1,12 @@
 ---
 title: Metadatabreuken - laat ze jouw werk niet afbreken! 
-image: datasets/moz.jpg
+image: articles/AlanWarburton-VirtualHuman-1280x720.jpg
 tags: Metadata
 lab: opendatalab
 publishedOn: "2024-01-12"
 datasets: []
 ---
+<span>Beeld van <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
 
 Tim Manders (Beeld en Geluid), Mari Wigham (Beeld en Geluid)
 
