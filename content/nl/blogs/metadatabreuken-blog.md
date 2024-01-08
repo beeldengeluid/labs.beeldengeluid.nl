@@ -87,19 +87,19 @@ Figuur 5 toont twee voorbeelden van verschillende annotatieniveaus bij handmatig
 
 <table style='table-layout:fixed;width:100%'>
 <tr>
-<td style='width:100%'><img src="/images/articles/goed geannoteerd 1.PNG"></td>
+<td style='width:100%'><img src="/images/articles/goed geannoteerd 1.png"></td>
 </tr>
 <tr>
 <td style='width:100%'>Een uitgebreid geannoteerd programma, <a href=https://zoeken.beeldengeluid.nl/program/urn:vme:default:program:2101608120104172831>Buitenhof.</a></td>
 </tr>
 <tr>
-<td style='width:100%'><img src="/images/articles/goed geannoteerd 2.PNG"></td>
+<td style='width:100%'><img src="/images/articles/goed geannoteerd 2.png"></td>
 </tr>
 <tr>
 <td style='width:100%'>Het programma is ook in segmenten onderverdeeld, die in detail zijn geannoteerd.</td>
 </tr>
 <tr>
-<td style='width:100%'><img src="/images/articles/slecht geannoteerd 1.PNG"></td>
+<td style='width:100%'><img src="/images/articles/slecht geannoteerd 1.png"></td>
 </tr>
 <tr>
 <td style='width:100%'>Een summier beschreven programma, <a href=https://zoeken.beeldengeluid.nl/program/urn:vme:default:program:2101608120104171831>Boeken.</a></td>
@@ -137,13 +137,13 @@ Naar aanleiding van 70 jaar televisie in 2021 wilden we kijk- en luistercijfers 
 
 <table style='table-layout:fixed;width:100%'>
 <tr>
-<td style='width:100%'><img src="/images/articles/1967.PNG"></td>
+<td style='width:100%'><img src="/images/articles/1967.png"></td>
 </tr>
 <tr>
 <td style='width:100%'>1967</td>
 </tr>
 <tr>
-<td style='width:100%'><img src="/images/articles/1993.PNG"></td>
+<td style='width:100%'><img src="/images/articles/1993.png"></td>
 </tr>
 <tr>
 <td style='width:100%'>1993</td>
@@ -169,7 +169,7 @@ De [Media Suite](https://mediasuite.clariah.nl/) geeft toegang tot de metadata v
 
 De Inspect tool is voor iedereen beschikbaar. Deze toont statistieken waarmee je metadatabreuken goed kunt opsporen, door te kijken naar de volledigheid van metadatavelden, ook over de tijd heen.
 
-<img src="/images/articles/inspect_tool.PNG">
+<img src="/images/articles/inspect_tool.png">
 
 _Figuur 8: Screenshot van de Media Suite Inspect Tool - deze laat duidelijk zien hoe de hoeveelheid items met een onderwerp is veranderd over de tijd heen._
 
@@ -177,11 +177,11 @@ Figuur 8 hierboven is een screenshot van de Media Suite Inspect Tool en laat dui
 
 De Compare tool is beschikbaar voor academische onderzoekers en Beeld & Geluid medewerkers. Deze maakt het mogelijk om de resultaten van verschillende zoekvragen te vergelijken. Daarbij geeft deze tool je de mogelijkheid te compenseren voor metadatabreuken. Zo analyseerden onderzoekers in het [MediaOorlog](https://beeldengeluid.nl/kennis/projecten/mediaoorlog)-project oorlogskranten in de Media Suite. De kranten werden toegekend aan de categorieën ‘Genazificeerd’ en ‘Anti-nazi’. Er waren veel meer kranten in de ‘Genazificeerd’-categorie dan in de categorie ‘Anti-nazi’. Als we zoeken op bijvoorbeeld ‘Stalingrad’, dan zijn de aantallen krantenartikels met dat woord uiteraard hoger in de ‘Genazificeerd’-categorie dan in ‘Anti-nazi’. Door naar percentages te kijken in plaats van naar absolute aantallen, kunnen we compenseren  en zien we een heel ander patroon (zie figuren 9 en 10 hieronder).
 
-<img src="/images/articles/stalingrad_absolute.PNG">
+<img src="/images/articles/stalingrad_absolute.png">
 
 _Figuur 9: Screenshot van de Media Suite Compare Tool - de absolute aantallen krantenartikels met de term 'Stalingrad' in genazificeerde en anti-nazi kranten._
 
-<img src="/images/articles/stalingrad_relatief.PNG">
+<img src="/images/articles/stalingrad_relatief.png">
 
 _Figuur 10: Screenshot van de Media Suite Compare Tool - de relatieve aantallen krantenartikels met de term 'Stalingrad' in genazificeerde en anti-nazi kranten._
 
