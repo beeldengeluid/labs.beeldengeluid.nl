@@ -88,19 +88,19 @@ Figure 5 shows two examples of different annotation levels for manual annotation
 
 <table style='table-layout:fixed;width:100%'>
 <tr>
-<td style='width:100%'><img src="images/goed geannoteerd 1.PNG"></td>
+<td style='width:100%'><img src="articles/goed geannoteerd 1.PNG"></td>
 </tr>
 <tr>
 <td style='width:100%'>A programme annotated in detail, <a href=https://zoeken.beeldengeluid.nl/program/urn:vme:default:program:2101608120104172831>Buitenhof.</a></td>
 </tr>
 <tr>
-<td style='width:100%'><img src="images/goed geannoteerd 2.PNG"></td>
+<td style='width:100%'><img src="articles/goed geannoteerd 2.PNG"></td>
 </tr>
 <tr>
 <td style='width:100%'>The programme is also split into segments, which are also annotated in detail.</td>
 </tr>
 <tr>
-<td style='width:100%'><img src="images/slecht geannoteerd 1.PNG"></td>
+<td style='width:100%'><img src="articles/slecht geannoteerd 1.PNG"></td>
 </tr>
 <tr>
 <td style='width:100%'>A programme described at a basic level<a href=https://zoeken.beeldengeluid.nl/program/urn:vme:default:program:2101608120104171831>Boeken.</a></td>
@@ -138,13 +138,13 @@ On the occasion of the 70th anniversary of television in 2021 we wanted to analy
 
 <table style='table-layout:fixed;width:100%'>
 <tr>
-<td style='width:100%'><img src="images/1967.PNG"></td>
+<td style='width:100%'><img src="articles/1967.PNG"></td>
 </tr>
 <tr>
 <td style='width:100%'>1967</td>
 </tr>
 <tr>
-<td style='width:100%'><img src="images/1993.PNG"></td>
+<td style='width:100%'><img src="articles/1993.PNG"></td>
 </tr>
 <tr>
 <td style='width:100%'>1993</td>
@@ -170,7 +170,7 @@ The [Media Suite](https://mediasuite.clariah.nl/) gives access to the metadata o
 
 The Inspect tool is available for everyone. This tool shows statistics that help you to find metadata fractures by looking at the completeness of metadata fields, also over time.
 
-<img src="images/inspect_tool.PNG">
+<img src="articles/inspect_tool.PNG">
 
 _Figure 8: Screenshot of the Media Suite Inspect Tool - this clearly shows how the number of items with a subject has changed over time._
 
@@ -178,11 +178,11 @@ Figure 8 above is a screenshot of the Media Suite Inspect Tool that clearly show
 
 The Compare tool is available for academic researchers and Sound & Vision employees. This tool makes it possible to compare the results of different search questions. In addition, this tool gives you the possibility of compensating for metadata fractures. In this way researchers in the [MediaOorlog (Media War)](https://beeldengeluid.nl/kennis/projecten/mediaoorlog) project analysed wartime newspapers in the Media Suite. The newspapers were allocated to the categories ‘Nazified’ and ‘Anti-nazi’. There were many more newspapers in the ‘Nazified’ category than in the ‘Anti-nazi’ category. If we search for ‘Stalingrad’, for example, then the number of newspaper articles with that word is naturally larger in the ‘Nazified’ category than in ‘Anti-nazi’. By looking at percentages rather than absolute numbers, we can compensate for this and we see a very different pattern (see figures 9 and 10 below).
 
-<img src="images/stalingrad_absolute.PNG">
+<img src="articles/stalingrad_absolute.PNG">
 
 _Figure 9: Screenshot of the Media Suite Compare Tool - the absolute numbers of newspaper articles with the term 'Stalingrad' in Nazified and Anti-nazi newspapers._
 
-<img src="images/stalingrad_relatief.PNG">
+<img src="articles/stalingrad_relatief.PNG">
 
 _Figure 10: Screenshot of the Media Suite Compare Tool - the percentages of newspaper articles with the term 'Stalingrad' in Nazified and Anti-nazi newspapers._
 
