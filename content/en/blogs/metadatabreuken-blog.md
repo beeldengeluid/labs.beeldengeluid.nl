@@ -6,9 +6,9 @@ lab: opendatalab
 publishedOn: "2024-01-12"
 datasets: []
 ---
-<span>Image by <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
+<span>Image: <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
 
-Tim Manders (Sound & Vision), Mari Wigham (Sound & Vision)
+Article: Tim Manders (Sound & Vision), Mari Wigham (Sound & Vision)
 
 The Sound & Vision archive contains more than 2 million items (programmes, documents and physical objects) spread over more than 150 years. This represents an enormous treasure trove of knowledge. 
 

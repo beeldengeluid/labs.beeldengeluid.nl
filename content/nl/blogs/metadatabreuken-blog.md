@@ -6,9 +6,9 @@ lab: opendatalab
 publishedOn: "2024-01-12"
 datasets: []
 ---
-<span>Beeld van <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
+<span>Beeld: <a href="https://alanwarburton.co.uk/">Alan Warburton</a> / © BBC / <a href="https://www.betterimagesofai.org">Better Images of AI</a> / Virtual Human / <a href="https://creativecommons.org/licenses/by/4.0/">Licenced by CC-BY 4.0</a></span>
 
-Tim Manders (Beeld en Geluid), Mari Wigham (Beeld en Geluid)
+Artikel: Tim Manders (Beeld en Geluid), Mari Wigham (Beeld en Geluid)
 
 Het Beeld & Geluid archief bevat meer dan 2 miljoen items (programma’s, documenten en fysieke objecten) verspreid over meer dan 150 jaar. Dat representeert een enorme schat van kennis. 
 
