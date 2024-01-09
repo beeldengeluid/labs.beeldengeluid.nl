@@ -2,7 +2,7 @@
 title: De MOZ concert collectie
 subtitle: Van Mozart tot Metallica - een kijk in de rijke aanbod van concerten op de publieke omroepen
 image: datasets/moz.jpg
-imageCaption: Photo by Danny Howe on Unsplash
+imageCaption: Foto door Danny Howe op Unsplash
 tags: Metadata, Linked Open Data, Muziek
 lab: opendatalab
 publishedOn: "2023-04-03"
