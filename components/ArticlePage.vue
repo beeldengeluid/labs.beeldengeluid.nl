@@ -5,7 +5,8 @@
     <section class="markdown-style pt-5">
       <!-- Published date -->
       <p v-if="article.publishedOn" class="text-overline">
-        {{ $t('published_on') }}: {{ formatDate(article.publishedOn) }}
+        {{ $t('published_on') }}:
+        {{ formatDate(article.publishedOn, $i18n.locale) }}
       </p>
 
       <figure>
@@ -62,7 +63,7 @@
         - https://github.com/nuxt/content/issues/1797
         - https://github.com/beeldengeluid/labs.beeldengeluid.nl/issues/526
       <p v-if="article.updatedAt" class="caption">
-        {{ $t('last_update') }}: {{ formatDate(article.updatedAt) }}
+        {{ $t('last_update') }}: {{ formatDate(article.updatedAt, $i18n.locale) }}
       </p>
       -->
 
