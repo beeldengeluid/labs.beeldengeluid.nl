@@ -13,7 +13,15 @@ fetch(datacatalogURL)
   })
   .then((okResponse) => okResponse.json())
   .then((dataCatalog) => {
-    const jsonText = JSON.stringify(dataCatalog)
+    dataCatalog = JSON.parse(fs.readFileSync(datacatalogPath))
+    // for now only sort the graph by '@id' for a more readable diff
+    const dataCatalogSorted = {
+      ...dataCatalog,
+      '@graph': dataCatalog['@graph'].sort((l, r) =>
+        l['@id'] < r['@id'] ? -1 : 1
+      ),
+    }
+    const jsonText = JSON.stringify(dataCatalogSorted, undefined, 2)
     fs.writeFileSync(datacatalogPath, jsonText)
     console.log(`Data catalog written to file: ${datacatalogPath}`)
   })
