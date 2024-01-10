@@ -1,9 +1,32 @@
 {
   "@context": {
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
     "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "sdo": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
@@ -12,37 +35,37 @@
       "@type": "sdo:DataCatalog",
       "sdo:dataset": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0006"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0002"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/dataset/0025"
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0026"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0001"
         },
         {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0005"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0025"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0003"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0028"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0013"
+        },
+        {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0024"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/dataset/0007"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/dataset/0010"
@@ -153,26 +176,26 @@
       }
     },
     {
-      "@id": "http://data.beeldengeluid.nl/id/datadownload/0008",
+      "@id": "http://data.beeldengeluid.nl/id/datadownload/0009",
       "@type": "sdo:DataDownload",
       "sdo:contentUrl": {
-        "@id": "https://commons.wikimedia.org/wiki/Category:Radio_broadcasts_by_Radio_Herrijzend_Nederland"
+        "@id": "https://soundcloud.com/beeldengeluid/sets/radio-oranje"
       },
       "sdo:description": {
-        "@language": "nl",
-        "@value": "Radio uitzendingen Radio Herrijzend Nederland van Beeld en Geluid op Wikimedia Commons."
+        "@language": "en",
+        "@value": "The collection of Broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation."
       },
       "sdo:encodingFormat": "audio/wav",
       "sdo:inLanguage": "nl-NL",
       "sdo:license": {
-        "@id": "https://creativecommons.org/publicdomain/mark/1.0/"
+        "@id": "https://creativecommons.org/licenses/by-sa/3.0/"
       },
       "sdo:name": {
         "@language": "nl",
-        "@value": "Radio uitzendingen Radio Herrijzend Nederland van Beeld en Geluid op Wikimedia Commons"
+        "@value": "Radio Oranje op SoundCloud"
       },
       "sdo:usageInfo": {
-        "@id": "https://www.mediawiki.org/wiki/API:Tutorial"
+        "@id": "https://developers.soundcloud.com/docs/api/guide"
       }
     },
     {
@@ -687,7 +710,7 @@
       },
       "sdo:description": {
         "@language": "en",
-        "@value": "Metadata for the catalogue objects that are provided by Netherlands Institue for Sound and Vision."
+        "@value": "Metadata for the catalogue objects from the Netherlands Institute for Sound and Vision."
       },
       "sdo:distribution": {
         "@id": "http://data.beeldengeluid.nl/id/datadownload/0001"
@@ -710,7 +733,7 @@
         "@id": "https://www.beeldengeluid.nl"
       },
       "sdo:size": "2126454",
-      "sdo:temporalCoverage": "1877/2021"
+      "sdo:temporalCoverage": "1877/2023"
     },
     {
       "@id": "http://data.beeldengeluid.nl/id/dataset/0002",
@@ -823,7 +846,7 @@
         "@value": "The collection of broadcasts from Radio Oranje (Radio Orange) contains a selection of the radio broadcasts that were transmitted between 1940 and 1945. They were broadcasts created by the Dutch Government in exile in London, transmitted to encourage and inform the people of the Netherlands whilst under occupation. According to Dutch law these recordings are in the Public Domain, and hence free for reuse by anyone. The set can be accessed and downloaded via the Soundcloud API. But also on Wikimedia Commons, or through the Wikimedia Commons API."
       },
       "sdo:distribution": {
-        "@id": "http://data.beeldengeluid.nl/id/datadownload/0008"
+        "@id": "http://data.beeldengeluid.nl/id/datadownload/0009"
       },
       "sdo:inLanguage": "nl-NL",
       "sdo:includedInDataCatalog": {
@@ -889,46 +912,46 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0027"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0018"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
-        },
-        {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0014"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
-        },
-        {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0017"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0026"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0029"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0015"
         },
         {
           "@id": "http://data.beeldengeluid.nl/id/datadownload/0028"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0032"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0031"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0016"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0019"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0013"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0018"
+        },
+        {
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0030"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -962,10 +985,10 @@
       },
       "sdo:distribution": [
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0021"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0020"
         },
         {
-          "@id": "http://data.beeldengeluid.nl/id/datadownload/0020"
+          "@id": "http://data.beeldengeluid.nl/id/datadownload/0021"
         }
       ],
       "sdo:inLanguage": "nl-NL",
@@ -976,7 +999,7 @@
         "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
       },
       "sdo:mainEntityOfPage": {
-        "@id": "https://www.beeldengeluid.nl/nieuws/beeld-en-geluid-stelt-propagandafilms-nsb-online-beschikbaar"
+        "@id": "https://www.beeldengeluid.nl/kennis/blog/propagandafilms-van-de-filmdienst-der-nsb-open-beschikbaar"
       },
       "sdo:name": {
         "@language": "nl",
@@ -1110,8 +1133,8 @@
       "sdo:publisher": {
         "@id": "https://www.beeldengeluid.nl"
       },
-      "sdo:size": "78781",
-      "sdo:temporalCoverage": "1900/2022"
+      "sdo:size": "79156",
+      "sdo:temporalCoverage": "1900/2023"
     },
     {
       "@id": "http://www.wikidata.org/entity/Q94482770",
@@ -1145,22 +1168,22 @@
       },
       "sdo:sameAs": [
         {
-          "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
-        },
-        {
           "@id": "http://www.wikidata.org/entity/Q1131877"
         },
         {
-          "@id": "https://grid.ac/institutes/grid.425952.d"
-        },
-        {
-          "@id": "http://www.openbeelden.nl/users/beeldengeluid"
+          "@id": "https://data.overheid.nl/community/organization/nlpo12345678"
         },
         {
           "@id": "https://data.netwerkdigitaalerfgoed.nl/beeldengeluid"
         },
         {
+          "@id": "http://www.openbeelden.nl/users/beeldengeluid"
+        },
+        {
           "@id": "https://data.overheid.nl/community/organization/beeld-en-geluid"
+        },
+        {
+          "@id": "https://grid.ac/institutes/grid.425952.d"
         }
       ]
     },

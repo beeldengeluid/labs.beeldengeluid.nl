@@ -13,7 +13,6 @@ fetch(datacatalogURL)
   })
   .then((okResponse) => okResponse.json())
   .then((dataCatalog) => {
-    dataCatalog = JSON.parse(fs.readFileSync(datacatalogPath))
     // for now only sort the graph by '@id' for a more readable diff
     const dataCatalogSorted = {
       ...dataCatalog,
