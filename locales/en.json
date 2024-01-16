@@ -33,5 +33,7 @@
   "download_metadata": "JSON-LD",
   "explore_dataset": "Explore dataset",
   "intro_title": "Welcome to Sound & Vision Labs!",
-  "intro_text": "Here we offer you information, projects and the latest articles about the research and innovation activities at Sound & Vision."
+  "intro_text": "Here we offer you information, projects and the latest articles about the research and innovation activities at Sound & Vision.",
+  "deprecation_title": "We've moved!",
+  "deprecation_text": "We will be focussing more on data, and have a new home at"
 }
