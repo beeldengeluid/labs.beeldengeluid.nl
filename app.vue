@@ -65,6 +65,23 @@
     </v-navigation-drawer>
 
     <!-- site title -->
+    <v-app-bar>
+      <v-banner
+        icon="$warning"
+        color="warning"
+        :stacked="false"
+        elevation="0"
+        class="bg-warning"
+      >
+        <template #text>
+          <h3>{{ $t('deprecation_title') }}</h3>
+          {{ $t('deprecation_text') }}
+          <a href="https://data.beeldengeluid.nl/"
+            >https://data.beeldengeluid.nl</a
+          >.
+        </template>
+      </v-banner>
+    </v-app-bar>
     <v-app-bar
       position="fixed"
       theme="dark"
