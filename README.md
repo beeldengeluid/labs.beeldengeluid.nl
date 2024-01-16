@@ -2,6 +2,9 @@
 
 Welcome to the online home of Sound & Vision Labs (B&G Labs in Dutch).
 
+> [!IMPORTANT]
+> The Labs Website has been deprecated. We continue at [beeldengeluid/data.beeldengeluid.nl](https://github.com/beeldengeluid/data.beeldengeluid.nl).
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) v20.x.
